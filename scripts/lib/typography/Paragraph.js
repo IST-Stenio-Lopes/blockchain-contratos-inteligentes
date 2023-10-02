@@ -1,6 +1,11 @@
+
+
+
 export class Paragraph extends HTMLElement {
   constructor() {
     super();
+
+    this.build();
   }
 
   build() {
@@ -11,7 +16,6 @@ export class Paragraph extends HTMLElement {
     const p = this.createParagraph();
     
     shadow.appendChild(p);
-
   }
 
   createParagraph() {
@@ -30,10 +34,11 @@ export class Paragraph extends HTMLElement {
   styles() {
     const style = document.createElement('style');
     style.textContent = `
-      .star {
+      p {
         font-size: 1rem;
         overflow-wrap: break-word;
-        color: var(--orange-500);
+        width: 200px;
+        height: 200px;
       }
     `
 
