@@ -1,5 +1,8 @@
-
-
+/**
+ * Create a p tag.
+ *
+ * @param {string} value The value injected inside p tag.
+ */
 
 export class Paragraph extends HTMLElement {
   constructor() {
@@ -12,41 +15,31 @@ export class Paragraph extends HTMLElement {
     const shadow = this.attachShadow({mode: 'open'});
 
     shadow.appendChild(this.styles());
-    
-    const p = this.createParagraph();
-    
-    shadow.appendChild(p);
-
-
-    document.adoptedStyleSheets = [this.createSheet()];
+    shadow.appendChild(this.createParagraph());
   }
 
   createParagraph() {
     const p = document.createElement('p');
 
+    p.innerHTML = this.getAttribute('value');
     return p;
   }
 
-  createSheet() {
-    const sheet = new CSSStyleSheet();
-    sheet.replace('@import url("./../../css/global.css")');
-
-    return sheet;
-  }
 
   styles() {
     const style = document.createElement('style');
     style.textContent = `
       p {
-        font-size: 1rem;
+        font-size: var(--text-base);
+        line-height: 1.5rem;
         overflow-wrap: break-word;
-        color: var(--orange-500)
-        width: 200px;
-        height: 200px;
+        color: var(--gray-200);
       }
     `
 
     return style;
   }
 }
+
+
 
