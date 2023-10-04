@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossOrigin=""
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/theme.css" />
-  <link rel="stylesheet" href="css/global.css" />
-  
-  <script type="module" src="scripts/lib/index.js"></script>
-  
-  <title>Contratos Inteligentes</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
-<body>
-  
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="SENAI/PB" />
 
-  <sd-title-h1 value="Título 1"></sd-title-h1>
-  <sd-title-h2 value="Título 2"></sd-title-h2>
-  <sd-title-h3 value="Título 3"></sd-title-h3>
-  <sd-subtitle-h4 value="Subtítulo 4"></sd-subtitle-h4>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <sd-p value="Parágrafo"></sd-p>
-  
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/global.css" />
 
-</body>
+    <!-- Scripts -->
+    <script type="module" src="scripts/lib/index.js"></script>
+    <script type="text/javascript" src="scripts/data.js"></script>
+
+    <!-- JQUERY -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+
+    <title>Contratos Inteligentes</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      carregarHTML(aulaAtual);
+
+      function carregarHTML(id) {
+        if (id != "x") {
+          $(function () {
+            $("#root").load("aulas/aula-" + id + ".html#root");
+            aulaAtual = id;
+
+            // updateLessonPage();
+
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          });
+        }
+      }
+
+      // ajustes Moodle e T2K
+      setTimeout(function () {
+        if (top.document.getElementById("scorm_layout")) {
+          top.document.getElementById("scorm_layout").style.height = "100vh";
+        }
+
+        // Usado no T2K para forçar a saida do LMS e Ajustes de Layout
+        if (top.document.getElementById("blsm-qp-exit")) {
+          var parent = top.document.getElementById("blsm-qp-exit");
+          parent.addEventListener(
+            "click",
+            function (event) {
+              unloadPage();
+            },
+            true
+          );
+          top.document.getElementById("scorm_content").style.height =
+            "calc(100vh - 30px)";
+          top.document.getElementsByClassName("launcher")[0].style.height =
+            "26px";
+          top.document.getElementsByClassName("launcher")[0].style.fontSize =
+            "19px";
+          top.document.getElementsByClassName("launcher")[0].style.padding =
+            "unset";
+          window.addEventListener("resize", function (e) {
+            top.document.getElementById("scorm_content").style.height =
+              "calc(100vh - 30px)";
+          });
+        }
+      }, 200);
+    </script>
+  </body>
 </html>

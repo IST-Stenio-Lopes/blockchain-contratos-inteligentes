@@ -21,7 +21,9 @@ export class Paragraph extends HTMLElement {
   createParagraph() {
     const p = document.createElement('p');
 
-    p.innerHTML = this.getAttribute('value');
+    // p.innerHTML = this.getAttribute('value');
+    
+    p.innerHTML = "<slot></slot>";
     return p;
   }
 
