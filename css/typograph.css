@@ -39,9 +39,13 @@
 }
 
 .page p {
+  font-size: var(--text-base);
+  line-height: 1.5rem;
+  font-weight: 400;
+
+  overflow-wrap: break-word;
 }
 
-/* 
 .section-title-container {
   width: 100vw;
 }
@@ -54,6 +58,9 @@
   height: 4rem;
 }
 
+/* .section-title-content-primary {
+  background: linear-gradient(90deg, red 0%, green 35%, blue 100%);
+} */
 .section-title-content-primary {
   background: linear-gradient(
     90deg,
@@ -73,4 +80,4 @@
   font-weight: 700;
   text-align: left;
   background-color: red;
-} */
+}
