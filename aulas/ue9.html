@@ -1,0 +1,463 @@
+<!-- Page -->
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- TODO HEADER -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- TODO VIDEO -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Sintaxe</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Solidity é uma linguagem de programação orientada a objetos com muitos
+          recursos e está em constante evolução. Você vai conhecer um pouco mais
+          sobre a sintaxe de funções, construtores e modificadores. É importante
+          ficar atento às mudanças, pois as evoluções da linguagem são muito
+          rápidas. Mantenha-se atualizado consultando a documentação em:
+          https://solidity-portuguese.readthedocs.io/pt/latest/
+        </p>
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h2>Funções</h2>
+
+        <p>
+          No Solidity, assim como em outras linguagens de programação, as
+          funções representam possíveis ações de um contrato inteligente. Na
+          prática, elas são usadas para agrupar trechos de código que podem ser
+          chamados quando necessário.
+        </p>
+
+        <p>
+          Na figura a seguir, você pode ver a estrutura básica de um função em
+          Solidity:
+        </p>
+
+        <!-- TDODO IMAGEM -->
+
+        <p>Analisando a imagem, pode-se destacar:</p>
+
+        <!-- TODO LIST -->
+        "Uso da palavra reservada function para definição da função.", "As
+        funções recebem um nome de identificação para serem chamadas", "Entre
+        parênteses, podem ter parâmetros de entrada que são definidos com tipo e
+        nome.", "Elas podem retornar um ou mais valores. Nesse caso, usa-se a
+        palavra reservada returns e os tipos dos valores retornados devem ser
+        especificados entre parênteses.", "Há funções que não retornam nenhum
+        valor.",
+        <!-- /TODO LIST -->
+
+        <p>
+          Outras duas propriedades relacionadas às funções são a visibilidade e
+          o identificador de estado. A princípio, é necessário saber que a
+          visibilidade estabelece onde a função poderá ser acessada e o
+          identificador de estado define como a função tem acesso aos dados.
+          Você verá sobre essas características mais detalhadamente nesta
+          unidade.
+        </p>
+
+        <p>
+          Na imagem a seguir, você pode ver a estrutura geral de uma função.
+        </p>
+
+        <!-- TODO IMAGEM -->
+        <!-- TODO QUESTÕES -->
+
+        <p>
+          Agora é hora de se aprofundar mais um pouco em cada uma dessas
+          estruturas.
+        </p>
+
+        <h3>Parâmetros</h3>
+
+        <p>
+          Funções podem receber parâmetros externos, veja a função a seguir:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Por enquanto, preste atenção somente nos parâmetros dentro dos
+          parêntesis (uint x, uint y). Esse trecho de código indica que essa
+          função recebe dois número:
+        </p>
+
+        <!-- TODO LIST -->
+        "um inteiro na variável 'x' e,", "outro inteiro na variável 'y'",
+        <!-- / TODO LIST -->
+
+        <p>Funções também podem funcionar sem parâmetros externos.</p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h3>Retorno</h3>
+
+        <p>
+          Se a função retornar algum dado, é preciso especificar o tipo de dado
+          que será retornado em um parâmetro da função. Em Solidity, isso é
+          feito através do parâmetro returns, a imagem a seguir mostra na linha
+          1. Nesse caso, foi especificado que a saída da função é do tipo unit.
+        </p>
+
+        <p>
+          Observe na linha 2 que o return é usado no corpo da função e indica o
+          que será retomado. Nesse caso, é retorna o valor de saldo.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO QUESTÃO -->
+
+        <h3>Visibilidade</h3>
+
+        <p>
+          Parâmetros de visibilidade definem como essa função poderá ser
+          acessada.
+        </p>
+
+        <!-- TODO IMAGEM -->
+        <!-- TODO IMAGEM -->
+        <!-- TODO IMAGEM -->
+        <!-- TODO IMAGEM -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          A tabela abaixo resume o acesso à chamada de funções de acordo com a
+          visibilidade.
+        </p>
+
+        <!-- TODO SimpleTableV1 -->
+
+        <p>
+          Por padrão a visibilidade das funções é public, então se você não
+          especificar na função a visibilidade, ela estará visível dentro e fora
+          do contrato.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h3>Comportamento da função</h3>
+
+        <p>
+          As funções podem apresentar diferentes comportamentos em relação ao
+          estado da rede. O estado são os dados armazenados na memória da
+          Blockchain. Considerando as funções, alguns parâmetros podem ser
+          utilizados para definição de como acessar/modificar o estado.
+        </p>
+
+        <p>
+          Se nenhuma palavra reservada for utilizada, a função é executada no
+          modo transaction, ou seja, ela pode retornar, gravar ou alterar dados.
+          A execução das funções transaction sempre envolvem pagamento de gás,
+          mesmo que seja apenas uma leitura de valores.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Existem as funções do tipo <strong>view</strong> que são aquelas
+          incapazes de modificar o estado do elemento a que se referem. Elas são
+          executadas no modo <strong>call</strong>, isso faz com que não tenha
+          custo de gás envolvido.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Outro tipo utilizado, são as funções definidas como{" "}
+          <strong>pure</strong>. Elas são as mais restritivas e seu uso não
+          permite ler ou alterar dados. Sua execução também ocorre no modo call
+          e não envolve custo de gás.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Você pode estar se perguntando se existe alguma função especial para
+          ações que envolvem transações financeiras? A resposta é sim!
+        </p>
+
+        <p>
+          As funções pagáveis (payable) permitem receber fundos, ou seja,
+          recebem Ether (Eth) e/ou outros tokens.
+        </p>
+
+        <p>
+          Observe na imagem abaixo uma função que incrementa uma variável com um
+          valor financeiro.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Se o contrato necessita enviar fundos, ela vai precisar de um
+          parâmetro endereço do tipo pagável (address payable), conforme o
+          código exibido na imagem abaixo:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO WarningBanner -->
+        Funções com parâmetro de estado view não podem ser pagáveis (payable).
+        <!-- / TODO WarningBanner -->
+
+        <!-- TODO QUESTÃO -->
+      </div>
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h2>Funções e variáveis intrínsecas (Build-in)</h2>
+
+        <p>
+          As variáveis/funções intrínsecas (build-in) são implementações
+          oferecidas pela própria linguagem de programação. No Solidity, você
+          deve usá-las quando precisar que dados sejam tratados como dados de um
+          bloco ou de uma transação.
+        </p>
+
+        <p>
+          Essas variáveis são acessíveis através de instruções e você conhecerá
+          algumas a seguir.
+        </p>
+
+        <!-- TODO LIST -->
+        <!-- / TODO LIST -->
+
+        <!-- TODO WarningBanner -->
+        Você pode consultar os Chain ids em: https://chainlist.org/ <br />
+        Também é possível inserir sua rede e receber seu id.
+        <!-- / TODO WarningBanner -->
+
+        <!-- TODO LIST -->
+        <!-- / TODO LIST -->
+
+        <!-- TODO WarningBanner -->
+        Acesse: https://etherscan.io/blocks e confira quantos blocos existem na
+        rede Ethereum atualmente.
+        <!-- / TODO WarningBanner -->
+
+        <!-- TODO LIST -->
+        <!-- / TODO LIST -->
+
+        <!-- TODO QUESTÃO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h2>Exemplo de uso de funções</h2>
+
+        <p>
+          Como exemplo do uso de funções, você vai acompanhar a implementação de
+          um contrato chamado Caixa. O objetivo desse contrato é ser capaz de
+          guardar um número inteiro e, posteriormente, consultá-lo.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>Ao analisar o código, pode-se observar:</p>
+
+        <!-- TODO LIST -->
+        <!-- / TODO LIST -->
+
+        <p>
+          Logo após a compilação e deploy do contrato, tem-se disponível para
+          usar de forma pública as duas funções. Veja abaixo como as funções
+          ficam disponíveis para teste na plataforma Remix.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A figura mostra a execução da função guardar(234). Se você estiver
+          usando o Remix, pode executar a função dessa forma, inserindo o
+          parâmetro no campo indicado e apertando o botão da função. Em seguida,
+          o console mostrará a transação gerada.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Agora o valor será consultado utilizando a função consultar() Note que
+          não há campo para inserção de parâmetros. Observe na imagem que após
+          apertar o botão, o valor é retornado em um campo abaixo da função.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Uma transação é gerada, mas nesse caso, por ser uma função do tipo
+          view, ela é executada no modo call e não envolve custo de gás.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h2>Construtores</h2>
+
+        <p>
+          O construtor é um tipo especial de função que é executada apenas uma
+          vez quando o contrato é implantado e tem como objetivo inicializar as
+          variáveis de estado. Cada contrato possui um único construtor.
+        </p>
+
+        <p>
+          Para sua definição é usada a palavra reservada constructor. Caso
+          nenhum construtor seja definido, Solidity considera um construtor
+          vazio como padrão. Cada contrato possui um único construtor.
+        </p>
+
+        <p>
+          No exemplo a seguir, o construtor é definido na linha 5. Observe na
+          sua implementação que a variável de estado proprietario foi
+          inicializada utilizando a função msg.sender.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO QUESTÃO -->
+      </div>
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h2>Modificadores</h2>
+        <p>
+          Modificadores são códigos chamados antes e/ou depois da execução de
+          uma função, garantindo cumprimento de critérios importantes. Um
+          exemplo bastante utilizado é o modificador que garante que uma função
+          só será executada se for chamada pelo dono do contrato. Os
+          modificadores são amplamente usados para verificação de acesso e
+          validação de dados.
+        </p>
+
+        <p>
+          O código a seguir mostra a declaração de um modificador na linha 10,
+          utilizando a palavra reservada modifier. Na linha 11, tem-se o uso de
+          uma função chamada de require. Essa função retorna valores booleanos
+          (verdadeiro ou falso), considerando a condição estabelecida. Nesse
+          caso, é verificado se o endereço retornado em msg.render é igual ao
+          endereço guardado na variável proprietario. Na linha 12, você encontra
+          o elemento “_;”. Isso significa que caso a condição estabelecida não
+          seja alcançada, será lançado em exceção. Esse elemento é usado
+          obrigatoriamente nos modificadores.
+        </p>
+
+        <p>
+          Na linha 19, você encontra uma função chamada de
+          mudaProprietario(address novoProprietario). O objetivo é modificar o
+          endereço do proprietário. Observe ainda na linha 19, no final da
+          declaração, o uso do modificador. A função mudaProprietario só poderá
+          ser executada se a condição do modificador ehProprietario for
+          verdadeira.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO QUESTÃO -->
+      </div>
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Recapitulando</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
+
+        <!-- TODO LIST -->
+        "Uso da palavra reservada function p....
+        <!-- / TODO LIST -->
+
+        <!-- TODO SimpleTableV1 -->
+
+        <!-- TODO LIST -->
+        "As funções podem apresentar diferentes co...
+        <!-- / TODO LIST -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+    </div>
+  </div>
+  <!-- / Section -->
+</div>
+<!-- / Page-->
