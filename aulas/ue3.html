@@ -12,7 +12,20 @@
   </div>
   <!-- / Section -->
 
-  <!-- TODO SECTION TITLE -->
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">
+            Estrutura da rede Blockchain
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Section -->
   <div class="flex flex-col w-full items-center">
@@ -273,27 +286,204 @@
         <!-- TODO VIDEO -->
 
         <!-- TODO QUESTÃO -->
-        
-        
       </div>
-        <!-- / GridCol marginInCols = 2 -->
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h1>Assinaturas digitais</h1>
+        <p>
+          Sabemos que na Blockchain os blocos formam uma cadeia. Cada bloco
+          possui informações ou transações e cada modificação ou nova informação
+          inserida é registrada em um dos blocos da cadeia. As transações estão
+          relacionadas às assinaturas digitais que proporcionam segurança e
+          anonimato.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h1>Chave pública e chave privada</h1>
+
+        <p>
+          As chaves públicas e privadas geram as assinaturas digitais dos
+          negociadores. Para entender como essas chaves funcionam, você vai
+          conhecer o conceito de criptografia de chaves assimétricas ou
+          criptografia de chave pública.
+        </p>
+
+        <!-- TODO IMAGE -->
+        <!-- TODO IMAGE -->
+        <p>
+          Computacionalmente, a geração dessas chaves é uma tarefa muito
+          simples. A chave pública é gerada a partir da chave privada. Mas, não
+          é possível gerar a chave privada a partir da chave pública.
+        </p>
+
+        <p>
+          Dessa forma, podemos publicar a nossa chave pública em uma rede sem
+          temer que a nossa chave privada seja descoberta.
+        </p>
+
+        <p>
+          A estratégia de chaves assimétricas é utilizada em inúmeras
+          aplicações, mas como esse par é utilizado na Blockchain? Depois que se
+          tem o par de chaves assimétricas, um endereço é criado a partir da
+          chave pública. O endereço é o identificador que permite enviar e
+          receber criptomoedas. Para ficar mais claro, vamos fazer uma analogia
+          ao sistema bancário, temos:
+        </p>
+
+        <!-- TODO LIST -->
+        "A chave privada é como a senha de sua conta bancária. Com ela, é
+        possível realizar transações das suas criptomoedas, logo deve ser
+        guardada em local seguro.", "A chave pública é como sua conta bancária.
+        Suas criptomoedas ficam guardadas nela, e só podem ser liberadas com a
+        chave privada. Como é pública, qualquer um pode ver, mas ninguém pode
+        movimentar os fundos utilizando ela.", "O endereço é como o número da
+        sua conta no banco ou sua chave PIX. É esse endereço, derivado da chave
+        pública, que deve ser informado em transferências de criptomoedas. ",
+        <!-- / TODO LIST -->
+
+        <p>
+          Para produzir um endereço válido na rede, inicialmente geramos a chave
+          privada de um usuário. A partir da chave privada, diversos algoritmos
+          podem ser utilizados para derivar a chave pública.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Uma vez que geramos a nossa chave pública, submetemos tal chave ao
+          algoritmo de hash, como o SHA-256, obtendo nosso endereço. Na rede
+          bitcoin, por exemplo, esse endereço ainda é submetido a um outro
+          algoritmo (RIPEMD-160), que irá produzir o endereço bitcoin. Todo esse
+          processo de codificação garante o anonimato nas transações em rede.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A criptografia assimétrica é baseada em duas chaves: a chave privada e
+          a chave pública. Imagine que você deseja transmitir um arquivo em uma
+          rede, e busca garantir que apenas o destinatário possa ler seu
+          conteúdo. Para isso, você pode fazer uso da chave pública desse
+          destinatário para cifrar o documento, encriptando-o.
+        </p>
+
+        <p>
+          Somente com a chave privada (que fica em posse do destinatário) será
+          possível descriptografar o texto. Logo, nenhuma outra pessoa que tenha
+          acesso ao documento criptografado conseguirá ter acesso ao seu
+          conteúdo, a imagem a seguir mostra isso:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          O vídeo a seguir apresenta o conceito de uma chave pública e uma chave
+          privada, clique e se aprofunde no conhecimento.
+        </p>
+
+        <!-- TODO VIDEO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h1>Carteira de Criptomoedas</h1>
+
+        <p>
+          As carteiras de criptomoedas, também chamadas de wallets, são os
+          softwares e os dispositivos que guardam as informações que dão acesso
+          aos cripto ativos armazenados na blockchain. Ou seja, é nela que ficam
+          a chave privada, chave pública e os endereços.
+        </p>
+
+        <p>
+          Há vários tipos de wallets, no entanto, os modelos disponíveis podem
+          ser divididos em dois grandes grupos: hot wallets (carteiras quentes)
+          e cold wallets (carteiras frias). A imagem a seguir mostra as
+          diferenças entre elas.
+        </p>
+
+        <!-- TODO IMAGEM -->
+        <!-- TODO QUESTÃO -->
       </div>
     </div>
-    <!-- / Section -->
+  </div>
 
-
-      <!-- Section -->
-      <div class="flex flex-col w-full items-center">
-        <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
-            <!-- GridCol marginInCols = 2 -->
-    <div class="col-end-11 col-start-3 space-y-4"><!-- Titulo H1 -->
-      <h1 class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6">
-        H1
-      </h1></div>
-    <!-- / GridCol marginInCols = 2 -->
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Recaptulando</h1>
         </div>
       </div>
-      <!-- / Section -->
+    </div>
   </div>
-  <!-- / Page-->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
+
+        <!-- TODO LIST -->
+        "Os blocos são formados por hashes que são ligados ao bloco anterior,
+        funcionando como links com os blocos anteriores até o bloco inicial,
+        também conhecido como bloco gênesis (o bloco que deu origem à cadeia).",
+        "O bloco inicial, conhecido como bloco gênesis, não possui registro de
+        transações de outros blocos; por isso, o campo de hash do bloco anterior
+        normalmente apresenta valor 0 nesse campo.", "Um bloco pode ser
+        entendido como um conjunto de transações ou informações validadas.",
+        "Além da lista de transações, um bloco possui as seguintes partes:
+        número do bloco, hash do bloco anterior, dificuldade alvo, marcação do
+        tempo, valor nonce e árvore de Merkle.", "Qualquer modificação no bloco
+        irá modificar a hash que o representa e resultará numa bifurcação do
+        encadeamento dos blocos, evidenciando uma alteração na cadeia.", "Os
+        algoritmos de hash são conhecidos por serem unidirecionais (em inglês,
+        one-way). Ou seja, não é possível descobrir os dados originais a partir
+        de uma hash. Por isso, as hashes na Blockchain garantem a
+        confidencialidade dos dados originais.", "As transações definem uma
+        quantidade de criptomoedas que serão transferidas de um endereço de
+        origem para um endereço destino em um determinado tempo (data e hora).
+        Associada a cada transação existe um id.", "As transações estão
+        relacionadas às assinaturas digitais que proporcionam segurança e
+        anonimato.", "As chaves públicas e privadas geram as assinaturas
+        digitais dos negociadores.", "A chave privada funciona como uma senha,
+        pois é uma sequência alfanumérica que permite transacionar
+        criptomoedas.", "No processo de transação, a mensagem só pode ser
+        descriptografada com a chave privada do destinatário.",
+        <!-- / TODO LIST -->
+      </div>
+    </div>
+    <!-- TODO VIDEO-->
+  </div>
 </div>
+<!-- / Page-->
