@@ -1,0 +1,243 @@
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- TODO HEADER -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- TODO VIDEO COM BORDA -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- TODO SECTION TITLE -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <p>
+            O funcionamento da blockchain exige recursos computacionais para
+            executar operações específicas, você deve lembrar da mineração.
+            Esses recursos são pagos, através de taxas repassadas aos usuários
+            da rede. Na rede Ethereum, essas taxas são chamadas de taxas de gás.
+        </p>
+
+        <p>
+            O gás é o combustível para o funcionamento do ecossistema Ethereum.
+            Mas como ela é cobrada? Cada transação requer uma taxa, como podemos
+            ver na figura abaixo.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+            As taxas são pagas em ETH. A indicação é feita em Gwei, uma
+            denominação para uma fração do ETH, sendo sua menor unidade.
+        </p>
+
+        <p>
+            Segundo o ethereum.org, tem-se que 1 ETH é igual a 1.000.000.000.000.000.000 wei.
+        </p>
+
+        <!-- TODO RADIO QUESTION -->
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            O cálculo da taxa total funciona da seguinte forma:
+        </p>
+
+        <p>
+            <strong>GÁS = LIMITE DE GÁS * (TAXA BASE + GORJETA)</strong>
+        </p>
+
+        <p>
+            Limite de gás (gas limit) é o limite máximo que você está disposto
+            gastar com uma operação. Esse valor irá variar se a operação for uma
+            transação, uma operação com contrato inteligente ou bloco.
+        </p>
+
+        <p>
+            Taxa base (gas fee) é a quantidade mínima de gás que a blockchain
+            Ethereum precisa para processar a transação naquele instante. As
+            taxas são ajustadas dinamicamente de acordo com o número de usuários
+            presentes na rede em um determinado momento.
+        </p>
+
+        <p>
+            Gorjeta (tip), também conhecido como taxa de prioridade, é uma taxa
+            adicional feita para que sua operação seja concluída rapidamente. Os
+            mineradores podem verificar o valor das gorjetas adicionais e dão
+            prioridades às operações com maior valor. O exemplo a seguir mostra
+            uma transação e sua taxa de gás:
+        </p>
+
+        <!-- TODO VIDEO -->
+
+        <p>
+            Além disso, Antônio também pode definir uma taxa máxima para a
+            transação. A diferença entre a taxa máxima e a taxa real é
+            reembolsada a Antônio, isto é:
+        </p>
+
+        <p>
+            <strong>REEMBOLSO = TAXA MÁXIMA - (TAXA BASE + GORJETA)</strong>
+        </p>
+
+        <p>
+            Antônio pode definir um valor máximo a pagar para a transação ser
+            executada e não se preocupar em pagar “além” da taxa base quando a
+            transação for executada.
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <!-- TODO CLASSIFICATION QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h2 id="1-1">Contrato inteligente</h2>
+
+        <p>
+            Na prática, um contrato inteligente ou smart contract é algo
+            simples: um programa executando no ecossistema Ethereum. De forma
+            geral, um contrato contém um conjunto de ações (código) e dados que
+            residem em um endereço.
+        </p>
+
+        <p>
+            Os contratos inteligentes são um tipo de conta Ethereum. Eles
+            possuem saldo e podem ser alvo de transações, porém não são capazes
+            de iniciar uma transação por conta própria. Não são controlados por
+            um usuário, em vez disso, são implantados na rede e executados
+            conforme programado. Eles definem regras, como um contrato regular,
+            e aplicá-las automaticamente por meio do código. Os contratos
+            inteligentes não podem ser excluídos por padrão e as interações com
+            eles são irreversíveis, como qualquer transação na blockchain.
+        </p>
+
+        <!-- TODO RADIO QUESTION -->
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO VIDEO -->
+
+        <p>
+            A criação e utilização de um contrato inteligente são transações da
+            rede Ethereum e envolvem cobrança de taxa de gás. Além disso, os
+            contratos inteligentes utilizam a EVM (máquina virtual do Ethereum)
+            como plataforma para seu funcionamento. Na prática, os
+            desenvolvedores desenvolvem e carregam programas para serem
+            armazenados e compilados na EVM. Assim, utilizar um contrato
+            inteligente é solicitar a execução desses programas armazenados.
+        </p>
+
+        <p>
+            Por exemplo, um contrato inteligente foi programado por um usuário e
+            está armazenado na EVM. Esse contrato possui a seguinte regra: Se o
+            usuário comprador enviar 1,2 ether para o destinatário específico, a
+            propriedade do terreno será atribuída automaticamente ao comprador.
+        </p>
+
+        <!-- TODO COMPLETE QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h2 id="1-2">Criptomoedas</h2>
+
+        <p>
+            Ethereum, como no Bitcoin, usa um algoritmo de validação chamado de
+            prova de trabalho ou Proof of Work (PoW). Sabe-se que uma
+            atualização na blockchain Ethereum eliminará gradualmente a prova de
+            trabalho em favor da prova de participação ou Proof of Stake (PoS).
+        </p>
+
+        <p>
+            O algoritmo Proof of Stake foi proposto como uma alternativa
+            ecológica e rápida ao Proof of Work. Em um sistema PoS, não existem:
+            É necessário, apenas, um computador comum e criptomoedas.
+        </p>
+
+        <!-- TODO LIST -->
+
+        <p>
+            É necessário, apenas, um computador comum e criptomoedas.  
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO CLASSIFICATION QUESTION -->
+
+        <p>
+            Como funciona? <br />É importante saber que no PoS os blocos são
+            construídos e não minerados como no PoW. Assim, temos os seguintes
+            pontos relacionados ao funcionamento:
+        </p>
+
+        <!-- TODO LIST -->
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO WARNINGBANNER -->
+
+        <!-- TODO LIST -->
+
+        <p>
+            Até o momento, o Proof of Stake puro só foi de fato implantado em
+            criptomoedas menores. Portanto, ainda não está claro se ele pode
+            servir como uma alternativa viável ao PoW. Embora pareça
+            teoricamente correto, na prática, é muito diferente. 
+        </p>
+
+        <!-- TODO COMPLETE QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- TODO SECTION TITLE RECAPITULANDO -->
+  
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <!-- GridCol marginInCols = 2 -->
+        <div class="col-end-11 col-start-3 space-y-4">
+
+            <!-- TODO LIST -->
+
+        </div>
+        <!-- / GridCol marginInCols = 2 -->
+
+        <!-- TODO VIDEO -->
+
+    </div>
+  </div>
+  <!-- / Section -->
+
+</div>
