@@ -12,19 +12,33 @@
   </head>
   <body>
     <!-- Paragraph -->
-    <p>Parágrafo</p>
+    <p
+      class="font-normal text-base text-gray-200 dark:text-gray-900 break-words"
+    >
+      Parágrafo
+    </p>
 
     <!-- Titulo H1 -->
-    <h1>H1</h1>
+    <h1 class="font-bold text-primary-500 dark:text-white text-2xl ms-6">H1</h1>
 
     <!-- Titulo H2 -->
-    <h2>H2</h2>
+    <h2 class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12">
+      H2
+    </h2>
 
     <!-- Titulo H3 -->
-    <h3>H3</h3>
+    <h3
+      class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-[4.5rem]"
+    >
+      H3
+    </h3>
 
     <!-- Sub-titulo H4 -->
-    <h4>H4</h4>
+    <h4
+      class="font-semibold text-secondary-400 dark:text-primary-700 text-base ms-[6.5rem]"
+    >
+      H4
+    </h4>
 
     <!-- Section title primary -->
     <div class="w-full">
@@ -93,14 +107,14 @@
 
     <!-- Button primary -->
     <button
-      className="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+      class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
     >
       Primary
     </button>
 
     <!-- Button secondary -->
     <button
-      className="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-secondary-500 text-secondary-500 bg-secondary-900 disabled:text-secondary-overlay-200 rounded-md disabled:border-secondary-overlay-200 disabled:bg-secondary-overlay-800"
+      class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-secondary-500 text-secondary-500 bg-secondary-900 disabled:text-secondary-overlay-200 rounded-md disabled:border-secondary-overlay-200 disabled:bg-secondary-overlay-800"
     >
       Secondary
     </button>
@@ -118,38 +132,38 @@
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
           <div
-            className="relative h-40 px-6 flex flex-col justify-between font-bold"
+            class="relative h-40 px-6 flex flex-col justify-between font-bold"
           >
             <div
-              className="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+              class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
             ></div>
             <div>
-              <h2 className="font-normal text-sm">Curso de Aperfeiçoamento</h2>
-              <h2 className="text-base uppercase">
+              <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+              <h2 class="text-base uppercase">
                 Programação para Blockchain: Contratos Inteligentes
               </h2>
             </div>
 
-            <div className="flex text-3xl items-end my-auto">
-              <h1 id="page-number" className="text-5xl text-primary-900">
+            <div class="flex text-3xl items-end my-auto">
+              <h1 id="page-number" class="text-5xl text-primary-900">
                 <!-- Numero da UE -->
               </h1>
-              <h1 id="page-title" className="ml-6">
+              <h1 id="page-title" class="ml-6">
                 <!-- Titulo da UE -->
               </h1>
             </div>
           </div>
 
-          <div className="mt-24 ">
-            <h2 className="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
-            <h2 id="page-description" className="w-1/2 font-regular text-base">
+          <div class="mt-24">
+            <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+            <h2 id="page-description" class="w-1/2 font-regular text-base">
               <!-- Descricao da UE -->
             </h2>
           </div>
 
-          <div className="mt-20 flex">
+          <div class="mt-20 flex">
             <button
-              className="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+              class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
               onclick="handleStart"
             >
               Iniciar unidade

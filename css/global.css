@@ -410,3 +410,32 @@
 .border-lightPurple-300 {
   border-color: var(--lightPurple-300);
 }
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-primary-900 {
+  --tw-gradient-from: #b2f74f var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(178 247 79 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-primary-overlay-40 {
+  --tw-gradient-to: rgba(178, 247, 79, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),
+    rgba(178, 247, 79, 0.04) var(--tw-gradient-via-position),
+    var(--tw-gradient-to);
+}
+
+.to-primary-overlay-0 {
+  --tw-gradient-to: rgba(178, 247, 79, 0) var(--tw-gradient-to-position);
+}
+
+.min-w-page {
+  min-width: 720px;
+}
+
+.max-w-page {
+  max-width: 1120px;
+}
