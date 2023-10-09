@@ -18,15 +18,17 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/tailwind/tailwind-base.css" />
+    <link rel="stylesheet" href="css/tailwind/tailwind-components.css" />
+    <link rel="stylesheet" href="css/tailwind/tailwind-utilities.css" />
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/global/output.css" />
 
     <!-- Scripts -->
-    <script type="module" src="scripts/lib/index.js"></script>
-    <script type="text/javascript" src="scripts/data.js"></script>
+    <script type="text/javascript" src="scripts/global/data.js"></script>
+    <script type="text/javascript" src="scripts/global/header.js"></script>
 
     <!-- JQUERY -->
-    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/global/jquery.js"></script>
 
     <title>Contratos Inteligentes</title>
   </head>
@@ -40,13 +42,18 @@
       function carregarHTML(id) {
         if (id != "x") {
           $(function () {
-            $("#root").load("aulas/ue" + id + ".html#root");
-            aulaAtual = id;
+            console.log("aqui");
+            $("#root").load("aulas/ue" + id + ".html#root", function () {
+              console.log("aqui2");
+              aulaAtual = id;
 
-            // updateLessonPage();
+              // updateLessonPage();
 
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+
+              loadUeInformation(id);
+            });
           });
         }
       }
