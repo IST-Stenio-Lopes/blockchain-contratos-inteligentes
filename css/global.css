@@ -27,137 +27,137 @@
 
 /* Background colors */
 .bg-primary-50 {
-  backgournd-color: var(--primary-50);
+  background-color: var(--primary-50);
 }
 .bg-primary-100 {
-  backgournd-color: var(--primary-100);
+  background-color: var(--primary-100);
 }
 .bg-primary-300 {
-  backgournd-color: var(--primary-300);
+  background-color: var(--primary-300);
 }
 .bg-primary-400 {
-  backgournd-color: var(--primary-400);
+  background-color: var(--primary-400);
 }
 .bg-primary-500 {
-  backgournd-color: var(--primary-500);
+  background-color: var(--primary-500);
 }
 .bg-primary-700 {
-  backgournd-color: var(--primary-700);
+  background-color: var(--primary-700);
 }
 .bg-primary-800 {
-  backgournd-color: var(--primary-800);
+  background-color: var(--primary-800);
 }
 .bg-primary-900 {
-  backgournd-color: var(--primary-900);
+  background-color: var(--primary-900);
 }
 .bg-primary-990 {
-  backgournd-color: var(--primary-990);
+  background-color: var(--primary-990);
 }
 
 .bg-primary-overlay-0 {
-  backgournd-color: var(--primary-overlay-0);
+  background-color: var(--primary-overlay-0);
 }
 .bg-primary-overlay-40 {
-  backgournd-color: var(--primary-overlay-40);
+  background-color: var(--primary-overlay-40);
 }
 .bg-primary-overlay-500 {
-  backgournd-color: var(--primary-overlay-500);
+  background-color: var(--primary-overlay-500);
 }
 
 .bg-secondary-300 {
-  backgournd-color: var(--secondary-300);
+  background-color: var(--secondary-300);
 }
 .bg-secondary-400 {
-  backgournd-color: var(--secondary-400);
+  background-color: var(--secondary-400);
 }
 .bg-secondary-500 {
-  backgournd-color: var(--secondary-500);
+  background-color: var(--secondary-500);
 }
 .bg-secondary-700 {
-  backgournd-color: var(--secondary-700);
+  background-color: var(--secondary-700);
 }
 .bg-secondary-800 {
-  backgournd-color: var(--secondary-800);
+  background-color: var(--secondary-800);
 }
 .bg-secondary-900 {
-  backgournd-color: var(--secondary-900);
+  background-color: var(--secondary-900);
 }
 .bg-secondary-950 {
-  backgournd-color: var(--secondary-950);
+  background-color: var(--secondary-950);
 }
 
 .bg-secondary-overlay-200 {
-  backgournd-color: var(--secondary-overlay-200);
+  background-color: var(--secondary-overlay-200);
 }
 .bg-secondary-overlay-800 {
-  backgournd-color: var(--secondary-overlay-800);
+  background-color: var(--secondary-overlay-800);
 }
 
 .bg-red-300 {
-  backgournd-color: var(--red-300);
+  background-color: var(--red-300);
 }
 .bg-red-500 {
-  backgournd-color: var(--red-500);
+  background-color: var(--red-500);
 }
 .bg-red-950 {
-  backgournd-color: var(--red-950);
+  background-color: var(--red-950);
 }
 .bg-red-990 {
-  backgournd-color: var(--red-990);
+  background-color: var(--red-990);
 }
 
 .bg-blue-990 {
-  backgournd-color: var(--blue-990);
+  background-color: var(--blue-990);
 }
 
 .bg-orange-500 {
-  backgournd-color: var(--orange-500);
+  background-color: var(--orange-500);
 }
 
 .bg-surface-200 {
-  backgournd-color: var(--surface-200);
+  background-color: var(--surface-200);
 }
 .bg-surface-900 {
-  backgournd-color: var(--surface-900);
+  background-color: var(--surface-900);
 }
 
 .bg-gray-100 {
-  backgournd-color: var(--gray-100);
+  background-color: var(--gray-100);
 }
 .bg-gray-200 {
-  backgournd-color: var(--gray-200);
+  background-color: var(--gray-200);
 }
 .bg-gray-300 {
-  backgournd-color: var(--gray-300);
+  background-color: var(--gray-300);
 }
 .bg-gray-500 {
-  backgournd-color: var(--gray-500);
+  background-color: var(--gray-500);
 }
 .bg-gray-600 {
-  backgournd-color: var(--gray-600);
+  background-color: var(--gray-600);
 }
 .bg-gray-650 {
-  backgournd-color: var(--gray-650);
+  background-color: var(--gray-650);
 }
 .bg-gray-900 {
-  backgournd-color: var(--gray-900);
+  background-color: var(--gray-900);
 }
 
 .bg-gray-overlay-120 {
-  backgournd-color: var(--gray-overlay-120);
+  background-color: var(--gray-overlay-120);
 }
 .bg-gray-overlay-800 {
-  backgournd-color: var(--gray-overlay-800);
+  background-color: var(--gray-overlay-800);
 }
 
 .bg-lightPurple-100 {
-  backgournd-color: var(--lightPurple-100);
+  background-color: var(--lightPurple-100);
 }
 .bg-lightPurple-200 {
-  backgournd-color: var(--lightPurple-200);
+  background-color: var(--lightPurple-200);
 }
 .bg-lightPurple-300 {
-  backgournd-color: var(--lightPurple-300);
+  background-color: var(--lightPurple-300);
 }
 
 /* Text colors */

@@ -1,4 +1,4 @@
-.title-h1 {
+.page h1 {
   font-size: var(--text-2xl);
   line-height: 2rem;
   font-weight: 700;
@@ -8,7 +8,7 @@
   color: var(--primary-500);
 }
 
-.title-h2 {
+.page h2 {
   font-size: var(--text-2xl);
   line-height: 1.75rem;
   font-weight: 700;
@@ -18,7 +18,7 @@
   color: var(--primary-500);
 }
 
-.title-h3 {
+.page h3 {
   font-size: var(--text-xl);
   line-height: 1.75rem;
   font-weight: 700;
@@ -28,7 +28,7 @@
   color: var(--secondary-400);
 }
 
-.subtitle-h4 {
+.page h4 {
   font-size: var(--text-base);
   line-height: 1.5rem;
   font-weight: 600;
@@ -38,6 +38,10 @@
   color: var(--secondary-400);
 }
 
+.page p {
+}
+
+/* 
 .section-title-container {
   width: 100vw;
 }
@@ -69,4 +73,4 @@
   font-weight: 700;
   text-align: left;
   background-color: red;
-}
+} */
