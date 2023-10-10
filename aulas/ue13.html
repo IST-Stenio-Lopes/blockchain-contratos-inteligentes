@@ -354,12 +354,30 @@
         </p>
 
         <!-- TODO WarningBanner -->
-        A variável "_cliente" precisa armazenar os dados permanentes do cliente,
-        como o saldo do cliente. Por isso, é necessário usar a palavra-chave
-        "storage" para declarar a variável "_cliente". Se a variável fosse
-        declarada com "memory", os dados do cliente seriam apagados quando a
-        função terminasse e o saldo do cliente seria perdido.
-        <!-- / TODO WarningBanner -->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">IMPORTANTE</span>
+              A variável "_cliente" precisa armazenar os dados permanentes do
+              cliente, como o saldo do cliente. Por isso, é necessário usar a
+              palavra-chave "storage" para declarar a variável "_cliente". Se a
+              variável fosse declarada com "memory", os dados do cliente seriam
+              apagados quando a função terminasse e o saldo do cliente seria
+              perdido.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/exclamation-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
 
         <!-- TODO QUESTÃO -->
 
