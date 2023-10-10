@@ -2,6 +2,58 @@
   class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
 >
   <!-- TODO HEADER -->
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
+    <div
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
+    >
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              <!-- Numero da UE -->
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              <!-- Titulo da UE -->
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            <!-- Descrição da UE -->
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Section -->
   <div class="flex flex-col w-full items-center">
@@ -33,19 +85,23 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <h1
           id="1-1"
-          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6"
+          class="font-bold text-primary-500 dark:text-white text-2xl ms-6"
         >
           Criptomoedas
         </h1>
 
-        <p>
+        <p
+          class="font-normal text-base text-gray-200 dark:text-gray-900 break-words"
+        >
           Criptomoedas é o nome dado às moedas digitais
           <strong>descentralizadas</strong> que utilizam
           <strong>criptografia</strong> como elemento de segurança, protegendo
           as transações, suas informações e os dados de quem transaciona.
         </p>
 
-        <p>
+        <p
+          class="font-normal text-base text-gray-200 dark:text-gray-900 break-words"
+        >
           Parece complicado? Não se preocupe, falaremos ponto a ponto no vídeo a
           seguir:
         </p>
