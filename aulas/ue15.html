@@ -3,25 +3,54 @@
   class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
 >
   <!-- TODO HEADER -->
-
-  <!-- Section -->
-  <div class="flex flex-col w-full items-center">
-    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
-      <!-- TODO VIDEO -->
-    </div>
-  </div>
-  <!-- / Section -->
-
-  <!-- Section title primary -->
-  <div class="w-full">
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
     >
-      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
-        <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold">
-            Boas Práticas - Padrões de projeto para contratos inteligentes
-          </h1>
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              <!-- Numero da UE -->
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              <!-- Titulo da UE -->
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            <!-- Descrição da UE -->
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
         </div>
       </div>
     </div>
@@ -76,7 +105,11 @@
           A seguir, vamos explorar alguns deles:
         </p>
 
-        <h2>Autoridade</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Autoridade
+        </h2>
 
         <p>
           O padrão de autoridade para contratos inteligentes que permite que um
@@ -125,7 +158,11 @@
 
         <!-- TODO IMAGEM -->
 
-        <h2>Segurança</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Segurança
+        </h2>
 
         <p>
           O padrão de segurança visa garantir a integridade e a segurança dos
@@ -207,7 +244,11 @@
           utilizadas para esse fim.
         </p>
 
-        <h3>Função sing(), ecrecover(), recover</h3>
+        <h3
+          class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-[4.5rem]"
+        >
+          Função sing(), ecrecover(), recover
+        </h3>
 
         <p>
           A função sign() é uma função que permite que um usuário assine
@@ -270,7 +311,11 @@
 
         <!-- TODO QUESTÃO -->
 
-        <h2>Manutenção</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Manutenção
+        </h2>
 
         <p>
           Os padrões de manutenção de projeto para contratos inteligentes visam
@@ -334,7 +379,11 @@
 
         <!-- TODO QUESTÃO -->
 
-        <h2>Controle</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Controle
+        </h2>
 
         <p>
           O padrão de controle garante que as operações do contrato sejam
@@ -390,7 +439,11 @@
 
         <!-- TODO QUESTÃO -->
 
-        <h2>Economia de Gas</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Economia de Gas
+        </h2>
 
         <p>
           Para economia de gás existem padrões de projeto que minimizam o uso de
