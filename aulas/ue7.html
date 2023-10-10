@@ -3,25 +3,54 @@
   class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
 >
   <!-- TODO HEADER -->
-
-  <!-- Section -->
-  <div class="flex flex-col w-full items-center">
-    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
-      <!-- TODO VIDEO -->
-    </div>
-  </div>
-  <!-- / Section -->
-
-  <!-- Section title primary -->
-  <div class="w-full">
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
     >
-      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
-        <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold">
-            Protocolos e Algoritmos
-          </h1>
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              <!-- Numero da UE -->
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              <!-- Titulo da UE -->
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            <!-- Descrição da UE -->
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
         </div>
       </div>
     </div>
@@ -32,7 +61,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>Consenso</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Consenso
+        </h2>
         <p>
           Em sistemas distribuídos, como a Blockchain, tem-se informação
           distribuída em múltiplos nós e o grande desafio é manter a integridade
@@ -84,7 +117,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>Proof of Work (PoW) ou prova de trabalho</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Proof of Work (PoW) ou prova de trabalho
+        </h2>
 
         <!-- TDODO IMAGEM -->
 
@@ -100,7 +137,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>Proof of Stake (PoS) ou prova de participação</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Proof of Stake (PoS) ou prova de participação
+        </h2>
 
         <!-- TODO IMAGEM -->
 
@@ -116,7 +157,9 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
           Bynzantine Fault Tolerance (BFT) ou Tolerância à falha bizantina.
         </h2>
 
@@ -135,7 +178,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>Hash e Criptografia</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Hash e Criptografia
+        </h2>
 
         <p>
           A criptografia é um conjunto de mecanismos capazes de proteger uma
@@ -202,7 +249,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>SHA-256</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          SHA-256
+        </h2>
 
         <p>
           SHA-256 é um algoritmo de criptografia seguro que ganhou popularidade
@@ -248,7 +299,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>ETHASH</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          ETHASH
+        </h2>
 
         <p>
           Ethash (Dagger Hashimoto) é um algoritmo de criptomoeda desenvolvido
@@ -275,7 +330,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>Integridade</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Integridade
+        </h2>
 
         <p>
           A rede Blockchain é responsável por armazenar um grande volume de
@@ -293,7 +352,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>Imutabilidade</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Imutabilidade
+        </h2>
 
         <p>
           Uma das propriedades da Blockchain é a imutabilidade dos dados
@@ -338,7 +401,11 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h2>Segurança</h2>
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Segurança
+        </h2>
 
         <p>
           As redes Blockchain surgiram como a tecnologia fundamental das
