@@ -19,13 +19,18 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/tailwind/tailwind-base.css" />
+    <link rel="stylesheet" href="css/tailwind/tailwind-grid.css" />
     <link rel="stylesheet" href="css/tailwind/tailwind-components.css" />
     <link rel="stylesheet" href="css/tailwind/tailwind-utilities.css" />
     <link rel="stylesheet" href="css/global.css" />
 
     <!-- Scripts -->
-    <script type="text/javascript" src="scripts/global/data.js"></script>
+    <script type="text/javascript" src="scripts/global/footer.js"></script>
     <script type="text/javascript" src="scripts/global/header.js"></script>
+
+    <!-- Scorm -->
+    <script type="text/javascript" src="scripts/scorm/APIWrapper.js"></script>
+    <script type="text/javascript" src="scripts/scorm/SCOFunctions.js"></script>
 
     <!-- JQUERY -->
     <script type="text/javascript" src="scripts/global/jquery.js"></script>
@@ -36,16 +41,53 @@
   <body>
     <div id="root"></div>
 
+    <!-- Page footer -->
+    <div
+      class="flex items-center justify-center w-full h-20 border-t-2 border-gray-600 bg-transparent dark:bg-gray-100"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div
+          class="col-start-2 col-end-12 flex flex-row items-center justify-evenly h-full"
+        >
+          <button
+            id="previous-page"
+            type="button"
+            class="flex flex-row items-center justify-center hover:underline p-4 text-gray-600"
+            onClick="previousPage()"
+          >
+            <img
+              src="images/icons/caret-right.svg"
+              class="rotate-180"
+              alt="Ícone seta para a esquerda"
+            />
+            <span class="font-regular text-base ml-3"> Unidade anterior </span>
+          </button>
+
+          <button
+            id="next-page"
+            type="button"
+            class="flex flex-row items-center justify-center hover:underline p-4 text-secondary-400"
+            onClick="nextPage()"
+          >
+            <span class="font-regular text-base mr-3">Próxima unidade</span>
+            <img
+              src="images/icons/caret-right.svg"
+              alt="Ícone seta para a direita"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- /Page footer -->
+
     <script>
-      carregarHTML(aulaAtual);
+      carregarHTML(currentPage);
 
       function carregarHTML(id) {
         if (id != "x") {
           $(function () {
-            console.log("aqui");
             $("#root").load("aulas/ue" + id + ".html#root", function () {
-              console.log("aqui2");
-              aulaAtual = id;
+              currentPage = id;
 
               // updateLessonPage();
 
@@ -53,6 +95,8 @@
               document.documentElement.scrollTop = 0;
 
               loadUeInformation(id);
+
+              hidePageButton();
             });
           });
         }
@@ -76,11 +120,10 @@
           );
           top.document.getElementById("scorm_content").style.height =
             "calc(100vh - 30px)";
-          top.document.getElementsByClassName("launcher")[0].style.height =
-            "26px";
-          top.document.getElementsByClassName("launcher")[0].style.fontSize =
+          top.document.getElementsByclass("launcher")[0].style.height = "26px";
+          top.document.getElementsByclass("launcher")[0].style.fontSize =
             "19px";
-          top.document.getElementsByClassName("launcher")[0].style.padding =
+          top.document.getElementsByclass("launcher")[0].style.padding =
             "unset";
           window.addEventListener("resize", function (e) {
             top.document.getElementById("scorm_content").style.height =
