@@ -46041,6 +46041,10 @@
     align-content: space-around;
   }
 
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .xl\:flex-1 {
     -webkit-box-flex: 1;
     flex: 1 1 0%;

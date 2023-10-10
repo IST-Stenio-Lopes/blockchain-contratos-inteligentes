@@ -439,3 +439,7 @@
 .max-w-page {
   max-width: 1120px;
 }
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
