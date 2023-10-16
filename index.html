@@ -55,7 +55,7 @@
             id="previous-page"
             type="button"
             class="flex flex-row items-center justify-center hover:underline p-4 text-gray-600"
-            onClick="previousPage()"
+            onclick="previousPage()"
           >
             <img
               src="images/icons/caret-right.svg"
@@ -69,7 +69,7 @@
             id="next-page"
             type="button"
             class="flex flex-row items-center justify-center hover:underline p-4 text-secondary-400"
-            onClick="nextPage()"
+            onclick="nextPage()"
           >
             <span class="font-regular text-base mr-3">Próxima unidade</span>
             <img
@@ -83,7 +83,7 @@
     <!-- /Page footer -->
 
     <script>
-      carregarHTML(currentPage);
+      carregarHTML(ueData.currentPage);
 
       function carregarHTML(id) {
         if (id != "x") {

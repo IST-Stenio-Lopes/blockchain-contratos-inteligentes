@@ -18,6 +18,7 @@ function nextPage() {
 
   updateLessonPage(tempData);
   resetScroll();
+  carregarHTML(ueData.currentPage);
 }
 
 function previousPage() {
@@ -32,6 +33,7 @@ function previousPage() {
   updateLessonPage(tempData);
 
   resetScroll();
+  carregarHTML(ueData.currentPage);
 }
 
 function hidePageButton() {
