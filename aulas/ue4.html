@@ -1,0 +1,465 @@
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- HEADER -->
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
+    <div
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
+    >
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              4
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              LIVRO RAZÃO DE UMA BLOCKCHAIN
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            Reconhecer as estruturas e princípios de uma Blockchain por meio de um ambiente simulado.
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- TODO VIDEO COM BORDA -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div
+        class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20"
+      >
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">
+            Livro-razão (Ledger)
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <p>
+          O conjunto de transações dos blocos é registrado no livro-razão
+          (ledger), como um livro contábil.
+        </p>
+
+        <p>
+          Essa, aliás, é uma das grandes inovações da tecnologia Blockchain,
+          muito utilizada nas criptomoedas. O controle das transações não é
+          centralizado, ou seja, não há uma instituição bancária ou qualquer
+          outra instituição que organize o registro de todas as informações de
+          transações.
+        </p>
+
+        <p>
+          Segundo os dados do NISTIR (National Institute of Standards and
+          Technology Environmental Scan) em 2018, o uso de um livro-razão
+          distribuído se destaca em relação ao controle centralizado, uma vez
+          que centralização apresenta as seguintes desvantagens.
+        </p>
+
+        <!-- TODO LIST -->
+
+        <!-- TODO CHECKLIST QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <h1 class="font-bold text-primary-500 dark:text-white text-2xl ms-6" id="1-1">Registro no livro-razão</h1>
+
+        <p>
+          Não se pode afirmar que o controle centralizado é ruim ou que sempre
+          tem o objetivo de alterar transações passadas. Atualmente, grande
+          parte do mercado financeiro mundial possui tal controle, cujo
+          interesse é manter as transações íntegras e sob seu monitoramento.
+        </p>
+
+        <p>
+          Diferente dos sistemas centralizados, cada nó da rede distribuída na
+          Blockchain, possui uma cópia do livro-razão. Dessa forma, qualquer
+          modificação do livro-razão seria facilmente reconhecida pelos demais
+          nós, já que cada nó possui uma cópia local e pode comparar e
+          identificar alterações indevidas.
+        </p>
+
+        <p>
+          Por isso, uma das características principais da tecnologia
+          Blockchain é a segurança, o que minimiza o risco de fraudes. A
+          imagem a seguir mostra um exemplo de um conjunto de transações
+          registradas em um livro-razão.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO RADIO QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <h1 class="font-bold text-primary-500 dark:text-white text-2xl ms-6" id="1-2">Consenso</h1>
+
+        <p>
+          Em um livro-razão distribuído, as atualizações são construídas e
+          registradas por cada nó da rede.
+        </p>
+
+        <p>
+          Os nós votam nessas atualizações, garantindo que a maioria concorde
+          com o novo registro. Essa votação, que visa obter um acordo sobre a
+          nova situação do livro-razão, é denominada consenso. Uma vez que o
+          consenso é alcançado, o livro-razão distribuído é atualizado e todos
+          os nós da rede irão armazenar sua última versão.
+        </p>
+
+        <p>
+          Para melhor compreender o consenso, imagine que uma transação, que
+          chamaremos de número 4, necessita ser incluída no livro-razão. Cada
+          nó da rede possui uma lista de transações pendentes. Como se trata
+          de uma rede distribuída, uma vez recebida a transação, um nó irá
+          transmiti-la para toda a rede para ser aceita, validada pela maioria
+          dos nós (consenso, que será detalhado posteriormente) e, então,
+          passará a integrar o livro-razão.
+        </p>
+
+        <!-- TODO IMAGESLIDER-->
+
+        <!-- TODO RADIO QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <h1 class="font-bold text-primary-500 dark:text-white text-2xl ms-6" id="1-3">Mineradores</h1>
+
+        <p>
+          Os usuários podem submeter transações para inclusão na Blockchain
+          por meio de algum nó da rede. Os nós que realizam essa inclusão são
+          denominados mineradores (miners).
+        </p>
+
+        <p>
+          Eles são um grupo de nós da rede Blockchain que mantém a estrutura
+          da cadeia de blocos, adicionando novos blocos com transações que
+          estavam pendentes de validação ou informações recém-validada. As
+          transações, que você acabou de ver, podem acontecer em redes
+          públicas ou em redes privadas.
+        </p>
+
+        <p>
+          Os mineradores vão buscar formar um novo bloco sempre que houver
+          transações pendentes. Logo, a busca por um novo bloco se inicia
+          quando transações são submetidas à rede. Por exemplo, imagine que
+          Lucas realizou uma transferência de 10 criptomoedas para Júlia. Logo
+          após a submissão da transação, os mineradores vão inseri-la em um
+          novo bloco e iniciar o processo de mineração para anexar o novo
+          bloco na cadeia. O processo da transação, desde a sua solicitação
+          até sua validação (identificação das partes envolvidas, análise das
+          chaves públicas, dentre outros fatores), dura poucos minutos.Ao
+          término da validação, a transferência de Lucas será concretizada e
+          Júlia receberá suas criptomoedas.
+        </p>
+
+        <p>
+          A transação requer que um bloco seja criado e, para isso, os
+          mineradores realizam algumas operações de acordo com o algoritmo de
+          consenso utilizado na rede. No caso do algoritmo Prova de Trabalho
+          (Proof of Work) há necessidade de resolver um enigma. Após o
+          consenso, é garantida a validade da transação.
+        </p>
+
+        <p>
+          Uma vez recebidas, tais transações são inseridas através da
+          estrutura de dados da merkle tree e armazenadas no bloco que será
+          minerado para ser inserido na rede Blockchain. Tal bloco é
+          denominado bloco candidato.
+        </p>
+
+        <!-- TODO RADIO QUESTION -->
+
+        <p>
+          A atividade de mineração consome muita energia elétrica.
+          Consequentemente, a rotina para incluir um novo bloco tem um custo
+          elevado. Ela é custosa pelos seguintes motivos:
+        </p>
+
+        <!-- TODO LIST -->
+
+        <p>
+          Como os blocos estão em uma cadeia, alterar um bloco requer alterar
+          todos os demais. Como a mineração é custosa e leva tempo,
+          provavelmente novos blocos serão adicionados antes que um nó mal
+          intencionado consiga alterar toda a cadeia, minimizando, assim, a
+          probabilidade de fraudes.
+        </p>
+
+        <p>
+          Mas, então, você pode estar se perguntando: E o que o nó minerador
+          ganha? Similar à vida real, eles ganham uma parte do tesouro que
+          encontram. No mundo das moedas virtuais, eles ganham uma quantia de
+          criptomoedas em recompensa ao trabalho de mineração. Na prática, em
+          cada bloco há uma transação denominada coinbase. Sua função é
+          definir a recompensa a ser paga ao minerador quando ele incluir o
+          bloco na cadeia.
+        </p>
+
+        <p>
+          Mas, de forma geral, incluir a transação em uma rede Blockchain tem
+          um preço, denominado custo da transação, que constitui as taxas
+          pagas pelos usuários que estão solicitando transações.
+        </p>
+
+        <!-- TODO COMPLETE QUESTION -->
+
+        <h3 class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-[4.5rem]" id="1-3-1">Proof of work</h3>
+
+        <p>
+          <strong>Proof of work ou prova de trabalho</strong> é uma das
+          rotinas computacionais que está por trás da mineração. De uma
+          maneira simplificada, a prova de trabalho mais conhecida para um
+          novo minerador consiste em obter, do bloco candidato, uma hash que
+          apresente um certo número de zeros iniciais.
+        </p>
+
+        <p>
+          Por exemplo, <strong>um novo bloco</strong> só pode ser aceito
+          quando sua <strong>hash contém 5 zeros</strong>. Este é o requisito
+          mínimo para a hash ser válida. É a dificuldade alvo.
+        </p>
+
+        <p>
+          <strong>
+            00000E6CC2661A6E263A391D88530B72C4491E43A0567BE6C5C5E5E0CF67A10D
+          </strong>
+        </p>
+
+        <p>
+          O número de zeros no código anterior, normalmente, está indicado no
+          campo difficult target (ou dificuldade alvo) de um bloco. Você pode
+          estar se perguntando: como um minerador faz para que a hash do bloco
+          candidato vá sendo modificada, de modo a cumprir o desafio? Bom, é
+          aí que entra o campo Nonce.
+        </p>
+
+        <!-- TODO RADIO QUESTION -->
+
+        <!-- TODO VIDEO -->
+
+        <p>
+          Portanto, quanto maior o valor do desafio, mais tempo o minerador
+          levará para conseguir obter uma hash válida.
+        </p>
+
+        <!-- TODO COMPLETE QUESTION -->
+
+        <h3 class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-[4.5rem]" id="1-3-2">Funcionamento da PoW</h3>
+
+        <p>
+          Observe o processo para entender o passo a passo:
+        </p>
+
+        <p>
+          A imagem a seguir representa um bloco gênesis, que não possui
+          registro de transações anteriores:
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+          Em síntese, cada hash é composta por: número de bloco, hash
+          anterior, marcação de tempo, dados e nonce, submetidos ao algoritmo
+          de criptografia Hash SHA256, gerando, assim, a hash do bloco.
+        </p>
+
+        <p>
+          O grau de dificuldade é definido conforme a blockchain cresce. Por
+          exemplo, na mineração do Bitcoin, a dificuldade é ajustada a cada
+          2016 blocos. Dessa forma, a dificuldade cresce proporcionalmente ao
+          aumento da cadeia de blocos.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+          O Proof of Work (PoW) é o padrinho dos algoritmos de consenso da
+          tecnologia blockchain. Foi implementado pela primeira vez no
+          Bitcoin, mas o conceito já existe há algum tempo. No Proof of Work,
+          os validadores (conhecidos como mineradores) fazem hash dos dados
+          que eles desejam adicionar, até produzir uma solução específica
+          válida.
+        </p>
+
+        <p>
+          Um hash é uma sequência de letras e números aparentemente aleatória,
+          criada quando você submete dados através de uma função de hash.
+          Entretanto, se você submeter os mesmos dados novamente, terá sempre
+          o mesmo output (saída). Porém, caso você altere apenas um detalhe,
+          seu hash resultante será completamente diferente.
+        </p>
+
+        <p>
+          Observando o output, não é possível dizer quais informações foram
+          inseridas na função. Portanto, é possível provar que você tinha
+          conhecimento de um dado ou informação, antes de certo momento. Você
+          pode fornecer um hash a alguém e, quando revelar os dados
+          posteriormente, essa pessoa poderá submetê-los através da função
+          para confirmar que o output será o mesmo.
+        </p>
+
+        <p>
+          No Proof of Work, o protocolo estabelece condições em relação ao que
+          torna um bloco válido. Pode existir por exemplo uma condição que diz
+          somente um bloco cujo hash começa com 00 será válido. A única
+          maneira de o minerador criar um bloco que corresponda a essa
+          condição, é tentando diversos inputs (entradas). Eles podem ajustar
+          parâmetros em seus dados para produzir um resultado diferente a cada
+          tentativa, até obterem o hash correto.
+        </p>
+
+        <p>
+          Nas principais blockchains, o nível de dificuldade é incrivelmente
+          alto. Para competir com outros mineradores, você precisaria de um
+          galpão cheio de hardware especializado para hashing (ASICs), para
+          então ter a chance de produzir um bloco válido.
+        </p>
+
+        <p>
+          Quando está fazendo mineração, existe o custo das máquinas e da
+          eletricidade necessária para operá-las. Os ASICs (circuitos
+          integrados de aplicação específica) são construídos para uma
+          finalidade, portanto, não têm outra utilidade além da mineração de
+          criptomoedas. Sua única maneira de recuperar seu investimento
+          inicial é minerar, o que proporciona uma recompensa significativa
+          caso você adicione com êxito um novo bloco à blockchain.
+        </p>
+
+        <p>
+          Verificar se você realmente criou um bloco válido é um processo
+          muito simples para a rede. Mesmo que você tenha tentado trilhões de
+          combinações para obter o hash correto, eles só precisam submeter
+          seus dados através da função uma vez. Se seus dados produzirem um
+          hash válido, eles serão aceitos e você receberá uma recompensa. Caso
+          contrário, a rede rejeitará o hash e você terá desperdiçado tempo e
+          eletricidade.
+        </p>
+
+        <!-- TODO VIDEO -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div
+        class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20"
+      >
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">
+            Recapitulando
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <!-- GridCol marginInCols = 2 -->
+        <div class="col-end-11 col-start-3 space-y-4">
+
+            <p>
+              Nesta unidade, os principais conceitos que você conheceu foram:
+            </p>
+
+            <!-- TODO LIST -->
+
+        </div>
+        <!-- / GridCol marginInCols = 2 -->
+
+        <!-- TODO VIDEO -->
+
+    </div>
+  </div>
+  <!-- / Section -->
+
+</div>

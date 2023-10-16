@@ -1,0 +1,576 @@
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- HEADER -->
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
+    <div
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
+    >
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+                8
+            </h1>
+            <h1 id="page-title" class="ml-6">
+                CONTRATOS INTELIGENTES
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+            <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+            <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+                Identificar contratos inteligentes
+            </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- TODO VIDEO COM BORDA -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div
+        class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20"
+      >
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">
+            Contratos inteligentes
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <p>
+            Na prática, um contrato inteligente ou smart contract é algo
+            simples: um programa executando no ecossistema Ethereum. De forma
+            geral, um contrato contém um conjunto de ações (código) e dados
+            (estado) que residem em um endereço na Blockchain.
+        </p>
+
+        <p>
+            Para escrever um contrato, você precisa aprender a codificar em uma
+            linguagem de programação apropriada, como Solidity utilizada pelo
+            Ethereum. Nesta unidade, você conhecerá um pouco melhor sobre essa
+            linguagem de programação.
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            Sabendo que os contratos inteligentes são um tipo de conta e que sua
+            criação e execução são transações, talvez você esteja pensando: Vou
+            precisar gastar Ether para testar meus contratos na rede com o
+            pagamento do Gás (taxa)?
+        </p>
+
+        <p>
+            A resposta é não! É possível dispor de algumas ferramentas de teste
+            que geram um ambiente simulado, onde é utilizada uma moeda sem valor
+            real.
+        </p>
+
+        <p>
+            Antes de falar melhor a linguagem de programação Solidity, você
+            entenderá como ter um ambiente de desenvolvimento para implementar
+            seus primeiros contratos inteligentes, assim como simular o
+            ecossistema para realização de testes.
+        </p>
+
+        <!-- TODO RADIO QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+   <!-- Section -->
+   <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <h2 class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12" id="1-1">
+            Ambiente
+        </h2>
+
+        <p>
+            Existem vários ambientes de desenvolvimento possíveis para a
+            implementação de contratos inteligentes com Solidity. Uma forma
+            bastante profissional é utilizando Truffle com Node.js.
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            Vamos utilizar o projeto Remix que fornece um ambiente de
+            desenvolvimento simples, muito didático e eficiente. Não é
+            necessária a instalação de nenhum programa, dependência ou
+            configuração de sua máquina. O Remix é uma IDE online e open source,
+            escrita em JavaScript. Ela é composta por módulos para
+            desenvolvimento, depuração e publicação dos contratos inteligentes
+            em Solidity.
+        </p>
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <div className="w-full flex row justify-between items-center">
+            <p>
+              Para acessar a ferramenta, digite no seu navegador o site: <br />
+              https://remix-project.org/ ou acesse o QR Code a seguir:
+            </p>
+            <!-- TODO IMAGECONTENT -->
+        </div>
+
+        <p>
+            Após acessar o endereço, você vai encontrar a página inicial com
+            informações sobre o projeto remix. Para acessar a IDE, clique no
+            botão vermelho, como indicado na figura.
+        </p>
+
+        <!-- FlexCenter -->
+        <div class="flex justify-center items-center w-full">
+            <!-- TODO IMAGECONTENT -->
+        </div>
+
+        <p>
+            Após o clique, a IDE é carregada como na figura a seguir, e você já
+            pode começar a produzir contratos inteligentes.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO VIDEO -->
+
+        <p>
+            Você vai criar seu primeiro contrato inteligente, aperte o botão
+            indicado na imagem dentro da pasta contracts e um novo arquivo será
+            criado. Nomeie o arquivo como {`"OlaMundo.sol"`}
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            Antes de continuar o desenvolvimento do exemplo é importante falar
+            um pouco sobre alguns conceitos da linguagem de programação
+            Solidity. Em breve, retomamos a implementação do contrato
+            inteligente. 
+        </p>
+
+        <!-- TODO COMPLETE QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <h2 class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12" id="1-2">
+            Linguagem de Programação Solidity
+        </h2>
+
+        <p>
+            O Solidity é uma das linguagens de programação de alto nível
+            utilizada, principalmente, para a criação de contratos inteligentes
+            da plataforma Ethereum,
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            É importante destacar seu uso para a criação de contratos, mas não
+            para manutenção. Isso porque, os contratos não podem ser modificados
+            após publicação, devido a propriedade de imutabilidade da
+            blockchain.
+        </p>
+
+        <p>
+            Descrito em sua documentação oficial
+            (https://docs.soliditylang.org/en/v0.8.17/), Solidity é uma
+            linguagem orientada a objetos, influenciada pelo C++, Python e pelo
+            JavaScript.
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            É também uma linguagem tipada estaticamente, com suporte à criação
+            de tipos definidos pelo usuário,
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            O Solidity evolui muito rapidamente e você deve ficar atento às
+            mudanças consultando a documentação constantemente. Além da melhoria
+            da própria linguagem, essas mudanças acontecem também por causa da
+            evolução do próprio Ethereum. 
+        </p>
+
+        <p>
+            Agora você vai ver a estrutura de um contrato inteligente e alguns
+            comandos básicos do Solidity na construção do exemplo iniciado
+            anteriormente.
+        </p>
+
+        <!-- TODO CHECKLIST QUESTION -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <h2 class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12" id="1-3">
+            Estrutura de um contrato inteligente
+        </h2>
+
+        <p>
+            Retomando o exemplo, após a criação do arquivo “OlaMundo.sol” é
+            necessário inserir duas instruções no início do programa. São elas:
+        </p>
+
+        <!-- TODO LIST -->
+
+        <p>
+            É necessário especificar a versão do compilador porque a linguagem
+            está em constante desenvolvimento e as mudanças podem invalidar um
+            compilador de uma versão para outra. Seu contrato precisa ser
+            compilado para, mais tarde, ser interpretado pela EVM (Ethereum
+            Virtual Machine).
+        </p>
+
+        <p>
+            A imagem a seguir mostra na linha 1 que a licença escolhida para o
+            código fonte é a GPL-3.0. Na linha 2, é especificado que o contrato
+            é compatível com o compilador entre as versões 0.7.0 e 0.9.0.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO RADIO QUESTION -->
+
+        <p>
+            Logo após essas informações, inicia-se a codificação do contrato. Se
+            você já programou em alguma linguagem orientada a objetos perceberá
+            que escrever um contrato é muito semelhante a escrever uma classe.
+        </p>
+
+        <p>
+            Você vai começar definindo seu contrato usando a palavra reservada
+            contract e usando chaves para delimitar o escopo.
+        </p>
+
+        <p>
+            A imagem a seguir mostra a delimitação do escopo, pois chamamos
+            nosso contrato de “OlaMundo”
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+            Agora que o escopo do contrato foi definido, você pode descrever as
+            propriedades ( definição de variáveis e constantes), construtor e
+            funções. Não existe um único formato correto, mas para facilitar a
+            construção, considere a estrutura a seguir:
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+            A declaração a seguir mostra uma variável chamada “mensagem”.
+            Primeiro, foi definido seu tipo como string (texto) e logo após,
+            tem-se o nome da variável (“mensagem”) A declaração é finalizada com
+            ; (ponto e vírgula), assim como todos os comandos em Solidity.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+            É possível definir um valor inicial para a variável durante a
+            declaração, mas optou-se por se fazer no construtor para que conheça
+            um pouco sobre ele. 
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            A imagem a seguir mostra que o valor de uma variável do tipo string
+            deve ficar entre aspas. 
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+            Agora que a variável foi declarada e inicializada, você pode
+            programar a função que retorna seu valor.
+        </p>
+
+        <p>
+            Neste instante é importante que você entenda sobre a estrutura da
+            função, não se preocupe em se aprofundar nos outras possibilidades
+            oferecidas pelo Solidity.
+        </p>
+
+        <p>
+            Inicia-se a função com a palavra reservada function e coloca-se o
+            nome da função e seus parâmetros entre parênteses, nesse caso o nome
+            escolhido é “olaMundo()” e não há parâmetros, por isso os parênteses
+            estão vazios.
+        </p>
+
+        <p>
+            Logo após, é definido o modificador de visibilidade de acesso. Neste
+            caso, foi definido public, indicando que a função pode ser chamada
+            de fora deste contrato.
+        </p>
+
+        <p>
+            Na sequência é definido o tipo da função, neste caso é um função do
+            tipo view, pois é utilizada para visualizar uma informação.
+        </p>
+
+        <p>
+            Por fim, é definido o tipo de retorno usando a palavra reservada
+            returns, neste caso o retorno é tipo string memory.
+        </p>
+
+        <p>
+            No escopo da função, a única instrução que ela executa é retornar o
+            valor da variável “mensagem” utilizando a palavra reservada return.
+            A imagem a seguir, mostra essa construção.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <p>
+            Ao final, se você seguiu as instruções, deve ter um contrato com a
+            seguinte implementação.
+        </p>
+
+        <!-- TODO IMAGECONTENT -->
+
+        <!-- TODO COMPLETEWITHSELECT QUESTION -->
+
+        <p>
+            Agora chegou a hora de compilar e executar o contrato utilizando o
+            Remix. 
+        </p>
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+
+        <h2 class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12" id="1-4">
+            Compilando e executando o OlaMundo no Remix
+        </h2>
+
+        <p>
+            Após o término da implementação do contrato inteligente, chegou a
+            hora de compilar e executar o código.
+            <br /> <br />
+            1- O primeiro passo é compilar o código. No menu lateral esquerdo,
+            selecione “Solidity Compiler”. Observe a figura abaixo.
+        </p>
+
+        <!-- FlexCenter -->
+        <div class="flex justify-center items-center w-full">
+            <!-- TODO IMAGECONTENT -->
+        </div>
+
+        <p>
+            2- Clique no botão “compile OlaMundo.sol”. Se tudo estiver certo,
+            seu programa será compilado com sucesso. Caso tenha algum problema
+            no código, o Remix irá avisar e indicar o erro.
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+        <p>
+            3 - Após compilar, você deve fazer o deploy (implantar) e executar
+            seu contrato. No menu lateral esquerdo, clique em “Deploy e run
+            transactions”
+        </p>
+
+        <!-- FlexCenter -->
+        <div class="flex justify-center items-center w-full">
+            <!-- TODO IMAGECONTENT -->
+        </div>
+
+        <p>
+            1 - O Remix oferece um ambiente de teste que você pode implantar e
+            rodar os contratos sem gastar dinheiro real. Observe a figura acima
+            e veja que o contrato será implantado em um rede de teste (definido
+            no campo “Environments”), utilizando uma conta fictícia com 100
+            Ethers disponíveis (campo account) e com os valores relacionados ao
+            Gás customizáveis. Após se certificar desses campos, clique em
+            “Deploy” e o contrato será implantado nas condições estabelecidas.
+        </p>
+
+        <!-- TODO WARNINGBANNER -->
+
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+
+    <!-- GridCol marginInCols = 2 -->
+    <div class="col-end-11 col-start-3 space-y-4">
+
+        <p>
+            2- A implantação do contrato é uma transação na blockchain. A imagem
+            a seguir mostra o registro da transação e o saldo de Ether
+            decrementado pelo valor do Gás.
+        </p>
+
+        <!-- FlexCenter -->
+        <div class="flex justify-center items-center w-full">
+            <!-- TODO IMAGECONTENT -->
+        </div>
+
+        <p>
+            3- A imagem a seguir mostra na parte esquerda, que você consegue ter
+            acesso aos contratos implantando e, na parte direita, às funções
+            públicas implementadas.
+        </p>
+
+        <!-- FlexCenter -->
+        <div class="flex justify-center items-center w-full">
+            <!-- TODO IMAGECONTENT -->
+        </div>
+
+        <p>
+            4- As chamadas funções em um contrato inteligente são transações que
+            ocorrem dentro da rede blockchain.
+        </p>
+
+        <!-- TODO RADIO QUESTION -->
+
+    </div>
+    <!-- / GridCol marginInCols = 2 -->
+
+    </div>
+  </div>
+  <!-- / Section -->
+
+
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div
+        class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20"
+      >
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">
+            Recapitulando
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <!-- GridCol marginInCols = 2 -->
+        <div class="col-end-11 col-start-3 space-y-4">
+
+            <p>
+                Nesta unidade, os principais conceitos que você conheceu foram:
+            </p>
+
+            <!-- TODO LIST -->
+
+            <!-- TODO IMAGECONTENT -->
+
+            <!-- TODO LIST -->
+
+        </div>
+        <!-- / GridCol marginInCols = 2 -->
+
+        <!-- TODO VIDEO -->
+
+    </div>
+  </div>
+  <!-- / Section -->
+
+</div>

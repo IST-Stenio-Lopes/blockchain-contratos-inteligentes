@@ -1,0 +1,588 @@
+<!-- Page -->
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- TODO HEADER -->
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
+    <div
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
+    >
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              <!-- Numero da UE -->
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              <!-- Titulo da UE -->
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            <!-- Descrição da UE -->
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- TODO VIDEO -->
+
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Pronto para desenvolver um contrato desafiador? Agora, vamos utilizar
+          como problema o programa de fidelidade de uma empresa de cartão de
+          crédito. A ideia é que os clientes que possuem o cartão acumulem
+          pontos que podem ser trocados por descontos na fatura, produtos e
+          milhas. Além disso, imagine que a empresa que nos contratou, pediu
+          para que fossem desenvolvidas algumas funções que são de interesse
+          apenas administrativo e não devem ser fornecidas aos clientes. Por
+          exemplo, a verificação do saldo do contrato para a gestão da
+          manutenção do gás.
+        </p>
+
+        <p>
+          Nesta unidade, vamos explorar o uso de alguns elementos mais
+          complexos, como event e logging. Logo, começamos falando sobre um
+          contrato básico e vamos evoluir gradualmente.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">
+            Desenvolvimento básico do contrato inteligente
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Vamos iniciar nossa codificação revisando alguns aspectos do
+          desenvolvimento mais básico do contrato. Na imagem a seguir, temos a
+          primeira parte do contrato.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Temos na linha 1 a definição da licença. Logo após, na linha 3, a
+          definição da versão do compilador. Na linha 5, iniciamos o contrato
+          ContratoEmpresaCartao.
+        </p>
+
+        <p>
+          As linhas 7 a 10, definem uma estrutura chamada "Cliente" que possui
+          dois campos: "nomeCliente" (uma string) e "saldoCliente" (um inteiro
+          sem sinal).
+        </p>
+
+        <p>
+          Finalmente, na linha 12, foi declarado um mapping privado chamado
+          "_clienteInscrito" que mapeia um endereço para um "Cliente". Ele é
+          utilizado para guardar os clientes inscritos no programa associado ao
+          endereço que realiza a inscrição.
+        </p>
+
+        <p>
+          Na imagem a seguir, temos uma função chamada "inscreveCliente" que
+          recebe como entrada uma string chamada "_nomeCliente" e pode ser
+          chamada por qualquer pessoa.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>Essa função faz o seguinte:</p>
+
+        <!-- TODO LIST -->
+        'Na linha 15, ela verifica se o nome do cliente é válido usando a função
+        "ehNomeClienteValido". Se não for válido, ele levantará uma mensagem de
+        erro que diz: "O nome deve ser informado"', 'Na linha 16, ela verifica
+        se o cliente já está registrado no contrato usando a função
+        "ehClienteValido". Se o cliente já estiver registrado, ele levantará uma
+        mensagem de erro que diz: "Cliente já inscrito".', "Na linha 17, ela
+        cria um novo cliente usando a struct Cliente no espaço memory.", "Na
+        linha 18 e 19, são atribuídos os valores de _nomeCliente e 0 para os
+        campos nomeCliente e saldoCliente, respectivamente.", 'Na linha 20, ela
+        afirma que o cliente é válido usando a função "ehClienteValido".', "Na
+        linha 21, o cliente é adicionado ao _clienteInscrito associado ao
+        msg.sender.",
+        <!-- / TODO LIST -->
+
+        <p>
+          A seguir temos a função que retorna um cliente inscrito a partir do
+          endereço associado no mapping _clienteInscrito.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A função é chamada "getClienteInscritoByAddress", que recebe como
+          entrada um endereço chamado "_addressCliente" e retorna uma estrutura
+          "Cliente". Essa função é marcada como "view" e "public", o que
+          significa que qualquer pessoa pode chamar essa função para recuperar
+          as informações de um cliente do mapeamento _clienteInscrito.
+        </p>
+
+        <p>
+          Concluindo a parte básica, temos as funções de validação na imagem a
+          seguir.
+        </p>
+
+        <!-- TODO IMAGEMM -->
+
+        <p>
+          Da linha 69 a 71, temos uma função chamada "ehClienteValido", que
+          recebe como entrada uma estrutura "Cliente" chamada "_cliente", esta
+          função é privada e "pure" retorna um booleano. Ele verifica as
+          validações no nome e saldo (balanceamento) do cliente. Caso nome e
+          saldo sejam válidos, o cliente é considerado válido.
+        </p>
+
+        <p>
+          Da linha 73 a 75, há uma função chamada "ehSaldoClienteValido", que
+          recebe como entrada um inteiro que representa o saldo. É feita uma
+          verificação se o saldo é maior do que zero. Caso positivo, o saldo é
+          considerado válido.
+        </p>
+
+        <p>
+          Por fim, da linha 77 a 79, temos a função chamada
+          “ehNomeClienteValido”, que recebe uma string que representa o nome do
+          cliente. Ele verifica se o tamanho da string é maior que zero. Caso
+          seja positivo, o retorno é válido.
+        </p>
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Nós precisamos manter registro dos itens oferecidos pela empresa que
+          podem ser trocados pelos pontos acumulados. Cada vez que um item for
+          trocado, o contrato emitirá um evento, registrando os detalhes da
+          transação no log do bloco. Para isso, declaramos o evento
+          "ProdutoTrocado", que armazenará informações como o endereço do
+          cliente que solicitou a troca, o índice do item trocado e a data e
+          hora da transação. Optamos por indexar o endereço do cliente, pois é
+          uma informação relevante para filtrar consultas aos logs.
+        </p>
+
+        <p>
+          Esse evento "ProdutoTrocado" é usado para registrar cada vez que um
+          item é trocado, e os dados armazenados são: endereço dos clientes, o
+          índice do produto trocado e a data e hora da transação. Ele é emitido
+          sempre que alguém chama a função que faz a troca, e esses dados são
+          registrados no log do contrato e ficam disponíveis para serem
+          consultados posteriormente.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO LIST -->
+        'Linha 7: "event ProdutoTrocado" - Declaração de um evento chamado
+        "ProdutoTrocado"', 'Linha 8: "address indexed_cliente," - Declaração de
+        um parâmetro do tipo "address" chamado "indexed_cliente", e está sendo
+        usado "indexed" que é um modificador para indicar que o endereço será
+        indexado, o que significa que é possível buscar eventos com base no
+        endereço específico do cliente.', 'Linha 9: "uint _indiceProduto," -
+        Declaração de um parâmetro do tipo "uint" chamado "_indiceProduto", o
+        qual é um unsigned integer, ou seja, um número inteiro sem sinal. Esse
+        parâmetro representa o índice do produto que está sendo trocado.',
+        'Linha 10: "uint256 _dataEHora" - Declaração de um parâmetro do tipo
+        "uint256" chamado "_dataEHora". Ele é também um unsigned integer, que
+        representa data e hora da transação.',
+        <!-- / TODO LIST -->
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Ao usar o modificador "indexed" no endereço do cliente, permite que
+          você possa buscar eventos com base no endereço específico do cliente,
+          possibilitando uma melhor filtragem e pesquisa de transações
+          específicas.
+        </p>
+
+        <p>
+          E esses três parâmetros juntos formam um registro completo da
+          transação, com informações importantes como: quem fez a troca, qual
+          item foi trocado e quando a troca aconteceu.
+        </p>
+
+        <p>
+          O código a seguir cria uma estrutura chamada "Produto" que tem três
+          campos: "nomeProduto", "Pontosproduto" e "quantidadeTrocada". Essa
+          estrutura é usada para armazenar informações sobre produtos que podem
+          ser trocados pelos pontos. Além disso, ele cria uma variável privada
+          chamada "_enderecoProprietario" que armazena o endereço do
+          proprietário do contrato e um array público chamado "produtos", que é
+          usado para armazenar informações sobre todos os produtos disponíveis
+          para troca.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO LIST -->
+        'Linha 13: "struct Produto{" - Declaração da estrutura chamada
+        "Produto"', 'Linha 14: "string nomeProduto;" - Declaração de uma
+        variável do tipo "string" chamada "nomeProduto" dentro do struct
+        Produto. Essa variável armazena o nome do produto.', 'Linha 15: "uint
+        Pontosproduto;" - Declaração de uma variável do tipo "uint" chamada
+        "Pontosproduto" dentro do struct Produto. Essa variável armazena a
+        quantidade de pontos necessária para trocar por esse produto.', 'Linha
+        16: "uint quantidadeTrocada;" - Declaração de uma variável do tipo
+        "uint" chamada "quantidadeTrocada" dentro do struct Produto. Essa
+        variável armazena a quantidade de vezes que esse produto foi trocado.',
+        'Linha 19: "address private _enderecoProprietario;" - Declaração de uma
+        variável do tipo "address" chamada "_enderecoProprietario" que é
+        privada, ela armazena o endereço do proprietário do contrato. Essa
+        variável será útil mais à frente, quando formos definir algumas
+        permissões.', 'Linha 20: "Produto[] public produtos;" - Declaração de um
+        array do tipo "Produto" chamado "produtos" é público, ele é utilizado
+        para armazenar informações sobre todos os produtos disponíveis para
+        troca.',
+        <!-- / TODO LIST -->
+
+        <p>
+          Para fins didáticos, vamos criar Produtos fictícios e adicionar à
+          lista produtos no construtor (assim, não há necessidade de inserir
+          manualmente após a implantação do contrato). Observe o código a
+          seguir:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Observe que da linha 32 até a linha 46 foram criados três produtos. E
+          nas linhas 47, 48 e 49 foram adicionadas ao array “produtos”.
+        </p>
+
+        <p>
+          Continuando a lógica de negócios do programa fidelidade, a empresa de
+          cartão de crédito estabeleceu que o Clie nte deve ganhar 1 ponto
+          sempre que pagar a fatura completa, independente do valor. Adicionamos
+          a essa lógica a função pagamento que pode ser vista na imagem a
+          seguir.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A função é chamada "pagamento" e tem um parâmetro "uint _valorTotal",
+          que representa o valor total a ser pago pelo cliente.
+        </p>
+
+        <p>
+          A função é declarada como "public" e "payable", o que significa que
+          ela pode ser chamada por qualquer endereço e que o pagamento é
+          esperado no momento da chamada.
+        </p>
+
+        <p>
+          Na linha 82, a função usa o "require" para verificar se o valor
+          enviado pelo cliente é igual ao _valorTotal informado como parâmetro.
+          Se o valor enviado for diferente do _valorTotal, a função falhará e a
+          mensagem "O valor de pagamento total é inválido" será retornada.
+        </p>
+
+        <p>
+          Na próxima linha, a função cria uma referência para o cliente que está
+          realizando o pagamento, com base no endereço do remetente da transação
+          ("msg.sender"). Essa referência é armazenada na variável "_cliente".
+        </p>
+
+        <p>
+          Já na linha 83, a função usa o "require" para verificar se o cliente é
+          válido. A função "ehClienteValido" é chamada para fazer essa
+          verificação. Se o cliente não for válido, a função falhará e a
+          mensagem "Cliente não inscrito" será retornada.
+        </p>
+
+        <p>
+          A última linha da função adiciona 1 ao saldo do cliente, armazenado na
+          variável "_cliente.saldoCliente".
+        </p>
+
+        <!-- TODO WarningBanner -->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">IMPORTANTE</span>
+              A variável "_cliente" precisa armazenar os dados permanentes do
+              cliente, como o saldo do cliente. Por isso, é necessário usar a
+              palavra-chave "storage" para declarar a variável "_cliente". Se a
+              variável fosse declarada com "memory", os dados do cliente seriam
+              apagados quando a função terminasse e o saldo do cliente seria
+              perdido.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/exclamation-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Chegou a hora de implementar a função que troca os pontos do cliente
+          por produtos no programa fidelidade. O índice do produto desejado é
+          passado como parâmetro e a função verifica se o cliente tem pontos
+          suficientes para trocar pelo produto. Se o cliente tiver pontos
+          suficientes, a transação é concluída e o produto é entregue ao
+          cliente. Caso contrário, a transação falhará e o cliente não receberá
+          o produto.
+        </p>
+
+        <p>Observe o código a seguir:</p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A função é chamada "trocaPontoPorProdutos" e tem um parâmetro "uint
+          _indiceProduto", que representa o índice do produto que o cliente
+          deseja trocar por seus pontos. É declarada como "public", o que
+          significa que ela pode ser chamada por qualquer endereço.
+        </p>
+
+        <p>
+          {`Na linha 89, a função usa o "require" para verificar se o índice do
+          produto é válido. A condição "(_indiceProduto <= produtos.length -1)"
+          verifica se o índice é menor ou igual ao índice máximo dos produtos no
+          array "produtos". Se o índice não for válido, a função falhará e a
+          mensagem "O índice não é válido" será retornada.`}
+        </p>
+
+        <p>
+          Logo após, a função cria uma referência para o cliente que está
+          realizando a troca de pontos, com base no endereço do remetente da
+          transação ("msg.sender"). Essa referência é armazenada na variável
+          "cliente" com a palavra-chave "storage". É feito um outro "require"
+          para verificar se o cliente é válido. A função "ehClienteValido" é
+          chamada para fazer essa verificação. Se o cliente não for válido, a
+          função falhará e a mensagem "Cliente não inscrito" será retornada.
+        </p>
+
+        <p>
+          Na linha 85, cria-se uma referência para o produto que o cliente
+          deseja trocar, com base no índice do produto passado como parâmetro.
+          Essa referência é armazenada na variável "produto" com a palavra-chave
+          "storage".
+        </p>
+
+        <p>
+          {`Na linha 93, é usado o "require" para verificar se o cliente tem
+          pontos suficientes para trocar pelo produto desejado. A condição
+          "cliente.saldoCliente >= produto.pontosProduto" verifica se o saldo do
+          cliente é maior ou igual aos pontos necessários para o produto. Se o
+          cliente não tiver pontos suficientes, a função falhará e a mensagem
+          "Não há pontos suficientes para serem usados." será retornada.`}
+        </p>
+
+        <p>
+          Na linha 94, a função subtrai os pontos necessários para o produto do
+          saldo do cliente, usando a expressão "cliente.saldoCliente -=
+          produto.pontosProduto". Isso atualiza o saldo do cliente após a troca
+          ter sido efetuada.
+        </p>
+
+        <p>
+          Em seguida, é incrementada a quantidade de vezes que o produto foi
+          trocado em 1, usando a expressão "produto.quantidadeTrocada += 1".
+          Isso atualiza o registro do produto após a troca ter sido efetuada.
+        </p>
+
+        <p>
+          Na linha 96, o "assert" para verificar se o saldo do cliente após a
+          troca de pontos é maior ou igual a zero. Isso ajuda a evitar erros e
+          verificações adicionais em casos futuros.
+        </p>
+
+        <p>
+          A última linha da função emite um evento "ProdutoTrocado" com
+          informações sobre a transação concluída, incluindo o endereço do
+          remetente, o índice do produto trocado e o momento em que a transação
+          ocorreu.
+        </p>
+
+        <p>
+          Agora, vamos fazer um modificador para restringir o acesso de algumas
+          funções. Por exemplo, é interessante estabelecer que apenas o
+          proprietário do contrato poderá ver seu saldo de pontos. Então, para
+          iniciar a implementação, vamos definir o modificador.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          O underline(_) na segunda linha do modifier é usado para indicar onde
+          o corpo da função que está usando o modifier será inserido, após a
+          verificação da condição na diretiva "require". Se a condição for
+          atendida, a execução continuará a partir do ponto indicado pelo
+          underline. Se a condição não for atendida, a execução será
+          interrompida e a função não será executada.
+        </p>
+
+        <p>
+          Finalmente, vamos implementar a função que verifica o saldo da conta
+          do proprietário do contrato. Observe o código a seguir:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Observe o uso do modificador "apenasProprietario" aplicado na função,
+          o que significa que a função só pode ser chamada pelo proprietário do
+          contrato.
+        </p>
+
+        <p>
+          Após finalizar nossa implementação, vamos implantar nosso contrato
+          para usá-lo.
+        </p>
+      </div>
+      <!-- /GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Após a execução do contrato e troca de um produto é gerada uma
+          transação com log. Observe a seguir o trecho da transação com as
+          informações do log
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Esse é um exemplo de um registro de evento gerado por um contrato na
+          blockchain Ethereum. Especificamente, ele registra um evento chamado
+          "ProdutoTrocado" que foi emitido pelo contrato.
+        </p>
+
+        <p>
+          O evento possui três parâmetros, representados pelos campos
+          "indexed_cliente", "_indiceProduto" e "_dataEHora". O primeiro
+          parâmetro indica o endereço da conta do cliente que realizou a troca
+          do produto, o segundo parâmetro indica o índice do produto que foi
+          trocado e o terceiro parâmetro indica o horário em que a troca foi
+          realizada.
+        </p>
+
+        <p>
+          Os logs são uma parte importante da execução de contratos na Ethereum,
+          pois permitem que as aplicações que interagem com o contrato saibam
+          quando certas ações foram realizadas. No caso desse exemplo, o
+          registro do evento "ProdutoTrocado" poderia ser usado por um
+          aplicativo externo para atualizar o estoque de produtos, gerar uma
+          fatura para o cliente ou enviar uma mensagem de confirmação da troca.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+      </div>
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Recapitulando</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <!-- TODO LIST -->
+        "O problema proposto nesta unidade é um programa de fidelidade de uma
+        empresa de cartão de crédito. O objetivo é desenvolver um contrato
+        inteligente que permita aos clientes acumular pontos para trocar por
+        descontos, produtos e milhas.", 'O contrato "ContratoEmpresaCartao"
+        implementa um programa de fidelidade de uma empresa de cartão de
+        crédito.', "O contrato permite a inscrição de novos clientes, pagamento
+        e troca de pontos por produtos.", 'O contrato utiliza a estrutura
+        "struct" para definir os produtos e os clientes inscritos.', 'O contrato
+        utiliza a diretiva "require" para validar as entradas e as condições de
+        execução.', 'O contrato utiliza a diretiva "modifier" para definir uma
+        função que só pode ser executada pelo proprietário.', 'O contrato
+        utiliza o "event" e "logging" para registrar a ocorrência de uma troca
+        de produtos.', 'O contrato utiliza o "mapping" para armazenar os
+        clientes inscritos e o saldo de cada cliente.',
+
+        <!-- /TODO LIST -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+    </div>
+  </div>
+  <!-- / Section -->
+</div>
+<!-- / Page-->
