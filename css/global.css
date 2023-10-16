@@ -837,3 +837,9 @@
 :is(.dark .dark\:border-lightPurple-300) {
   border-color: var(--lightPurple-300);
 }
+
+.shadow-banner {
+  box-shadow: -28px 28px 28px 0px rgba(255, 255, 255, 0.1) inset,
+    28px -28px 28px 0px rgba(165, 165, 165, 0.1) inset;
+  backdrop-filter: blur(28px);
+}
