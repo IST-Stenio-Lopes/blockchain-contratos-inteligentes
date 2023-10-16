@@ -1,0 +1,616 @@
+<!-- Page -->
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- TODO HEADER -->
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
+    <div
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
+    >
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              <!-- Numero da UE -->
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              <!-- Titulo da UE -->
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            <!-- Descrição da UE -->
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Solidity oferece suporte à herança, um recurso poderoso oferecido pela
+          programação orientada a objeto. A ideia é simples: um contrato
+          inteligente pode “herdar” características de outros contratos
+          inteligentes. Aqueles que têm características herdadas são chamados de
+          contrato base ou pai e os que herdam os elementos de contrato derivado
+          ou filho.
+        </p>
+
+        <!-- TODO WarningBanner -->
+
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">VOCÊ SABIA?</span>
+              No Solidity, os modificadores de visibilidade definem acesso de
+              acordo com a tabela abaixo.
+              <!-- TODO SimpleTableV1 -->
+              Assim, apenas elementos públicos (public) e internos (internal)
+              podem ser herdados por contratos derivados. Os elementos externos,
+              apesar de não serem modificáveis, podem ser acessados pelos
+              contratos derivados.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/question-icon.svg"
+                alt="icone interrogação"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p>
+          A palavra reservada utilizada para herança é is. O exemplo a seguir
+          mostra o uso:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Agora, você vai conhecer alguns tipos de herança oferecidas pelo
+          Solidity.
+        </p>
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Herança única
+        </h2>
+
+        <p>
+          Na herança única ou simples, um contrato pai é herdado por um único
+          contrato filho.
+        </p>
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          O exemplo no código a seguir mostra isso. Em um contrato chamado Pai
+          definido entre as linhas 4 e 11. Pode-se observar:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO LIST -->
+        "Na linha 6, é declarada uma variável chamada dobro do tipo uint.", "Na
+        linha 8, é definida uma função chamada dobrarValor que recebe um
+        parâmetro do tipo uint chamado numero e tem visibilidade external.", "Na
+        linha 9, numero é multiplicado por 2 e atribuído a variável dobro.",
+        <!-- / TODO LIST -->
+
+        <p>
+          Logo após, na linha 13, é definido o contrato chamado Filho. Note que
+          é utilizada a palavra reservada is definindo que o contrato Filho
+          herda as características e comportamento do pai. Observe:
+        </p>
+
+        <!-- TODO LIST -->
+        "Na linha 15, é definida uma função chamada getValor que retorna um
+        valor do tipo uint.", "Na linha 16, é retornada a variável dobro que
+        pertence ao contrato Pai.",
+        <!-- / TODO LIST -->
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO LIST -->
+        "Na linha 22, um novo contrato do tipo Filho, chamado cf, é instanciado
+        com a palavra reservada new.", "Na linha 24, é definida uma função
+        chamada testaHeranca com visibilidade public e retorna um uint.", "Na
+        linha 25, o contrato cf executa a função dobrarValor(20). Note que cf é
+        um contrato do tipo Filho e a função dobrarValor pertence ao contrato
+        Pai. O acesso é permitido devido a herança.", "Na linha 26, o contrato
+        cf executa a função consultar( ) que retorna a variável dobro.",
+        <!-- / TODO LIST -->
+
+        <p>
+          Após a compilação e deploy dos contratos, ao executar a função
+          testaHerança() do contrato Teste, a saída produzida foi 40 ("0":
+          "uint256: 40") , indicando que, de fato, o contrato Filho herdou as
+          característica e comportamentos do Pai.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Herança multinível
+        </h2>
+
+        <p>
+          A herança multinível possui funcionamento análogo ao herança única,
+          com diferença que podem existir vários níveis da relação Pai e Filho
+          (um contrato filho pode ser pai de outro contrato). No exemplo a
+          seguir, tem-se: o contrato A é pai do contrato B e o contrato B é pai
+          do contrato C. Analisando os três contratos definidos tem-se os
+          seguintes comportamentos:
+        </p>
+
+        <!-- TODO LIST -->
+        "O contrato A tem uma função que recebe um parâmetro do tipo string e
+        atualiza sua variável tituloA.", "O contrato B define uma função que
+        recebe um parâmetro do tipo string e concatena com a string da variável
+        tituloA. Após a concatenação, atribui o valor a tituloB.", "O contrato C
+        possui uma função que retorna o valor de tituloB.",
+        <!-- / TODO LIST -->
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Para testar a herança multinível, tem-se um contrato chamado Teste.
+          Nele, um contrato do tipo C é instanciado e chamado de cc. Observe que
+          na implementação da função testaHerança(), cc pode acessar a função do
+          contrato A, mesmo não herdando diretamente do contrato A.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A saída produzida para a execução da função <em>testaHeranca()</em>{"
+          "} do contrato Teste é a esperada{" "}
+          <em>“0”: “string: Heranca em Solidity no SENAI”.</em>
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Herança múltipla
+        </h2>
+
+        <p>
+          Na herança múltipla um único contrato pode estar envolvido na herança
+          de vários contratos. Pode-se existir as seguintes situações:
+        </p>
+
+        <!-- TODO LIST -->
+        "Um contrato pai pode ter mais de um filho, e", "Um filho pode ter mais
+        de um pai.",
+        <!-- / TODO LIST -->
+
+        <p>
+          No exemplo abaixo, o contrato C herda o contrato A e o contrato B.
+          Observe que a função getC() do contrato C tem acesso as variáveis do
+          contrato A (tituloA) e do contrato B (tituloB);
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Você pode observar no contrato de teste da herança que o contrato cc
+          do tipo C executa as funções defineTituloA(“Heranca em Solidity”),
+          defineTituloB(“ no SENAI”) e getC() que retorna a concatenação das
+          strings.
+        </p>
+
+        <!-- TODO IMAGEM -->
+      </div>
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Polimorfismo</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>Além de herança, o Solidity também suporta o polimorfismo.</p>
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>Observe o exemplo:</p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          O contrato A é o contrato base e possui uma função chamada
+          imprimirMsg() com o marcador virtual, indicando que a função pode ser
+          sobrescrita. O contrato B e C herdam o contrato A. Observe que ambos
+          possuem a mesma função de A - imprimirMsg(). Porém, elas possuem o
+          marcador override indicando que a implementação sobrescreve a do
+          contrato base. De fato, no contrato A, B e C as funções possuem
+          retornos diferentes.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+      </div>
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Eventos e Log</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Os eventos são mensagens que os contratos disparam em uma determinada
+          situação para a blockchain. Eles são usados para informar sobre
+          mudanças do estado atual do contrato para agentes externos, como um
+          retorno de interface de um aplicativo que escuta um determinado
+          evento.
+        </p>
+        <!-- TODO VIDEO -->
+        <p>
+          Os eventos quando são emitidos gravam seus parâmetros no{" "}
+          <strong>log</strong> da transação - uma estrutura de dados especial na
+          Blockchain. Esses logs estão associados ao endereço do contrato e
+          serão incorporados à Blockchain e permanecerão lá enquanto um bloco
+          estiver acessível. Os dados de log e eventos não são acessíveis nos
+          contratos (nem mesmo no contrato que os criou).
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO QUESTÃO -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Criação de um evento
+        </h2>
+
+        <p>
+          Eventos são criados a partir do uso da palavra reservada event,
+          seguida de seu nome e seus parâmetros, caso existam — e estes
+          representam os valores armazenados no log. Uma vez criados, eles podem
+          ser chamados em qualquer parte do código, através do uso da palavra
+          reservada emit seguida do nome do evento desejado e da inclusão dos
+          parâmetros necessários, na forma emit nome_do_evento(parâmetros)
+        </p>
+
+        <p>
+          Durante a criação dos eventos, até três de seus parâmetros podem ser
+          declarados utilizando o modificador indexed, e passam a fazer parte de
+          uma estrutura especial dos logs chamada de “tópico” (topic), e não
+          mais na porção reservada para guardar os dados do evento — usados,
+          assim, como indexadores no log e facilitadores durante a busca por
+          registros.
+        </p>
+
+        <p>
+          No exemplo a seguir, temos um evento chamado MandarMensagem que possui
+          dois parâmetros: sender do tipo address e message do tipo string.
+          Observe que sender tem o modificador indexed. Na função test, o evento
+          é emitido duas vezes.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A imagem a seguir mostra o log gerado a partir da transação que
+          executou a função test(). Os parâmetros passados pela emissão do
+          evento são estruturados no log. A partir deles, aplicativos externos
+          podem ter acesso aos parâmetros emitidos.
+        </p>
+
+        <p>
+          Note que sender possui modificador indexed, logo seu valor aparece na
+          campo topic, facilitando o acesso aos dados do evento.
+        </p>
+
+        <!-- TODO IMAGEM -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Controle de erros</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Os erros e exceções devem ser cuidadosamente tratados em contratos,
+          tendo em vista o aspecto financeiro envolvido e a imutabilidade dos
+          contratos após o deploy. O Solidity oferece muitas funções para
+          tratamento de erros. Os erros podem ocorrer em tempo de compilação ou
+          tempo de execução.
+        </p>
+
+        <!-- TODO SimpleTableV1 -->
+
+        <p>
+          Considerando os erros de execução, após a versão 4.10, uma nova
+          construção de instruções de tratamento (
+          <strong>assert, require, revert</strong>) foi introduzidas.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Require
+        </h2>
+
+        <p>
+          As instruções <em>'require'</em> declaram as condições para a execução
+          da função. Ela segue a seguinte sintaxe:
+        </p>
+
+        <p>require(condição, “mensagem de erro”)</p>
+
+        <p>Podem acontecer dois cenários:</p>
+
+        <!-- TODO LIST -->
+        "A condição é verdadeira (true), então a execução da função continua
+        normalmente.", 'A condição é falsa (false), então uma exceção é lançada
+        e a execução da função é interrompida. O gás não utilizado é devolvido
+        ao chamador e o estado é revertido ao seu estado original.
+        Opcionalmente, você pode definir uma "mensagem de erro” para informação
+        do usuário.',
+        <!-- / TODO LIST -->
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Caso a entrada esteja fora do intervalo, a transação é revertida e a
+          mensagem do erro é impressa como mostra o exemplo a seguir:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Assert
+        </h2>
+
+        <p>
+          Sua sintaxe é semelhante à instrução <strong>require</strong>. Ele
+          retorna um valor booleano após a avaliação da condição, mas não é
+          possível estabelecer uma mensagem de retorno.
+        </p>
+
+        <p>Sua forma geral é:</p>
+
+        <p>assert(condição)</p>
+
+        <p>Com base no valor de retorno da condição:</p>
+
+        <!-- TODO LIST -->
+        "Se for verdadeiro, o programa continuará sua execução", "Se for falso,
+        lançará uma exceção e o estado é revertido para o estado original.",
+        <!-- / TODO LIST -->
+
+        <p>
+          Observe a execução utilizando os valores de entrada 200 e 100. O valor
+          da soma ultrapassa o limite do tipo unit8. Devido à condição
+          estabelecida no assert, a transação é revertida.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          No exemplo a seguir, o contrato demonstra como usar uma 'declaração
+          assert'. O objetivo do assert é verificar se soma de dois números está
+          dentro do intervalo do tipo uint8 (0 a 255)
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Revert
+        </h2>
+
+        <p>
+          A instrução revert é utilizada para reverter o estado do sistema ao
+          estado imediatamente anterior. Diferente do require, esta instrução
+          não avalia nenhuma condição. Possui o formato geral:
+        </p>
+
+        <p>revert(“mensagem de erro”)</p>
+
+        <p>
+          No exemplo a seguir, o contrato demonstra a 'declaração de reversão'.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO IMAGEM -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Recapitulando</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Nesta unidade de estudo, os principais conceitos abordados para você
+          foram:
+        </p>
+
+        <!-- TODO LIST -->
+        "Utilizando o recurso de herança, um contrato inteligente pode “herdar”
+        características e comportamentos de outros contratos inteligentes.", "Os
+        contratos que têm características herdadas são chamados de contrato base
+        ou pai e os que herdam os elementos de contrato derivado ou filho.", "A
+        palavra reservada utilizada para herança é is.", "Na herança única, um
+        contrato pai é herdado por um único contrato filho.", "A herança
+        multinível possui funcionamento análogo ao herança única, com diferença
+        que podem existir vários níveis da relação Pai e Filho (um contrato
+        filho pode ser pai de outro contrato).", "Na herança múltipla um único
+        contrato pode estar envolvido na herança de vários contratos.",
+        "Polimorfismo é o mecanismo que faz com que dois contratos derivados de
+        um mesmo contrato base podem invocar funções com a mesma assinatura, mas
+        comportamentos totalmente diferentes.", "Para que seja possível que uma
+        função seja sobrescrita, isso deve ser habilitado explicitamente em cada
+        função usando as palavras-chave virtual (na função base) e override (na
+        função sobrescrita).", "Os eventos são mensagens que os contratos
+        disparam para informar mudanças do estado atual do contrato para agentes
+        externos.", "Os eventos quando são emitidos gravam seus parâmetros no
+        log da transação.", "Os logs são uma estrutura de dados especial na
+        Blockchain. Esses logs estão associados ao endereço do contrato e serão
+        incorporados à Blockchain e permanecerão lá enquanto um bloco estiver
+        acessível.", "Os dados de log e eventos não são acessíveis nos contratos
+        (nem mesmo no contrato que os criou).", "Eventos são criados a partir do
+        uso da palavra reservada event, seguida de seu nome e seus parâmetros",
+        "Os eventos podem ser chamados, através do uso da palavra reservada emit
+        seguida do nome do evento desejado e da inclusão dos parâmetros
+        necessários,", "Os erros podem ocorrer em tempo de compilação ou tempo
+        de execução.",
+        <!-- /TODO LIST -->
+
+        <!-- TODO LIST -->
+        "Os erros de compilação são identificados pelo compilador", "Os erros de
+        execução acontecem durante a execução dos contratos, podendo ocasionar
+        falhas para o usuário.",
+        <!-- / TODO LIST -->
+
+        "As instruções 'require' declaram as condições para a execução da
+        função.",
+        <!-- TODO LIST -->
+        "A condição é verdadeira (true), então a execução da função continua
+        normalmente.", "A condição é falsa (false), então uma exceção é lançada
+        e a execução da função é interrompida.",
+        <!-- / TODO LIST -->
+        "Require segue a seguinte sintaxe:",
+        <p>require(condição, “mensagem de erro”)</p>
+
+        <!-- TODO LIST -->
+        "A instrução revert é utilizada para reverter o estado do sistema ao
+        estado imediatamente anterior. Diferente do require, esta instrução não
+        avalia nenhuma condição.", "Revert possui o formato geral:",
+        <!-- / TODO LIST -->
+
+        <p>revert(“mensagem de erro”)</p>
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+    </div>
+  </div>
+  <!-- / Section -->
+</div>
+<!-- / Page-->

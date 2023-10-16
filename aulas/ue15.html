@@ -1,0 +1,564 @@
+<!-- Page -->
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- TODO HEADER -->
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
+    <div
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
+    >
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              <!-- Numero da UE -->
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              <!-- Titulo da UE -->
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            <!-- Descrição da UE -->
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Existem problemas relacionados aos projetos de software que acontecem
+          com frequência em seu desenvolvimento. Um padrão de projeto é uma
+          solução genérica que resolve esses tipos de problema de forma
+          eficiente e consistente.
+        </p>
+
+        <!-- TODO VIDEO -->
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Existem várias razões para se utilizar padrões de projeto em contratos
+          inteligentes. Algumas das principais motivações são:
+        </p>
+
+        <!-- TODO LIST -->
+        "Reutilização de código: Padrões de projeto permitem que o código de um
+        contrato inteligente seja organizado de maneira clara e estruturada,
+        facilitando sua reutilização em outros contratos. Isso pode aumentar a
+        eficiência e a produtividade no processo de desenvolvimento.",
+        "Manutenção e evolução: Também facilitam a manutenção e a evolução de um
+        contrato, pois permitem que ele seja dividido em componentes
+        independentes e reutilizáveis. Isso torna mais fácil adicionar novas
+        funcionalidades ou corrigir bugs sem afetar o funcionamento geral do
+        contrato.", "Qualidade e confiabilidade: Padrões de projeto ajudam a
+        garantir que um contrato inteligente seja bem projetado e organizado, o
+        que aumenta sua qualidade e confiabilidade. Isso é especialmente
+        importante em contratos que envolvem grandes quantidades de dinheiro ou
+        que são críticos para a operação de uma empresa.", "Segurança: Por fim,
+        também podem ajudar a aumentar a segurança, pois permitem que os
+        desenvolvedores adotem medidas específicas para proteger os dados e as
+        operações do contrato. Isso pode evitar ataques maliciosos e garantir a
+        integridade dos dados armazenados no contrato.",
+        <!-- / TODO LIST -->
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Existem muitos tipos diferentes de padrões de projeto, cada um com uma
+          abordagem específica para resolver um determinado problema de projeto.
+          A seguir, vamos explorar alguns deles:
+        </p>
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Autoridade
+        </h2>
+
+        <p>
+          O padrão de autoridade para contratos inteligentes que permite que um
+          determinado endereço ou grupo de endereços tenha controle exclusivo
+          sobre o contrato. Isso é útil em situações em que é preciso garantir
+          que apenas uma pessoa ou um grupo específico tenha a capacidade de
+          tomar decisões ou fazer alterações no contrato.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Para implementar o padrão de autoridade, o contrato deve ter uma
+          variável que armazena o endereço ou os endereços autorizados. Em
+          seguida, as funções do contrato devem incluir verificações para
+          garantir que apenas os endereços autorizados possam acessá-las.
+        </p>
+
+        <p>
+          Por exemplo, um contrato inteligente de licitação pode usar o padrão
+          de autoridade para permitir que apenas o administrador do leilão
+          altere os lances ou encerre o leilão. Isso garante que apenas o
+          administrador tem o controle sobre o andamento do leilão.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Neste exemplo, o contrato inteligente "Licitacao" tem um administrador
+          designado que é definido no construtor do contrato. O administrador é
+          armazenado na variável "administrador". A função "darLance" é marcada
+          com o modificador "autoridade", que verifica se o remetente é o
+          administrador antes de permitir a atualização dos lances. Isso garante
+          que apenas o administrador tem o controle sobre o andamento do leilão.
+          A função "encerrar" também utiliza o modificador "autoridade",
+          garantindo que apenas o administrador pode encerrar o leilão.
+        </p>
+
+        <p>
+          É importante notar que o padrão de autoridade pode ser um ponto fraco
+          de segurança em um contrato inteligente, pois depende de um endereço
+          ou grupo de endereços confiáveis para controlar o contrato. Se o
+          endereço autorizado for comprometido ou não for confiável, isso pode
+          levar a problemas de segurança ou má administração do contrato.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Segurança
+        </h2>
+
+        <p>
+          O padrão de segurança visa garantir a integridade e a segurança dos
+          dados e das operações do contrato. Existem várias técnicas e padrões
+          que podem ser utilizados para aumentar a segurança de um contrato
+          inteligente, como:
+        </p>
+
+        <!-- TODO LIST -->
+        "Uso de funções de verificação: As funções de verificação são usadas
+        para validar os dados de entrada e as condições prévias antes de
+        executar uma operação no contrato. Isso pode ajudar a evitar erros e
+        ataques maliciosos.",
+        <!-- / TODO LIST -->
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Neste exemplo, a função "transferir" utiliza as funções de verificação
+          "verificarSaldoSuficiente" e "verificarEnderecoValido" para validar os
+          dados de entrada antes de realizar a transferência. Isso ajuda a
+          garantir que as transferências só possam ser realizadas com saldo
+          suficiente e com um endereço destinatário válido.
+        </p>
+
+        <!-- TODO LIST -->
+        "Uso de variáveis privadas: As variáveis privadas são variáveis que só
+        podem ser acessadas pelas funções do contrato e não podem ser lidas ou
+        modificadas diretamente pelos usuários. Isso ajuda a proteger os dados
+        confidenciais do contrato.",
+        <!-- / TODO LIST -->
+
+        <p>Observe o exemplo a seguir envolvendo uma seguradora.</p>
+
+        <!-- TODO IMAGEMM -->
+
+        <p>
+          A variável privada "senha" no código do contrato Seguro é usada para
+          armazenar uma senha que é especificada pelo remetente da chamada à
+          função "solicitarSeguro". Ela é definida como privada pela palavra
+          reservada “private”. Essa senha é usada posteriormente na função
+          "resgatarSeguro" para verificar se a pessoa que está tentando resgatar
+          o seguro forneceu a senha correta. Isso ajuda a garantir que apenas a
+          seguradora, ou alguém que tem acesso à senha, possa resgatar o seguro.
+        </p>
+
+        <!-- TODO LIST -->
+        "Uso de funções de acesso: Às funções de acesso são usadas para
+        controlar o acesso às variáveis e funções do contrato. Isso pode ser
+        útil para limitar o acesso a determinadas operações ou dados a usuários
+        específicos ou endereços.",
+        <!-- / TODO LIST -->
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          No contrato Proprietário, a variável "dono" armazena o endereço do
+          dono do contrato, que é definido no construtor como o remetente da
+          chamada à função. A variável "acessoPermitido" é um mapeamento que
+          armazena se um endereço específico tem permissão de acesso ao contrato
+          ou não. A função "permitirAcesso" permite que o dono do contrato
+          permita o acesso a um usuário específico. A função "modificarDados"
+          requer que o remetente da chamada à função tenha acesso permitido
+          antes de executar a operação. Isso ajuda a garantir que apenas os
+          usuários com acesso permitido possam visualizar ou modificar os dados
+          do contrato.
+        </p>
+
+        <!-- TODO LIST -->
+        "Uso de assinaturas digitais: As assinaturas digitais são usadas para
+        garantir a autenticidade e a integridade das transações no contrato.
+        Isso ajuda a garantir que as transações só possam ser executadas pelos
+        usuários autorizados.",
+        <!-- / TODO LIST -->
+
+        <p>
+          Antes de explorarmos um exemplo sobre assinaturas digitais, vale
+          conhecermos mais um pouco algumas funções nativas do Ethereum
+          utilizadas para esse fim.
+        </p>
+
+        <h3
+          class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-[4.5rem]"
+        >
+          Função sing(), ecrecover(), recover
+        </h3>
+
+        <p>
+          A função sign() é uma função que permite que um usuário assine
+          digitalmente um conjunto de dados. Quando uma transação é enviada para
+          a blockchain, ela é assinada digitalmente pelo remetente da transação
+          usando sua chave privada. Ela permite que um contrato inteligente
+          verifique a validade dessa assinatura digital, garantindo assim que a
+          transação foi realmente enviada pelo remetente especificado. Ela
+          retorna valores que são usados para verificar a validade da assinatura
+          usando a função ecrecover() ou a função recover().
+        </p>
+
+        <p>
+          A função sign() é útil para garantir que uma transação ou operação em
+          um contrato inteligente foi realmente enviada por um usuário
+          autorizado, e não por um atacante ou alguém sem permissão. Isso também
+          pode ser útil para implementar soluções de autenticação, como a
+          confirmação de transações por meio de assinaturas digitais, onde
+          somente usuários com chaves privadas correspondentes podem assinar e
+          autorizar transações.
+        </p>
+
+        <!-- TODO WarningBanner -->
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">Lembre-se</span>
+              A segurança de suas chaves privadas é crucial, pois qualquer
+              pessoa com acesso à sua chave privada poderá assinar transações ou
+              acessar seus ativos no blockchain.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/exclamation-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- /TODO WarningBanner -->
+
+        <p>No exemplo a seguir, temos um contrato chamado AssinaturaDigital.</p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A função "assinarTransacao" é chamada pelo usuário antes de executar a
+          transação, com os dados da transação como entrada. Dentro da função,
+          os dados são resumidos usando <strong>keccak256</strong> e a
+          assinatura do usuário é verificada usando a função sign() do endereço
+          Ethereum. Se a assinatura for válida, o usuário é marcado como tendo
+          uma assinatura válida. Então, a função "executarTransacao" é chamada,
+          que requer que o remetente da chamada tenha uma assinatura válida
+          antes de executar a transação. Isso garante que apenas usuários
+          autorizados possam executar transações no contrato.
+        </p>
+
+        <!-- TODO WarningBanner -->
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">Saiba mais</span>
+              keccak256 é uma função hash incluída na linguagem de programação
+              Solidity, utilizada para criar uma representação resumida de um
+              conjunto de dados. A função keccak256 retorna um valor de 256 bits
+              (32 bytes) que é único para os dados de entrada e é usada para
+              garantir a integridade dos dados. É comumente usado para assinar
+              transações e para gerar endereços dos contratos inteligentes.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/exclamation-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p>
+          Lembre-se de que há muitas técnicas de segurança disponíveis e a
+          segurança é uma preocupação constante na criação de contratos
+          inteligentes. É sempre necessário reforçar as medidas de segurança
+          para garantir a proteção dos fundos e dos dados.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Manutenção
+        </h2>
+
+        <p>
+          Os padrões de manutenção de projeto para contratos inteligentes visam
+          facilitar a atualização e a manutenção do contrato ao longo do tempo.
+          Pela natureza da imutabilidade da blockchain, algumas das principais
+          questões que o padrão de manutenção tentam resolver incluem:
+        </p>
+
+        <!-- TODO LIST -->
+        "Como atualizar o contrato sem interromper ou prejudicar o funcionamento
+        do aplicativo descentralizado que o utiliza?", "Como garantir que os
+        dados e as configurações do contrato sejam preservados durante as
+        atualizações?", "Como garantir que as alterações no contrato sejam
+        aprovadas e implementadas de maneira controlada e segura?",
+        <!-- / TODO LIST -->
+
+        <p>
+          Um padrão bastante utilizado é o de Controle de Atualizações
+          ("Upgradeability" ou "Upgradable contract"): Esse padrão permite que
+          as alterações no contrato sejam aprovadas e implementadas de maneira
+          controlada e segura. Isso é alcançado através da utilização de um
+          mecanismo de votação para aprovar as atualizações antes de serem
+          implementadas.
+        </p>
+
+        <p>
+          Para abordar essas questões, o padrão de manutenção pode incluir
+          técnicas como a criação de uma nova versão do contrato ao invés de
+          alterar a versão existente, a utilização de um contrato de
+          gerenciamento para controlar as atualizações do contrato principal e o
+          uso de funções de verificação para garantir a integridade dos dados
+          durante as atualizações.
+        </p>
+
+        <p>
+          O exemplo a seguir mostra uma estratégia "Upgradeability" ou
+          "Upgradable contract" implementada em Solidity:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Neste exemplo, o contrato MeuContrato possui uma variável
+          "implementacao" do tipo "address" que armazena o endereço do contrato
+          atualmente em uso. A função "upgradeTo" permite que o dono do contrato
+          atualize o contrato para uma nova versão, simplesmente atualizando o
+          endereço armazenado na variável "implementacao".
+        </p>
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          É importante lembrar que a manutenção eficiente de um contrato
+          inteligente é fundamental para garantir que ele continue funcionando
+          de maneira confiável e segura ao longo do tempo.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Controle
+        </h2>
+
+        <p>
+          O padrão de controle garante que as operações do contrato sejam
+          executadas de maneira controlada e segura. Ele pode ser implementado
+          de várias maneiras, mas geralmente envolve o uso de funções de
+          verificação e variáveis privadas para validar os dados de entrada e as
+          condições prévias antes de executar uma operação no contrato.
+        </p>
+
+        <p>
+          Por exemplo, um contrato de licitação pode usar o padrão de controle
+          para garantir que apenas os usuários autorizados possam fazer lances,
+          que os lances só podem ser feitos se o leilão estiver ativo e que os
+          lances só podem ser maiores do que o lance anterior. Isso ajuda a
+          garantir que o leilão seja conduzido de maneira justa e segura.
+          Observe o exemplo abaixo:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          Este contrato implementa uma licitação simples, onde os usuários podem
+          fazer lances em uma determinada oferta. O padrão de controle é
+          implementado usando o operador que verifica se uma determinada
+          condição é satisfeita antes de executar a operação.
+        </p>
+
+        <p>
+          Por exemplo, antes de registrar um novo lance, o contrato verifica se
+          o valor do lance é maior do que o lance atual, se o remetente não é o
+          mesmo que o atual licitador e se a soma dos dois lances não resulta em
+          um overflow. Se alguma dessas condições não for satisfeita, a operação
+          é interrompida.
+        </p>
+
+        <p>
+          Além disso, a função cancelAuction só pode ser executada pelo
+          proprietário da licitação, o que é verificado pelo padrão de controle.
+          Outra forma de implementar o padrão de controle é por meio de funções
+          de acesso, que permitem controlar o acesso às variáveis e funções do
+          contrato. Isso pode ser útil para limitar o acesso a determinadas
+          operações ou dados a usuários específicos ou endereços. Também é
+          possível a utilização de assinaturas digitais para autenticar
+          transações e a utilização de mecanismos de oráculos para obter
+          informações externas no mundo real.
+        </p>
+
+        <p>
+          O padrão de controle é fundamental para garantir a integridade e a
+          segurança dos contratos inteligentes e é importante considerá-lo
+          durante o projeto e o desenvolvimento do contrato.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <h2
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+        >
+          Economia de Gas
+        </h2>
+
+        <p>
+          Para economia de gás existem padrões de projeto que minimizam o uso de
+          gás (que é a unidade de medida da computação utilizada pelos contratos
+          inteligentes na rede Ethereum) durante a execução do contrato. Isso é
+          importante porque o gás tem um custo associado e quanto mais gás é
+          usado durante a execução de um contrato, maior será o custo para os
+          usuários que o utilizam.
+        </p>
+
+        <p>
+          Para implementar o padrão de economia de gás, é importante considerar
+          as seguintes práticas:
+        </p>
+
+        <!-- TODO LIST -->
+        "Otimizar o código do contrato: Isso inclui evitar loops longos e
+        complexos, usar funções eficientes e minimizar o uso de chamadas
+        externas.", "Usar variáveis locais sempre que possível: As variáveis
+        locais são armazenadas na memória do contrato e são mais eficientes em
+        termos de gás do que as variáveis armazenadas na memória de estado.",
+        <!-- / TODO LIST -->
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO IMAGEM -->
+
+        <!-- TODO LIST -->
+        "Evitar o uso desnecessário de operações de escrita na memória de
+        estado: Escrever na memória de estado é mais custoso em termos de gás do
+        que ler da memória de estado, então é importante evitar escrever na
+        memória de estado quando não é necessário.",
+        <!-- / TODO LIST -->
+      </div>
+      <!-- /GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Recapitulando</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <!-- TODO LIST -->
+        "O padrão de autoridade é um padrão de projeto para contratos
+        inteligentes que permite que um determinado endereço ou grupo de
+        endereços tenha controle exclusivo sobre o contrato.", "O padrão de
+        segurança é um padrão de projeto para contratos inteligentes que visa
+        garantir a integridade e a segurança dos dados e das operações do
+        contrato.", "O padrão de manutenção é um padrão de projeto para
+        contratos inteligentes que visa facilitar a atualização e a manutenção
+        do contrato ao longo do tempo.", "O padrão de controle é um padrão de
+        projeto para contratos inteligentes que visa garantir que as operações
+        do contrato sejam executadas de maneira controlada e segura.", "O padrão
+        de economia de gás é um padrão de projeto para contratos inteligentes
+        que visa minimizar o uso de gás durante a execução do contrato.",
+        <!-- /TODO LIST -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+
+      <!-- TODO VIDEO -->
+    </div>
+  </div>
+  <!-- / Section -->
+</div>
+<!-- / Page-->

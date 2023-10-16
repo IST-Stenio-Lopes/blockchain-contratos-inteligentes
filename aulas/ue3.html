@@ -1,0 +1,545 @@
+<!-- Page -->
+<div
+  class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
+>
+  <!-- TODO HEADER -->
+  <div
+    id="page-header"
+    class="relative w-full h-screen items-center justify-center flex flex-col text-white"
+  >
+    <img
+      id="page-cover"
+      class="absolute inset-0 w-full h-full object-cover z-10"
+      alt="Capa"
+    />
+    <div
+      class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full my-auto z-20"
+    >
+      <div class="col-end-11 col-start-3 space-y-4">
+        <div class="relative h-40 px-6 flex flex-col justify-between font-bold">
+          <div
+            class="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-primary-900 via-primary-overlay-40 to-primary-overlay-0"
+          ></div>
+          <div>
+            <h2 class="font-normal text-sm">Curso de Aperfeiçoamento</h2>
+            <h2 class="text-base uppercase">
+              Programação para Blockchain: Contratos Inteligentes
+            </h2>
+          </div>
+
+          <div class="flex text-3xl items-end my-auto">
+            <h1 id="page-number" class="text-5xl text-primary-900">
+              <!-- Numero da UE -->
+            </h1>
+            <h1 id="page-title" class="ml-6">
+              <!-- Titulo da UE -->
+            </h1>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h2 class="font-bold text-lg mb-3">Objetivo de Aprendizagem</h2>
+          <h2 id="page-description" class="w-1/2 font-normal text-base flex">
+            <!-- Descrição da UE -->
+          </h2>
+        </div>
+
+        <div class="mt-20 flex">
+          <button
+            class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
+            onclick="handleStart"
+          >
+            Iniciar unidade
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>
+          Como você já sabe, pode-se definir Blockchain como um registro de
+          informações em um livro-razão composto por uma rede P2P (peer-to-peer
+          ou ponto a ponto) e um banco de dados distribuído e descentralizado.
+        </p>
+
+        <p>
+          Em uma rede P2P, todos compartilham dados e podem assumir funções
+          diferentes. Alguns computadores ou usuários são chamados de nó. Toda
+          informação lançada em um sistema que utiliza a tecnologia Blockchain é
+          difundida entre todos os nós da rede de forma criptografada.
+        </p>
+
+        <p>
+          O banco de dados é constituído por blocos que, juntos, formam uma
+          cadeia. Cada bloco possui informações ou transações e cada modificação
+          ou nova informação inserida é registrada em um dos blocos da cadeia.
+          Esse histórico de informação cria o livro-razão.
+        </p>
+
+        <p>
+          Os blocos são formados por hashes que são ligados ao bloco anterior,
+          funcionando como links com os blocos anteriores até o bloco inicial,
+          também conhecido como bloco gênesis (o bloco que deu origem à cadeia).
+          A hash é formada como uma chave criptografada, o que confere ao
+          sistema segurança quanto à informação registrada.
+        </p>
+
+        <!-- TODO IMAGE -->
+
+        <p>
+          Os itens estruturais que compõem e permitem o funcionamento da
+          Blockchain são o bloco, o hash, a transação e o livro-razão (ledger).
+          Todos eles estão relacionados. Vamos iniciar aprofundando o
+          conhecimento sobre o bloco, a estrutura básica na blockchain.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <!-- Titulo H1 -->
+        <h1
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6"
+        >
+          Bloco
+        </h1>
+
+        <p>
+          Um bloco pode ser entendido como um conjunto de transações ou
+          informações validadas.
+        </p>
+        <p>
+          Uma vez que a transação é recebida, ela pode ser transmitida aos
+          outros nós, para que possa ser incluída na Blockchain. As transações
+          são incluídas na Blockchain pelos nós mineradores (miners).
+        </p>
+        <p>Além da lista de transações, um bloco possui as seguintes partes:</p>
+
+        <!-- TODO IMAGE -->
+
+        <!-- TODO SimpleTableV3 -->
+
+        <p>
+          Na Blockchain, a hash de cada bloco, aponta para o bloco anterior.
+          Todas as transações que um bloco possui são identificadas
+          criptograficamente por uma hash. No cabeçalho do bloco, as transações
+          são identificadas por uma hash única denominada Merkle Root Hash, que
+          representa a raiz de uma árvore de transações conhecida como Markle
+          Tree.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          O bloco inicial, conhecido como bloco gênesis, não possui registro de
+          transações de outros blocos; por isso, o campo de hash do bloco
+          anterior normalmente apresenta valor 0 nesse campo.
+        </p>
+
+        <!-- TODO IMAGE -->
+
+        <p>
+          Outros campos são a marcação de tempo, mais conhecida como timestamp,
+          que proporciona a ordenação temporal contínua dos blocos e eventos na
+          cadeia e um valor denominado nonce.
+        </p>
+
+        <p>
+          Imagine, por exemplo, que para alterar uma informação no Bloco 1,
+          teríamos que alterar o Bloco 2, que teria sua Hash alterada e
+          impactaria o Bloco 3, e assim por diante. Ou seja, algo impraticável.
+          Você pode estar pensando: mas, com o poder computacional existente,
+          essa tarefa não seria fácil?
+        </p>
+
+        <p>
+          Alterar valores e recalcular hashes é fácil computacionalmente; por
+          isso, para evitar fraudes, a Blockchain exige um trabalho adicional
+          para inclusão de novos blocos, denominado PoW-Proof of Work (em
+          português, Prova de Trabalho) ou Proof of Stack.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Você conhecerá mais sobre este conceito, as funções do nonce e do
+          difficulty target mais adiante, quando abordarmos o trabalho dos
+          mineradores para incluir um novo bloco na Blockchain.
+        </p>
+
+        <!-- TODO IMAGE -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <!-- Titulo H1 -->
+        <h1
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6"
+        >
+          HASH
+        </h1>
+
+        <p>
+          As funções de hash (em português, funções de dispersão) são essenciais
+          na Blockchain, pois têm como principal objetivo compilar dados de
+          qualquer tamanho para um tamanho fixo. Os valores retornados por uma
+          função de hash são chamados de valores ou códigos hash (em inglês,
+          digest). Qualquer modificação dos dados submetidos a uma função de
+          hash irá modificar a hash gerada.
+        </p>
+
+        <p>
+          Dessa forma, na tecnologia da Blockchain, os dados de um bloco são
+          vinculados a uma função de hash, gerando a hash do bloco, que será
+          utilizada pelo bloco seguinte, formando o encadeamento dos blocos.
+          Portanto, qualquer modificação no bloco irá modificar a hash que o
+          representa e resultará numa bifurcação do encadeamento dos blocos,
+          evidenciando uma alteração na cadeia.
+        </p>
+
+        <p>A seguir a representação do trabalho das funções:</p>
+
+        <!-- TODO IMAGE -->
+
+        <!-- TODO WarningBanner -->
+        <!-- WarningBanner -->
+
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">SAIBA MAIS</span>
+              Quer testar como funciona essa transformação de mensagem em hash?
+              Acesse o site https://emn178.github.io/online-tools/sha256.html,
+              insira algumas mensagens e verifique as hashes geradas. Faça
+              modificações no texto e observe que mesmo uma vírgula, um ponto
+              final ou um acento causa modificação na hash.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/exclamation-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- / TODO WarningBanner -->
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Os algoritmos de hash são conhecidos por serem unidirecionais (em
+          inglês, one-way), ou seja, não é possível descobrir os dados originais
+          a partir de uma hash. Por isso, as hashes na Blockchain garantem a
+          confidencialidade dos dados originais, além do fato de o cálculo da
+          hash de um bloco ser uma tarefa computacionalmente barata e rápida.
+        </p>
+
+        <p>
+          Um algoritmo de hash muito utilizado nas implementações de Blockchains
+          é o SHA-256 (Secure Hash Algorithm), que produz uma saída de 256 bits
+          para qualquer dado de origem. A saída deste algoritmo é um conjunto de
+          32 caracteres, isto é: cada caractere possui o tamanho de 8 bits,
+          logo, 8 bits x 32 caracteres = 256 bits.
+        </p>
+
+        <p>
+          Você pode estar pensando: o que significa a saída do algoritmo de 256
+          bits? Isto significa que há 2 elevado a 256 possíveis valores de
+          saída, o que equivale a: 1.1579209e+77 (numero muito grande),
+          portanto, é muito difícil dois dados de entrada diferentes
+          apresentarem a mesma hash.
+        </p>
+
+        <p>
+          Na verdade, mesmo que haja a possibilidade, os algoritmos de hash
+          modernos possuem formas de tratar tais questões e evitar essa
+          coincidência. Estudaremos mais sobre hash posteriormente. O vídeo a
+          seguir apresenta o conceito de hash e bloco.
+        </p>
+
+        <!-- TODO VIDEO -->
+        <!-- TODO QUESTÃO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <!-- Titulo H1 -->
+        <h1
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6"
+        >
+          Transação
+        </h1>
+
+        <p>
+          Transação é um registro digital, normalmente composta pelos seguintes
+          dados:
+        </p>
+
+        <!-- TODO LIST -->
+        "ID da transação (hash): Identificador único da transação. É obtido por
+        meio de uma função da hash que recebe como entrada os demais dados da
+        transação e gera, dela, um identificador único (ID).", "Entrada (Input):
+        Endereço de quem está enviando recursos. Normalmente, é uma referência a
+        algum output de transação anterior, na qual o usuário recebeu uma certa
+        quantia. É possível que uma transação faça referência a mais do que uma
+        entrada.", "Saídas (Output): Endereço do(s) destinatário(s) que irão
+        receber o objeto digital.", "Quantidade (amount): A quantia de objeto
+        digital a ser transferido.", "Marcação do Tempo (timestamp): Registro de
+        data e horário da transação.",
+        <!-- / TODO LIST -->
+
+        <p>A imagem a seguir apresenta como funciona com dados reais:</p>
+
+        <!-- TODO IMAGE -->
+
+        <p>
+          A imagem mostra que o ID da transação registra o envio de moedas
+          (bitcoins). Os endereços de entrada e saída da transação indicam,
+          respectivamente, a origem e o destino da transferência dos recursos.
+          Assista ao vídeo para entender melhor o funcionamento das transações
+          com Criptomoedas:
+        </p>
+
+        <!-- TODO VIDEO -->
+
+        <!-- TODO QUESTÃO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h1 class="font-bold text-primary-500 dark:text-white text-2xl ms-6">
+          Assinaturas digitais
+        </h1>
+        <p>
+          Sabemos que na Blockchain os blocos formam uma cadeia. Cada bloco
+          possui informações ou transações e cada modificação ou nova informação
+          inserida é registrada em um dos blocos da cadeia. As transações estão
+          relacionadas às assinaturas digitais que proporcionam segurança e
+          anonimato.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h1 class="font-bold text-primary-500 dark:text-white text-2xl ms-6">
+          Chave pública e chave privada
+        </h1>
+
+        <p>
+          As chaves públicas e privadas geram as assinaturas digitais dos
+          negociadores. Para entender como essas chaves funcionam, você vai
+          conhecer o conceito de criptografia de chaves assimétricas ou
+          criptografia de chave pública.
+        </p>
+
+        <!-- TODO IMAGE -->
+        <!-- TODO IMAGE -->
+        <p>
+          Computacionalmente, a geração dessas chaves é uma tarefa muito
+          simples. A chave pública é gerada a partir da chave privada. Mas, não
+          é possível gerar a chave privada a partir da chave pública.
+        </p>
+
+        <p>
+          Dessa forma, podemos publicar a nossa chave pública em uma rede sem
+          temer que a nossa chave privada seja descoberta.
+        </p>
+
+        <p>
+          A estratégia de chaves assimétricas é utilizada em inúmeras
+          aplicações, mas como esse par é utilizado na Blockchain? Depois que se
+          tem o par de chaves assimétricas, um endereço é criado a partir da
+          chave pública. O endereço é o identificador que permite enviar e
+          receber criptomoedas. Para ficar mais claro, vamos fazer uma analogia
+          ao sistema bancário, temos:
+        </p>
+
+        <!-- TODO LIST -->
+        "A chave privada é como a senha de sua conta bancária. Com ela, é
+        possível realizar transações das suas criptomoedas, logo deve ser
+        guardada em local seguro.", "A chave pública é como sua conta bancária.
+        Suas criptomoedas ficam guardadas nela, e só podem ser liberadas com a
+        chave privada. Como é pública, qualquer um pode ver, mas ninguém pode
+        movimentar os fundos utilizando ela.", "O endereço é como o número da
+        sua conta no banco ou sua chave PIX. É esse endereço, derivado da chave
+        pública, que deve ser informado em transferências de criptomoedas. ",
+        <!-- / TODO LIST -->
+
+        <p>
+          Para produzir um endereço válido na rede, inicialmente geramos a chave
+          privada de um usuário. A partir da chave privada, diversos algoritmos
+          podem ser utilizados para derivar a chave pública.
+        </p>
+
+        <!-- TODO QUESTÃO -->
+
+        <p>
+          Uma vez que geramos a nossa chave pública, submetemos tal chave ao
+          algoritmo de hash, como o SHA-256, obtendo nosso endereço. Na rede
+          bitcoin, por exemplo, esse endereço ainda é submetido a um outro
+          algoritmo (RIPEMD-160), que irá produzir o endereço bitcoin. Todo esse
+          processo de codificação garante o anonimato nas transações em rede.
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          A criptografia assimétrica é baseada em duas chaves: a chave privada e
+          a chave pública. Imagine que você deseja transmitir um arquivo em uma
+          rede, e busca garantir que apenas o destinatário possa ler seu
+          conteúdo. Para isso, você pode fazer uso da chave pública desse
+          destinatário para cifrar o documento, encriptando-o.
+        </p>
+
+        <p>
+          Somente com a chave privada (que fica em posse do destinatário) será
+          possível descriptografar o texto. Logo, nenhuma outra pessoa que tenha
+          acesso ao documento criptografado conseguirá ter acesso ao seu
+          conteúdo, a imagem a seguir mostra isso:
+        </p>
+
+        <!-- TODO IMAGEM -->
+
+        <p>
+          O vídeo a seguir apresenta o conceito de uma chave pública e uma chave
+          privada, clique e se aprofunde no conhecimento.
+        </p>
+
+        <!-- TODO VIDEO -->
+      </div>
+      <!-- / GridCol marginInCols = 2 -->
+    </div>
+  </div>
+  <!-- / Section -->
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <h1 class="font-bold text-primary-500 dark:text-white text-2xl ms-6">
+          Carteira de Criptomoedas
+        </h1>
+
+        <p>
+          As carteiras de criptomoedas, também chamadas de wallets, são os
+          softwares e os dispositivos que guardam as informações que dão acesso
+          aos cripto ativos armazenados na blockchain. Ou seja, é nela que ficam
+          a chave privada, chave pública e os endereços.
+        </p>
+
+        <p>
+          Há vários tipos de wallets, no entanto, os modelos disponíveis podem
+          ser divididos em dois grandes grupos: hot wallets (carteiras quentes)
+          e cold wallets (carteiras frias). A imagem a seguir mostra as
+          diferenças entre elas.
+        </p>
+
+        <!-- TODO IMAGEM -->
+        <!-- TODO QUESTÃO -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Section title secondary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Recaptulando</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- GridCol marginInCols = 2 -->
+      <div class="col-end-11 col-start-3 space-y-4">
+        <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
+
+        <!-- TODO LIST -->
+        "Os blocos são formados por hashes que são ligados ao bloco anterior,
+        funcionando como links com os blocos anteriores até o bloco inicial,
+        também conhecido como bloco gênesis (o bloco que deu origem à cadeia).",
+        "O bloco inicial, conhecido como bloco gênesis, não possui registro de
+        transações de outros blocos; por isso, o campo de hash do bloco anterior
+        normalmente apresenta valor 0 nesse campo.", "Um bloco pode ser
+        entendido como um conjunto de transações ou informações validadas.",
+        "Além da lista de transações, um bloco possui as seguintes partes:
+        número do bloco, hash do bloco anterior, dificuldade alvo, marcação do
+        tempo, valor nonce e árvore de Merkle.", "Qualquer modificação no bloco
+        irá modificar a hash que o representa e resultará numa bifurcação do
+        encadeamento dos blocos, evidenciando uma alteração na cadeia.", "Os
+        algoritmos de hash são conhecidos por serem unidirecionais (em inglês,
+        one-way). Ou seja, não é possível descobrir os dados originais a partir
+        de uma hash. Por isso, as hashes na Blockchain garantem a
+        confidencialidade dos dados originais.", "As transações definem uma
+        quantidade de criptomoedas que serão transferidas de um endereço de
+        origem para um endereço destino em um determinado tempo (data e hora).
+        Associada a cada transação existe um id.", "As transações estão
+        relacionadas às assinaturas digitais que proporcionam segurança e
+        anonimato.", "As chaves públicas e privadas geram as assinaturas
+        digitais dos negociadores.", "A chave privada funciona como uma senha,
+        pois é uma sequência alfanumérica que permite transacionar
+        criptomoedas.", "No processo de transação, a mensagem só pode ser
+        descriptografada com a chave privada do destinatário.",
+        <!-- / TODO LIST -->
+      </div>
+    </div>
+    <!-- TODO VIDEO-->
+  </div>
+</div>
+<!-- / Page-->
