@@ -378,20 +378,73 @@
           manter a base de dados, que tem como características principais:
         </p>
 
-        <!-- TODO DIV -->
-        <div className="py-8 grid gap-4">
-          <IconBanner type="security" title="Segurança" />
+        <div class="py-8 grid gap-4">
+          <!-- IconBanner -->
+          <div class="flex py-6 px-8 rounded-lg border-primary-800 border">
+            <div class="flex items-center justify-center min-h-full">
+              <img
+                src="images/icons/security-icon.svg"
+                alt="icone de segurança"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center ml-10 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-2xl uppercase"> SEGURANÇA </span>
+            </div>
+          </div>
 
-          <IconBanner type="distribution" title="Distribuição" />
+          <!-- IconBanner -->
+          <div class="flex py-6 px-8 rounded-lg border-primary-800 border">
+            <div class="flex items-center justify-center min-h-full">
+              <img
+                src="images/icons/distribution-icon.svg"
+                alt="icone de distribuição"
+              />
+            </div>
+            <div
+              class="flex flex-col justify-center ml-10 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-2xl uppercase"> Distribuição </span>
+            </div>
+          </div>
 
-          <IconBanner type="data" title="Integridade dos dados" />
+          <!-- IconBanner -->
+          <div class="flex py-6 px-8 rounded-lg border-primary-800 border">
+            <div class="flex items-center justify-center min-h-full">
+              <img src="images/icons/data-icon.svg" alt="icone de dados" />
+            </div>
+            <div
+              class="flex flex-col justify-center ml-10 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-2xl uppercase">
+                Integridade dos dados
+              </span>
+            </div>
+          </div>
 
-          <IconBanner type="historic" title="Histórico das transações">
-            São registradas em bloco, que permanecem inalteradas após inseridas
-            no ledger (por isso a expressão “livro contábil imutável”).
-          </IconBanner>
+          <!-- IconBanner -->
+          <div class="flex py-6 px-8 rounded-lg border-primary-800 border">
+            <div class="flex justify-center w-20">
+              <img
+                src="images/icons/historic-icon.svg"
+                alt="icone de histórico"
+              />
+            </div>
+            <div
+              class="inline-block ml-8 w-full text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-2xl uppercase">
+                Histórico das transações
+              </span>
+              <div class="flex inline-block">
+                São registradas em bloco, que permanecem inalteradas após
+                inseridas no ledger (por isso a expressão “livro contábil
+                imutável”).
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /  TODO DIV -->
 
         <p>
           Entenderemos um pouco mais sobre essa estratégia ao longo desta
