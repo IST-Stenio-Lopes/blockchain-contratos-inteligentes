@@ -428,14 +428,6 @@
   max-width: 1120px;
 }
 
-.rotate-180 {
-  transform: rotate(180deg);
-}
-
-.rotate-90 {
-  transform: rotate(90deg);
-}
-
 /* Background colors */
 :is(.dark .dark\:bg-primary-50) {
   background-color: var(--primary-50);

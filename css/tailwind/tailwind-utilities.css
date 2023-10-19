@@ -10669,6 +10669,10 @@
   width: 16rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -10815,6 +10819,10 @@
 
 .z-100 {
   z-index: 100;
+}
+
+.z-110 {
+  z-index: 110;
 }
 
 .z-8888 {
