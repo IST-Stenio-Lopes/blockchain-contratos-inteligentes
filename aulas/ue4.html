@@ -1,6 +1,16 @@
 <div
   class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
 >
+  <script
+    type="text/javascript"
+    src="scripts/components/imagesSlidersUE.js"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="scripts/components/ImageSlider.js"
+  ></script>
+
   <!-- HEADER -->
   <div
     id="page-header"
@@ -188,46 +198,37 @@
         </p>
 
         <!-- IMAGESLIDER-->
-        <script
-          type="text/javascript"
-          src="scripts/components/imagesSlidersUE.js"
-        ></script>
-        <script
-          type="text/javascript"
-          src="scripts/components/ImageSlider.js"
-        ></script>
+        <div class="relative flex flex-col items-center">
+          <img
+            id="ue4-0"
+            src="images/ue/UE 4/Imagem 2 - UE4 1.jpg"
+            alt="imagem slide"
+          />
+          <button
+            type="button"
+            id="next-button"
+            class="next-slider-btn absolute right-0 top-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center drop-shadow-md text-gray-300 hover:bg-gray-900 transition"
+            onclick="nextImage(sliderUE4[0])"
+          >
+            <object
+              class="pointer-events-none"
+              type="image/svg+xml"
+              data="/images/icons/chevron-right.svg"
+            ></object>
+          </button>
 
-        <div class="flex items-center pt-8 pb-8">
-          <div class="py-4">
-            <button
-              type="button"
-              id="previous-button"
-              class="bg-white drop-shadow-md shadow-lg translate-x-80% -translate-y-1/2 rounded-full flex items-center justify-center w-12 h-12 hover:bg-gray-900 transition"
-              onClick="previousImage(slides[0])"
-            >
-              <img
-                class="rotate-180"
-                src="images/icons/chevron-right.svg"
-                alt="botão de retornar"
-              />
-            </button>
-          </div>
-          <div class="py-12">
-            <img id="ue4-0" src="" alt="imagem slide" />
-          </div>
-          <div class="py-8">
-            <button
-              type="button"
-              id="next-button"
-              class="bg-white drop-shadow-md shadow-lg translate-x-80% -translate-y-1/2 rounded-full flex items-center justify-center w-12 h-12 hover:bg-gray-900 transition"
-              onClick="nextImage(slides[0])"
-            >
-              <img
-                src="images/icons/chevron-right.svg"
-                alt="botão de avançar"
-              />
-            </button>
-          </div>
+          <button
+            type="button"
+            id="previous-button"
+            class="previous-slider-btn absolute left-0 top-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center drop-shadow-md text-gray-300 hover:bg-gray-900 transition"
+            onclick="previousImage(sliderUE4[0])"
+          >
+            <object
+              class="pointer-events-none"
+              type="image/svg+xml"
+              data="/images/icons/chevron-right.svg"
+            ></object>
+          </button>
         </div>
 
         <!-- /IMAGESLIDER-->
@@ -375,7 +376,8 @@
               src="https://www.youtube.com/embed/PNzM1VtPfyI"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen>
+              allowfullscreen
+            >
             </iframe>
           </div>
         </div>
@@ -488,7 +490,8 @@
               src="https://www.youtube.com/embed/7wrvkXYX71s"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen>
+              allowfullscreen
+            >
             </iframe>
           </div>
         </div>

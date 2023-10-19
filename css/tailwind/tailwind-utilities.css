@@ -9047,6 +9047,10 @@
   top: 0;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .right-0 {
   right: 0;
 }
@@ -53991,13 +53995,5 @@
   .xl\:z-auto {
     z-index: auto;
   }
-}
-
-.\-translate-y-1\/2 {
-  transform: translateY(-50%);
-}
-
-.\-translate-x-1\/2 {
-  transform: translateX(-50%);
 }
 

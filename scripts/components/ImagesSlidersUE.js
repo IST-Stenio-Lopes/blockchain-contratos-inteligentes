@@ -1,5 +1,6 @@
 //adicionar em array a idTag do slide e suas respectivas src das imagens.
-var slides = [
+
+var sliderUE4 = [
   {
     idTag: "ue4-0",
     index: 0,
@@ -10,8 +11,11 @@ var slides = [
       "images/ue/UE 4/Imagem 2 - UE4 3.jpg",
     ],
   },
+];
+
+var sliderUE14 = [
   {
-    idTag: "ue14-1",
+    idTag: "ue14-0",
     index: 0,
     currentImage: "",
     imagesSrc: [
@@ -21,7 +25,7 @@ var slides = [
     ],
   },
   {
-    idTag: "ue14-2",
+    idTag: "ue14-1",
     index: 0,
     currentImage: "",
     imagesSrc: [

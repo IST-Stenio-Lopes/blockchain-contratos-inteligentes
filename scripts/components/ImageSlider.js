@@ -1,9 +1,3 @@
-// Pecorre todos os slides e atualiza a imagem inicial do slide
-slides.forEach((slider) => {
-  slider.currentImage = document.getElementById(slider.idTag).src =
-    slider.imagesSrc[0];
-});
-
 // Avançar imagem do Slide
 function nextImage(currentSlide) {
   let size = currentSlide.imagesSrc.length - 1;
