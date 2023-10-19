@@ -3231,6 +3231,10 @@
   height: 100%;
 }
 
+.h-fit {
+  height: fit-content;
+}
+
 .h-screen {
   height: 100vh;
 }
