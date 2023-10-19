@@ -10833,6 +10833,10 @@
   z-index: auto;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
@@ -53988,3 +53992,12 @@
     z-index: auto;
   }
 }
+
+.\-translate-y-1\/2 {
+  transform: translateY(-50%);
+}
+
+.\-translate-x-1\/2 {
+  transform: translateX(-50%);
+}
+
