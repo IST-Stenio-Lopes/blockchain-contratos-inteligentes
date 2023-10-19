@@ -187,7 +187,50 @@
           integrar o livro-razão.
         </p>
 
-        <!-- TODO IMAGESLIDER-->
+        <!-- IMAGESLIDER-->
+        <script
+          type="text/javascript"
+          src="scripts/components/imagesSlidersUE.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="scripts/components/ImageSlider.js"
+        ></script>
+
+        <div class="flex items-center pt-8 pb-8">
+          <div class="py-4">
+            <button
+              type="button"
+              id="previous-button"
+              class="bg-white drop-shadow-md shadow-lg translate-x-80% -translate-y-1/2 rounded-full flex items-center justify-center w-12 h-12 hover:bg-gray-900 transition"
+              onClick="previousImage(slides[0])"
+            >
+              <img
+                class="rotate-180"
+                src="images/icons/chevron-right.svg"
+                alt="botão de retornar"
+              />
+            </button>
+          </div>
+          <div class="py-12">
+            <img id="ue4-0" src="" alt="imagem slide" />
+          </div>
+          <div class="py-8">
+            <button
+              type="button"
+              id="next-button"
+              class="bg-white drop-shadow-md shadow-lg translate-x-80% -translate-y-1/2 rounded-full flex items-center justify-center w-12 h-12 hover:bg-gray-900 transition"
+              onClick="nextImage(slides[0])"
+            >
+              <img
+                src="images/icons/chevron-right.svg"
+                alt="botão de avançar"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- /IMAGESLIDER-->
 
         <!-- TODO RADIO QUESTION -->
       </div>
