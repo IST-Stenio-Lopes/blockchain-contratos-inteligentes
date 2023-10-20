@@ -1339,6 +1339,38 @@ function getPics(ue, index) {
   return image || null;
 }
 
+function createLegend(gallery, image) {
+  const legend = document.createElement("span");
+
+  const classNames =
+    "text-sm font-normal text-gray-200 dark:text-gray-900 mt-0.625";
+
+  classNames.split(" ").forEach((className) => {
+    legend.classList.add(className);
+  });
+
+  legend.innerHTML = image.imageLegend;
+
+  gallery.appendChild(legend);
+}
+
+function createImg(fullPage, gallery, src, alt) {
+  const imgElement = document.createElement("img");
+
+  imgElement.src = src;
+  imgElement.alt = alt;
+  imgElement.classList.add("cursor-pointer");
+
+  imgElement.addEventListener("click", function () {
+    fullPage.style.backgroundImage = "url('" + src + "')";
+    fullPage.classList.add("block");
+    fullPage.classList.remove("hidden");
+    console.log(fullPage);
+  });
+
+  gallery.appendChild(imgElement);
+}
+
 function createImages() {
   const galleries = document.getElementsByClassName("gallery");
   const fullPage = document.querySelector("#fullpage");
@@ -1350,35 +1382,11 @@ function createImages() {
     const image = getPics(ue, index);
 
     image.imageSrc.forEach((img) => {
-      const imgElement = document.createElement("img");
-
-      imgElement.src = img;
-      imgElement.alt = image.imageAlt;
-      imgElement.classList.add("cursor-pointer");
-
-      imgElement.addEventListener("click", function () {
-        fullPage.style.backgroundImage = "url('" + img + "')";
-        fullPage.classList.add("block");
-        fullPage.classList.remove("hidden");
-        console.log(fullPage);
-      });
-
-      gallery.appendChild(imgElement);
+      createImg(fullPage, gallery, img, image.imageAlt);
     });
 
     if (image.imageLegend !== "") {
-      const legend = document.createElement("span");
-
-      const classNames =
-        "text-sm font-normal text-gray-200 dark:text-gray-900 mt-0.625";
-
-      classNames.split(" ").forEach((className) => {
-        legend.classList.add(className);
-      });
-
-      legend.innerHTML = image.imageLegend;
-
-      gallery.appendChild(legend);
+      createLegend(gallery, image);
     }
   }
 }
