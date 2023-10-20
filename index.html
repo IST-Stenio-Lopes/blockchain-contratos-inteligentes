@@ -33,6 +33,10 @@
     <script type="text/javascript" src="scripts/global/navbar.js"></script>
     <script
       type="text/javascript"
+      src="scripts/imagesData/imagesData.js"
+    ></script>
+    <script
+      type="text/javascript"
       src="scripts/components/sidebar/sidebar.js"
     ></script>
     <script
@@ -203,6 +207,12 @@
     </div>
     <!-- /Page footer -->
 
+    <div
+      id="fullpage"
+      onclick="this.classList.remove('block'); this.classList.add('hidden')"
+      class="hidden fixed z-9999 top-0 left-0 w-screen h-screen bg-contain bg-no-repeat bg-center bg-gray-overlay-800"
+    ></div>
+
     <script>
       carregarHTML(ueData.currentPage);
 
@@ -220,6 +230,7 @@
               loadUeInformation(id);
 
               hidePageButton();
+              createImages();
             });
           });
         }
