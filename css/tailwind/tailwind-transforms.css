@@ -33,3 +33,11 @@
 .previous-slider-btn object {
   transform: translateX(-2px) rotate(180deg);
 }
+
+.video-border-frame-top {
+  transform: translate(-50%, -50%);
+}
+
+.video-border-frame-bottom {
+  transform: translate(-50%, 50%);
+}

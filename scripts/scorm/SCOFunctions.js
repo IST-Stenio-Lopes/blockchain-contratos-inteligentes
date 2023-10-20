@@ -9,7 +9,7 @@
 var startDate;
 var exitPageStatus;
 
-var currentPage = 14;
+var currentPage = 1;
 var lessonStatus = 1;
 
 var ueData = {
