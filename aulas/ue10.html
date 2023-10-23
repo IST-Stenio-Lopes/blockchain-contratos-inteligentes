@@ -249,18 +249,82 @@
 
         <!-- TODO SIMPLETABLEV2 -->
 
-        <!-- TODO WARNINGBANNER -->
+        <!-- WarningBanner -->
+
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">VOCÊ SABIA?</span>
+              As operações bit-a-bit possuem diversas aplicações voltadas para o
+              alto desempenho de uma aplicação, mas seu uso é incomum. Além
+              disso, a operação de shift também é aplicada bit a bit e um uso
+              muito comum é a multiplicação e divisão de um número. Ou seja,
+              quando um shift à esquerda é aplicado a um número inteiro (em
+              binário) ele é multiplicado por dois. Da mesma forma, quando um
+              shift à direita é aplicado, o número inteiro é dividido por dois,
+              mantendo-se apenas a parte inteira do resultado.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/question-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
 
         <p>
           No exemplo apresentado a seguir, na imagem 1, utiliza-se o tipo uint
           para representar a idade de uma pessoa de 15 anos (linha 1), o ano
           atual (linha 2), e calcula-se o seu ano de nascimento subtraindo o ano
-          atual da idade (linha 3). No exemplo, o ano de nascimento teria
+          atual da idade (linha 3). No exemplo, o ano de nascimento teria valor
+          2007.
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="1"
+        ></div>
+        <!-- / Image content -->
 
-        <!-- TODO WARNINGBANNER -->
+        <!-- WarningBanner -->
+
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">VOCÊ SABIA?</span>
+              A quantidade de bits de memória define o intervalo de números
+              aceitos naquele tipo. Por exemplo, em um int8 pode-se armazenar
+              números que vão apenas de -127 a 128, enquanto em um int32 é
+              possível armazenar número de -2.147.483.648 a 2.147.483.647.
+              Naturalmente, se um programa precisar armazenar números maiores ou
+              menores que os citados, deve-se utilizar tipos maiores. De forma
+              complementar, se o programa armazena apenas valores pequenos,
+              sugere-se o uso de tipos menores, o que ajudará a economizar
+              memória e banda de internet no tráfego da informação pela rede.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/question-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
 
         <!-- TODO RADIO QUESTION -->
       </div>
@@ -337,7 +401,13 @@
           booleano: se a senha está correta (true), ou errada (false).
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="2"
+        ></div>
+        <!-- / Image content -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -365,7 +435,40 @@
 
         <!-- TODO LIST -->
 
-        <!-- TODO WARNINGBANNER -->
+        <!-- WarningBanner -->
+
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">VOCÊ SABIA?</span>
+              Nas conjunções (&&) e disjunções (||) aplica-se uma importante
+              regra chamada de curto-circuito. Isso significa que quando há duas
+              ou mais expressões sendo avaliadas e uma delas se mostra
+              suficiente para uma conclusão, as demais não serão avaliadas.
+              <br /><br />
+              Um exemplo bem simples é pensar que a aprovação de um aluno
+              depende de média maior que 7, ou nota na prova final maior que
+              5.Escrevendo em código teríamos algo como:bool aprovado = media >
+              7 || final > 5.
+              <br /><br />
+              Suponha que o aluno teve média = 8.Pela regra do curto-circuito,
+              ao validar o primeiro lado da expressão, o outro lado não é
+              verificado, pois já é possível concluir que o aluno está aprovado.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/question-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -408,7 +511,13 @@
           mostrado em exemplos, adiante.
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="3"
+        ></div>
+        <!-- / Image content -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -441,6 +550,8 @@
         </p>
 
         <!-- TODO LIST -->
+        <!-- address e
+address payable (endereço a pagar, em tradução direta). -->
 
         <p>
           Ambos representam um endereço da rede Ethereum com 20 bytes de
@@ -456,9 +567,15 @@
           detalhes do uso desse tipo.
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="4"
+        ></div>
+        <!-- / Image content -->
 
-        <!-- TODO RADIO QUESTION -->
+        <!-- TODO RADIO QUESTION - Questão 4 -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -501,7 +618,13 @@
           como a que segue.
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="5"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Entrando em detalhes, na linha 1 estamos convertendo um número
@@ -514,6 +637,8 @@
         <p>Na linha 3, estamos usando dois membros:</p>
 
         <!-- TODO LIST -->
+        <!-- balance: nos permite verificar o saldo de Ether em um endereço;
+transfer: concretizar uma transferência da carteira de origem do contrato, para a carteira de destino. -->
 
         <p>
           Definimos uma operação bem simples: se o saldo (balance) da conta
@@ -521,7 +646,7 @@
           a 10, a carteira de destino recebe uma transferência de 10.
         </p>
 
-        <!-- TODO RADIO QUESTION -->
+        <!-- TODO RADIO QUESTION - Questão 5 -->
 
         <p>
           Existem algumas possibilidades em que a função de transferência falha:
@@ -562,7 +687,33 @@
           send retornará false.
         </p>
 
-        <!-- TODO WARNINGBANNER -->
+        <!-- WarningBanner -->
+
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="">
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">AVISO</span>
+              Existem alguns perigos no uso de send: A transferência falha se a
+              profundidade da pilha de chamadas estiver em 1024 (isso sempre
+              pode ser forçado pelo chamador) e também falha se o destinatário
+              ficar sem gás. Então, para fazer transferências Ether seguras,
+              verifique sempre o valor de retorno do envio, use transferência ou
+              ainda melhor: use um padrão onde o destinatário saca o dinheiro.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/exclamation-icon.svg"
+                alt="icone exclamação"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -595,7 +746,13 @@
           comprimento da cadeia.
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="6"
+        ></div>
+        <!-- / Image content -->
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18"
@@ -607,6 +764,10 @@
         <p>Para os arrays de bytes são possíveis usar as operações:</p>
 
         <!-- TODO LIST -->
+        <!-- + : concatenação;
+        == : comparação de igualdade;
+        != : comparação de diferença.
+        =: atribuição -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -634,7 +795,13 @@
           NORTE, SUL, LESTE e OESTE. Observe o código da imagem:
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="7"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Na linha 01, é definido um enum chamado Coordenada que poderá assumir
@@ -646,7 +813,7 @@
           assumiu valor padrão, Coordenada NORTE.
         </p>
 
-        <!-- TODO RADIO QUESTION -->
+        <!-- TODO RADIO QUESTION - Questão 6 -->
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18"
@@ -658,6 +825,9 @@
         <p>As operações possíveis para Enum são:</p>
 
         <!-- TODO LIST -->
+        <!-- =: atribuição
+        ==: comparação de igualdade
+        !=: comparação de diferença -->
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18"
@@ -674,8 +844,17 @@
         </p>
 
         <!-- TODO LIST -->
+        <!-- Números inteiros: 42, 0x2a (representação de hexadecimal de 42)
+        String de caracteres: “Olá, mundo!”
+        Booleano: true, false. -->
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="8"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Além disso, existem alguns literais especiais em Solidity que são
@@ -759,6 +938,23 @@
 
         <!-- TODO LIST -->
 
+        <!-- Em memória (memory) - usado para armazenar temporariamente os valores
+          passados entre funções. O tempo de vida dos valores é limitado ao
+          período em que a função está sendo utilizada, sendo descartados logo
+          ao término da execução. Este tipo de dado, geralmente, é utilizado
+          para passar valores para funções e só pode ser declarado dentro do
+          escopo das funções. Não é adequado para armazenar valores
+          permanentemente. -->
+        <!--         
+          Em armazenamento (storage) - utilizada quando o tempo de vida dos
+          elementos é limitado ao tempo de vida do contrato, estando acessível
+          enquanto o contrato estiver em execução. Os valores armazenados no
+          'storage' são visíveis para todos os contratos que interagem com o
+          contrato atual e são armazenados na blockchain do Ethereum. É uma
+          localização mais cara do que memory, quando consideramos as taxas de
+          Gas, justamente por possuir um tempo maior de vida, o que também deve
+          ser considerado no desenvolvimento. -->
+
         <p>A seguir, temos uma tabela sintetizando as principais diferenças.</p>
 
         <!-- TODO SIMPLETABLEV1 -->
@@ -798,7 +994,13 @@
           fixo com 10 elementos, armazenando os inteiros de 1 até 10.
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="9"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Os arrays também podem ter tamanho dinâmico, ou seja, eles crescem de
@@ -807,14 +1009,20 @@
           uso de um array de tamanho dinâmico:
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="10"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Na linha 05, podemos ver que os elementos são adicionados ao array com
           o membro push.
         </p>
 
-        <!-- TODO RADIO QUESTION -->
+        <!-- TODO RADIO QUESTION - Questão 7 -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -856,7 +1064,13 @@
           sequências) de caracteres para fins quaisquer.
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="11"
+        ></div>
+        <!-- / Image content -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -889,7 +1103,13 @@
           informações recebe o nome de membro. Observe o código a seguir:
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE11"
+          index="12"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Para definição, utilizamos a palavra reservada struct, observe a linha
@@ -952,11 +1172,22 @@
 
         <!-- TODO LIST -->
 
+        <!-- tipoDaChave é o tipo de dado da chave. Ela pode ser de qualquer tipo,
+          exceto arrays, structs e outros mappings. tipoDoValor é o tipo de dado
+          do valor cujo os valores não possuem restrições quanto ao tipo.
+          nomeMapping é o nome da variável do mapping. -->
+
         <p>
           Observe o mapping que mapeia endereços para saldos em conta abaixo
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="13"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Na linha 02, é definido um mapping chamado saldos. Ele possui a chave
@@ -969,7 +1200,7 @@
           perderia todos os dados após a execução da função.
         </p>
 
-        <!-- TODO RADIO QUESTION -->
+        <!-- TODO RADIO QUESTION - Questão 8 -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -1005,7 +1236,13 @@
           for verdadeira e outra ação se a condição for falsa. Por exemplo:
         </p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="14"
+        ></div>
+        <!-- / Image content -->
 
         <p>
           Outra estrutura de controle comum é o "loop" de repetição, que faz uma
@@ -1014,10 +1251,29 @@
         </p>
 
         <!-- TODO LIST -->
+        <!--         
+          for: comando de repetição que permite executar uma série de instruções
+          várias vezes. Usado, geralmente, quando se conhece o número de vezes
+          que será repetido ou para iterar um array. 
+
+          while: comando de repetição
+          que permite executar uma série de instruções enquanto uma determinada
+          condição for verdadeira. A condição é avaliada no início de cada
+          iteração do laço. 
+
+          do-while: funciona de forma muito semelhante ao
+          'while', porém a condição é avaliada ao final da iteração do laço,
+          garantindo que a série de instruções é executada ao menos uma vez. -->
 
         <p>Na imagem a seguir, podemos observar a sintaxe de cada comendo:</p>
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE10"
+          index="15"
+        ></div>
+        <!-- / Image content -->
       </div>
 
       <!-- VideoFrame -->
@@ -1036,7 +1292,7 @@
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <!-- TODO COMPLETEWITHSELECT QUESTION -->
+        <!-- TODO COMPLETEWITHSELECT QUESTION - Questão 9 -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -1063,15 +1319,58 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <!-- TODO LIST -->
 
+        <!-- A linguagem de programação Solidity é estaticamente tipada. Isso
+          significa que os tipos dos dados devem ser previamente especificados.
+          
+          Os tipos podem ser classificados em: tipos de Valor (Value Types),
+          tipos de Referência (Reference Types) e tipos de Mapeamento (Mapping
+          Types). 
+          
+          Os tipos de valor ou value types são utilizados para definir o
+          tipo básicos de variáveis. A seguir temos um tabela resumo de alguns
+          tipos -->
+
         <!-- TODO SIMPLETABLEV1 -->
 
         <!-- TODO LIST -->
+
+        <!-- 
+          Os tipos por referência ou references types são aqueles cujo valor é
+          passado entre variáveis através da sua localização de armazenamento.
+
+          Os tipos por referência usam data location, são elas: 
+          
+          storage:
+          utilizada quando o tempo de vida dos elementos é limitado ao tempo de
+          vida do contrato, estando acessível enquanto o contrato estiver em
+          execução. 
+
+          memory: usado para armazenar temporariamente os valores
+          passados entre funções. O tempo de vida dos valores é limitado ao
+          período em que a função está sendo utilizada
+          
+          calldata: similar a
+          localização memory, com a diferença que o dado não pode ser alterado
+          durante a execução. -->
 
         <p>A seguir, temos um resumo de alguns tipos por referência</p>
 
         <!-- TODO SIMPLETABLEV1 -->
 
         <!-- TODO LIST -->
+
+        <!-- 
+        Os tipos de mapeamento ou mapping type são um tipo de dado que permite
+        você criar uma estrutura de dados capaz de mapear uma chave para um
+        valor. Um mapping é declarado da seguinte maneira:
+        
+              mapping(tipoDaChave => tipoDoValor) nomeDoMapping
+                   
+        Solidity oferece estruturas de controle que permitem criar lógicas complexas para os contratos. São elas:
+        
+          Estrutura condicional if/else
+          Estrutura de repetição: for, while, do/while
+        -->
 
         <!-- FlexCenter -->
         <div class="flex justify-center items-center w-full">
