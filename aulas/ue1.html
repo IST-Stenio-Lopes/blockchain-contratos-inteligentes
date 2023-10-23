@@ -1,7 +1,6 @@
 <div
   class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
 >
-  <!-- TODO HEADER -->
   <div
     id="page-header"
     class="relative w-full h-screen items-center justify-center flex flex-col text-white"
@@ -167,8 +166,7 @@
           bitcoin, a<strong> Blockchain</strong>.
         </p>
 
-        <!-- TODO WarningBanner-->
-        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <!-- Warning banner -->
         <div class="">
           <div
             class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
@@ -191,6 +189,7 @@
             </div>
           </div>
         </div>
+        <!-- / Warning banner -->
 
         <!-- TODO QUESTÃO-->
       </div>
@@ -275,20 +274,38 @@
           clientes.Exemplo: transferência de valores:
         </p>
 
-        <!-- TODO LIST -->
-        "O usuário Anderson deseja transferir R$100,00 para o usuário Paulo.",
-        "O usuário Anderson aciona sua agência bancária, que fará a
-        intermediação e o repasse do recurso para o usuário Paulo.", "O banco
-        armazenará o registro dessa operação para provar que ela foi efetuada.",
-        "Caso alguma parte conteste a operação, recorrerá ao banco para
-        comprovar que essa transação foi realizada.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-decimal"
+        >
+          <li>
+            "O usuário Anderson deseja transferir R$100,00 para o usuário Paulo.
+          </li>
+          <li>
+            "O usuário Anderson aciona sua agência bancária, que fará a
+            intermediação e o repasse do recurso para o usuário Paulo.
+          </li>
+          <li>
+            "O banco armazenará o registro dessa operação para provar que ela
+            foi efetuada.
+          </li>
+          <li>
+            "Caso alguma parte conteste a operação, recorrerá ao banco para
+            comprovar que essa transação foi realizada.
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Portanto, o banco é o agente que controla e confirma essa operação.
         </p>
 
-        <!-- TODO IMAGE -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE1"
+          index="1"
+        ></div>
+
         <!-- TODO QUESTÃO -->
 
         <!-- Sub-titulo H4 -->
@@ -319,15 +336,29 @@
           criptomoedas:
         </p>
 
-        <!-- TODO LIST -->
-        "O usuário Anderson deseja transferir 2 criptomoedas para o usuário
-        Paulo.", "O usuário Anderson transmite uma solicitação diretamente ao
-        usuário Paulo.", "Essa solicitação é também comunicada a toda a rede. Um
-        dos nós verifica o saldo de Anderson para validar a transação. Em
-        seguida, disponibiliza a informação na rede, que deve ser confirmada em
-        consenso pelos nós. Logo após, a transação é concluída.", "Essa
-        transação ficará armazenada em todos os computadores da rede.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-decimal"
+        >
+          <li>
+            O usuário Anderson deseja transferir 2 criptomoedas para o usuário
+            Paulo.
+          </li>
+          <li>
+            O usuário Anderson transmite uma solicitação diretamente ao usuário
+            Paulo.
+          </li>
+          <li>
+            Essa solicitação é também comunicada a toda a rede. Um dos nós
+            verifica o saldo de Anderson para validar a transação. Em seguida,
+            disponibiliza a informação na rede, que deve ser confirmada em
+            consenso pelos nós. Logo após, a transação é concluída.
+          </li>
+          <li>
+            Essa transação ficará armazenada em todos os computadores da rede.
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Caso alguma parte conteste a operação, haverá muitas pessoas (ou
@@ -343,7 +374,7 @@
 
         <!-- TODO IMAGE -->
 
-        <!-- TODO WarnerBanner -->
+        <!--  WarnerBanner -->
         <div class="">
           <!--para acrescentar se vai precisar de margem ou não-->
           <div
@@ -365,6 +396,7 @@
             </div>
           </div>
         </div>
+        <!-- / WarnerBanner -->
 
         <!-- TODO ClassificationQuestion-->
       </div>
@@ -392,7 +424,7 @@
           contábil imutável (do inglês immutable digital ledger).
         </p>
 
-        <!-- TODO WarningBanner -->
+        <!-- WarningBanner -->
         <div class="">
           <!--para acrescentar se vai precisar de margem ou não-->
           <div
@@ -415,6 +447,7 @@
             </div>
           </div>
         </div>
+        <!-- / WarnerBanner -->
 
         <p>
           A estrutura do Blockchain é composta por uma rede P2P (peer-to-peer ou
@@ -516,7 +549,7 @@
           autenticidade da transação.
         </p>
 
-        <!-- TODO WarningBanner -->
+        <!-- WarningBanner -->
         <!--classe para acrescentar se vai precisar de margem ou não-->
         <div class="">
           <div
@@ -539,6 +572,7 @@
             </div>
           </div>
         </div>
+        <!-- / WarnerBanner -->
 
         <p>
           O banco de dados é constituído por blocos que, juntos, formam uma
@@ -694,30 +728,64 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
 
-        <!-- TODO LIST -->
-        "<strong>Criptomoedas</strong> é o nome dado às moedas digitais
-        descentralizadas que utilizam criptografia como elemento de segurança,
-        protegendo as transações, suas informações e os dados de quem
-        transaciona.", "Em uma <strong>rede centralizada</strong>, um servidor
-        armazena informações e controla as tarefas e os serviços realizados por
-        usuários conectados a ele.", "Em uma <strong>rede distribuída</strong>,
-        todos os usuários estão interconectados e a comunicação ocorre
-        diretamente entre as partes, Não existe um servidor central que controla
-        e registra as transações.", "A <strong>Blockchain</strong> é uma rede
-        distribuída que compartilha entre nós, o ledger, no qual são feitos os
-        registros das transações.", "As
-        <strong>principais características</strong> da Blockchain são:
-        segurança, distribuição, integridade dos dados, histórico de transações
-        imutáveis registrados em blocos.", "O banco de dados é constituído por
-        <strong>blocos</strong> que formam uma <strong>cadeia</strong>.", "Cada
-        bloco possui informações ou transações e cada modificação ou nova
-        informação inserida é registrada em um dos blocos da cadeia após
-        verificação e validação.", "A validação de novos blocos é feita por nós
-        chamados de <strong>mineradores</strong>.", "O bloco de informações
-        somente será gravado na rede se houver a aprovação de 51% dos
-        mineradores. Esse é o mecanismo mais comum utilizado em redes
-        Blockchain, o chamado <strong>consenso</strong>.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            <strong>Criptomoedas</strong> é o nome dado às moedas digitais
+            descentralizadas que utilizam criptografia como elemento de
+            segurança, protegendo as transações, suas informações e os dados de
+            quem transaciona.
+          </li>
+          <br />
+          <li>
+            Em uma <strong>rede centralizada</strong>, um servidor armazena
+            informações e controla as tarefas e os serviços realizados por
+            usuários conectados a ele.
+          </li>
+          <br />
+          <li>
+            Em uma <strong>rede distribuída</strong>, todos os usuários estão
+            interconectados e a comunicação ocorre diretamente entre as partes,
+            Não existe um servidor central que controla e registra as
+            transações.
+          </li>
+          <br />
+          <li>
+            A <strong>Blockchain</strong> é uma rede distribuída que compartilha
+            entre nós, o ledger, no qual são feitos os registros das transações.
+          </li>
+          <br />
+          <li>
+            As <strong>principais características</strong> da Blockchain são:
+            segurança, distribuição, integridade dos dados, histórico de
+            transações imutáveis registrados em blocos.
+          </li>
+          <br />
+          <li>
+            O banco de dados é constituído por <strong>blocos</strong> que
+            formam uma <strong>cadeia</strong>.
+          </li>
+          <br />
+          <li>
+            Cada bloco possui informações ou transações e cada modificação ou
+            nova informação inserida é registrada em um dos blocos da cadeia
+            após verificação e validação.
+          </li>
+          <br />
+          <li>
+            A validação de novos blocos é feita por nós chamados de
+            <strong>mineradores</strong>.
+          </li>
+          <br />
+          <li>
+            O bloco de informações somente será gravado na rede se houver a
+            aprovação de 51% dos mineradores. Esse é o mecanismo mais comum
+            utilizado em redes Blockchain, o chamado <strong>consenso</strong>.
+          </li>
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 
