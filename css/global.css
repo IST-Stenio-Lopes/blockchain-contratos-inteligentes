@@ -545,7 +545,7 @@
   border-color: var(--lightPurple-300);
 }
 
-.hover\:bg-gradient-to-b:hover {
+.bg-gradient-to-b {
   background-image: linear-gradient(
     180deg,
     var(--primary-overlay-500) 0%,
@@ -1004,4 +1004,17 @@
 
 .list-disc {
   list-style-type: disc;
+}
+
+.nav-button:hover {
+  color: var(--primary-900);
+  background-color: var(--gray-200);
+}
+
+.summary-button:hover {
+  color: var(--primary-900);
+}
+
+.grayscale {
+  filter: grayscale(100%);
 }
