@@ -749,8 +749,17 @@
               createImages();
               summaryInit(currentPage);
               sideBarInit();
+              configPs();
             });
           });
+        }
+      }
+
+      function configPs() {
+        const allPs = document.getElementsByTagName("p");
+
+        for (p of allPs) {
+          p.classList.add("dark:text-gray-900");
         }
       }
 

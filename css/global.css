@@ -570,6 +570,10 @@
   transform: rotate(90deg);
 }
 
+:is(.dark .dark\:text-white) {
+  color: white;
+}
+
 :is(.dark .dark\:checked\:before\:bg-gray-600:checked::before) {
   background-color: var(--gray-600);
 }
