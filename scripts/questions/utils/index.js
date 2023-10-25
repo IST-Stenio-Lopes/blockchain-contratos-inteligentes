@@ -12,8 +12,16 @@ const getInputIndexById = (inputId) => {
 	return parseInt(inputId[inputId.length - 1])
 }
 
+function createElementWithClasses(tag, classes){
+	const element = document.createElement(tag);
+	const classesElement = classes.split(" ");
+	element.classList.add(...classesElement);
+	return element;
+}
+
 export {
 	generateID,
 	getQuestionNumber,
-	getInputIndexById
+	getInputIndexById,
+  createElementWithClasses
 };
