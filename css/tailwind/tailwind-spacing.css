@@ -1,3 +1,7 @@
+.mt-0\.625 {
+  margin-top: 0.625rem /* 10px */;
+}
+
 .mt-8 {
   margin-top: 2rem; /* 32px */
 }
@@ -7,6 +11,10 @@
 
 .ms-6 {
   margin-inline-start: 1.5rem; /* 24px */
+}
+
+.ms-8 {
+  margin-inline-start: 2rem /* 32px */;
 }
 
 .ms-12 {
@@ -22,8 +30,8 @@
 }
 
 .my-12 {
-  margin-top: 3rem/* 48px */;
-  margin-bottom: 3rem/* 48px */;
+  margin-top: 3rem /* 48px */;
+  margin-bottom: 3rem /* 48px */;
 }
 
 .space-y-2 > * + * {

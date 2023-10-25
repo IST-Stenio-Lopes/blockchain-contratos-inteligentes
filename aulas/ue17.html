@@ -1,4 +1,3 @@
-<!-- Page -->
 <div
   class="page w-full flex flex-col items-center bg-white dark:bg-gray-100 -z-50 space-y-4"
 >
@@ -59,6 +58,64 @@
   <!-- Section -->
   <div class="flex flex-col w-full items-center">
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+      <!-- VideoBorderFrame Problematizando -->
+      <div
+        class="relative col-start-1 col-end-13 grid grid-cols-12 gap-x-4 mt-14 mb-8"
+      >
+        <div
+          class="absolute inset-0 rounded-lg border-2 mx-10 border-orange-500"
+        >
+          <div
+            class="flex items-center justify-center w-1/2 bg-white dark:bg-gray-100 absolute top-0 video-border-frame-top left-1/2"
+          >
+            <div class="flex items-center justify-center">
+              <img src="images/icons/problem.png" alt="ícone problematizando" />
+            </div>
+            <span
+              class="font-bold text-2xl text-primary-400 dark:text-gray-900"
+            >
+              Problematizando
+            </span>
+          </div>
+          <div
+            class="w-1/2 h-10 bg-white dark:bg-gray-100 absolute bottom-0 video-border-frame-bottom left-1/2"
+          ></div>
+        </div>
+
+        <div class="col-end-12 col-start-2 space-y-4">
+          <div class="relative pb-56.25 my-12">
+            <iframe
+              class="absolute w-full h-full top-0 left-0"
+              src="https://youtube.com/embed/ohKl-_h11ho"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- /VideoBorderFrame Problematizando -->
+    </div>
+  </div>
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold" id="1-0">
+            Protocolo DeFi em um Projeto Agile
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
         <p>
@@ -105,7 +162,19 @@
       </div>
       <!-- / GridCol marginInCols = 2 -->
 
-      <!-- TODO VIDEO -->
+      <!-- VideoFrame -->
+      <div class="col-end-12 col-start-2 space-y-4">
+        <div class="relative pb-56.25 my-12">
+          <iframe
+            class="absolute w-full h-full top-0 left-0"
+            src="https://youtube.com/embed/x_M6LJAdWpo"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
@@ -138,7 +207,7 @@
 
         <!-- TODO WarningBanner -->
         <!--classe para acrescentar se vai precisar de margem ou não-->
-        <div class="">
+        <div class="mb-3">
           <div
             class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
           >
@@ -165,7 +234,19 @@
       </div>
       <!-- /GridCol marginInCols = 2 -->
 
-      <!-- TODO VIDEO -->
+      <!-- VideoFrame -->
+      <div class="col-end-12 col-start-2 space-y-4">
+        <div class="relative pb-56.25 my-12">
+          <iframe
+            class="absolute w-full h-full top-0 left-0"
+            src="https://youtube.com/embed/Y8xzq8QX-NE"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
@@ -195,41 +276,128 @@
           diversos motivos, tais como:
         </p>
 
-        <!-- TODO ParagraphBanner -->
-        <!-- title="Atualizações e melhorias" -->
-        Como qualquer outro produto de software, o Protocolo DeFi requer
-        atualizações regulares para melhorar a funcionalidade e segurança. A
-        equipe de desenvolvimento deve estar pronta para identificar e corrigir
-        quaisquer erros de segurança, bem como adicionar novos recursos e
-        melhorias para manter o Protocolo atualizado e competitivo.
-        <!-- / TODO ParagraphBanner -->
+        <!-- ParagraphBanner -->
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="mb-3 mt-20">
+          <div
+            class="flex dark:shadow-dark_banner p-6 rounded-lg border-primary-900 border"
+          >
+            <div
+              class="flex flex-col w-full gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <div
+                class="relative group flex flex-row items-center gap-3 text-gray-200 dark:text-gray-900"
+              >
+                <div class="flex items-center justify-center">
+                  <img
+                    src="images/icons/update-icon.svg"
+                    alt="icone de engrenagem"
+                  />
+                </div>
 
-        <!-- TODO ParagraphBanner -->
-        <!-- title="Comunidade e feedback" -->
-        A comunidade é um fator crucial para o sucesso do Protocolo DeFi como
-        produto de software. A equipe de desenvolvimento deve estar disposta a
-        receber feedback da comunidade e implementar sugestões para melhorar a
-        experiência do usuário. Além disso, é importante manter uma comunicação
-        clara e transparente com a comunidade para criar confiança e lealdade.
-        <!-- /TODO ParagraphBanner -->
-
-        <!-- TODO ParagraphBanner -->
-        <!-- title="Documentação" -->
-        Assim como qualquer outro produto de software, o Protocolo DeFi deve ser
-        acompanhado de uma documentação clara e completa. Isso inclui
-        documentação técnica para ajudar outros desenvolvedores a entender como
-        o protocolo funciona, bem como documentação do usuário para orientar os
-        usuários finais sobre como usar o produto.
-        <!-- / TODO ParagraphBanner -->
+                <span class="font-bold text-lg"> Atualizações e melhorias</span>
+              </div>
+              Como qualquer outro produto de software, o Protocolo DeFi requer
+              atualizações regulares para melhorar a funcionalidade e segurança.
+              A equipe de desenvolvimento deve estar pronta para identificar e
+              corrigir quaisquer erros de segurança, bem como adicionar novos
+              recursos e melhorias para manter o Protocolo atualizado e
+              competitivo.
+            </div>
+          </div>
+        </div>
 
         <!-- ParagraphBanner -->
-        <!-- title="Segurança" i-->
-        O Protocolo DeFi lida com finanças e, portanto, a segurança é uma
-        preocupação crítica. A equipe de desenvolvimento deve estar sempre
-        atenta para identificar e corrigir quaisquer vulnerabilidades de
-        segurança e adotar práticas de segurança rigorosas para proteger o
-        Protocolo DeFi e seus usuários.
-        <!-- / aragraphBanner -->
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="mb-3 mt-20">
+          <div
+            class="flex dark:shadow-dark_banner p-6 rounded-lg border-primary-900 border"
+          >
+            <div
+              class="flex flex-col w-full gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <div
+                class="relative group flex flex-row items-center gap-3 text-gray-200 dark:text-gray-900"
+              >
+                <div class="flex items-center justify-center">
+                  <img
+                    src="images/icons/chats-icon.svg"
+                    alt="icone de balões de conversa"
+                  />
+                </div>
+
+                <span class="font-bold text-lg"> Comunidade e feedback</span>
+              </div>
+              A comunidade é um fator crucial para o sucesso do Protocolo DeFi
+              como produto de software. A equipe de desenvolvimento deve estar
+              disposta a receber feedback da comunidade e implementar sugestões
+              para melhorar a experiência do usuário. Além disso, é importante
+              manter uma comunicação clara e transparente com a comunidade para
+              criar confiança e lealdade.
+            </div>
+          </div>
+        </div>
+
+        <!-- ParagraphBanner -->
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="mb-3 mt-20">
+          <div
+            class="flex dark:shadow-dark_banner p-6 rounded-lg border-primary-900 border"
+          >
+            <div
+              class="flex flex-col w-full gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <div
+                class="relative group flex flex-row items-center gap-3 text-gray-200 dark:text-gray-900"
+              >
+                <div class="flex items-center justify-center">
+                  <img
+                    src="images/icons/file-icon.svg"
+                    alt="icone de arquivo"
+                  />
+                </div>
+
+                <span class="font-bold text-lg"> Documentação</span>
+              </div>
+              Assim como qualquer outro produto de software, o Protocolo DeFi
+              deve ser acompanhado de uma documentação clara e completa. Isso
+              inclui documentação técnica para ajudar outros desenvolvedores a
+              entender como o protocolo funciona, bem como documentação do
+              usuário para orientar os usuários finais sobre como usar o
+              produto.
+            </div>
+          </div>
+        </div>
+
+        <!-- ParagraphBanner -->
+        <!--classe para acrescentar se vai precisar de margem ou não-->
+        <div class="mb-3 mt-20">
+          <div
+            class="flex dark:shadow-dark_banner p-6 rounded-lg border-primary-900 border"
+          >
+            <div
+              class="flex flex-col w-full gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <div
+                class="relative group flex flex-row items-center gap-3 text-gray-200 dark:text-gray-900"
+              >
+                <div class="flex items-center justify-center">
+                  <img
+                    src="images/icons/shield-icon.svg"
+                    alt="icone de escudo"
+                  />
+                </div>
+
+                <span class="font-bold text-lg"> Segurança</span>
+              </div>
+              O Protocolo DeFi lida com finanças e, portanto, a segurança é uma
+              preocupação crítica. A equipe de desenvolvimento deve estar sempre
+              atenta para identificar e corrigir quaisquer vulnerabilidades de
+              segurança e adotar práticas de segurança rigorosas para proteger o
+              Protocolo DeFi e seus usuários.
+            </div>
+          </div>
+        </div>
 
         <p>
           Além disso, tratar o Protocolo DeFi como um produto de software também
@@ -305,7 +473,19 @@
         <p>O vídeo a seguir mostra um exemplo de como isso pode ser feito:</p>
       </div>
 
-      <!-- TODO VIDEO -->
+      <!-- VideoFrame -->
+      <div class="col-end-12 col-start-2 space-y-4">
+        <div class="relative pb-56.25 my-12">
+          <iframe
+            class="absolute w-full h-full top-0 left-0"
+            src="https://youtube.com/embed/SkDCoXLpC18"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
@@ -579,7 +759,47 @@
       </div>
       <!-- / GridCol marginInCols = 2 -->
 
-      <!-- TODO VIDEO -->
+      <!-- VideoBorderFrame isSolution -->
+      <div
+        class="relative col-start-1 col-end-13 grid grid-cols-12 gap-x-4 mt-14 mb-8"
+      >
+        <div
+          class="absolute inset-0 rounded-lg border-2 mx-10 border-primary-800"
+        >
+          <div
+            class="flex items-center justify-center w-1/2 bg-white dark:bg-gray-100 absolute top-0 video-border-frame-top left-1/2"
+          >
+            <div class="flex items-center justify-center">
+              <img
+                src="images/icons/solution.png"
+                alt="ícone problematizando"
+              />
+            </div>
+            <span
+              class="font-bold text-2xl text-primary-400 dark:text-gray-900"
+            >
+              Solução do problematizando
+            </span>
+          </div>
+          <div
+            class="w-1/2 h-10 bg-white dark:bg-gray-100 absolute bottom-0 video-border-frame-bottom left-1/2"
+          ></div>
+        </div>
+
+        <div class="col-end-12 col-start-2 space-y-4">
+          <div class="relative pb-56.25 my-12">
+            <iframe
+              class="absolute w-full h-full top-0 left-0"
+              src="https://youtube.com/embed/Zkf0iC1fs14"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- /VideoBorderFrame isSolution -->
     </div>
   </div>
   <!-- / Section -->
