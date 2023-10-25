@@ -1,0 +1,43 @@
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.transition {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.next-slider-btn {
+  transform: translate(80px, -50%);
+}
+
+.previous-slider-btn {
+  transform: translate(-80px, -50%);
+}
+
+.next-slider-btn object {
+  transform: translateX(2px);
+}
+
+.previous-slider-btn object {
+  transform: translateX(-2px) rotate(180deg);
+}
+
+.video-border-frame-top {
+  transform: translate(-50%, -50%);
+}
+
+.video-border-frame-bottom {
+  transform: translate(-50%, 50%);
+}

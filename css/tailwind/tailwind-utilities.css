@@ -4069,6 +4069,10 @@
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mr-12 {
   margin-right: 3rem;
 }
@@ -9169,8 +9173,12 @@
   left: -20%;
 }
 
-.peer:checked ~ .peer-checked\:opacity-100{
+.peer:checked ~ .peer-checked\:opacity-100 {
   opacity: 1;
+}
+
+.top-1\/2 {
+  top: 50%;
 }
 
 .right-0 {
@@ -10798,8 +10806,13 @@
   width: 16rem;
 }
 
+<<<<<<< HEAD
 .w-100 {
   width: 25rem;
+=======
+.w-80 {
+  width: 20rem;
+>>>>>>> 035949e7b05d30ea6c349684a0f69bd15809e2d7
 }
 
 .w-auto {
@@ -10953,8 +10966,16 @@
   z-index: 100;
 }
 
+.z-110 {
+  z-index: 110;
+}
+
 .z-8888 {
   z-index: 8888;
+}
+
+.z-9999 {
+  z-index: 9999;
 }
 
 .z-auto {
@@ -54119,13 +54140,5 @@
   .xl\:z-auto {
     z-index: auto;
   }
-}
-
-.\-translate-y-1\/2 {
-  transform: translateY(-50%);
-}
-
-.\-translate-x-1\/2 {
-  transform: translateX(-50%);
 }
 

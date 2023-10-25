@@ -76,6 +76,29 @@
       </div>
     </div>
 
+    <!-- ParagraphBanner -->
+    <!--classe para acrescentar se vai precisar de margem ou não-->
+    <div class="mb-3 mt-20">
+      <div
+        class="flex dark:shadow-dark_banner p-6 rounded-lg border-primary-900 border"
+      >
+        <div
+          class="flex flex-col w-full gap-3 text-gray-200 dark:text-gray-900"
+        >
+          <div
+            class="relative group flex flex-row items-center gap-3 text-gray-200 dark:text-gray-900"
+          >
+            <div class="flex items-center justify-center">
+              <img src="images/icons/shield-icon.svg" alt="icone de escudo" />
+            </div>
+
+            <span class="font-bold text-lg"> Título </span>
+          </div>
+          Conteúdo
+        </div>
+      </div>
+    </div>
+
     <!-- WarningBanner -->
 
     <!--classe para acrescentar se vai precisar de margem ou não-->
@@ -94,6 +117,59 @@
           <img src="images/icons/exclamation-icon.svg" alt="icone exclamação" />
         </div>
       </div>
+    </div>
+
+    <!-- IconBanner -->
+    <div class="flex py-6 px-8 rounded-lg border-primary-800 border">
+      <div class="flex items-center justify-center min-h-full">
+        <img src="images/icons/data-icon.svg" alt="icone de dados" />
+      </div>
+      <div
+        class="flex flex-col justify-center ml-10 text-gray-200 dark:text-gray-900"
+      >
+        <span class="font-bold text-2xl uppercase">
+          Integridade dos dados
+        </span>
+      </div>
+    </div>
+
+    <!-- ImageSlider-->
+    <script
+      type="text/javascript"
+      src="scripts/components/imagesSlidersUE.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/components/ImageSlider.js"
+    ></script>
+
+    <div class="relative flex flex-col items-center">
+      <img id="ue4-0" src="url da primeira imagem" alt="imagem slide" />
+      <button
+        type="button"
+        id="next-button"
+        class="next-slider-btn absolute right-0 top-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center drop-shadow-md text-gray-300 hover:bg-gray-900 transition"
+        onclick="nextImage(sliderUE4[0])"
+      >
+        <object
+          class="pointer-events-none"
+          type="image/svg+xml"
+          data="/images/icons/chevron-right.svg"
+        ></object>
+      </button>
+
+      <button
+        type="button"
+        id="previous-button"
+        class="previous-slider-btn absolute left-0 top-1/2 bg-white rounded-full w-12 h-12 flex items-center justify-center drop-shadow-md text-gray-300 hover:bg-gray-900 transition"
+        onclick="previousImage(sliderUE4[0])"
+      >
+        <object
+          class="pointer-events-none"
+          type="image/svg+xml"
+          data="/images/icons/chevron-right.svg"
+        ></object>
+      </button>
     </div>
 
     <!-- Containers -->
@@ -205,25 +281,33 @@
           src="https://www.youtube.com/embed/Bd9zUAs2-Wg"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen>
+          allowfullscreen
+        >
         </iframe>
       </div>
     </div>
+    <!-- / VideoFrame -->
 
-    <!-- VideoBorderFrame isSolution -->
-    <div class="relative col-start-1 col-end-13 grid grid-cols-12 gap-x-4">
-      <div class="absolute inset-0 rounded-lg border-2 mx-10 border-primary-800">
-        <div class="flex items-center justify-center w-1/2  bg-white dark:bg-gray-100 absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"> 
+    <!-- VideoBorderFrame Problematizando -->
+    <div
+      class="relative col-start-1 col-end-13 grid grid-cols-12 gap-x-4 mt-14 mb-8"
+    >
+      <div class="absolute inset-0 rounded-lg border-2 mx-10 border-orange-500">
+        <div
+          class="flex items-center justify-center w-1/2 bg-white dark:bg-gray-100 absolute top-0 video-border-frame-top left-1/2"
+        >
           <div class="flex items-center justify-center">
-            <img src="images/icons/solution.png" alt="ícone problematizando">
+            <img src="images/icons/problem.png" alt="ícone problematizando" />
           </div>
           <span class="font-bold text-2xl text-primary-400 dark:text-gray-900">
-            Solução do problematizando
+            Problematizando
           </span>
         </div>
-        <div class="w-1/2 h-10 bg-white dark:bg-gray-100 absolute bottom-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+        <div
+          class="w-1/2 h-10 bg-white dark:bg-gray-100 absolute bottom-0 video-border-frame-bottom left-1/2"
+        ></div>
       </div>
-      <!-- VideoFrame -->
+
       <div class="col-end-12 col-start-2 space-y-4">
         <div class="relative pb-56.25 my-12">
           <iframe
@@ -231,11 +315,67 @@
             src="https://www.youtube.com/embed/Bd9zUAs2-Wg"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen>
+            allowfullscreen
+          >
           </iframe>
         </div>
       </div>
     </div>
+    <!-- /VideoBorderFrame Problematizando -->
 
+    <!-- VideoBorderFrame isSolution -->
+    <div
+      class="relative col-start-1 col-end-13 grid grid-cols-12 gap-x-4 mt-14 mb-8"
+    >
+      <div
+        class="absolute inset-0 rounded-lg border-2 mx-10 border-primary-800"
+      >
+        <div
+          class="flex items-center justify-center w-1/2 bg-white dark:bg-gray-100 absolute top-0 video-border-frame-top left-1/2"
+        >
+          <div class="flex items-center justify-center">
+            <img src="images/icons/solution.png" alt="ícone problematizando" />
+          </div>
+          <span class="font-bold text-2xl text-primary-400 dark:text-gray-900">
+            Solução do problematizando
+          </span>
+        </div>
+        <div
+          class="w-1/2 h-10 bg-white dark:bg-gray-100 absolute bottom-0 video-border-frame-bottom left-1/2"
+        ></div>
+      </div>
+
+      <div class="col-end-12 col-start-2 space-y-4">
+        <div class="relative pb-56.25 my-12">
+          <iframe
+            class="absolute w-full h-full top-0 left-0"
+            src="https://www.youtube.com/embed/Bd9zUAs2-Wg"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <!-- /VideoBorderFrame isSolution -->
+
+    <!-- List -->
+    <ol
+      class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+    >
+      <li>
+        <strong>Criptomoedas</strong> é o nome dado às moedas digitais
+        descentralizadas que utilizam criptografia como elemento de segurança,
+        protegendo as transações, suas informações e os dados de quem
+        transaciona.
+      </li>
+      <br />
+    </ol>
+    <!-- / List -->
+
+    <!-- Image content -->
+    <div class="gallery flex flex-col items-center" ue="UE1" index="1"></div>
+    <!-- / Image content -->
   </body>
 </html>

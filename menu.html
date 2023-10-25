@@ -1,16 +1,35 @@
-<nav
-  id="navbar"
-  class="px-8 fixed top-0 left-0 h-20 w-full z-[100] bg-surface-200 flex items-center justify-between ease-in duration-100"
+<div
+  class="fixed h-full w-0 bg-surface-200 z-[110] duration-700 flex flex-col items-center justify-start text-white overflow-hidden"
 >
-  <button
-    type="button"
-    class="bg-none flex items-center justify-center h-full text-white p-2"
-    onClick="{handleOpenMenu}"
-  >
-    <img src="images/icons/menu-icon.svg" alt="Ícone de menu" />
-  </button>
+  <div>
+    <div class="h-20 w-full px-8 flex justify-end">
+      <button
+        type="button"
+        class="bg-none flex items-center justify-center h-full text-white p-2 opacity-75"
+        onClick="onCloseMenu()"
+      >
+        <img src="images/icons/x-icon.svg" />
+      </button>
+    </div>
 
-  <img src="images/header-logo-senai.png" alt="Logo Senai" />
+    <div id="menu-items" class="flex flex-col justify-start w-full gap-4 px-8">
+      <button
+        type="button"
+        class="relative group flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md hover:bg-gray-200 cursor-pointer"
+        onClick="{handleClick}"
+      >
+        <div
+          class="flex items-center justify-center min-w-4 text-zinc-100 group-hover:text-primary-900"
+        >
+          <Icon class="" />
+        </div>
 
-  <div></div>
-</nav>
+        <span
+          class="text-zinc-100 whitespace-nowrap group-hover:text-primary-900"
+        >
+          Visão geral do curso
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
