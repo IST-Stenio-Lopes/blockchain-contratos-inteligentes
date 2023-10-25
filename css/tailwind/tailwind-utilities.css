@@ -1254,6 +1254,10 @@
   border-collapse: collapse;
 }
 
+.border-hidden {
+  border-style: hidden;
+}
+
 .border-separate {
   border-collapse: separate;
 }
@@ -1628,6 +1632,11 @@
 
 .border-pink-900 {
   border-color: #702459;
+}
+
+.border-secondary-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(184 196 255 / var(--tw-border-opacity));
 }
 
 .hover\:border-transparent:hover {
