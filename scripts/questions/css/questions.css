@@ -1,0 +1,11 @@
+.border-r-\[1\.5px\] {
+    border-right-width: 1.5px;
+}
+
+.focus\:ring-blue-500:focus {
+    --tw-ring-color: rgb(59 130 246);
+}
+
+.focus\:border-secondary-500:focus {
+    border-color: var(--secondary-500);
+}
