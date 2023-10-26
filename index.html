@@ -32,6 +32,7 @@
     <script type="text/javascript" src="scripts/global/header.js"></script>
     <script type="text/javascript" src="scripts/global/navbar.js"></script>
     <script type="text/javascript" src="scripts/global/summary.js"></script>
+    <script type="text/javascript" src="scripts/global/progress.js"></script>
     <script
       type="text/javascript"
       src="scripts/imagesData/imagesData.js"
@@ -132,7 +133,7 @@
           <button
             type="button"
             class="relative group flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md nav-button cursor-pointer"
-            onclick=""
+            onclick="openProgress(); closeMenu()"
           >
             <div class="flex items-center justify-center min-w-4 text-zinc-100">
               <svg
@@ -686,6 +687,7 @@
 
     <!-- Page footer -->
     <div
+      id="footer"
       class="flex items-center justify-center w-full h-20 border-t-2 border-gray-600 bg-transparent dark:bg-gray-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
@@ -750,6 +752,7 @@
               summaryInit(currentPage);
               sideBarInit();
               configPs();
+              showHeaderAndFooter(true);
             });
           });
         }

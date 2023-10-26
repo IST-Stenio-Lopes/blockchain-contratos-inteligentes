@@ -1,0 +1,53 @@
+<div
+  class="pt-20 flex w-full flex-col z-10000 dark:bg-gray-100 text-gray-200 dark:text-gray-300"
+>
+  <div
+    class="fixed top-0 left-0 w-full flex flex-row items-center justify-between px-8 h-20 text-white bg-primary-50 z-50"
+  >
+    <button
+      type="button"
+      class="bg-none flex items-center justify-center h-full text-gray-900 p-2"
+      onclick="carregarHTML(ueData.currentPage)"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+          fill="currentColor"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M11.0303 4.71967C11.3232 5.01256 11.3232 5.48744 11.0303 5.78033L4.81066 12L11.0303 18.2197C11.3232 18.5126 11.3232 18.9874 11.0303 19.2803C10.7374 19.5732 10.2626 19.5732 9.96967 19.2803L3.21967 12.5303C2.92678 12.2374 2.92678 11.7626 3.21967 11.4697L9.96967 4.71967C10.2626 4.42678 10.7374 4.42678 11.0303 4.71967Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+
+    <span class="font-semibold text-xl">Visão geral do curso</span>
+    <div></div>
+  </div>
+
+  <div class="w-full flex flex-col items-center dark:bg-gray-100">
+    <div
+      class="w-full items-center flex flex-col min-h-screen overflow-y-auto py-14 min-w-page max-w-page"
+    >
+      <!-- Progresso total -->
+
+      <div class="flex flex-row items-center justify-start w-full mt-14 mb-8">
+        <h1 class="font-bold text-2xl uppercase">Unidades de estudo</h1>
+      </div>
+
+      <div id="ue-cards" class="w-full grid grid-cols-3 gap-4">
+        <!-- botões de UEs -->
+      </div>
+    </div>
+  </div>
+</div>
