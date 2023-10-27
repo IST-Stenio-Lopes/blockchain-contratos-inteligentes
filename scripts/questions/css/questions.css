@@ -9,3 +9,108 @@
 .focus\:border-secondary-500:focus {
     border-color: var(--secondary-500);
 }
+
+.right-20\% {
+    right: 20%;
+}
+
+.top-2\/4 {
+    top: 50%;
+}
+
+.-left-2\/4 {
+    left: -50%;
+}
+
+.h-\[24px\] {
+    height: 24px;
+}
+
+.w-\[24px\] {
+    width: 24px;
+}
+
+.border-\[1\.5px\] {
+    /*border: 1.5px solid black;*/
+    border-width: 1.5px;
+}
+
+.before\:top--2\/4::before {
+    top: -50%;
+}
+
+.before\:left-2\/4::before {
+    left: 50%;
+}
+
+.top-2\/4 {
+    top: 50%;
+}
+
+.left-2\/4 {
+    left: 50%;
+}
+
+
+.checked\:bg-transparent:checked {
+    background-color: transparent;
+}
+.checked\:before\:bg-white:checked::before {
+    background-color: white;
+}
+
+.fill-primary-400 {
+    fill: var(--primary-400);
+}
+
+:is(.dark .dark\:fill-primary-800) {
+    fill: var(--primary-800);
+}
+/*
+.before\:content\[\'\'\]::before {
+    content: "";
+  }
+  
+  .before\:absolute::before {
+    position: absolute;
+  }
+  
+  .before\:top--90\%::before {
+    top: -90%;
+  }
+  .before\:left-2\/4::before {
+    left: 50%;
+  }
+  .before\:block::before {
+    display: block;
+  }
+  .before\:h-12::before {
+    height: 3rem;
+  }
+  .before\:w-12::before {
+    width: 3rem;
+  }
+  .before\:-translate-y-2\/4::before {
+    transform: translateY(-50%);
+  }
+  .before\:-translate-x-2\/4::before {
+    transform: translateX(-50%);
+  }
+  .before\:rounded-full::before {
+    border-radius: 9999px;
+  }
+  .before\:opacity-0::before {
+    opacity: 0;
+  }
+  .before\:transition-opacity::before {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .checked\:border-primary-400:checked {
+    border-color: var(--primary-400);
+  }
+  
+  .checked\:before\:bg-gray-100:checked::before {
+    background-color: var(--gray-100);
+  }*/
