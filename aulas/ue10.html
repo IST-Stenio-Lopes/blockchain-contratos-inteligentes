@@ -256,7 +256,75 @@
           basicamente todas as linguagens de programação modernas, como segue:
         </p>
 
-        <!-- TODO SIMPLETABLEV2 -->
+        <!-- SimpleTableV2 -->
+        <div>
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
+            <colgroup>
+              <col style="width: 50%" />
+              <col style="width: 50%" />
+            </colgroup>
+            <caption
+              class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left"
+            >
+              Tipos de Operadores
+            </caption>
+            <tbody class="text-left">
+              <tr>
+                <td
+                  class="bg-secondary-900 px-4 font-semibold uppercase border border-secondary-800"
+                >
+                  OPERADORES ARITMÉTICOS
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  +, -, unary - (apenas para inteiros com sinal), *, /, %
+                  (módulo), ** (exponenciação)
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="bg-secondary-900 px-4 font-semibold uppercase border border-secondary-800"
+                >
+                  OPERADORES DE COMPARAÇÃO
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  <=, <, ==, !=, >=, > (cujo resultado é um booleano, verdadeiro
+                  ou falso)
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="bg-secondary-900 px-4 font-semibold uppercase border border-secondary-800"
+                >
+                  OPERADORES DE BIT
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  &, |, ^ (ou exclusivo bit-a-bit), ~ (negação bit-a-bit :)
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="bg-secondary-900 px-4 font-semibold uppercase border border-secondary-800"
+                >
+                  OPERADORES DE SHIFT
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  << (shift à esquerda), >> (shift à direita)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- / SimpleTableV2 -->
 
         <!-- WarningBanner -->
 
@@ -1026,7 +1094,101 @@
 
         <p>A seguir, temos uma tabela sintetizando as principais diferenças.</p>
 
-        <!-- TODO SIMPLETABLEV1 -->
+        <!-- SimpleTableV1 -->
+        <div>
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                ></th>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  MEMORY
+                </th>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  STORAGE
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-left">
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Local de armazenamento
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Na memória do contrato
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Na blockchain Ethereum
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Duração do armazenamento
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Até o final da função que os usa
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  O tempo de execução do contrato na blockchain.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Quem tem acesso
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Apenas a função que os usa
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Todos os contratos que interagem com o contrato
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Custo de gás
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Menor
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Maior
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- / SimpleTableV1 -->
 
         <p>
           Existem também a localização calldata, similar a localização memory,
@@ -1398,7 +1560,9 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold">Recapitulando</h1>
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+            Recapitulando
+          </h1>
         </div>
       </div>
     </div>
@@ -1438,6 +1602,198 @@
           <br />
         </ol>
         <!-- / List -->
+        <br />
+
+        <!-- SimpleTableV1 -->
+        <div>
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  TIPO DE VALOR
+                </th>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  OPERAÇÕES
+                </th>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  CARACTERÍSTICAS
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-left">
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  unit
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  +, -, *, /, %, &, |, ^, <<, >>
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Inteiro sem sinal, o que significa que só pode assumir valores
+                  positivos ou zero. A capacidade de armazenamento é de 256
+                  bits.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  int
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  +, -, *, /, %, **, &, |, ^, <<, >>
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Tipo de valor inteiro de sinal, o que significa que pode
+                  assumir valores positivos, negativos ou zero. A capacidade de
+                  armazenamento é de 256 bits.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  fixed/ufixed
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  -
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Utilizado para valor com ponto flutuante, porém não é
+                  totalmente suportado pela linguagem. Pode ser declarado, mas
+                  não pode ser atribuído;
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  bool
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  !, &&, ||, ==, !=
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  O tipo booleano existe para permitir a construção de
+                  verificações lógicas, cujo resultado precisa ser descrito como
+                  verdadeiro (true) ou falso (false).
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  address
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  +, -, ==, !=
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Tipo de valor que representa o endereço de um contrato ou de
+                  uma conta Ethereum. A capacidade de armazenamento é de 20
+                  bytes.Existem dois tipo: address e address payable (possível
+                  receber Ether).
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  bytes
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  +, ==. !=, =
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Tipo de valor para armazenar arrays de bytes
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  enum
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  ==, !=, =
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Tipos enumeráveis existem para restringir uma variável a
+                  apenas um valor, ou um conjunto restrito de valores.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  literal
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  As operações correspondem a do tipo de cada literal.
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Literais são valores fixos declarados nos contratos
+                  inteligentes. Existem diferentes tipos de literais para
+                  representar diferentes tipos de dados, como números inteiros,
+                  string de caracteres e booleanos.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- / SimpleTableV1 -->
+        <!-- A linguagem de programação Solidity é estaticamente tipada. Isso
+          significa que os tipos dos dados devem ser previamente especificados.
+          
+          Os tipos podem ser classificados em: tipos de Valor (Value Types),
+          tipos de Referência (Reference Types) e tipos de Mapeamento (Mapping
+          Types). 
+          
+          Os tipos de valor ou value types são utilizados para definir o
+          tipo básicos de variáveis. A seguir temos um tabela resumo de alguns
+          tipos -->
 
         <!-- TODO SIMPLETABLEV1 -->
 
@@ -1483,7 +1839,77 @@
 
         <p>A seguir, temos um resumo de alguns tipos por referência</p>
 
-        <!-- TODO SIMPLETABLEV1 -->
+        <br />
+
+        <!-- SimpleTableV1 -->
+        <div>
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
+            <thead>
+              <tr>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  TIPO DE VALOR
+                </th>
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  CARACTERÍSTICAS
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-left">
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  array
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  São usados para armazenar uma coleção de valores de um mesmo
+                  tipo. Eles podem ser de tamanho fixo ou variável, e podem
+                  conter qualquer tipo de dados suportado pelo Solidity,
+                  incluindo outros arrays e estruturas.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  string
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Trata-se do tipo que permite a escrita de textos de propósito
+                  geral, desde que contenha caracteres válidos; e são sempre
+                  escritos entre aspas. Funciona de forma dinâmica, o que
+                  significa que o tamanho da string não é fixo e pode variar
+                  conforme a necessidade.
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  struct
+                </td>
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  São estruturas definidas pelo programador, criadas pela
+                  composição dos diferentes tipos de dados. Elas são úteis para
+                  agrupar dados relacionados em uma única estrutura.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- / SimpleTableV1 -->
 
         <!-- List -->
         <ol

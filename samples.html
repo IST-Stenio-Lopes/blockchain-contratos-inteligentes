@@ -51,7 +51,7 @@
           class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20"
         >
           <div class="col-end-11 col-start-3 space-y-4">
-            <h1 class="text-primary-400 text-2xl font-bold">
+            <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
               Section title primary
             </h1>
           </div>
@@ -68,7 +68,7 @@
           class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20"
         >
           <div class="col-end-11 col-start-3 space-y-4">
-            <h1 class="text-primary-400 text-2xl font-bold">
+            <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
               Section title secondary
             </h1>
           </div>
@@ -377,5 +377,142 @@
     <!-- Image content -->
     <div class="gallery flex flex-col items-center" ue="UE1" index="1"></div>
     <!-- / Image content -->
+
+    <!-- SimpleTableV1 -->
+    <div>
+      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+        <colgroup>
+          <col style="width: 75%;">
+          <col style="width: 25%;">
+          <col style="width: 25%;">
+        </colgroup>
+        <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+          Tipos de Blockchain
+        </caption>
+        <thead>
+          <tr>
+            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+            
+            </th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+              PÚBLICA
+            </th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+              PRIVADA
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-left">
+          <tr>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              Sem necessidade de permissão?	
+            </td>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              Sim
+            </td>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              Não
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- / SimpleTableV1 -->
+
+    <!-- SimpleTableV2 -->
+    <div>
+      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+        <colgroup>
+          <col style="width: 50%;">
+          <col style="width: 50%;">
+        </colgroup>
+        <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+          Tipos de Operadores
+        </caption>
+        <tbody class="text-left">
+          <tr>
+            <td class="bg-secondary-900 px-4 font-semibold uppercase border border-secondary-800">
+              OPERADORES ARITMÉTICOS	
+            </td>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              +, -, unary - (apenas para inteiros com sinal), *, /, % (módulo), ** (exponenciação)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- / SimpleTableV2 -->
+
+    <!-- SimpleTableV3 -->
+    <div>
+      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+        <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+          Estruturas do bloco
+        </caption>
+        <colgroup>
+          <col style="width: 50%;">
+          <col style="width: 50%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+              ESTRUTURA
+            </th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+              DESCRIÇÃO
+            </th>
+          </tr>
+          <tr>
+            <th class="font-semibold py-2 px-4 bg-secondary-950">
+              CABEÇALHO
+            </th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950">
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-left">
+          <tr>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              Bloco 1		
+            </td>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              Número do bloco (altura do bloco na cadeia de bloco)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+        <colgroup>
+          <col style="width: 50%;">
+          <col style="width: 50%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="font-semibold py-2 px-4 bg-secondary-950">
+              CORPO DO BLOCO	
+            </th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950">
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-left">
+          <tr>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              Assinatura	
+            </td>
+            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+              Assinatura digital associado às transações
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- / SimpleTableV3 -->
+
   </body>
 </html>

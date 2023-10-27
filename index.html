@@ -31,6 +31,8 @@
     <script type="text/javascript" src="scripts/global/footer.js"></script>
     <script type="text/javascript" src="scripts/global/header.js"></script>
     <script type="text/javascript" src="scripts/global/navbar.js"></script>
+    <script type="text/javascript" src="scripts/global/summary.js"></script>
+    <script type="text/javascript" src="scripts/global/progress.js"></script>
     <script
       type="text/javascript"
       src="scripts/imagesData/imagesData.js"
@@ -61,6 +63,7 @@
       class="px-8 fixed top-0 left-0 h-20 w-full z-100 bg-surface-200 flex items-center justify-between ease-in duration-100"
     >
       <button
+        id="menu-button"
         type="button"
         class="bg-none flex items-center justify-center h-full text-white p-2"
         onclick="openMenu()"
@@ -93,14 +96,33 @@
       id="sidebar"
       class="fixed h-full w-0 bg-surface-200 z-110 duration-700 flex flex-col items-center justify-start text-white overflow-hidden"
     >
-      <div>
+      <div class="w-full">
         <div class="h-20 w-full px-8 flex justify-end">
           <button
             type="button"
             class="bg-none flex items-center justify-center h-full text-white p-2 opacity-75"
             onclick="closeMenu()"
           >
-            <img src="images/icons/x-icon.svg" />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.4571 4.54289C19.8476 4.93342 19.8476 5.56658 19.4571 5.95711L5.95711 19.4571C5.56658 19.8476 4.93342 19.8476 4.54289 19.4571C4.15237 19.0666 4.15237 18.4334 4.54289 18.0429L18.0429 4.54289C18.4334 4.15237 19.0666 4.15237 19.4571 4.54289Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.54289 4.54289C4.93342 4.15237 5.56658 4.15237 5.95711 4.54289L19.4571 18.0429C19.8476 18.4334 19.8476 19.0666 19.4571 19.4571C19.0666 19.8476 18.4334 19.8476 18.0429 19.4571L4.54289 5.95711C4.15237 5.56658 4.15237 4.93342 4.54289 4.54289Z"
+                fill="currentColor"
+              />
+            </svg>
           </button>
         </div>
 
@@ -110,23 +132,518 @@
         >
           <button
             type="button"
-            class="relative group flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md hover:bg-gray-200 cursor-pointer"
-            onClick="{handleClick}"
+            class="relative group flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md nav-button cursor-pointer"
+            onclick="openProgress(); closeMenu()"
           >
-            <div
-              class="flex items-center justify-center min-w-4 text-zinc-100 group-hover:text-primary-900"
-            >
-              <Icon class="" />
+            <div class="flex items-center justify-center min-w-4 text-zinc-100">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.25 14.25C8.25 13.8358 8.58579 13.5 9 13.5H15C15.4142 13.5 15.75 13.8358 15.75 14.25C15.75 14.6642 15.4142 15 15 15H9C8.58579 15 8.25 14.6642 8.25 14.25Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.25 11.25C8.25 10.8358 8.58579 10.5 9 10.5H15C15.4142 10.5 15.75 10.8358 15.75 11.25C15.75 11.6642 15.4142 12 15 12H9C8.58579 12 8.25 11.6642 8.25 11.25Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.18934 3.43934C4.47064 3.15804 4.85217 3 5.25 3H9C9.41421 3 9.75 3.33579 9.75 3.75C9.75 4.16421 9.41421 4.5 9 4.5L5.25 4.5L5.25 20.25H18.75V4.5H15C14.5858 4.5 14.25 4.16421 14.25 3.75C14.25 3.33579 14.5858 3 15 3H18.75C19.1478 3 19.5294 3.15804 19.8107 3.43934C20.092 3.72065 20.25 4.10218 20.25 4.5V20.25C20.25 20.6478 20.092 21.0294 19.8107 21.3107C19.5294 21.592 19.1478 21.75 18.75 21.75H5.25C4.85218 21.75 4.47065 21.592 4.18934 21.3107C3.90804 21.0294 3.75 20.6478 3.75 20.25V4.5C3.75 4.10217 3.90804 3.72064 4.18934 3.43934Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 3C11.2044 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6H15C15 5.20435 14.6839 4.44129 14.1213 3.87868C13.5587 3.31607 12.7956 3 12 3ZM8.81802 2.81802C9.66193 1.97411 10.8065 1.5 12 1.5C13.1935 1.5 14.3381 1.97411 15.182 2.81802C16.0259 3.66193 16.5 4.80653 16.5 6V6.75C16.5 7.16421 16.1642 7.5 15.75 7.5H8.25C7.83579 7.5 7.5 7.16421 7.5 6.75V6C7.5 4.80653 7.97411 3.66193 8.81802 2.81802Z"
+                  fill="currentColor"
+                />
+              </svg>
             </div>
 
-            <span
-              class="text-zinc-100 whitespace-nowrap group-hover:text-primary-900"
-            >
+            <span class="text-zinc-100 whitespace-nowrap whitespace-no-wrap">
               Visão geral do curso
             </span>
           </button>
+
+          <button
+            type="button"
+            class="relative group flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md nav-button cursor-pointer"
+            onclick="openSummary()"
+          >
+            <div class="flex items-center justify-center min-w-4 text-zinc-100">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9 12C9 11.5858 9.33579 11.25 9.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H9.75C9.33579 12.75 9 12.4142 9 12Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9 6C9 5.58579 9.33579 5.25 9.75 5.25H20.25C20.6642 5.25 21 5.58579 21 6C21 6.41421 20.6642 6.75 20.25 6.75H9.75C9.33579 6.75 9 6.41421 9 6Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9 18C9 17.5858 9.33579 17.25 9.75 17.25H20.25C20.6642 17.25 21 17.5858 21 18C21 18.4142 20.6642 18.75 20.25 18.75H9.75C9.33579 18.75 9 18.4142 9 18Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.64446 4.23701C5.86558 4.37367 6.00016 4.61507 6.00016 4.875V10.125C6.00016 10.5392 5.66438 10.875 5.25016 10.875C4.83595 10.875 4.50016 10.5392 4.50016 10.125V6.08853L4.08557 6.29582C3.71509 6.48106 3.26459 6.33089 3.07934 5.96041C2.8941 5.58993 3.04427 5.13942 3.41475 4.95418L4.91475 4.20418C5.14725 4.08793 5.42335 4.10036 5.64446 4.23701Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.11166 14.2368C5.03278 14.2309 4.95356 14.2418 4.87916 14.2686C4.80476 14.2955 4.73686 14.3377 4.6799 14.3926C4.62293 14.4475 4.57818 14.5138 4.54856 14.5871C4.39345 14.9712 3.95635 15.1568 3.57228 15.0017C3.1882 14.8466 3.00259 14.4095 3.1577 14.0254C3.2663 13.7565 3.4304 13.5135 3.63927 13.3123C3.84814 13.1111 4.0971 12.9562 4.3699 12.8577C4.64269 12.7593 4.93318 12.7194 5.2224 12.7409C5.51163 12.7623 5.79309 12.8444 6.0484 12.982C6.30372 13.1196 6.52716 13.3094 6.70413 13.5392C6.8811 13.7689 7.00762 14.0334 7.07544 14.3154C7.14326 14.5974 7.15085 14.8905 7.09772 15.1756C7.04458 15.4607 6.93192 15.7314 6.76707 15.97C6.76167 15.9779 6.75612 15.9856 6.75043 15.9932L5.24825 18H6.375C6.78922 18 7.125 18.3358 7.125 18.75C7.125 19.1642 6.78922 19.5 6.375 19.5H3.75C3.46605 19.5 3.20645 19.3396 3.07934 19.0857C2.95223 18.8318 2.97942 18.5279 3.14958 18.3006L5.53925 15.1081C5.58078 15.0453 5.60931 14.9748 5.62311 14.9008C5.6376 14.823 5.63553 14.7431 5.61703 14.6662C5.59854 14.5893 5.56403 14.5172 5.51577 14.4545C5.4675 14.3918 5.40657 14.34 5.33693 14.3025C5.2673 14.265 5.19054 14.2426 5.11166 14.2368Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+
+            <span class="text-zinc-100 whitespace-nowrap whitespace-no-wrap">
+              Sumário
+            </span>
+          </button>
+
+          <button
+            type="button"
+            class="relative group flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md nav-button cursor-pointer"
+            onclick="setGrayScale()"
+          >
+            <div class="flex items-center justify-center min-w-4 text-zinc-100">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96451 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46928 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM12.75 3.78469C13.2577 3.83102 13.76 3.92519 14.25 4.06594V19.9378C13.76 20.0786 13.2577 20.1727 12.75 20.2191V3.78469ZM15.75 4.65281C16.2845 4.92649 16.7875 5.25784 17.25 5.64094V18.3591C16.7875 18.7422 16.2845 19.0735 15.75 19.3472V4.65281ZM3.75 12C3.75248 9.94257 4.52267 7.96011 5.90984 6.44064C7.29701 4.92117 9.2013 3.97406 11.25 3.78469V20.2153C9.2013 20.0259 7.29701 19.0788 5.90984 17.5594C4.52267 16.0399 3.75248 14.0574 3.75 12ZM18.75 16.7381V7.26188C19.7262 8.64902 20.25 10.3038 20.25 12C20.25 13.6962 19.7262 15.351 18.75 16.7381Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+
+            <span class="text-zinc-100 whitespace-nowrap whitespace-no-wrap">
+              Escala de cinza
+            </span>
+          </button>
+
+          <div>
+            <button
+              type="button"
+              class="relative flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md nav-button cursor-pointer"
+              onclick=""
+            >
+              <div
+                class="flex items-center justify-center min-w-4 text-zinc-100"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_162_446"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="24"
+                    height="24"
+                  >
+                    <rect width="24" height="24" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_162_446)">
+                    <path
+                      d="M12 21C10.77 21 9.6075 20.7638 8.5125 20.2912C7.4175 19.8187 6.46125 19.1737 5.64375 18.3562C4.82625 17.5387 4.18125 16.5825 3.70875 15.4875C3.23625 14.3925 3 13.23 3 12C3 10.755 3.24375 9.585 3.73125 8.49C4.21875 7.395 4.87875 6.4425 5.71125 5.6325C6.54375 4.8225 7.515 4.18125 8.625 3.70875C9.735 3.23625 10.92 3 12.18 3C13.38 3 14.5125 3.20625 15.5775 3.61875C16.6425 4.03125 17.5762 4.60125 18.3787 5.32875C19.1812 6.05625 19.8187 6.91875 20.2912 7.91625C20.7638 8.91375 21 9.99 21 11.145C21 12.87 20.475 14.1938 19.425 15.1163C18.375 16.0387 17.1 16.5 15.6 16.5H13.935C13.8 16.5 13.7063 16.5375 13.6538 16.6125C13.6013 16.6875 13.575 16.77 13.575 16.86C13.575 17.04 13.6875 17.2987 13.9125 17.6363C14.1375 17.9738 14.25 18.36 14.25 18.795C14.25 19.545 14.0437 20.1 13.6312 20.46C13.2188 20.82 12.675 21 12 21ZM7.05 12.9C7.44 12.9 7.7625 12.7725 8.0175 12.5175C8.2725 12.2625 8.4 11.94 8.4 11.55C8.4 11.16 8.2725 10.8375 8.0175 10.5825C7.7625 10.3275 7.44 10.2 7.05 10.2C6.66 10.2 6.3375 10.3275 6.0825 10.5825C5.8275 10.8375 5.7 11.16 5.7 11.55C5.7 11.94 5.8275 12.2625 6.0825 12.5175C6.3375 12.7725 6.66 12.9 7.05 12.9ZM9.75 9.3C10.14 9.3 10.4625 9.1725 10.7175 8.9175C10.9725 8.6625 11.1 8.34 11.1 7.95C11.1 7.56 10.9725 7.2375 10.7175 6.9825C10.4625 6.7275 10.14 6.6 9.75 6.6C9.36 6.6 9.0375 6.7275 8.7825 6.9825C8.5275 7.2375 8.4 7.56 8.4 7.95C8.4 8.34 8.5275 8.6625 8.7825 8.9175C9.0375 9.1725 9.36 9.3 9.75 9.3ZM14.25 9.3C14.64 9.3 14.9625 9.1725 15.2175 8.9175C15.4725 8.6625 15.6 8.34 15.6 7.95C15.6 7.56 15.4725 7.2375 15.2175 6.9825C14.9625 6.7275 14.64 6.6 14.25 6.6C13.86 6.6 13.5375 6.7275 13.2825 6.9825C13.0275 7.2375 12.9 7.56 12.9 7.95C12.9 8.34 13.0275 8.6625 13.2825 8.9175C13.5375 9.1725 13.86 9.3 14.25 9.3ZM16.95 12.9C17.34 12.9 17.6625 12.7725 17.9175 12.5175C18.1725 12.2625 18.3 11.94 18.3 11.55C18.3 11.16 18.1725 10.8375 17.9175 10.5825C17.6625 10.3275 17.34 10.2 16.95 10.2C16.56 10.2 16.2375 10.3275 15.9825 10.5825C15.7275 10.8375 15.6 11.16 15.6 11.55C15.6 11.94 15.7275 12.2625 15.9825 12.5175C16.2375 12.7725 16.56 12.9 16.95 12.9ZM12 19.2C12.135 19.2 12.2437 19.1625 12.3263 19.0875C12.4087 19.0125 12.45 18.915 12.45 18.795C12.45 18.585 12.3375 18.3375 12.1125 18.0525C11.8875 17.7675 11.775 17.34 11.775 16.77C11.775 16.14 11.9925 15.6375 12.4275 15.2625C12.8625 14.8875 13.395 14.7 14.025 14.7H15.6C16.59 14.7 17.4375 14.4113 18.1425 13.8337C18.8475 13.2563 19.2 12.36 19.2 11.145C19.2 9.33 18.5062 7.81875 17.1187 6.61125C15.7312 5.40375 14.085 4.8 12.18 4.8C10.14 4.8 8.4 5.4975 6.96 6.8925C5.52 8.2875 4.8 9.99 4.8 12C4.8 13.995 5.50125 15.6938 6.90375 17.0962C8.30625 18.4987 10.005 19.2 12 19.2Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <span class="text-zinc-100 whitespace-nowrap whitespace-no-wrap">
+                Tema
+              </span>
+
+              <div class="w-full">
+                <input
+                  type="checkbox"
+                  class="absolute top-0 inset-x-0 w-full h-full z-10 cursor-pointer opacity-0"
+                  onchange="expandTopic(this, 'dark-mode-panel')"
+                />
+
+                <div
+                  class="inset-y-0 flex items-center justify-end min-w-4 ml-auto text-zinc-100 duration-100 transition-transform"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.96967 8.46967C4.26256 8.17678 4.73744 8.17678 5.03033 8.46967L12 15.4393L18.9697 8.46967C19.2626 8.17678 19.7374 8.17678 20.0303 8.46967C20.3232 8.76256 20.3232 9.23744 20.0303 9.53033L12.5303 17.0303C12.2374 17.3232 11.7626 17.3232 11.4697 17.0303L3.96967 9.53033C3.67678 9.23744 3.67678 8.76256 3.96967 8.46967Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+
+            <div
+              id="dark-mode-panel"
+              class="h-0 w-full flex-col items-center overflow-hidden duration-700 transition-all topic-panel"
+            >
+              <button
+                id="white-mode"
+                type="button"
+                class="flex flex-row w-full items-start my-1 summary-button"
+                onclick="setDarkMode(false)"
+              >
+                <div class="w-6 mr-5 ml-2 flex items-center justify-center">
+                  <div class="arrow">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_91_456"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="24"
+                      >
+                        <rect width="24" height="24" fill="currentColor" />
+                      </mask>
+                      <g mask="url(#mask0_91_456)">
+                        <path
+                          d="M10 16.9996V6.99963L15 11.9996L10 16.9996Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <span class="">Claro</span>
+              </button>
+
+              <button
+                id="dark-mode"
+                type="button"
+                class="flex flex-row w-full items-start my-1 summary-button"
+                onclick="setDarkMode(true)"
+              >
+                <div class="w-6 mr-5 ml-2 flex items-center justify-center">
+                  <div class="arrow">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_91_456"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="24"
+                      >
+                        <rect width="24" height="24" fill="currentColor" />
+                      </mask>
+                      <g mask="url(#mask0_91_456)">
+                        <path
+                          d="M10 16.9996V6.99963L15 11.9996L10 16.9996Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <span class="">Escuro</span>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="button"
+              class="relative flex flex-row items-center gap-x-2 overflow-x-hidden w-full p-2 rounded-md nav-button cursor-pointer"
+              onclick=""
+            >
+              <div
+                class="flex items-center justify-center min-w-4 text-zinc-100"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.50015 4.5C7.77796 4.5 8.03301 4.65356 8.16299 4.89908L14.913 17.6491C15.1068 18.0152 14.9671 18.469 14.6011 18.6628C14.235 18.8566 13.7811 18.717 13.5873 18.3509L7.50015 6.85295L1.41299 18.3509C1.21919 18.717 0.765311 18.8566 0.399234 18.6628C0.0331573 18.469 -0.106496 18.0152 0.0873091 17.6491L6.83731 4.89908C6.96729 4.65356 7.22234 4.5 7.50015 4.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.5 13.7719C18.1602 13.7719 17.25 14.7023 17.25 15.6469C17.25 16.5914 18.1602 17.5219 19.5 17.5219C20.8398 17.5219 21.75 16.5914 21.75 15.6469C21.75 14.7023 20.8398 13.7719 19.5 13.7719ZM15.75 15.6469C15.75 13.6919 17.5261 12.2719 19.5 12.2719C21.4739 12.2719 23.25 13.6919 23.25 15.6469C23.25 17.6018 21.4739 19.0219 19.5 19.0219C17.5261 19.0219 15.75 17.6018 15.75 15.6469Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.4916 10.3968C18.8504 10.3896 18.232 10.6344 17.7694 11.0785C17.4706 11.3654 16.9959 11.3557 16.709 11.0569C16.4221 10.7581 16.4318 10.2834 16.7306 9.99649C17.4757 9.28111 18.4715 8.88637 19.5042 8.89687C21.4787 8.89888 23.25 10.3148 23.25 12.2719V18C23.25 18.4142 22.9142 18.75 22.5 18.75C22.0858 18.75 21.75 18.4142 21.75 18V12.2719C21.75 11.3241 20.8426 10.3969 19.5 10.3969H19.4916L19.4916 10.3968Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.9873 14.25C1.9873 13.8358 2.32309 13.5 2.7373 13.5H12.2623C12.6765 13.5 13.0123 13.8358 13.0123 14.25C13.0123 14.6642 12.6765 15 12.2623 15H2.7373C2.32309 15 1.9873 14.6642 1.9873 14.25Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <span class="text-zinc-100 whitespace-nowrap whitespace-no-wrap">
+                Tamanho da fonte
+              </span>
+
+              <div class="w-full">
+                <input
+                  type="checkbox"
+                  class="absolute top-0 inset-x-0 w-full h-full z-10 cursor-pointer opacity-0"
+                  onchange="expandTopic(this, 'font-size-panel')"
+                />
+
+                <div
+                  class="inset-y-0 flex items-center justify-end min-w-4 ml-auto text-zinc-100 duration-100 transition-transform"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.96967 8.46967C4.26256 8.17678 4.73744 8.17678 5.03033 8.46967L12 15.4393L18.9697 8.46967C19.2626 8.17678 19.7374 8.17678 20.0303 8.46967C20.3232 8.76256 20.3232 9.23744 20.0303 9.53033L12.5303 17.0303C12.2374 17.3232 11.7626 17.3232 11.4697 17.0303L3.96967 9.53033C3.67678 9.23744 3.67678 8.76256 3.96967 8.46967Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+
+            <div
+              id="font-size-panel"
+              class="h-0 w-full flex-col items-center overflow-hidden duration-700 transition-all topic-panel"
+            >
+              <button
+                id="sm"
+                type="button"
+                class="flex flex-row w-full items-start my-1 summary-button"
+                onclick="changeFontSize(sizes.sm)"
+              >
+                <div class="w-6 mr-5 ml-2 flex items-center justify-center">
+                  <div class="arrow">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_91_456"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="24"
+                      >
+                        <rect width="24" height="24" fill="currentColor" />
+                      </mask>
+                      <g mask="url(#mask0_91_456)">
+                        <path
+                          d="M10 16.9996V6.99963L15 11.9996L10 16.9996Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <span class="">Pequeno</span>
+              </button>
+
+              <button
+                id="md"
+                type="button"
+                class="flex flex-row w-full items-start my-1 summary-button"
+                onclick="changeFontSize(sizes.md)"
+              >
+                <div class="w-6 mr-5 ml-2 flex items-center justify-center">
+                  <div class="arrow">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_91_456"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="24"
+                      >
+                        <rect width="24" height="24" fill="currentColor" />
+                      </mask>
+                      <g mask="url(#mask0_91_456)">
+                        <path
+                          d="M10 16.9996V6.99963L15 11.9996L10 16.9996Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <span class="">Médio</span>
+              </button>
+
+              <button
+                id="lg"
+                type="button"
+                class="flex flex-row w-full items-start my-1 summary-button"
+                onclick="changeFontSize(sizes.lg)"
+              >
+                <div class="w-6 mr-5 ml-2 flex items-center justify-center">
+                  <div class="arrow">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_91_456"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="24"
+                        height="24"
+                      >
+                        <rect width="24" height="24" fill="currentColor" />
+                      </mask>
+                      <g mask="url(#mask0_91_456)">
+                        <path
+                          d="M10 16.9996V6.99963L15 11.9996L10 16.9996Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <span class="">Grande</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Summary -->
+      <div
+        id="summary"
+        class="absolute left-0 top-0 overflow-x-hidden w-0 z-120 bg-surface-200"
+      >
+        <header
+          class="flex flex-row justify-between text-primary-900 bg-gray-200 py-2 px-8"
+        >
+          <button
+            type="button"
+            class="h-full bg-none border-none cursor-pointer"
+            onclick="closeSummary()"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.0303 4.71967C11.3232 5.01256 11.3232 5.48744 11.0303 5.78033L4.81066 12L11.0303 18.2197C11.3232 18.5126 11.3232 18.9874 11.0303 19.2803C10.7374 19.5732 10.2626 19.5732 9.96967 19.2803L3.21967 12.5303C2.92678 12.2374 2.92678 11.7626 3.21967 11.4697L9.96967 4.71967C10.2626 4.42678 10.7374 4.42678 11.0303 4.71967Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+
+          <span>Sumário</span>
+
+          <div></div>
+        </header>
+        <div class="py-8 px-12 flex flex-col">
+          <ul id="summary-items">
+            <!-- elementos do sumário -->
+          </ul>
+        </div>
+      </div>
+      <!-- / Summary -->
     </div>
     <!-- /Menu -->
 
@@ -170,6 +687,7 @@
 
     <!-- Page footer -->
     <div
+      id="footer"
       class="flex items-center justify-center w-full h-20 border-t-2 border-gray-600 bg-transparent dark:bg-gray-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
@@ -231,8 +749,20 @@
 
               hidePageButton();
               createImages();
+              summaryInit(currentPage);
+              sideBarInit();
+              configPs();
+              showHeaderAndFooter(true);
             });
           });
+        }
+      }
+
+      function configPs() {
+        const allPs = document.getElementsByTagName("p");
+
+        for (p of allPs) {
+          p.classList.add("dark:text-gray-900");
         }
       }
 
