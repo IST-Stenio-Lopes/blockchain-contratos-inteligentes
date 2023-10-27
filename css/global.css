@@ -548,7 +548,7 @@
 .bg-gradient-to-b {
   background-image: linear-gradient(
     180deg,
-    var(--primary-overlay-500) 0%,
+    var(--primary-900) 0%,
     var(--primary-overlay-40) 50%,
     var(--primary-overlay-0) 100%
   );
