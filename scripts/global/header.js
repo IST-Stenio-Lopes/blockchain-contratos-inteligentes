@@ -1,4 +1,4 @@
-const capes = [
+var capes = [
   {
     page: 1,
     title: "Visão geral",

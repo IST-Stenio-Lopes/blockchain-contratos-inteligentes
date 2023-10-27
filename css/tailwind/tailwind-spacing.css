@@ -9,6 +9,14 @@
   margin-bottom: 2rem; /* 32px */
 }
 
+.ms-0 {
+  margin-inline-start: 0; /* 24px */
+}
+
+.ms-2 {
+  margin-inline-start: 0.5rem; /* 24px */
+}
+
 .ms-6 {
   margin-inline-start: 1.5rem; /* 24px */
 }
