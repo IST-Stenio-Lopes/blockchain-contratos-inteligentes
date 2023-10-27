@@ -18,7 +18,7 @@ var ueData = {
   lastPageSeen: 1,
   darkMode: false,
   grayScale: false,
-  fontSize: 1,
+  fontSize: 0,
 };
 
 function loadPage() {

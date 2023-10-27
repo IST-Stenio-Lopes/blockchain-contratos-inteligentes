@@ -1,4 +1,4 @@
-const sizes = {
+var sizes = {
   sm: -10,
   md: 0,
   lg: 10,
@@ -38,4 +38,60 @@ function openMenu() {
 
 function closeMenu() {
   document.getElementById("sidebar").classList.remove("w-80");
+}
+
+function setDarkMode(isDarkMode) {
+  const buttons = document
+    .getElementById("dark-mode-panel")
+    .getElementsByTagName("button");
+
+  for (button of buttons) {
+    button.classList.remove("text-primary-900");
+
+    if (
+      (isDarkMode && button.id === "dark-mode") ||
+      (!isDarkMode && button.id === "white-mode")
+    )
+      button.classList.add("text-primary-900");
+  }
+
+  isDarkMode
+    ? document.documentElement.classList.add("dark")
+    : document.documentElement.classList.remove("dark");
+
+  ueData.darkMode = isDarkMode;
+}
+
+function changeFontSize(size) {
+  const sizeBase = 100;
+  const newSize = sizeBase + size;
+
+  document.documentElement.style.fontSize = newSize + "%";
+
+  ueData.fontSize = size;
+
+  const buttons = document
+    .getElementById("font-size-panel")
+    .getElementsByTagName("button");
+
+  for (button of buttons) {
+    button.classList.remove("text-primary-900");
+
+    if (sizes[button.id] == size) button.classList.add("text-primary-900");
+  }
+}
+
+function setGrayScale() {
+  const isGray = !ueData.grayScale;
+
+  isGray
+    ? document.documentElement.classList.add("grayscale")
+    : document.documentElement.classList.remove("grayscale");
+
+  ueData.grayScale = isGray;
+}
+
+function sideBarInit() {
+  changeFontSize(ueData.fontSize);
+  setDarkMode(ueData.darkMode);
 }
