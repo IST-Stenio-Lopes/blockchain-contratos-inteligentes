@@ -134,7 +134,16 @@
 
         <p>O Solidity trabalho com três tipos principais de dados:</p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>Os Tipos de Valor (Value Types);</li>
+          <li>Os Tipos de Referência (Reference Types);</li>
+          <li>Os Tipos de Mapeamento (Mapping Types).</li>
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -433,7 +442,18 @@
           Java:
         </p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>! (negação lógica)</li>
+          <li>&& (conjunção lógica, “e”)</li>
+          <li>|| (disjunção lógica, “ou”)</li>
+          <li>== (igualdade)</li>
+          <li>!= (desigualdade)</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- WarningBanner -->
 
@@ -549,9 +569,18 @@
           formas:
         </p>
 
-        <!-- TODO LIST -->
-        <!-- address e
-address payable (endereço a pagar, em tradução direta). -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li><strong>address</strong> e</li>
+          <li>
+            <strong>address payable</strong> (endereço a pagar, em tradução
+            direta).
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           Ambos representam um endereço da rede Ethereum com 20 bytes de
@@ -636,9 +665,21 @@ address payable (endereço a pagar, em tradução direta). -->
 
         <p>Na linha 3, estamos usando dois membros:</p>
 
-        <!-- TODO LIST -->
-        <!-- balance: nos permite verificar o saldo de Ether em um endereço;
-transfer: concretizar uma transferência da carteira de origem do contrato, para a carteira de destino. -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            <strong>balance</strong> nos permite verificar o saldo de Ether em
+            um endereço;
+          </li>
+          <li>
+            <strong>transfer</strong>: concretizar uma transferência da carteira
+            de origem do contrato, para a carteira de destino.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           Definimos uma operação bem simples: se o saldo (balance) da conta
@@ -763,11 +804,17 @@ transfer: concretizar uma transferência da carteira de origem do contrato, para
 
         <p>Para os arrays de bytes são possíveis usar as operações:</p>
 
-        <!-- TODO LIST -->
-        <!-- + : concatenação;
-        == : comparação de igualdade;
-        != : comparação de diferença.
-        =: atribuição -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>+ : concatenação;</li>
+          <li>== : comparação de igualdade;</li>
+          <li>!= : comparação de diferença.</li>
+          <li>=: atribuição</li>
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -824,10 +871,16 @@ transfer: concretizar uma transferência da carteira de origem do contrato, para
 
         <p>As operações possíveis para Enum são:</p>
 
-        <!-- TODO LIST -->
-        <!-- =: atribuição
-        ==: comparação de igualdade
-        !=: comparação de diferença -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>=: atribuição</li>
+          <li>==: comparação de igualdade</li>
+          <li>!=: comparação de diferença</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18"
@@ -843,10 +896,18 @@ transfer: concretizar uma transferência da carteira de origem do contrato, para
           Veja exemplos:
         </p>
 
-        <!-- TODO LIST -->
-        <!-- Números inteiros: 42, 0x2a (representação de hexadecimal de 42)
-        String de caracteres: “Olá, mundo!”
-        Booleano: true, false. -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Números inteiros: 42, 0x2a (representação de hexadecimal de 42)
+          </li>
+          <li>String de caracteres: “Olá, mundo!”</li>
+          <li>Booleano: true, false.</li>
+          <br />
+        </ol>
+        <!-- / List -->>
 
         <!-- Image content -->
         <div
@@ -936,24 +997,32 @@ transfer: concretizar uma transferência da carteira de origem do contrato, para
           da localização.. As opções de localização são:
         </p>
 
-        <!-- TODO LIST -->
-
-        <!-- Em memória (memory) - usado para armazenar temporariamente os valores
-          passados entre funções. O tempo de vida dos valores é limitado ao
-          período em que a função está sendo utilizada, sendo descartados logo
-          ao término da execução. Este tipo de dado, geralmente, é utilizado
-          para passar valores para funções e só pode ser declarado dentro do
-          escopo das funções. Não é adequado para armazenar valores
-          permanentemente. -->
-        <!--         
-          Em armazenamento (storage) - utilizada quando o tempo de vida dos
-          elementos é limitado ao tempo de vida do contrato, estando acessível
-          enquanto o contrato estiver em execução. Os valores armazenados no
-          'storage' são visíveis para todos os contratos que interagem com o
-          contrato atual e são armazenados na blockchain do Ethereum. É uma
-          localização mais cara do que memory, quando consideramos as taxas de
-          Gas, justamente por possuir um tempo maior de vida, o que também deve
-          ser considerado no desenvolvimento. -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Em memória (memory) - usado para armazenar temporariamente os
+            valores passados entre funções. O tempo de vida dos valores é
+            limitado ao período em que a função está sendo utilizada, sendo
+            descartados logo ao término da execução. Este tipo de dado,
+            geralmente, é utilizado para passar valores para funções e só pode
+            ser declarado dentro do escopo das funções. Não é adequado para
+            armazenar valores permanentemente.
+          </li>
+          <br />
+          <li>
+            Em armazenamento (storage) - utilizada quando o tempo de vida dos
+            elementos é limitado ao tempo de vida do contrato, estando acessível
+            enquanto o contrato estiver em execução. Os valores armazenados no
+            'storage' são visíveis para todos os contratos que interagem com o
+            contrato atual e são armazenados na blockchain do Ethereum. É uma
+            localização mais cara do que memory, quando consideramos as taxas de
+            Gas, justamente por possuir um tempo maior de vida, o que também
+            deve ser considerado no desenvolvimento.
+          </li>
+          <br />
+        </ol>
 
         <p>A seguir, temos uma tabela sintetizando as principais diferenças.</p>
 
@@ -1170,12 +1239,22 @@ transfer: concretizar uma transferência da carteira de origem do contrato, para
 
         <p>Onde:</p>
 
-        <!-- TODO LIST -->
-
-        <!-- tipoDaChave é o tipo de dado da chave. Ela pode ser de qualquer tipo,
-          exceto arrays, structs e outros mappings. tipoDoValor é o tipo de dado
-          do valor cujo os valores não possuem restrições quanto ao tipo.
-          nomeMapping é o nome da variável do mapping. -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            tipoDaChave é o tipo de dado da chave. Ela pode ser de qualquer
+            tipo, exceto arrays, structs e outros mappings.
+          </li>
+          <li>
+            tipoDoValor é o tipo de dado do valor cujo os valores não possuem
+            restrições quanto ao tipo.
+          </li>
+          <li>nomeMapping é o nome da variável do mapping.</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           Observe o mapping que mapeia endereços para saldos em conta abaixo
@@ -1250,20 +1329,33 @@ transfer: concretizar uma transferência da carteira de origem do contrato, para
           Solidity tem três tipos de loop:
         </p>
 
-        <!-- TODO LIST -->
-        <!--         
-          for: comando de repetição que permite executar uma série de instruções
-          várias vezes. Usado, geralmente, quando se conhece o número de vezes
-          que será repetido ou para iterar um array. 
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            for: comando de repetição que permite executar uma série de
+            instruções várias vezes. Usado, geralmente, quando se conhece o
+            número de vezes que será repetido ou para iterar um array.
+          </li>
+          <br />
 
-          while: comando de repetição
-          que permite executar uma série de instruções enquanto uma determinada
-          condição for verdadeira. A condição é avaliada no início de cada
-          iteração do laço. 
+          <li>
+            while: comando de repetição que permite executar uma série de
+            instruções enquanto uma determinada condição for verdadeira. A
+            condição é avaliada no início de cada iteração do laço.
+          </li>
+          <br />
 
-          do-while: funciona de forma muito semelhante ao
-          'while', porém a condição é avaliada ao final da iteração do laço,
-          garantindo que a série de instruções é executada ao menos uma vez. -->
+          <li>
+            do-while: funciona de forma muito semelhante ao 'while', porém a
+            condição é avaliada ao final da iteração do laço, garantindo que a
+            série de instruções é executada ao menos uma vez.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>Na imagem a seguir, podemos observar a sintaxe de cada comendo:</p>
 
@@ -1317,70 +1409,124 @@ transfer: concretizar uma transferência da carteira de origem do contrato, para
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            A linguagem de programação Solidity é estaticamente tipada. Isso
+            significa que os tipos dos dados devem ser previamente
+            especificados.
+          </li>
+          <br />
 
-        <!-- A linguagem de programação Solidity é estaticamente tipada. Isso
-          significa que os tipos dos dados devem ser previamente especificados.
-          
-          Os tipos podem ser classificados em: tipos de Valor (Value Types),
-          tipos de Referência (Reference Types) e tipos de Mapeamento (Mapping
-          Types). 
-          
-          Os tipos de valor ou value types são utilizados para definir o
-          tipo básicos de variáveis. A seguir temos um tabela resumo de alguns
-          tipos -->
+          <li>Os tipos podem ser classificados em: tipos de Valor (Va</li>
+          <br />
+
+          <li>
+            lue Types), tipos de Referência (Reference Types) e tipos de
+            Mapeamento (Mapping Types).
+          </li>
+          <br />
+
+          <li>
+            Os tipos de valor ou value types são utilizados para definir o tipo
+            básicos de variáveis. A seguir temos um tabela resumo de alguns
+            tipos
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- TODO SIMPLETABLEV1 -->
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Os tipos por referência ou references types são aqueles cujo valor é
+            passado entre variáveis através da sua localização de armazenamento.
+          </li>
+          <br />
 
-        <!-- 
-          Os tipos por referência ou references types são aqueles cujo valor é
-          passado entre variáveis através da sua localização de armazenamento.
+          <li>Os tipos por referência usam data location, são elas:</li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                storage: utilizada quando o tempo de vida dos elementos é
+                limitado ao tempo de vida do contrato, estando acessível
+                enquanto o contrato estiver em execução.
+              </li>
+              <li>
+                memory: usado para armazenar temporariamente os valores passados
+                entre funções. O tempo de vida dos valores é limitado ao período
+                em que a função está sendo utilizada
+              </li>
+              <li>
+                calldata: similar a localização memory, com a diferença que o
+                dado não pode ser alterado durante a execução.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
 
-          Os tipos por referência usam data location, são elas: 
-          
-          storage:
-          utilizada quando o tempo de vida dos elementos é limitado ao tempo de
-          vida do contrato, estando acessível enquanto o contrato estiver em
-          execução. 
-
-          memory: usado para armazenar temporariamente os valores
-          passados entre funções. O tempo de vida dos valores é limitado ao
-          período em que a função está sendo utilizada
-          
-          calldata: similar a
-          localização memory, com a diferença que o dado não pode ser alterado
-          durante a execução. -->
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>A seguir, temos um resumo de alguns tipos por referência</p>
 
         <!-- TODO SIMPLETABLEV1 -->
 
-        <!-- TODO LIST -->
-
-        <!-- 
-        Os tipos de mapeamento ou mapping type são um tipo de dado que permite
-        você criar uma estrutura de dados capaz de mapear uma chave para um
-        valor. Um mapping é declarado da seguinte maneira:
-        
-              mapping(tipoDaChave => tipoDoValor) nomeDoMapping
-                   
-        Solidity oferece estruturas de controle que permitem criar lógicas complexas para os contratos. São elas:
-        
-          Estrutura condicional if/else
-          Estrutura de repetição: for, while, do/while
-        -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Os tipos de mapeamento ou mapping type são um tipo de dado que
+            permite você criar uma estrutura de dados capaz de mapear uma chave
+            para um valor. Um mapping é declarado da seguinte maneira:
+          </li>
+        </ol>
+        <!-- / List -->
 
         <!-- FlexCenter -->
         <div class="flex justify-center items-center w-full">
           <span>
-            <span style="color: #0000ff">mapping</span>
-            (tipoDaChave => tipoDoValor) nomeDoMapping
+            <span style="color: #0000ff">mapping</span>(tipoDaChave =>
+            tipoDoValor) nomeDoMapping
           </span>
         </div>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Solidity oferece estruturas de controle que permitem criar lógicas
+            complexas para os contratos. São elas:
+          </li>
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>Estrutura condicional if/else</li>
+              <li>Estrutura de repetição: for, while, do/while</li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 

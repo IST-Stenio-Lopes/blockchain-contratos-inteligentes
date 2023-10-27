@@ -256,7 +256,46 @@
 
         <p>A implementação da figura 04 permite observar que:</p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>A função foi chamada de getEstudanteMatriculado.</li>
+          <br />
+
+          <li>
+            Ela recebe como entrada um parâmetro do tipo address chamado
+            _estudanteAddress. Esse é o endereço que mapeia para o estudante no
+            mapping.
+          </li>
+          <br />
+
+          <li>
+            A visibilidade é definida como public, pois é necessário que a
+            função seja acessada de qualquer lugar externamente.
+          </li>
+          <br />
+
+          <li>
+            É definida do tipo view, pois a função acessa dados, mas não os
+            modifica.
+          </li>
+          <br />
+
+          <li>
+            O retorno é uma variável do tipo Estudante que será armazenada
+            temporariamente na memória.
+          </li>
+          <br />
+
+          <li>
+            A implementação consiste em usar o parâmetro de entrada
+            _estudanteAddress como chave no mapping _estudantesMatriculados para
+            retornar o Estudante mapeado ao endereço.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           Quando o endereço é passado como parâmetro para a função
@@ -266,7 +305,25 @@
           cada um de seu tipo. Neste caso, os valores seriam:
         </p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            nomeEstudante é do tipo string e tem como valor padrão uma string
+            vazia “”,
+          </li>
+          <br />
+
+          <li>idade é do tipo uint e recebe como valor padrão o zero.</li>
+          <br />
+
+          <li>
+            preRequisito é do tipo booleano e o valor padrão estabelecido é
+            false.
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Diante disso, você já deve estar pensando que será necessário
@@ -297,7 +354,21 @@
           alunos que:
         </p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>Tenha o nomeEstudante não vazio;</li>
+          <br />
+
+          <li>Tenha idade maior que zero, e;</li>
+          <br />
+
+          <li>
+            Tenha os preRequisito para o curso, ou seja, valor igual a true.
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Como pode-se observar na imagem a seguir, a função foi chamada
@@ -343,7 +414,40 @@
           validações:
         </p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Na linha 35, é utilizada a função ehNomeValido que verifica se o
+            nome é vazio. Caso o nome seja vazio, uma mensagem é retornada ao
+            usuário.
+          </li>
+          <br />
+
+          <li>
+            Na linha 36, é verificada a validade da idade com a função
+            ehIdadeValida. É verificado se a idade é maior que zero.
+          </li>
+          <br />
+
+          <li>
+            Na linha 37, é verificado se o estudante contém o preRequisito
+            necessário para o curso.
+          </li>
+          <br />
+
+          <li>
+            Na linha 38, há uma verificação um pouco mais complexa. Primeiro, é
+            buscado no mapping, o estudante correspondente ao endereço que
+            iniciou a execução do contrato. Para isso, utiliza-se a função
+            getEstudanteMatriculado(msg.sender). Depois disso, verifica-se a
+            validade do aluno que retornou do mapping. Observe que a exclamação
+            (!) inverte o valor retornado (Se for true, retorna false e vice
+            versa).
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Para entender melhor, imagine o contexto que um estudante está
@@ -539,48 +643,102 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <p>Nesta unidade, os principais conceitos que você estudou foram:</p>
 
-        <!-- TODO LIST -->
-        <p>
-          <!-- O passo a passo da implementação de um contrato inteligente para
-          controle de matrícula de estudantes no curso “Programação para
-          contratos inteligentes do SENAI” utilizando a blockchain Ethereum.
-          
-          O primeiro passo para iniciar o projeto é a criação do arquivo
-          “ContratoCadastroEstudantes.sol”. 
-          
-          É utilizado um struct para definir um Estudante. A estrutura contém os parâmetros nomeEstudante do tipo
-          string , idade do tipo int , preRequisito do tipo bool. (Código na
-          imagem02)
-          
-          Um mapping chamado _estudantesMatriculados recebe como
-          parâmetro um endereço - de onde foi feita a chamada do contrato - e
-          retorna um Estudante.
-          
-          Uma função chamada getEstudanteMatriculado foi
-          implementada com o objetivo de retornar o Estudante a partir do
-          endereço fornecido. Mesmo que não exista um estudante vinculado ao
-          endereço, é retornada uma estrutura Estudante, mas com os valores
-          padrão para os tipos das variáveis Ela possui visibilidade public e é
-          do tipo view. (Código na figura 04).
-          
-          São definidas funções para
-          validar as variáveis da estrutura Estudante, são elas:
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            O passo a passo da implementação de um contrato inteligente para
+            controle de matrícula de estudantes no curso “Programação para
+            contratos inteligentes do SENAI” utilizando a blockchain Ethereum.
+          </li>
+          <br />
 
+          <li>
+            O primeiro passo para iniciar o projeto é a criação do arquivo
+            “ContratoCadastroEstudantes.sol”.
+          </li>
+          <br />
 
-            ehIdadeValida(uint _idadeEstudante)
-            ehNomeValido(string memory_nomeEstudante)
-          
-          Foi implementada uma função para verificar a validade
-          do Estudante. Para isso, foi utilizado a comparação lógica && entre
-          ehIdadeValidade, ehNomeValido e preRequisito. Por fim, a principal
-          função matricularEstudante foi criada. Ela recebe como parâmetros
-          string nomeEstudante, uint idade e um booleando preReqquisito.
-          
-            O primeiro passo da implementação é validar os dados utilizando require.
-            Logo após, um estudante é criado com os valores dos parâmetros.
-            Então,o estudante criado é validado. 
-            E, finalmente, inserido no mapping (associado ao seu endereço)como um estudante matriculado. -->
-        </p>
+          <li>
+            É utilizado um struct para definir um Estudante. A estrutura contém
+            os parâmetros nomeEstudante do tipo string , idade do tipo int ,
+            preRequisito do tipo bool. (Código na imagem02)
+          </li>
+          <br />
+
+          <li>
+            Um mapping chamado _estudantesMatriculados recebe como parâmetro um
+            endereço - de onde foi feita a chamada do contrato - e retorna um
+            Estudante.
+          </li>
+          <br />
+
+          <li>
+            Uma função chamada getEstudanteMatriculado foi implementada com o
+            objetivo de retornar o Estudante a partir do endereço fornecido.
+            Mesmo que não exista um estudante vinculado ao endereço, é retornada
+            uma estrutura Estudante, mas com os valores padrão para os tipos das
+            variáveis Ela possui visibilidade public e é do tipo view. (Código
+            na figura 04).
+          </li>
+          <br />
+
+          <li>
+            São definidas funções para validar as variáveis da estrutura
+            Estudante, são elas:
+          </li>
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>ehIdadeValida(uint _idadeEstudante)</li>
+              <li>ehNomeValido(string memory _nomeEstudante)</li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            Foi implementada uma função para verificar a validade do Estudante.
+            Para isso, foi utilizado a comparação lógica && entre
+            ehIdadeValidade, ehNomeValido e preRequisito.
+          </li>
+          <br />
+
+          <li>
+            Por fim, a principal função matricularEstudante foi criada. Ela
+            recebe como parâmetros string nomeEstudante, uint idade e um
+            booleando preReqquisito.
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                O primeiro passo da implementação é validar os dados utilizando
+                require.
+              </li>
+              <br />
+              <li>
+                Logo após, um estudante é criado com os valores dos parâmetros.
+              </li>
+              <br />
+              <li>Então,o estudante criado é validado.</li>
+              <br />
+              <li>
+                E, finalmente, inserido no mapping (associado ao seu
+                endereço)como um estudante matriculado.
+              </li>
+              <br />
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 

@@ -409,18 +409,35 @@
           dados:
         </p>
 
-        <!-- TODO LIST -->
-        "ID da transação (hash): Identificador único da transação. É obtido por
-        meio de uma função da hash que recebe como entrada os demais dados da
-        transação e gera, dela, um identificador único (ID).", "Entrada (Input):
-        Endereço de quem está enviando recursos. Normalmente, é uma referência a
-        algum output de transação anterior, na qual o usuário recebeu uma certa
-        quantia. É possível que uma transação faça referência a mais do que uma
-        entrada.", "Saídas (Output): Endereço do(s) destinatário(s) que irão
-        receber o objeto digital.", "Quantidade (amount): A quantia de objeto
-        digital a ser transferido.", "Marcação do Tempo (timestamp): Registro de
-        data e horário da transação.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            ID da transação (hash): Identificador único da transação. É obtido
+            por meio de uma função da hash que recebe como entrada os demais
+            dados da transação e gera, dela, um identificador único (ID).
+          </li>
+          <li>
+            Entrada (Input): Endereço de quem está enviando recursos.
+            Normalmente, é uma referência a algum output de transação anterior,
+            na qual o usuário recebeu uma certa quantia. É possível que uma
+            transação faça referência a mais do que uma entrada.
+          </li>
+          <li>
+            Saídas (Output): Endereço do(s) destinatário(s) que irão receber o
+            objeto digital.
+          </li>
+          <li>
+            Quantidade (amount): A quantia de objeto digital a ser transferido.
+          </li>
+          <li>
+            Marcação do Tempo (timestamp): Registro de data e horário da
+            transação.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>A imagem a seguir apresenta como funciona com dados reais:</p>
 
@@ -538,16 +555,29 @@
           ao sistema bancário, temos:
         </p>
 
-        <!-- TODO LIST -->
-        "A chave privada é como a senha de sua conta bancária. Com ela, é
-        possível realizar transações das suas criptomoedas, logo deve ser
-        guardada em local seguro.", "A chave pública é como sua conta bancária.
-        Suas criptomoedas ficam guardadas nela, e só podem ser liberadas com a
-        chave privada. Como é pública, qualquer um pode ver, mas ninguém pode
-        movimentar os fundos utilizando ela.", "O endereço é como o número da
-        sua conta no banco ou sua chave PIX. É esse endereço, derivado da chave
-        pública, que deve ser informado em transferências de criptomoedas. ",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            A chave privada é como a senha de sua conta bancária. Com ela, é
+            possível realizar transações das suas criptomoedas, logo deve ser
+            guardada em local seguro.
+          </li>
+          <li>
+            A chave pública é como sua conta bancária. Suas criptomoedas ficam
+            guardadas nela, e só podem ser liberadas com a chave privada. Como é
+            pública, qualquer um pode ver, mas ninguém pode movimentar os fundos
+            utilizando ela.
+          </li>
+          <li>
+            O endereço é como o número da sua conta no banco ou sua chave PIX. É
+            esse endereço, derivado da chave pública, que deve ser informado em
+            transferências de criptomoedas.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           Para produzir um endereço válido na rede, inicialmente geramos a chave
@@ -670,33 +700,66 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
 
-        <!-- TODO LIST -->
-        "Os blocos são formados por hashes que são ligados ao bloco anterior,
-        funcionando como links com os blocos anteriores até o bloco inicial,
-        também conhecido como bloco gênesis (o bloco que deu origem à cadeia).",
-        "O bloco inicial, conhecido como bloco gênesis, não possui registro de
-        transações de outros blocos; por isso, o campo de hash do bloco anterior
-        normalmente apresenta valor 0 nesse campo.", "Um bloco pode ser
-        entendido como um conjunto de transações ou informações validadas.",
-        "Além da lista de transações, um bloco possui as seguintes partes:
-        número do bloco, hash do bloco anterior, dificuldade alvo, marcação do
-        tempo, valor nonce e árvore de Merkle.", "Qualquer modificação no bloco
-        irá modificar a hash que o representa e resultará numa bifurcação do
-        encadeamento dos blocos, evidenciando uma alteração na cadeia.", "Os
-        algoritmos de hash são conhecidos por serem unidirecionais (em inglês,
-        one-way). Ou seja, não é possível descobrir os dados originais a partir
-        de uma hash. Por isso, as hashes na Blockchain garantem a
-        confidencialidade dos dados originais.", "As transações definem uma
-        quantidade de criptomoedas que serão transferidas de um endereço de
-        origem para um endereço destino em um determinado tempo (data e hora).
-        Associada a cada transação existe um id.", "As transações estão
-        relacionadas às assinaturas digitais que proporcionam segurança e
-        anonimato.", "As chaves públicas e privadas geram as assinaturas
-        digitais dos negociadores.", "A chave privada funciona como uma senha,
-        pois é uma sequência alfanumérica que permite transacionar
-        criptomoedas.", "No processo de transação, a mensagem só pode ser
-        descriptografada com a chave privada do destinatário.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Os blocos são formados por hashes que são ligados ao bloco anterior,
+            funcionando como links com os blocos anteriores até o bloco inicial,
+            também conhecido como bloco gênesis (o bloco que deu origem à
+            cadeia).
+          </li>
+          <li>
+            O bloco inicial, conhecido como bloco gênesis, não possui registro
+            de transações de outros blocos; por isso, o campo de hash do bloco
+            anterior normalmente apresenta valor 0 nesse campo.
+          </li>
+          <li>
+            Um bloco pode ser entendido como um conjunto de transações ou
+            informações validadas.
+          </li>
+          <li>
+            Além da lista de transações, um bloco possui as seguintes partes:
+            número do bloco, hash do bloco anterior, dificuldade alvo, marcação
+            do tempo, valor nonce e árvore de Merkle.
+          </li>
+          <li>
+            Qualquer modificação no bloco irá modificar a hash que o representa
+            e resultará numa bifurcação do encadeamento dos blocos, evidenciando
+            uma alteração na cadeia.
+          </li>
+          <li>
+            Os algoritmos de hash são conhecidos por serem unidirecionais (em
+            inglês, one-way). Ou seja, não é possível descobrir os dados
+            originais a partir de uma hash. Por isso, as hashes na Blockchain
+            garantem a confidencialidade dos dados originais.
+          </li>
+          <li>
+            As transações definem uma quantidade de criptomoedas que serão
+            transferidas de um endereço de origem para um endereço destino em um
+            determinado tempo (data e hora). Associada a cada transação existe
+            um id.
+          </li>
+          <li>
+            As transações estão relacionadas às assinaturas digitais que
+            proporcionam segurança e anonimato.
+          </li>
+          <li>
+            As chaves públicas e privadas geram as assinaturas digitais dos
+            negociadores.
+          </li>
+          <li>
+            A chave privada funciona como uma senha, pois é uma sequência
+            alfanumérica que permite transacionar criptomoedas.
+          </li>
+          <li>
+            No processo de transação, a mensagem só pode ser descriptografada
+            com a chave privada do destinatário.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
 
       <!-- VideoBorderFrame isSolution -->

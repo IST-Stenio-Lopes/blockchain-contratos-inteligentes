@@ -96,6 +96,25 @@
         </div>
       </div>
       <!-- /VideoBorderFrame Problematizando -->
+    </div>
+  </div>
+
+  <!-- Section title primary -->
+  <div class="w-full">
+    <div
+      class="flex items-center justify-center w-full h-16 section-title-content-primary"
+    >
+      <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
+        <div class="col-end-11 col-start-3 space-y-4">
+          <h1 class="text-primary-400 text-2xl font-bold">Ethereum</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full items-center">
+    <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
         <p>
@@ -140,7 +159,7 @@
 
         <!-- / WarningBanner -->
 
-        <!-- TODO QUESTÃO -->
+        <!-- TODO QUESTÃO - Questão 1 -->
 
         <p>
           Ela também oferece mecanismos como DeFi (Decentralized Finance) e NFTs
@@ -213,7 +232,7 @@
           participam da rede Ethereum mantêm uma cópia de estado (EVM).
         </p>
 
-        <!-- TODO QUESTÃO -->
+        <!-- TODO QUESTÃO - Questão 3 -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -284,7 +303,7 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO QUESTÃO -->
+        <!-- TODO QUESTÃO - Questão 4-->
 
         <p>
           Enquanto algumas aplicações da tecnologia blockchain são Turing
@@ -353,11 +372,21 @@
         <p>Ethereum tem dois tipos de contas:</p>
 
         <!-- TODO LIST -->
-        "<strong>Propriedade externa:</strong>controlada por qualquer pessoas
-        com as chaves privadas e não tem código relacionado a ela.", "<strong
-          >Contrato: </strong
-        >um contrato inteligente implantado na rede, controlado por código.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            <strong>Propriedade externa: </strong> controlada por qualquer
+            pessoas com as chaves privadas e não tem código relacionado a ela.
+          </li>
+          <li>
+            <strong>Contrato:</strong> um contrato inteligente implantado na
+            rede, controlado por código.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- Image content -->
         <div
@@ -369,12 +398,17 @@
 
         <p>Ambos os tipos têm capacidade para:</p>
 
-        <!-- TODO LIST -->
-        "Receber, armazenar e enviar ETH/tokens", "Interagir com contratos
-        inteligentes",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>Receber, armazenar e enviar ETH/tokens</li>
+          <li>Interagir com contratos inteligentes</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
-        <!-- TODO QUESTÃO -->
+        <!-- TODO QUESTÃO - Questão 6 -->
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18"
         >
@@ -394,21 +428,34 @@
           mesmos campos. São eles:
         </p>
 
-        <!-- TODO LIST -->
-        "<strong>Nonce: </strong>um contador que indica o número de transações
-        enviadas pela conta de propriedade externa e o número de contratos
-        criados por uma conta contratual. Tem a função de garantir que as
-        transações sejam processadas uma única vez.", "<strong>Balance: </strong
-        >o saldo em Wei (unidade de ETH) da conta.", "<strong>CodeHash: </strong
-        >hash numérico que se refere ao código com as funcionalidades (contrato)
-        para uma conta contratual. Para contas de propriedade externa, o campo
-        codeHash é o hash de uma cadeia caracteres vazia.", "<strong
-          >StorageRoot: </strong
-        >é um hash do nó raiz de uma árvore de Merkle que codifica o conteúdo de
-        armazenamento da conta. Essa árvore codifica o hash do conteúdo de
-        armazenamento desta conta e está vazia por padrão.",
-
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            <strong>Nonce: </strong>um contador que indica o número de
+            transações enviadas pela conta de propriedade externa e o número de
+            contratos criados por uma conta contratual. Tem a função de garantir
+            que as transações sejam processadas uma única vez.
+          </li>
+          <li>
+            <strong>Balance: </strong>o saldo em Wei (unidade de ETH) da conta.
+          </li>
+          <li>
+            <strong>CodeHash: </strong>hash numérico que se refere ao código com
+            as funcionalidades (contrato) para uma conta contratual. Para contas
+            de propriedade externa, o campo codeHash é o hash de uma cadeia
+            caracteres vazia.
+          </li>
+          <li>
+            <strong>StorageRoot: </strong>é um hash do nó raiz de uma árvore de
+            Merkle que codifica o conteúdo de armazenamento da conta. Essa
+            árvore codifica o hash do conteúdo de armazenamento desta conta e
+            está vazia por padrão.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18"
@@ -446,15 +493,27 @@
 
         <p>Abaixo está uma imagem de como é a tela principal do Metamask.</p>
 
-        <!-- TODO LIST -->
-        "Você pode ver o endereço público da sua carteira logo abaixo de
-        'Account 1'. É através deste endereço que você pode receber
-        criptomoedas.", "Em 'Comprar' podemos utilizar dinheiro fiduciário para
-        comprar cripto.", "Em 'Enviar' podemos mandar moedas para outras
-        carteiras. Basta saber o endereço público da carteira de destino e se a
-        rede é compatível.", "Em 'Trocar' conseguimos trocar criptomoedas por
-        outras.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Você pode ver o endereço público da sua carteira logo abaixo de
+            'Account 1'. É através deste endereço que você pode receber
+            criptomoedas.
+          </li>
+          <li>
+            Em 'Comprar' podemos utilizar dinheiro fiduciário para comprar
+            cripto.
+          </li>
+          <li>
+            Em 'Enviar' podemos mandar moedas para outras carteiras. Basta saber
+            o endereço público da carteira de destino e se a rede é compatível.
+          </li>
+          <li>Em 'Trocar' conseguimos trocar criptomoedas por outras.</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- Image content -->
         <div
@@ -517,42 +576,100 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
 
-        <!-- TODO LIST -->
-        "Ethereum é uma plataforma descentralizada que utiliza uma blockchain
-        pública. Ela tem uma criptomoeda nativa chamada ether (ETH).", "Além de
-        transações com criptomoedas, ela permite implementar seu próprio código
-        e interagir com outros aplicativos na rede blockchain.", "Esses códigos
-        são chamados de <strong>contratos inteligentes.</strong>", "A Ethereum
-        Virtual Machine (EVM) é uma máquina virtual, ou seja, ela simula um
-        ambiente computacional. A EVM é a base de toda blockchain Ethereum, pois
-        proporciona a operação e implantação dos contratos inteligentes.", "Um
-        dispositivo ou linguagem de programação é considerado Turing Completo
-        quando ele pode replicar uma Máquina de Turing executando qualquer
-        programa ou resolvendo qualquer problema que a Máquina de Turing possa
-        executar ou resolver. Por outro lado, se um dispositivo ou linguagem de
-        programação não for capaz de fazê-lo, então é chamado de Turing
-        Incompleto.", "Enquanto algumas aplicações da tecnologia blockchain são
-        Turing Completas, caso do Ethereum, outras são Turing Incompletas, caso
-        do Bitcoin.", "Ethereum tem dois tipos de contas:",
-        <!-- / TODO LIST -->
-        <!--  TODO LIST -->
-        "<strong>Propriedade externa:</strong> controlada por qualquer pessoas
-        com as chaves privadas e não tem código relacionado a ela.", "<strong
-          >Contrato: um contrato</strong
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
         >
-        inteligente implantado na rede, controlado por código.",
-        <!-- / TODO LIST -->
-        <!-- TODO LIST -->
-        "Ambos os tipos têm capacidade para:",
-        <!-- / TODO LIST -->
-        <!--  TODO LIST -->
-        "Receber, armazenar e enviar ETH/tokens", "Interagir com contratos
-        inteligentes.", "Os campos das contas Ethereum são: nonce, balance,
-        codeHash e StorageRoot.", "<strong>Metamask</strong> é uma hot wallet.
-        Nela podemos guardar criptomoedas e tokens do Ethereum.", "O Metamask
-        pode ser instalado em: www.metamask.io/download", "A criação de conta é
-        prática, rápida e anônima.",
-        <!-- / TODO LIST -->
+          <li>
+            Ethereum é uma plataforma descentralizada que utiliza uma blockchain
+            pública. Ela tem uma criptomoeda nativa chamada ether (ETH).
+          </li>
+          <br />
+          <li>
+            Além de transações com criptomoedas, ela permite implementar seu
+            próprio código e interagir com outros aplicativos na rede
+            blockchain.
+          </li>
+          <br />
+          <li>
+            Esses códigos são chamados de
+            <strong>contratos inteligentes.</strong>
+          </li>
+          <br />
+          <li>
+            A Ethereum Virtual Machine (EVM) é uma máquina virtual, ou seja, ela
+            simula um ambiente computacional. A EVM é a base de toda blockchain
+            Ethereum, pois proporciona a operação e implantação dos contratos
+            inteligentes.
+          </li>
+          <br />
+          <li>
+            Um dispositivo ou linguagem de programação é considerado Turing
+            Completo quando ele pode replicar uma Máquina de Turing executando
+            qualquer programa ou resolvendo qualquer problema que a Máquina de
+            Turing possa executar ou resolver. Por outro lado, se um dispositivo
+            ou linguagem de programação não for capaz de fazê-lo, então é
+            chamado de Turing Incompleto.
+          </li>
+          <br />
+          <li>
+            Enquanto algumas aplicações da tecnologia blockchain são Turing
+            Completas, caso do Ethereum, outras são Turing Incompletas, caso do
+            Bitcoin.
+          </li>
+          <br />
+          <li>Ethereum tem dois tipos de contas:</li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                <strong>Propriedade externa:</strong> controlada por qualquer
+                pessoas com as chaves privadas e não tem código relacionado a
+                ela.
+              </li>
+              <li>
+                <strong>Contrato: um contrato</strong> inteligente implantado na
+                rede, controlado por código.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+
+          <li>Ambos os tipos têm capacidade para:</li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>Receber, armazenar e enviar ETH/tokens</li>
+              <br />
+              <li>Interagir com contratos inteligentes.</li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+
+          <li>
+            Os campos das contas Ethereum são: nonce, balance, codeHash e
+            StorageRoot.
+          </li>
+          <br />
+          <li>
+            <strong>Metamask</strong> é uma hot wallet. Nela podemos guardar
+            criptomoedas e tokens do Ethereum.
+          </li>
+          <br />
+          <li>O Metamask pode ser instalado em: www.metamask.io/download</li>
+          <br />
+          <li>A criação de conta é prática, rápida e anônima.</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- TODO QUESTÃO -->
       </div>

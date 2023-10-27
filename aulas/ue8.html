@@ -497,8 +497,16 @@
           Retomando o exemplo, após a criação do arquivo “OlaMundo.sol” é
           necessário inserir duas instruções no início do programa. São elas:
         </p>
-
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>A licença do seu código-fonte, e</li>
+          <li>
+            A versão do compilador Solidity necessária para compilar o contrato
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           É necessário especificar a versão do compilador porque a linguagem
@@ -902,11 +910,131 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Um contrato inteligente ou smart contract é um programa executando
+            no ecossistema Ethereum.
+          </li>
+          <br />
+          <li>
+            Existem algumas linguagens de programação que são utilizadas para o
+            desenvolvimento de contratos inteligentes, como o Solidity.
+          </li>
+          <br />
+          <li>
+            Durante a fase de desenvolvimento dos contratos inteligentes, você
+            pode utilizar um ambiente de teste para não gastar dinheiro real com
+            o gás das transações da rede Ethereum.
+          </li>
+          <br />
+          <li>
+            O Remix é uma IDE online e open source, escrita em JavaScript. Ela é
+            composta por módulos para desenvolvimento, depuração e publicação
+            dos contratos inteligentes em Solidity.(Disponível em:
+            https://remix-project.org )
+          </li>
+          <br />
+          <li>
+            O Solidity é uma linguagem de programação de alto nível utilizada
+            para programação de contratos inteligentes. Tem como característica
+            ser orientada a objetos e estáticamente tipada. (Documentação
+            disponível em: https://docs.soliditylang.org/en/v0.8.17/ )
+          </li>
+          <br />
+          <li>Um dos objetivos da unidade foi construir o código a seguir:</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
-        <!-- TODO IMAGECONTENT -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE8"
+          index="9"
+        ></div>
+        <!-- / Image content -->
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            As duas primeiras informações inseridas no código do contrato são:
+          </li>
+          <br />
+
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                A licença do seu código-fonte, e as transações, suas informações
+                e os dados de quem transaciona.
+              </li>
+              <li>
+                A versão do compilador Solidity necessária para compilar o
+                contrato.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            A definição do contrato é feita usando a palavra reservada contract
+            e chaves para delimitar o escopo.
+          </li>
+          <br />
+          <li>
+            Na declaração da variável deve-se definir seu tipo e, depois, o
+            nome.
+          </li>
+          <br />
+          <li>
+            O construtor funciona como uma função especial que é chamada sempre
+            que uma nova instância do objeto contrato for criada. Nele podemos
+            definir inicialização do valor das variáveis do objeto, entre
+            outras. Em Solidity, usa-se a palavra reservada constructor.
+          </li>
+          <br />
+          <li>
+            Inicia-se a função com a palavra reservada function e coloca-se o
+            nome da função e seus parâmetros entre parênteses.
+          </li>
+          <br />
+          <li>
+            Logo após, é definido o modificador de visibilidade de acesso. Neste
+            caso, foi definido public.
+          </li>
+          <br />
+          <li>
+            Na sequência é definido o tipo da função, neste caso é um função do
+            tipo view, pois é utilizada para visualizar uma informação.
+          </li>
+          <br />
+          <li>
+            Por fim, é definido o tipo de retorno usando a palavra reservada
+            returns, neste caso o retorno é tipo string memory.
+          </li>
+          <br />
+          <li>
+            No escopo da função, a única instrução que ela executa é retornar o
+            valor da variável “mensagem” utilizando a palavra reservada return.
+          </li>
+          <br />
+          <li>Após a implementação do contrato deve-se compilar o código.</li>
+          <br />
+          <li>
+            Depois da compilação é feito o deploy (implantação) do contrato
+            inteligente. A implantação do contrato é uma transação e envolve o
+            pagamento de Gás, por isso é feito em ambiente de teste.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 

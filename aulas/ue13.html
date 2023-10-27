@@ -190,20 +190,51 @@
 
         <p>Essa função faz o seguinte:</p>
 
-        <!-- TODO LIST -->
-        'Na linha 15, ela verifica se o nome do cliente é válido usando a função
-        "ehNomeClienteValido". Se não for válido, ele levantará uma mensagem de
-        erro que diz: "O nome deve ser informado"', 'Na linha 16, ela verifica
-        se o cliente já está registrado no contrato usando a função
-        "ehClienteValido". Se o cliente já estiver registrado, ele levantará uma
-        mensagem de erro que diz: "Cliente já inscrito".', "Na linha 17, ela
-        cria um novo cliente usando a struct Cliente no espaço memory.", "Na
-        linha 18 e 19, são atribuídos os valores de _nomeCliente e 0 para os
-        campos nomeCliente e saldoCliente, respectivamente.", 'Na linha 20, ela
-        afirma que o cliente é válido usando a função "ehClienteValido".', "Na
-        linha 21, o cliente é adicionado ao _clienteInscrito associado ao
-        msg.sender.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Na linha 15, ela verifica se o nome do cliente é válido usando a
+            função "ehNomeClienteValido". Se não for válido, ele levantará uma
+            mensagem de erro que diz: "O nome deve ser informado"
+          </li>
+          <br />
+
+          <li>
+            Na linha 16, ela verifica se o cliente já está registrado no
+            contrato usando a função "ehClienteValido". Se o cliente já estiver
+            registrado, ele levantará uma mensagem de erro que diz: "Cliente já
+            inscrito".
+          </li>
+          <br />
+
+          <li>
+            Na linha 17, ela cria um novo cliente usando a struct Cliente no
+            espaço memory.
+          </li>
+          <br />
+
+          <li>
+            Na linha 18 e 19, são atribuídos os valores de _nomeCliente e 0 para
+            os campos nomeCliente e saldoCliente, respectivamente.
+          </li>
+          <br />
+
+          <li>
+            Na linha 20, ela afirma que o cliente é válido usando a função
+            "ehClienteValido".
+          </li>
+          <br />
+
+          <li>
+            Na linha 21, o cliente é adicionado ao _clienteInscrito associado ao
+            msg.sender.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           A seguir temos a função que retorna um cliente inscrito a partir do
@@ -307,20 +338,42 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO LIST -->
-        'Linha 7: "event ProdutoTrocado" - Declaração de um evento chamado
-        "ProdutoTrocado"', 'Linha 8: "address indexed_cliente," - Declaração de
-        um parâmetro do tipo "address" chamado "indexed_cliente", e está sendo
-        usado "indexed" que é um modificador para indicar que o endereço será
-        indexado, o que significa que é possível buscar eventos com base no
-        endereço específico do cliente.', 'Linha 9: "uint _indiceProduto," -
-        Declaração de um parâmetro do tipo "uint" chamado "_indiceProduto", o
-        qual é um unsigned integer, ou seja, um número inteiro sem sinal. Esse
-        parâmetro representa o índice do produto que está sendo trocado.',
-        'Linha 10: "uint256 _dataEHora" - Declaração de um parâmetro do tipo
-        "uint256" chamado "_dataEHora". Ele é também um unsigned integer, que
-        representa data e hora da transação.',
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Linha 7: "event ProdutoTrocado" - Declaração de um evento chamado
+            "ProdutoTrocado"
+          </li>
+          <br />
+
+          <li>
+            Linha 8: "address indexed_cliente," - Declaração de um parâmetro do
+            tipo "address" chamado "indexed_cliente", e está sendo usado
+            "indexed" que é um modificador para indicar que o endereço será
+            indexado, o que significa que é possível buscar eventos com base no
+            endereço específico do cliente.
+          </li>
+          <br />
+
+          <li>
+            Linha 9: "uint _indiceProduto," - Declaração de um parâmetro do tipo
+            "uint" chamado "_indiceProduto", o qual é um unsigned integer, ou
+            seja, um número inteiro sem sinal. Esse parâmetro representa o
+            índice do produto que está sendo trocado.
+          </li>
+          <br />
+
+          <li>
+            Linha 10: "uint256 _dataEHora" - Declaração de um parâmetro do tipo
+            "uint256" chamado "_dataEHora". Ele é também um unsigned integer,
+            que representa data e hora da transação.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- TODO QUESTÃO - Questão 1 -->
 
@@ -356,26 +409,58 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO LIST -->
-        'Linha 13: "struct Produto{" - Declaração da estrutura chamada
-        "Produto"', 'Linha 14: "string nomeProduto;" - Declaração de uma
-        variável do tipo "string" chamada "nomeProduto" dentro do struct
-        Produto. Essa variável armazena o nome do produto.', 'Linha 15: "uint
-        Pontosproduto;" - Declaração de uma variável do tipo "uint" chamada
-        "Pontosproduto" dentro do struct Produto. Essa variável armazena a
-        quantidade de pontos necessária para trocar por esse produto.', 'Linha
-        16: "uint quantidadeTrocada;" - Declaração de uma variável do tipo
-        "uint" chamada "quantidadeTrocada" dentro do struct Produto. Essa
-        variável armazena a quantidade de vezes que esse produto foi trocado.',
-        'Linha 19: "address private _enderecoProprietario;" - Declaração de uma
-        variável do tipo "address" chamada "_enderecoProprietario" que é
-        privada, ela armazena o endereço do proprietário do contrato. Essa
-        variável será útil mais à frente, quando formos definir algumas
-        permissões.', 'Linha 20: "Produto[] public produtos;" - Declaração de um
-        array do tipo "Produto" chamado "produtos" é público, ele é utilizado
-        para armazenar informações sobre todos os produtos disponíveis para
-        troca.',
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Linha 13: "struct Produto{" - Declaração da estrutura chamada
+            "Produto"
+          </li>
+          <br />
+
+          <li>
+            Linha 14: "string nomeProduto;" - Declaração de uma variável do tipo
+            "string" chamada "nomeProduto" dentro do struct Produto. Essa
+            variável armazena o nome do produto.
+          </li>
+          <br />
+
+          <li>
+            Linha 15: "uint Pontosproduto;" - Declaração de uma variável do tipo
+            "uint" chamada "Pontosproduto" dentro do struct Produto. Essa
+            variável armazena a quantidade de pontos necessária para trocar por
+            esse produto.
+          </li>
+          <br />
+
+          <li>
+            Linha 16: "uint quantidadeTrocada;" - Declaração de uma variável do
+            tipo "uint" chamada "quantidadeTrocada" dentro do struct Produto.
+            Essa variável armazena a quantidade de vezes que esse produto foi
+            trocado.
+          </li>
+          <br />
+
+          <li>
+            Linha 19: "address private _enderecoProprietario;" - Declaração de
+            uma variável do tipo "address" chamada "_enderecoProprietario" que é
+            privada, ela armazena o endereço do proprietário do contrato. Essa
+            variável será útil mais à frente, quando formos definir algumas
+            permissões.
+          </li>
+          <br />
+
+          <li>
+            Linha 20: "Produto[] public produtos;" - Declaração de um array do
+            tipo "Produto" chamado "produtos" é público, ele é utilizado para
+            armazenar informações sobre todos os produtos disponíveis para
+            troca.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           Para fins didáticos, vamos criar Produtos fictícios e adicionar à
@@ -691,23 +776,62 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <!-- TODO LIST -->
-        "O problema proposto nesta unidade é um programa de fidelidade de uma
-        empresa de cartão de crédito. O objetivo é desenvolver um contrato
-        inteligente que permita aos clientes acumular pontos para trocar por
-        descontos, produtos e milhas.", 'O contrato "ContratoEmpresaCartao"
-        implementa um programa de fidelidade de uma empresa de cartão de
-        crédito.', "O contrato permite a inscrição de novos clientes, pagamento
-        e troca de pontos por produtos.", 'O contrato utiliza a estrutura
-        "struct" para definir os produtos e os clientes inscritos.', 'O contrato
-        utiliza a diretiva "require" para validar as entradas e as condições de
-        execução.', 'O contrato utiliza a diretiva "modifier" para definir uma
-        função que só pode ser executada pelo proprietário.', 'O contrato
-        utiliza o "event" e "logging" para registrar a ocorrência de uma troca
-        de produtos.', 'O contrato utiliza o "mapping" para armazenar os
-        clientes inscritos e o saldo de cada cliente.',
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            O problema proposto nesta unidade é um programa de fidelidade de uma
+            empresa de cartão de crédito. O objetivo é desenvolver um contrato
+            inteligente que permita aos clientes acumular pontos para trocar por
+            descontos, produtos e milhas.
+          </li>
+          <br />
 
-        <!-- /TODO LIST -->
+          <li>
+            O contrato "ContratoEmpresaCartao" implementa um programa de
+            fidelidade de uma empresa de cartão de crédito.
+          </li>
+          <br />
+
+          <li>
+            O contrato permite a inscrição de novos clientes, pagamento e troca
+            de pontos por produtos.
+          </li>
+          <br />
+
+          <li>
+            O contrato utiliza a estrutura "struct" para definir os produtos e
+            os clientes inscritos.
+          </li>
+          <br />
+
+          <li>
+            O contrato utiliza a diretiva "require" para validar as entradas e
+            as condições de execução.
+          </li>
+          <br />
+
+          <li>
+            O contrato utiliza a diretiva "modifier" para definir uma função que
+            só pode ser executada pelo proprietário.
+          </li>
+          <br />
+
+          <li>
+            O contrato utiliza o "event" e "logging" para registrar a ocorrência
+            de uma troca de produtos.
+          </li>
+          <br />
+
+          <li>
+            O contrato utiliza o "mapping" para armazenar os clientes inscritos
+            e o saldo de cada cliente.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 
