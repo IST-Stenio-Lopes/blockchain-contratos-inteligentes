@@ -219,7 +219,58 @@
           Explicação do código
         </h2>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>contract CoinDemo { ... }: Este é o contrato em si.</li>
+          <br />
+
+          <li>string public name;: O nome da moeda virtual.</li>
+          <br />
+
+          <li>string public symbol;: O símbolo da moeda virtual.</li>
+          <br />
+
+          <li>
+            uint256 public totalSupply;: O total de moedas virtuais disponíveis.
+          </li>
+          <br />
+
+          <li>
+            mapping(address => uint256) public balanceOf;: Um mapa que associa o
+            saldo de cada endereço de usuário à quantidade de moedas virtuais
+            disponíveis para esse endereço.
+          </li>
+          <br />
+
+          <li>
+            event Transfer(address indexed from, address indexed to, uint256
+            value);: Este é um evento que é emitido sempre que uma transferência
+            de moedas virtuais ocorre.
+          </li>
+          <br />
+
+          <li>
+            constructor(string memory _name, string memory _symbol, uint256
+            _totalSupply) { ... }: Este é o construtor do contrato, que é
+            executado quando o contrato é implantado na blockchain. Ele define o
+            nome, símbolo e total de moedas virtuais disponíveis e atribui todas
+            as moedas ao endereço do proprietário do contrato.
+          </li>
+          <br />
+
+          <li>
+            function transfer(address _to, uint256 _value) public returns (bool
+            success) { ... }: Esta é a função que permite aos usuários
+            transferir moedas virtuais de uma conta para outra. Ele verifica se
+            há saldo suficiente e, em seguida, atualiza os saldos e emite um
+            evento de transferência.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -253,7 +304,31 @@
           a implantação em uma rede de testes, seguindo os referidos passos:
         </p>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Antes de tudo, é preciso compilar o contrato. Para fazer isso, abra
+            o arquivo "CoinDemo.sol" no Remix IDE e clique no botão "Compile" na
+            barra lateral esquerda.
+          </li>
+          <br />
+
+          <li>
+            Depois que o contrato for compilado com sucesso, você pode
+            implantá-lo na blockchain clicando no botão "Deploy & Run
+            Transactions".
+          </li>
+          <br />
+
+          <li>
+            Certifique-se de selecionar a rede correta na parte superior da
+            página antes de implantar o contrato. Após implantação na rede
+            testes, vamos realizar alguns testes de validação:
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Após implantação na rede testes, vamos realizar alguns testes de
@@ -303,7 +378,75 @@
           Projeto Exemplo: Contrato Não-Fungível
         </h2>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Outro exemplo de projeto de contrato inteligente é um contrato
+            não-fungível (NFT), usado para representar um ativo digital
+            exclusivo, como uma obra de arte ou um item colecionável.
+          </li>
+          <br />
+
+          <li>
+            NFT (Non-Fungible Token) é um tipo de ativo digital que representa a
+            propriedade exclusiva de um item ou obra de arte digital. Diferente
+            de criptomoedas como Bitcoin e Ethereum, que são fungíveis (ou seja,
+            podem ser trocados por unidades idênticas), os NFTs são exclusivos e
+            não podem ser trocados por outros tokens.
+          </li>
+          <br />
+
+          <li>
+            Os NFTs são criados na blockchain, usando contratos inteligentes que
+            garantem a autenticidade e propriedade exclusiva do ativo digital.
+            Cada NFT tem um código exclusivo na blockchain que garante sua
+            autenticidade e um registro de propriedade que registra a história
+            das transações.
+          </li>
+          <br />
+
+          <li>
+            Os NFTs podem ser usados para representar uma ampla gama de ativos
+            digitais exclusivos, incluindo obras de arte, música, vídeos,
+            imagens, jogos e até mesmo tweets. Os NFTs são comprados e vendidos
+            em mercados online especializados, como o OpenSea e o Rarible, onde
+            os preços podem variar de alguns dólares a milhões de dólares.
+          </li>
+          <br />
+
+          <li>
+            Embora os NFTs sejam relativamente novos, eles já estão causando um
+            grande impacto no mundo da arte e dos colecionáveis digitais. Os
+            NFTs permitem que artistas e criadores monetizem seus trabalhos de
+            maneiras que antes não eram possíveis, ao mesmo tempo em que
+            garantem a autenticidade e a propriedade exclusiva do ativo digital.
+          </li>
+          <br />
+
+          <li>
+            No entanto, os NFTs também têm sido criticados por sua pegada
+            ambiental, já que muitos são criados na blockchain Ethereum, que
+            consome muita energia. Além disso, alguns críticos questionam o
+            valor dos NFTs, argumentando que o preço pode ser excessivamente
+            inflacionado devido à especulação e à falta de regulamentação no
+            mercado de NFTs.
+          </li>
+          <br />
+
+          <li>
+            No geral, os NFTs são um tipo emocionante e inovador de ativo
+            digital que estão mudando a maneira como pensamos sobre propriedade
+            e colecionáveis na era digital. No entanto, é importante lembrar
+            que, como em qualquer investimento, há riscos envolvidos e é
+            importante fazer sua própria pesquisa antes de comprar ou vender um
+            NFT.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- Image content -->
         <div
@@ -320,7 +463,65 @@
           Explicação do código
         </h2>
 
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>contract NonFungible { ... }: Declaração do contrato</li>
+          <br />
+
+          <li>
+            struct Asset { ... }: Esta é a estrutura que representa o ativo
+            digital exclusivo. Cada ativo digital tem um ID, um nome, uma
+            descrição e um endereço de proprietário.
+          </li>
+          <br />
+
+          <li>
+            Asset[] public assets;: Um array público que armazena todos os
+            ativos digitais exclusivos.
+          </li>
+          <br />
+
+          <li>
+            mapping(uint256 => address) public assetToOwner;: Um mapa que
+            associa o ID do ativo digital exclusivo ao endereço do proprietário
+            atual.event
+          </li>
+          <br />
+
+          <li>
+            AssetCreated(uint256 id, string name, string description, address
+            owner);: Este é um evento que é emitido sempre que um novo ativo
+            digital exclusivo é criado.
+          </li>
+          <br />
+
+          <li>
+            event AssetTransferred(uint256 id, address from, address to);: Este
+            é um evento que é emitido sempre que a propriedade de um ativo
+            digital exclusivo é transferida.
+          </li>
+          <br />
+
+          <li>
+            function createAsset(string memory _name, string memory
+            _description) public returns (uint256) { ... }: Esta é a função que
+            permite aos usuários criar um novo ativo digital exclusivo. Ele gera
+            um novo ID, cria um novo ativo digital exclusivo e associa o
+            proprietário atual ao ativo digital.
+          </li>
+          <br />
+
+          <li>
+            function transferAsset(uint256 _assetId, address _to) public { ...
+            }: Esta é a função que permite aos usuários transferir a propriedade
+            de um ativo digital exclusivo para outro endereço.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -423,7 +624,113 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <!-- TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            A validação e os testes devem ser realizados em todas as etapas do
+            processo de desenvolvimento do contrato inteligente, desde a fase
+            inicial de prototipagem até a fase final de implantação e
+            manutenção.
+          </li>
+          <br />
+
+          <li>
+            Durante a validação, é importante verificar se o código do contrato
+            atende aos requisitos de segurança e conformidade, além de verificar
+            se ele está de acordo com os padrões de programação e as melhores
+            práticas da indústria.
+          </li>
+          <br />
+
+          <li>
+            Durante os testes, é importante verificar se todas as funções do
+            contrato estão funcionando corretamente e atendendo às necessidades
+            dos usuários, bem como verificar se o contrato é escalável e capaz
+            de lidar com altas demandas de transações.
+          </li>
+          <br />
+
+          <li>
+            Coin Demo é um contrato inteligente que permite criar uma moeda
+            virtual na plataforma Ethereum.
+          </li>
+          <br />
+
+          <li>
+            É um exemplo de token ERC-20, que pode ser usado para transferências
+            entre usuários.
+          </li>
+          <br />
+
+          <li>
+            O contrato é escrito em Solidity e projetado para ser executado na
+            blockchain Ethereum.
+          </li>
+          <br />
+
+          <li>
+            Define as propriedades básicas da moeda virtual, incluindo o nome, o
+            símbolo, o total de moedas virtuais disponíveis e o saldo de cada
+            endereço de usuário.
+          </li>
+          <br />
+
+          <li>
+            O contrato Coin Demo também define uma função "transfer" que permite
+            aos usuários transferir moedas virtuais de uma conta para outra,
+            verificando o saldo suficiente na conta de origem antes de executar
+            a transferência.
+          </li>
+          <br />
+
+          <li>
+            O contrato emite um evento de transferência sempre que uma
+            transferência é executada, permitindo que outras partes monitorem as
+            transações na blockchain.
+          </li>
+          <br />
+
+          <li>
+            Pode ser usado como ponto de partida para projetos mais complexos,
+            como a criação de uma criptomoeda completa ou um token de utilidade.
+          </li>
+          <br />
+
+          <li>
+            Os NFTs são criados na blockchain usando contratos inteligentes que
+            garantem sua autenticidade e propriedade exclusiva.
+          </li>
+          <br />
+
+          <li>
+            Cada NFT tem um código exclusivo na blockchain que garante sua
+            autenticidade e um registro de propriedade que registra a história
+            das transações.
+          </li>
+          <br />
+
+          <li>
+            Os NFTs podem ser usados para representar uma ampla gama de ativos
+            digitais exclusivos, como obras de arte, música, vídeos, imagens,
+            jogos e até mesmo tweets.
+          </li>
+          <br />
+
+          <li>
+            Os NFTs são comprados e vendidos em mercados online especializados,
+            onde os preços podem variar de alguns dólares a milhões de dólares.
+          </li>
+          <br />
+
+          <li>
+            Os NFTs permitem que artistas e criadores monetizem seus trabalhos
+            de maneiras que antes não eram possíveis, ao mesmo tempo em que
+            garantem a autenticidade e a propriedade exclusiva do ativo digital.
+          </li>
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 

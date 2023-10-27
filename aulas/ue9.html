@@ -164,15 +164,27 @@
 
         <p>Analisando a imagem, pode-se destacar:</p>
 
-        <!-- TODO LIST -->
-        "Uso da palavra reservada function para definição da função.", "As
-        funções recebem um nome de identificação para serem chamadas", "Entre
-        parênteses, podem ter parâmetros de entrada que são definidos com tipo e
-        nome.", "Elas podem retornar um ou mais valores. Nesse caso, usa-se a
-        palavra reservada returns e os tipos dos valores retornados devem ser
-        especificados entre parênteses.", "Há funções que não retornam nenhum
-        valor.",
-        <!-- /TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>Uso da palavra reservada function para definição da função.</li>
+          <li>
+            As funções recebem um nome de identificação para serem chamadas
+          </li>
+          <li>
+            Entre parênteses, podem ter parâmetros de entrada que são definidos
+            com tipo e nome.
+          </li>
+          <li>
+            Elas podem retornar um ou mais valores. Nesse caso, usa-se a palavra
+            reservada returns e os tipos dos valores retornados devem ser
+            especificados entre parênteses.
+          </li>
+          <li>Há funções que não retornam nenhum valor.</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>
           Outras duas propriedades relacionadas às funções são a visibilidade e
@@ -225,9 +237,15 @@
           função recebe dois número:
         </p>
 
-        <!-- TODO LIST -->
-        "um inteiro na variável 'x' e,", "outro inteiro na variável 'y'",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>um inteiro na variável 'x' e,</li>
+          <li>outro inteiro na variável 'y'</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <p>Funções também podem funcionar sem parâmetros externos.</p>
 
@@ -603,8 +621,29 @@
           algumas a seguir.
         </p>
 
-        <!-- TODO LIST -->
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            <span class="text-blue-990"
+              >block.blockhash(uint blockNumber):</span
+            >
+            Essa função retorna o hash do bloco fornecido (funciona para os
+            últimos 256 blocos).
+          </li>
+          <br />
+          <li>
+            <span class="text-blue-990">block.chainid (uint):</span> Tem como
+            função retornar um 'id' (identificador), do tipo uint, da Blockchain
+            atual. Cada Blockchain possui um número único para identificá-la,
+            assim você pode, facilmente, saber qual rede está utilizando. Por
+            exemplo: A Blockchain Ethereum Mainnet tem o id igual a 1, já a
+            Binance Smart Chain (BSC) possui id igual a 56.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- WarningBanner -->
         <!--classe para acrescentar se vai precisar de margem ou não-->
@@ -630,8 +669,37 @@
           </div>
         </div>
 
-        <!-- TODO LIST -->
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            <span class="text-blue-990">block.coinbase(address):</span> Após
+            realizar deploy, seu contrato será incluído na rede por um
+            minerador. Essa função retorna o endereço do minerador responsável,
+            tornando possível alguma interação com ele.
+          </li>
+          <br />
+          <li>
+            <span class="text-blue-990">block.difficulty(uint):</span>
+            Responsável por retornar o grau de dificuldade do bloco, O parâmetro
+            de dificuldade de mineração é utilizado para regulação de emissão de
+            moedas e é constantemente atualizado.
+          </li>
+          <br />
+          <li>
+            <span class="text-blue-990">block.gaslimit:</span> Retorna a
+            quantidade de gás disponível para o bloco atual. Assim, é possível
+            saber se o bloco atual conseguirá processar seu contrato ou não.
+          </li>
+          <br />
+          <li>
+            <span class="text-blue-990">block.number(uint):</span> Retorna o
+            número do bloco atual.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- WarningBanner -->
         <!--classe para acrescentar se vai precisar de margem ou não-->
@@ -656,8 +724,38 @@
           </div>
         </div>
 
-        <!-- TODO LIST -->
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            <span class="text-blue-990">block.timestamp(uint):</span> Retorna o
+            timestamp em segundos do bloco atual.
+          </li>
+          <li>
+            <span class="text-blue-990">msg.sender(adress):</span> Retorna o
+            endereço da mensagem atual.
+          </li>
+          <li>
+            <span class="text-blue-990">msg.value(uint):</span> Retorna o número
+            de Wei (unidade do eth) enviados na transação.
+          </li>
+          <li>
+            <span class="text-blue-990">tx.origin(address):</span> Retorna o
+            remetente da transação. Parecido com msg.sender(adress):com a
+            diferença que tx.origin só refere-se à endereço de carteiras.
+          </li>
+          <li>
+            <span class="text-blue-990">tx.gasprice(unit):</span> Retorna o
+            valor do gás para a transação corrente.
+          </li>
+          <li>
+            <span class="text-blue-990">address(this).balance:</span> Retorna o
+            saldo do contrato corrente.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- TODO QUESTÃO -->
       </div>
@@ -707,8 +805,69 @@
 
         <p>Ao analisar o código, pode-se observar:</p>
 
-        <!-- TODO LIST -->
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Na linha 7, foi declarada uma variável do tipo uint chamada de
+            número.
+          </li>
+          <li>
+            Foram definidas duas funções chamadas guardar() e consultar().
+          </li>
+          <li>
+            Na linha 10 e 11, tem-se a implementação da função guardar(). Note
+            que:
+          </li>
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                Ela recebe um parâmetro chamado num e guarda na variável número.
+              </li>
+              <li>
+                A visibilidade da função é public, logo ela será visível de
+                qualquer contrato que tentar acessá-la.
+              </li>
+              <li>
+                Não há um especificador de comportamento, logo a função será do
+                tipo transaction.
+              </li>
+              <li>A função não retorna nenhum valor.</li>
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            Na linha 15 e 16, tem-se a implementação da função consultar(). Note
+            que:
+          </li>
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>Ela retorna o valor da variável numero.</li>
+              <li>A função não recebe parâmetros.</li>
+              <li>
+                A visibilidade da função é public, ou seja, ela será visível de
+                qualquer contrato que tentar acessá-la.
+              </li>
+              <li>
+                O especificador de comportamento da função é view. Assim, ela
+                tem acesso ao valor de numero, mas não pode modificar.
+              </li>
+              <li>
+                O retorno é do tipo unit, especificado nos parênteses do
+                returns.
+              </li>
+            </ol>
+            <!-- / List -->
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Logo após a compilação e deploy do contrato, tem-se disponível para
@@ -885,9 +1044,14 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
 
-        <!-- TODO LIST -->
-        "Uso da palavra reservada function p....
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>A estrutura geral de uma função que é:</li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <br />
 
@@ -1025,9 +1189,146 @@
 
         <!-- TODO SimpleTableV1 -->
 
-        <!-- TODO LIST -->
-        "As funções podem apresentar diferentes co...
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>Uso da palavra reservada function para definição da função.</li>
+          <br />
+
+          <li>
+            As funções recebem um nome de identificação para serem chamadas.
+          </li>
+          <br />
+
+          <li>
+            Entre parênteses, podem ter parâmetros de entrada que são definidos
+            com tipo e nome.
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>Funções também podem funcionar sem parâmetros externos.</li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            Parâmetros de visibilidade definem como essa função poderá ser
+            acessada. Podem ser do tipo: external, internal, public e private. O
+            grau de visibilidade está resumido na tabela abaixo.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
+
+        <!-- TODO SimpleTableV1 -->
+
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            As funções podem apresentar diferentes comportamentos em relação ao
+            estado da rede. São tipos possíveis:
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                transaction, é o comportamento padrão Podem acessar e modificar
+                o estado.
+              </li>
+              <li>view, podem acessar, mas não podem modificar o estado.</li>
+              <li>pure, não podem acessar e nem modificar o estado.</li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            Elas podem retornar um ou mais valores. Nesse caso, usa-se a palavra
+            reservada returns e os tipos dos valores retornados devem ser
+            especificados entre parênteses.
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>Há funções que não retornam valor.</li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            As funções pagáveis (payable) permitem receber fundos, ou seja,
+            recebem Ether (Eth) e/ou outros tokens.
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                Se o contrato necessita enviar fundos, ela vai precisar de um
+                parâmetro endereço do tipo pagável (address payable).
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            As variáveis/funções intrínsecas (build-in) são implementações
+            oferecidas pela própria linguagem de programação. Solidity oferece
+            várias que retornam informações sobre blocos, rede e transações.
+          </li>
+          <br />
+          <li>
+            O construtor é um tipo especial de função que é executada apenas uma
+            vez quando o contrato é implantado e tem como objetivo inicializar
+            as variáveis de estado.
+          </li>
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>A definição é feita com a palavra reservada constructor.</li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            Modificadores são códigos chamados antes e/ou depois da execução de
+            uma função, garantindo cumprimento de critérios importantes.
+          </li>
+          <li class="list-none">
+            <br />
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>A definição é feita pela palavra reserva modifier.</li>
+              <li>
+                No final do modificado usa-se o elemento. Isso significa que
+                caso a condição estabelecida não seja alcançada, será lançado em
+                exceção.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 

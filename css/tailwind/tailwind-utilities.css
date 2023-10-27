@@ -4611,6 +4611,10 @@
   min-width: 0;
 }
 
+.min-w-66px {
+  min-width: 66px;
+}
+
 .min-w-full {
   min-width: 100%;
 }

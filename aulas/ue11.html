@@ -299,12 +299,25 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO LIST -->
-        "Na linha 6, é declarada uma variável chamada dobro do tipo uint.", "Na
-        linha 8, é definida uma função chamada dobrarValor que recebe um
-        parâmetro do tipo uint chamado numero e tem visibilidade external.", "Na
-        linha 9, numero é multiplicado por 2 e atribuído a variável dobro.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Na linha 6, é declarada uma variável chamada dobro do tipo uint.
+          </li>
+          <br />
+          <li>
+            Na linha 8, é definida uma função chamada dobrarValor que recebe um
+            parâmetro do tipo uint chamado numero e tem visibilidade external.
+          </li>
+          <br />
+          <li>
+            Na linha 9, numero é multiplicado por 2 e atribuído a variável
+            dobro.
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Logo após, na linha 13, é definido o contrato chamado Filho. Note que
@@ -312,11 +325,22 @@
           herda as características e comportamento do pai. Observe:
         </p>
 
-        <!-- TODO LIST -->
-        "Na linha 15, é definida uma função chamada getValor que retorna um
-        valor do tipo uint.", "Na linha 16, é retornada a variável dobro que
-        pertence ao contrato Pai.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Na linha 15, é definida uma função chamada getValor que retorna um
+            valor do tipo uint.
+          </li>
+          <br />
+          <li>
+            Na linha 16, é retornada a variável dobro que pertence ao contrato
+            Pai.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- Image content -->
         <div
@@ -326,15 +350,34 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO LIST -->
-        "Na linha 22, um novo contrato do tipo Filho, chamado cf, é instanciado
-        com a palavra reservada new.", "Na linha 24, é definida uma função
-        chamada testaHeranca com visibilidade public e retorna um uint.", "Na
-        linha 25, o contrato cf executa a função dobrarValor(20). Note que cf é
-        um contrato do tipo Filho e a função dobrarValor pertence ao contrato
-        Pai. O acesso é permitido devido a herança.", "Na linha 26, o contrato
-        cf executa a função consultar( ) que retorna a variável dobro.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Na linha 22, um novo contrato do tipo Filho, chamado cf, é
+            instanciado com a palavra reservada new.
+          </li>
+          <br />
+          <li>
+            Na linha 24, é definida uma função chamada testaHeranca com
+            visibilidade public e retorna um uint.
+          </li>
+          <br />
+
+          <li>
+            Na linha 25, o contrato cf executa a função dobrarValor(20). Note
+            que cf é um contrato do tipo Filho e a função dobrarValor pertence
+            ao contrato Pai. O acesso é permitido devido a herança.
+          </li>
+          <br />
+
+          <li>
+            Na linha 26, o contrato cf executa a função consultar( ) que retorna
+            a variável dobro.
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Após a compilação e deploy dos contratos, ao executar a função
@@ -360,13 +403,30 @@
           seguintes comportamentos:
         </p>
 
-        <!-- TODO LIST -->
-        "O contrato A tem uma função que recebe um parâmetro do tipo string e
-        atualiza sua variável tituloA.", "O contrato B define uma função que
-        recebe um parâmetro do tipo string e concatena com a string da variável
-        tituloA. Após a concatenação, atribui o valor a tituloB.", "O contrato C
-        possui uma função que retorna o valor de tituloB.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            O contrato A tem uma função que recebe um parâmetro do tipo string e
+            atualiza sua variável tituloA.
+          </li>
+          <br />
+
+          <li>
+            O contrato B define uma função que recebe um parâmetro do tipo
+            string e concatena com a string da variável tituloA. Após a
+            concatenação, atribui o valor a tituloB.
+          </li>
+          <br />
+
+          <li>
+            O contrato C possui uma função que retorna o valor de tituloB.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- Image content -->
         <div
@@ -410,10 +470,16 @@
           de vários contratos. Pode-se existir as seguintes situações:
         </p>
 
-        <!-- TODO LIST -->
-        "Um contrato pai pode ter mais de um filho, e", "Um filho pode ter mais
-        de um pai.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>Um contrato pai pode ter mais de um filho, e</li>
+          <br />
+
+          <li>Um filho pode ter mais de um pai.</li>
+        </ol>
+        <!-- / List -->
 
         <p>
           No exemplo abaixo, o contrato C herda o contrato A e o contrato B.
@@ -749,14 +815,27 @@
 
         <p>Podem acontecer dois cenários:</p>
 
-        <!-- TODO LIST -->
-        "A condição é verdadeira (true), então a execução da função continua
-        normalmente.", 'A condição é falsa (false), então uma exceção é lançada
-        e a execução da função é interrompida. O gás não utilizado é devolvido
-        ao chamador e o estado é revertido ao seu estado original.
-        Opcionalmente, você pode definir uma "mensagem de erro” para informação
-        do usuário.',
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            condição é verdadeira (true), então a execução da função continua
+            normalmente.
+          </li>
+          <br />
+
+          <li>
+            A condição é falsa (false), então uma exceção é lançada e a execução
+            da função é interrompida. O gás não utilizado é devolvido ao
+            chamador e o estado é revertido ao seu estado original.
+            Opcionalmente, você pode definir uma "mensagem de erro” para
+            informação do usuário.
+          </li>
+          <br />
+          <br />
+        </ol>
+        <!-- / List -->
 
         <!-- Image content -->
         <div
@@ -797,10 +876,19 @@
 
         <p>Com base no valor de retorno da condição:</p>
 
-        <!-- TODO LIST -->
-        "Se for verdadeiro, o programa continuará sua execução", "Se for falso,
-        lançará uma exceção e o estado é revertido para o estado original.",
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>Se for verdadeiro, o programa continuará sua execução</li>
+          <br />
+
+          <li>
+            Se for falso, lançará uma exceção e o estado é revertido para o
+            estado original.
+          </li>
+        </ol>
+        <!-- / List -->
 
         <p>
           Observe a execução utilizando os valores de entrada 200 e 100. O valor
@@ -855,7 +943,12 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO IMAGEM -->
+        <!-- Image content -->
+        <div
+          class="gallery flex flex-col items-center"
+          ue="UE11"
+          index="17"
+        ></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -887,60 +980,157 @@
           foram:
         </p>
 
-        <!-- TODO LIST -->
-        "Utilizando o recurso de herança, um contrato inteligente pode “herdar”
-        características e comportamentos de outros contratos inteligentes.", "Os
-        contratos que têm características herdadas são chamados de contrato base
-        ou pai e os que herdam os elementos de contrato derivado ou filho.", "A
-        palavra reservada utilizada para herança é is.", "Na herança única, um
-        contrato pai é herdado por um único contrato filho.", "A herança
-        multinível possui funcionamento análogo ao herança única, com diferença
-        que podem existir vários níveis da relação Pai e Filho (um contrato
-        filho pode ser pai de outro contrato).", "Na herança múltipla um único
-        contrato pode estar envolvido na herança de vários contratos.",
-        "Polimorfismo é o mecanismo que faz com que dois contratos derivados de
-        um mesmo contrato base podem invocar funções com a mesma assinatura, mas
-        comportamentos totalmente diferentes.", "Para que seja possível que uma
-        função seja sobrescrita, isso deve ser habilitado explicitamente em cada
-        função usando as palavras-chave virtual (na função base) e override (na
-        função sobrescrita).", "Os eventos são mensagens que os contratos
-        disparam para informar mudanças do estado atual do contrato para agentes
-        externos.", "Os eventos quando são emitidos gravam seus parâmetros no
-        log da transação.", "Os logs são uma estrutura de dados especial na
-        Blockchain. Esses logs estão associados ao endereço do contrato e serão
-        incorporados à Blockchain e permanecerão lá enquanto um bloco estiver
-        acessível.", "Os dados de log e eventos não são acessíveis nos contratos
-        (nem mesmo no contrato que os criou).", "Eventos são criados a partir do
-        uso da palavra reservada event, seguida de seu nome e seus parâmetros",
-        "Os eventos podem ser chamados, através do uso da palavra reservada emit
-        seguida do nome do evento desejado e da inclusão dos parâmetros
-        necessários,", "Os erros podem ocorrer em tempo de compilação ou tempo
-        de execução.",
-        <!-- /TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Utilizando o recurso de herança, um contrato inteligente pode
+            “herdar” características e comportamentos de outros contratos
+            inteligentes.
+          </li>
+          <br />
 
-        <!-- TODO LIST -->
-        "Os erros de compilação são identificados pelo compilador", "Os erros de
-        execução acontecem durante a execução dos contratos, podendo ocasionar
-        falhas para o usuário.",
-        <!-- / TODO LIST -->
+          <li>
+            Os contratos que têm características herdadas são chamados de
+            contrato base ou pai e os que herdam os elementos de contrato
+            derivado ou filho.
+          </li>
+          <br />
 
-        "As instruções 'require' declaram as condições para a execução da
-        função.",
-        <!-- TODO LIST -->
-        "A condição é verdadeira (true), então a execução da função continua
-        normalmente.", "A condição é falsa (false), então uma exceção é lançada
-        e a execução da função é interrompida.",
-        <!-- / TODO LIST -->
-        "Require segue a seguinte sintaxe:",
-        <p class="text-center">require(condição, “mensagem de erro”)</p>
+          <li>A palavra reservada utilizada para herança é is.</li>
+          <br />
 
-        <!-- TODO LIST -->
-        "A instrução revert é utilizada para reverter o estado do sistema ao
-        estado imediatamente anterior. Diferente do require, esta instrução não
-        avalia nenhuma condição.", "Revert possui o formato geral:",
-        <!-- / TODO LIST -->
+          <li>
+            Na herança única, um contrato pai é herdado por um único contrato
+            filho.
+          </li>
+          <br />
 
-        <p class="text-center">revert(“mensagem de erro”)</p>
+          <li>
+            A herança multinível possui funcionamento análogo ao herança única,
+            com diferença que podem existir vários níveis da relação Pai e Filho
+            (um contrato filho pode ser pai de outro contrato).
+          </li>
+          <br />
+
+          <li>
+            Na herança múltipla um único contrato pode estar envolvido na
+            herança de vários contratos.
+          </li>
+          <br />
+
+          <li>
+            Polimorfismo é o mecanismo que faz com que dois contratos derivados
+            de um mesmo contrato base podem invocar funções com a mesma
+            assinatura, mas comportamentos totalmente diferentes.
+          </li>
+          <br />
+
+          <li>
+            Para que seja possível que uma função seja sobrescrita, isso deve
+            ser habilitado explicitamente em cada função usando as
+            palavras-chave virtual (na função base) e override (na função
+            sobrescrita).
+          </li>
+          <br />
+
+          <li>
+            Os eventos são mensagens que os contratos disparam para informar
+            mudanças do estado atual do contrato para agentes externos.
+          </li>
+          <br />
+
+          <li>
+            Os eventos quando são emitidos gravam seus parâmetros no log da
+            transação.
+          </li>
+          <br />
+
+          <li>
+            Os logs são uma estrutura de dados especial na Blockchain. Esses
+            logs estão associados ao endereço do contrato e serão incorporados à
+            Blockchain e permanecerão lá enquanto um bloco estiver acessível.
+          </li>
+          <br />
+
+          <li>
+            Os dados de log e eventos não são acessíveis nos contratos (nem
+            mesmo no contrato que os criou).
+          </li>
+          <br />
+
+          <li>
+            Eventos são criados a partir do uso da palavra reservada event,
+            seguida de seu nome e seus parâmetros
+          </li>
+          <br />
+
+          <li>
+            Os eventos podem ser chamados, através do uso da palavra reservada
+            emit seguida do nome do evento desejado e da inclusão dos parâmetros
+            necessários,
+          </li>
+          <br />
+
+          <li>
+            Os erros podem ocorrer em tempo de compilação ou tempo de execução.
+          </li>
+          <br />
+
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>Os erros de compilação são identificados pelo compilador</li>
+              <li>
+                Os erros de execução acontecem durante a execução dos contratos,
+                podendo ocasionar falhas para o usuário.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            As instruções 'require' declaram as condições para a execução da
+            função.
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                A condição é verdadeira (true), então a execução da função
+                continua normalmente.
+              </li>
+              <li>
+                A condição é falsa (false), então uma exceção é lançada e a
+                execução da função é interrompida.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>Require segue a seguinte sintaxe:</li>
+          <br />
+          <p class="text-center">require(condição, “mensagem de erro”)</p>
+          <br />
+          <li>
+            A instrução revert é utilizada para reverter o estado do sistema ao
+            estado imediatamente anterior. Diferente do require, esta instrução
+            não avalia nenhuma condição.
+          </li>
+          <br />
+          <li>Revert possui o formato geral:</li>
+          <br />
+          <p class="text-center">revert(“mensagem de erro”)</p>
+
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 

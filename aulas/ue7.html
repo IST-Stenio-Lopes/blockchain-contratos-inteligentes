@@ -449,23 +449,40 @@
 
         <p>As funções hashes apresentam algumas características importantes:</p>
 
-        <!-- TODO LIST-->
-        <!-- "<strong>Saída de tamanho fixo: </strong> independente do tamanho
-              da entrada, a saída de hash sempre apresentará as mesmas
-              quantidades de letras e números.", "<strong
-                >Eficiência Operacional:
-              </strong>
-              São fáceis de calcular e não exigem grande capacidade
-              computacional.", "<strong>Determinística: </strong> O
-              processamento de uma mesma entrada de uma função hash produzirá a
-              mesma saída sempre, independente da quantidade de vezes que for
-              processada.", "<strong>Funcionamento tipo avalanche: </strong>
-              Qualquer alteração na entrada de dados resulta num hash
-              diferente.", "<strong>São irreversíveis: </strong> Uma das
-              características que tornam os hashes seguros é que obter os dados
-              que o originaram é praticamente impossível.", -->
-
-        <!-- / TODO LIST-->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-decimal"
+        >
+          <li>
+            <strong>Saída de tamanho fixo: </strong> independente do tamanho da
+            entrada, a saída de hash sempre apresentará as mesmas quantidades de
+            letras e números.
+          </li>
+          <br />
+          <li>
+            <strong>Eficiência Operacional: </strong> São fáceis de calcular e
+            não exigem grande capacidade computacional.
+          </li>
+          <br />
+          <li>
+            <strong>Determinística:</strong> O processamento de uma mesma
+            entrada de uma função hash produzirá a mesma saída sempre,
+            independente da quantidade de vezes que for processada.
+          </li>
+          <br />
+          <li>
+            <strong>Funcionamento tipo avalanche:</strong> Qualquer alteração na
+            entrada de dados resulta num hash diferente.
+          </li>
+          <br />
+          <li>
+            <strong>São irreversíveis:</strong> Uma das características que
+            tornam os hashes seguros é que obter os dados que o originaram é
+            praticamente impossível.
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- VideoFrame -->
       <div class="col-end-12 col-start-2 space-y-4">
@@ -760,27 +777,43 @@
           Blockchain ganhe cada vez mais espaço.
         </p>
 
-        <!-- TODO IMAGEM -->
-
         <p>
           A segurança da Blockchain está relacionada a muitos mecanismos
           complexos e está longe de ser assunto simples. Abaixo estão listados
           alguns desses mecanismos já abordados nesta unidade:
         </p>
 
-        <!-- TODO LIST -->
-        <!-- "Os algoritmos de consenso combinados com imutabilidade garantindo
-        proteção das integridades dos dados", "O uso da criptografia nos blocos
-        gerando identificadores de hash que desempenham um papel importante na
-        garantia da segurança e imutabilidade do blockchain.", "O Hashing também
-        é aproveitado nos algoritmos de consenso utilizados para validar
-        transações.", "As carteiras digitais usadas para armazenar criptomoedas
-        também usam criptografia. As chaves públicas e privadas que permitem que
-        os usuários recebam e enviem pagamentos, são criadas por meio do uso de
-        criptografia de chave pública (também conhecida como criptografia
-        assimétrica)", -->
-        <!-- /TODO LIST -->
-        <!-- TODO QUESTÕES -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            Os algoritmos de consenso combinados com imutabilidade garantindo
+            proteção das integridades dos dados
+          </li>
+          <br />
+          <li>
+            O uso da criptografia nos blocos gerando identificadores de hash que
+            desempenham um papel importante na garantia da segurança e
+            imutabilidade do blockchain.
+          </li>
+          <br />
+          <li>
+            O Hashing também é aproveitado nos algoritmos de consenso utilizados
+            para validar transações.
+          </li>
+          <br />
+          <li>
+            As carteiras digitais usadas para armazenar criptomoedas também usam
+            criptografia. As chaves públicas e privadas que permitem que os
+            usuários recebam e enviem pagamentos, são criadas por meio do uso de
+            criptografia de chave pública (também conhecida como criptografia
+            assimétrica)
+          </li>
+          <br />
+        </ol>
+        <!-- / List -->
+        <!-- TODO QUESTÕES - Questão 7 -->
       </div>
     </div>
   </div>
@@ -808,9 +841,135 @@
       <div class="col-end-11 col-start-3 space-y-4">
         <p>Nesta unidade, os principais conceitos que você conheceu foram:</p>
 
-        <!-- TODO LIST -->
-        O mecanismo de consenso requer que os pare.....
-        <!-- / TODO LIST -->
+        <!-- List -->
+        <ol
+          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+        >
+          <li>
+            O mecanismo de consenso requer que os pares da rede cheguem a um
+            acordo comum sobre o estado atual da informação.
+          </li>
+          <br />
+          <li>
+            Na blockchain, consenso é a forma como parte dos “nós” (ou
+            mineradores, no caso do Bitcoin) chegam a um acordo a respeito de
+            uma decisão. A decisão de um validador só é compartilhada na rede
+            após o consenso dos nós envolvidos.
+          </li>
+          <br />
+          <li>
+            O mecanismo de consenso pode ser corrompido por um ataque sybill
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                Quando criam um número de identidades falsas maior que as
+                identidades verdadeiras, ou
+              </li>
+              <li>
+                Quando os atacantes são capazes de controlar a maior parte do
+                poder computacional da rede, conhecido como ataque dos 51%, e
+                assumem o controle da rede.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            Proof of Work (PoW) ou prova de trabalho, Proof of Stake (PoS) ou
+            prova de participação e byzantine fault tolerance (BFT) ou
+            tolerância à falha binzantina são algoritmos de consenso.
+          </li>
+          <br />
+          <li>
+            A <strong>criptografia</strong> é um conjunto de mecanismos capazes
+            de proteger uma informação.
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                A ideia é que, utilizando algoritmos, a mensagem seja codificada
+                pelo emissor e apenas o receptor consiga decodificar e acessar a
+                informação.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            Na criptografia, a palavra <strong>hash</strong> refere-se à saída
+            produzida por uma função hash depois que um dado é processado por
+            ela.
+          </li>
+          <br />
+          <li>
+            As funções hashes apresentam algumas características importantes:
+            saída de tamanho, eficiência operacional, determinismo,
+            funcionamento tipo avalanche e irreversibilidade.
+          </li>
+          <br />
+          <li>
+            SHA-256 é um algoritmo de criptografia seguro que ganhou
+            popularidade devido ao código Bitcoin, onde é usado na mineração, no
+            processo de geração de endereços e na estrutura dos blocos e cadeia.
+          </li>
+          <br />
+          <li>
+            A integridade dos dados é alcançada associando a característica de
+            imutabilidade e algoritmos de consenso
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                A própria estrutura de cadeia da Blockchain proporciona a
+                imutabilidade de dados que já foram validados;
+              </li>
+              <li>
+                Os algoritmos de consenso garantem que as regras do sistema
+                estejam sendo seguidas e que todas as partes envolvidas
+                concordem com o estado atual da rede.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+          <li>
+            A blockchain tem um conjunto de mecanismos complexos que garantem
+            segurança eficaz, como:
+          </li>
+          <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>Os mecanismos envolvidos com integridade dos dados.</li>
+              <li>
+                Os algoritmos de criptografia. Ela é usada para a geração do
+                hash na estrutura dos blocos, em alguns algoritmos de consenso e
+                associados a chaves assimétricas e endereço das contas de
+                usuário.
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
+
+          <br />
+        </ol>
+        <!-- / List -->
       </div>
       <!-- / GridCol marginInCols = 2 -->
 
