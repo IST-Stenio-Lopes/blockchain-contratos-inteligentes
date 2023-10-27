@@ -199,7 +199,116 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO SimpleTableV3 -->
+        <!-- SimpleTableV3 -->
+        <div>
+          <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+            <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+              Estruturas do bloco
+            </caption>
+            <colgroup>
+              <col style="width: 50%;">
+              <col style="width: 50%;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                  ESTRUTURA
+                </th>
+                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                  DESCRIÇÃO
+                </th>
+              </tr>
+              <tr>
+                <th class="font-semibold py-2 px-4 bg-secondary-950">
+                  CABEÇALHO
+                </th>
+                <th class="font-semibold py-2 px-4 bg-secondary-950">
+                  
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-left">
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Bloco 1		
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Número do bloco (altura do bloco na cadeia de bloco)
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  00054551		
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Hash do bloco anterior
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  000	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Dificuldade alvo (difficult target)
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  15:40 10/08/2018	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Marcação de tempo (timestamp)
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  7224
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Valor Nonce
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Raiz de Merkle	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Hash da lista de transações (Merkle Root Hash ou Merkle Tree)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div>
+          <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+            <colgroup>
+              <col style="width: 50%;">
+              <col style="width: 50%;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="font-semibold py-2 px-4 bg-secondary-950">
+                  CORPO DO BLOCO	
+                </th>
+                <th class="font-semibold py-2 px-4 bg-secondary-950">
+                  
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-left">
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Assinatura	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Assinatura digital associado às transações
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- / SimpleTableV3 -->
 
         <p>
           Na Blockchain, a hash de cada bloco, aponta para o bloco anterior.

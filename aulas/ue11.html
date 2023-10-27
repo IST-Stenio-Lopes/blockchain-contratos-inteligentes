@@ -139,7 +139,90 @@
               <span class="font-bold text-lg uppercase mb-3">VOCÊ SABIA?</span>
               No Solidity, os modificadores de visibilidade definem acesso de
               acordo com a tabela abaixo.
-              <!-- TODO SimpleTableV1 -->
+              <br>
+              
+              <!-- SimpleTableV1 -->
+              <div>
+                <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+                  <thead>
+                    <tr>
+                      <th class="font-semibold py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
+                        Visibilidade
+                      </th>
+                      <th class="font-semibold  py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
+                        Dentro do contrato	
+                      </th>
+                      <th class="font-semibold  py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
+                        Contratos derivados (filhos)	
+                      </th>
+                      <th class="font-semibold  py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
+                        Outros Contratos
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-left">
+                    <tr>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        external
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Não
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Não
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Sim
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        internal
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Sim
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Sim
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Não
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        public
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Sim
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Sim
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Sim
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        private
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Sim
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Não
+                      </td>
+                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                        Não
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- / SimpleTableV1 -->
+
+              <br>
               Assim, apenas elementos públicos (public) e internos (internal)
               podem ser herdados por contratos derivados. Os elementos externos,
               apesar de não serem modificáveis, podem ser acessados pelos
@@ -585,7 +668,63 @@
           tempo de execução.
         </p>
 
-        <!-- TODO SimpleTableV1 -->
+        <!-- SimpleTableV1 -->
+        <div>
+          <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+            <colgroup>
+              <col style="width: 50%;">
+              <col style="width: 50%;">
+            </colgroup>
+            <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-center">
+              Erros
+            </caption>
+            <thead>
+              <tr>
+                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                  COMPILAÇÃO
+                </th>
+                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                  EXECUÇÃO
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-left">
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Erros relacionados à sintaxe da linguagem	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Erros que acontecem durante a execução do contrato
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Identificados pelo compilador	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Difíceis de serem identificados. Não detecção automática
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Corrigidos pelo programador antes do deploy do contrato	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Precisam ser tratados para não causar uma falha para o usuário.
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Exemplo: palavras reservadas escritas de forma errada, esquecimento do ponto e vírgula após as instruções e etc	
+                </td>
+                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                  Exemplo: erro de falta de gás, erro de estouro de tipo de dados, erro de divisão por zero, erro de array fora do índice etc.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- / SimpleTableV1 -->
 
         <p>
           Considerando os erros de execução, após a versão 4.10, uma nova

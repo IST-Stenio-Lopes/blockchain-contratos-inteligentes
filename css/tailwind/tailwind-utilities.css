@@ -1293,6 +1293,10 @@
   border-collapse: collapse;
 }
 
+.border-hidden {
+  border-style: hidden;
+}
+
 .border-separate {
   border-collapse: separate;
 }
@@ -1669,8 +1673,14 @@
   border-color: #702459;
 }
 
+<<<<<<< HEAD
+.border-secondary-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(184 196 255 / var(--tw-border-opacity));
+=======
 .box-border {
   box-sizing: border-box;
+>>>>>>> 5d7fa6e7cad8569921bc3219640a52b575d1e7b4
 }
 
 .hover\:border-transparent:hover {
