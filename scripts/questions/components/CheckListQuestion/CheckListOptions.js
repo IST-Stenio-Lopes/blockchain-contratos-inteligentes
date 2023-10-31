@@ -7,7 +7,6 @@ import { generateButtonEnviarResposta } from "../ButtonEnviarResposta.js";
 import { generateCheckMark } from "./CheckMark.js";
 import { generateCheckMarkError } from "./CheckMarkError.js";
 
-// TODO here
 function generateCheckListOptions(question) {
   const {
     assertive,
@@ -21,20 +20,33 @@ function generateCheckListOptions(question) {
     allowMultipleSelect,
   } = question;
 
-  /*const alternativeIds = alternatives.map((_, index) => {
-        console.log("Scr deus");
-        generateID(questionId, "ALT", index);
-        console.log(index);
-    });*/
+  const handleSubmit = (e) => {
+    // Prevent the browser from reloading the page.
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const formJson = Object.fromEntries(formData.entries());
+    const checkedValues = Object.keys(formJson);
+
+    const answer = alternatives.filter(function (_, checkedIndex) {
+      const alternativeId = alternativeIds[checkedIndex];
+      return checkedValues.indexOf(alternativeId) !== -1;
+    });
+
+    let div = document.getElementById(questionId); // faz o elemento ser escutado só na div pai da questão
+    let evento = new CustomEvent("evaluationCreated", { detail: answer });
+    div.dispatchEvent(evento);
+  };
+
   const alternativeIds = {};
   alternatives.forEach((_, index) => {
     alternativeIds[index] = generateID(questionId, "ALT", index);
   });
-  console.log(alternativeIds);
 
   // form
   var form = createElementWithClasses("form", "w-full flex flex-col gap-4");
-  //form.addEventListener('submit', handleSubmit);
+  form.addEventListener('submit', handleSubmit);
 
   // table inside the form for alternatives
   const alternativesTable = createElementWithClasses(
@@ -48,17 +60,19 @@ function generateCheckListOptions(question) {
   alternativesTable.appendChild(tbody);
 
   alternatives.map((alternative, alternativeIndex) => {
-    console.log("Entrou");
     const alternativeId = alternativeIds[alternativeIndex];
-    //const isInCurrentAnswer = currentAnswer.indexOf(alternative) !== -1;
-    //const shouldShowErrorCheck = isInCurrentAnswer && !alternative.isCorrect;
+    const rootContainer = document.getElementById(questionId);
+    rootContainer.addEventListener("evaluationCreated", function (e) {
+      const answer = e.detail;
+      const isInCurrentAnswer = answer.indexOf(alternative) !== -1;
+      const shouldShowErrorCheck = isInCurrentAnswer && !alternative.isCorrect;
+      if (shouldShowErrorCheck) {
+        renderCheck.remove(); 
+        renderCheck = generateCheckMarkError(alternativeId);
+        div.appendChild(renderCheck);
+      }
 
-    /*
-        if (shouldShowErrorCheck) {
-            const renderCheck = generateCheckMarkError(alternativeId, true);
-        } else {
-            const renderCheck = generateCheckMark(alternativeId);
-        }*/
+    });
 
     // tr for each alternative
     const tr = createElementWithClasses(
@@ -74,10 +88,10 @@ function generateCheckListOptions(question) {
     );
     tr.appendChild(td1);
 
-    const div = createElementWithClasses("div", "h-20 w-[24px]"); // TODO VERIFY w-100 removed (só atrapalhando)
+    const div = createElementWithClasses("div", "h-20 w-[24px]");
     td1.appendChild(div);
-    console.log(alternativeId);
-    const renderCheck = generateCheckMark(alternativeId);
+  
+    let renderCheck = generateCheckMark(alternativeId);
     div.appendChild(renderCheck);
 
     // second td for the description of the alternative
@@ -97,7 +111,6 @@ function generateCheckListOptions(question) {
     td2.appendChild(labelDescription);
   });
 
-  // TODO ajeitar botao
   const containerButton = createElementWithClasses(
     "div",
     "flex justify-center items-center w-full w-full mt-6"

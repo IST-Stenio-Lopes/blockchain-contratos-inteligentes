@@ -63,9 +63,22 @@
     fill: var(--primary-400);
 }
 
+.left-2\/4 {
+  left: -84%;
+}
+
 :is(.dark .dark\:fill-primary-800) {
     fill: var(--primary-800);
 }
+
+.checked\:border-red-500:checked {
+  border-color: var(--red-500);
+}
+
+:is(.dark .dark\:checked\:border-red-500:checked) {
+  border-color: var(--red-500);
+}
+
 /*
 .before\:content\[\'\'\]::before {
     content: "";
