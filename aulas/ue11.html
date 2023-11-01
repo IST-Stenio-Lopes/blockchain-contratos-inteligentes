@@ -60,7 +60,8 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- VideoBorderFrame Problematizando -->
       <div
-        class="relative col-start-1 col-end-13 grid grid-cols-12 gap-x-4 mt-14 mb-8"
+        id="start-ue"
+        class="relative col-start-1 col-end-13 grid grid-cols-12 gap-x-4 mt-14"
       >
         <div
           class="absolute inset-0 rounded-lg border-2 mx-10 border-orange-500"
@@ -100,7 +101,7 @@
   </div>
 
   <!-- Section title primary -->
-  <div class="w-full">
+  <div class="w-full pt-8 pb-8">
     <div
       class="flex items-center justify-center w-full h-16 section-title-content-primary"
     >
@@ -127,9 +128,7 @@
         </p>
 
         <!-- WarningBanner -->
-
-        <!--classe para acrescentar se vai precisar de margem ou não-->
-        <div class="">
+        <div class="pt-8 pb-8">
           <div
             class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
           >
@@ -142,7 +141,7 @@
               <br>
               
               <!-- SimpleTableV1 -->
-              <div>
+              <div class="pt-8 pb-8">
                 <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
                   <thead>
                     <tr>
@@ -222,7 +221,6 @@
               </div>
               <!-- / SimpleTableV1 -->
 
-              <br>
               Assim, apenas elementos públicos (public) e internos (internal)
               podem ser herdados por contratos derivados. Os elementos externos,
               apesar de não serem modificáveis, podem ser acessados pelos
@@ -245,7 +243,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="1"
         ></div>
@@ -259,7 +257,8 @@
         </p>
 
         <h2
-          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+          id="1-1"
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
         >
           Herança única
         </h2>
@@ -293,7 +292,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="2"
         ></div>
@@ -316,6 +315,7 @@
             Na linha 9, numero é multiplicado por 2 e atribuído a variável
             dobro.
           </li>
+          <br>
         </ol>
         <!-- / List -->
 
@@ -339,12 +339,24 @@
             Pai.
           </li>
           <br />
+          <li class="list-none">
+            <!-- List -->
+            <ol
+              class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+            >
+              <li>
+                Filho por herdar Pai tem acesso a variável
+              </li>
+              <br />
+            </ol>
+            <!-- / List -->
+          </li>
         </ol>
         <!-- / List -->
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="3"
         ></div>
@@ -376,6 +388,8 @@
             Na linha 26, o contrato cf executa a função consultar( ) que retorna
             a variável dobro.
           </li>
+          <br />
+
         </ol>
         <!-- / List -->
 
@@ -389,7 +403,8 @@
         <!-- TODO QUESTÃO - Questão 2 -->
 
         <h2
-          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+          id="1-2"
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
         >
           Herança multinível
         </h2>
@@ -424,13 +439,12 @@
             O contrato C possui uma função que retorna o valor de tituloB.
           </li>
           <br />
-          <br />
         </ol>
         <!-- / List -->
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="4"
         ></div>
@@ -445,7 +459,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="5"
         ></div>
@@ -460,7 +474,8 @@
         <!-- TODO QUESTÃO -->
 
         <h2
-          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+          id="1-3"
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
         >
           Herança múltipla
         </h2>
@@ -478,6 +493,7 @@
           <br />
 
           <li>Um filho pode ter mais de um pai.</li>
+          <br />
         </ol>
         <!-- / List -->
 
@@ -489,7 +505,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="6"
         ></div>
@@ -504,7 +520,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="7"
         ></div>
@@ -515,7 +531,7 @@
   <!-- / Section -->
 
   <!-- Section title primary -->
-  <div class="w-full">
+  <div class="w-full pt-8 pb-8">
     <div
       class="flex items-center justify-center w-full h-16 section-title-content-primary"
     >
@@ -557,7 +573,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="8"
         ></div>
@@ -580,7 +596,7 @@
   <!-- / Section -->
 
   <!-- Section title primary -->
-  <div class="w-full">
+  <div class="w-full pt-8 pb-8">
     <div
       class="flex items-center justify-center w-full h-16 section-title-content-primary"
     >
@@ -634,7 +650,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="9"
         ></div>
@@ -643,7 +659,8 @@
         <!-- TODO QUESTÃO - Questão 5 -->
 
         <h2
-          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+          id="3-1"
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
         >
           Criação de um evento
         </h2>
@@ -675,7 +692,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="10"
         ></div>
@@ -695,7 +712,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="11"
         ></div>
@@ -707,13 +724,13 @@
   <!-- / Section -->
 
   <!-- Section title primary -->
-  <div class="w-full">
+  <div class="w-full pt-8 pb-8">
     <div
       class="flex items-center justify-center w-full h-16 section-title-content-primary"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="4-0">
             Controle de erros
           </h1>
         </div>
@@ -735,7 +752,7 @@
         </p>
 
         <!-- SimpleTableV1 -->
-        <div>
+        <div class="pt-8 pb-8">
           <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
             <colgroup>
               <col style="width: 50%;">
@@ -801,7 +818,8 @@
         <!-- TODO QUESTÃO - Questão 6-->
 
         <h2
-          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+          id="4-1"
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
         >
           Require
         </h2>
@@ -833,13 +851,12 @@
             informação do usuário.
           </li>
           <br />
-          <br />
         </ol>
         <!-- / List -->
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="12"
         ></div>
@@ -852,14 +869,15 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="13"
         ></div>
         <!-- / Image content -->
 
         <h2
-          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+          id="4-2"
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
         >
           Assert
         </h2>
@@ -887,6 +905,7 @@
             Se for falso, lançará uma exceção e o estado é revertido para o
             estado original.
           </li>
+          <br />
         </ol>
         <!-- / List -->
 
@@ -898,7 +917,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8 pb-8"
           ue="UE11"
           index="14"
         ></div>
@@ -912,13 +931,14 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="15"
         ></div>
         <!-- / Image content -->
         <h2
-          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12"
+          id="4-3"
+          class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
         >
           Revert
         </h2>
@@ -937,7 +957,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="16"
         ></div>
@@ -945,7 +965,7 @@
 
         <!-- Image content -->
         <div
-          class="gallery flex flex-col items-center"
+          class="gallery flex flex-col items-center pt-8"
           ue="UE11"
           index="17"
         ></div>
@@ -956,7 +976,7 @@
   <!-- / Section -->
 
   <!-- Section title secondary -->
-  <div class="w-full">
+  <div class="w-full pt-8 pb-8">
     <div
       class="flex items-center justify-center w-full h-16 section-title-content-secondary"
     >
@@ -1127,8 +1147,6 @@
           <li>Revert possui o formato geral:</li>
           <br />
           <p class="text-center">revert(“mensagem de erro”)</p>
-
-          <br />
         </ol>
         <!-- / List -->
       </div>
