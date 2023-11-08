@@ -1,7 +1,5 @@
 import {
-  generateID,
   createElementWithClasses,
-  getInputIndexById,
 } from "../../utils/index.js";
 
 function generateCheckMark(alternativeId) {

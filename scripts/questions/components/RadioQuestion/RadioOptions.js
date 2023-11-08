@@ -1,7 +1,6 @@
 import {
   generateID,
   createElementWithClasses,
-  getInputIndexById,
 } from "../../utils/index.js";
 import { generateButtonEnviarResposta } from "../ButtonEnviarResposta.js";
 

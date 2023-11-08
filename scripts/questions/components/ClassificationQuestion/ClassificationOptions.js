@@ -1,7 +1,6 @@
 import {
   createElementWithClasses,
   generateID,
-  getInputIndexById,
 } from "../../utils/index.js";
 import { generateButtonEnviarResposta } from "../ButtonEnviarResposta.js";
 
@@ -76,7 +75,7 @@ function generateClassificationOptions(question) {
 
   // form
   const form = createElementWithClasses("form", "flex flex-col gap-4");
-  //form.id = generateID(question.uid, "FORM", 1);
+  //form.id = generateID(questionId, "FORM", 1);
   form.addEventListener("submit", handleSubmit);
 
   // table
@@ -94,12 +93,12 @@ function generateClassificationOptions(question) {
   );
   thead.appendChild(tr);
 
-  question.descriptions.map((header, headerIndex) => {
+  descriptions.map((header, headerIndex) => {
     const th = createElementWithClasses(
       "th",
       "font-semibold text-lg text-center w-1/2 text-secondary-300 border-r-[1.5px] border-secondary-800 last:border-r-0"
     );
-    th.key = question.uid + "H" + headerIndex;
+    th.key = questionId + "H" + headerIndex;
     th.innerHTML = header.toUpperCase();
     tr.appendChild(th);
   });
@@ -108,10 +107,10 @@ function generateClassificationOptions(question) {
   const tbody = document.createElement("tbody");
   table.appendChild(tbody);
 
-  Object.keys(question.classifications).map(
+  Object.keys(classifications).map(
     (classification, classificationIndex) => {
       const classificationId = generateID(
-        question.uid,
+        questionId,
         "CLA",
         classificationIndex
       );
@@ -171,7 +170,7 @@ function generateClassificationOptions(question) {
       optionSelecione.selected = true;
       select.appendChild(optionSelecione);
 
-      question.alternatives.map((alternative, alternativeIndex) => {
+      alternatives.map((alternative, alternativeIndex) => {
         const alternativeId = generateID(questionId, "ALT", alternativeIndex);
 
         ////// ESSA PARTE DO CODIGO DISABLED QUE TA ATRAPALHANDO TUDO NA SUBMISSAO DO FORM !!!!!! //////////////////

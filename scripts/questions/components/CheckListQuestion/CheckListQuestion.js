@@ -2,7 +2,6 @@ import { generateQuestionHeader } from "../QuestionHeader.js";
 import { generateQuestionComponent } from "../QuestionComponent.js";
 import { generateFeedBack } from "../Feedback.js";
 import { generateCheckListOptions } from "./CheckListOptions.js";
-import { generateButtonEnviarResposta } from "../ButtonEnviarResposta.js";
 import { generateID } from "../../utils/index.js";
 
 function generateCheckListQuestion(question) {
@@ -25,7 +24,7 @@ function generateCheckListQuestion(question) {
   rootContainer.addEventListener("evaluationCreated", function (e) {
     // remover feedbacks se existirem, e transformar feedbackElement pra 0
     let i = 0;
-    for (i=0; i < feedbackCount; i++) {
+    for (i = 0; i < feedbackCount; i++) {
       let feedbackId = generateID(question.uid, "EVAL", i);
       let feedbackElement = document.getElementById(feedbackId);
       feedbackElement.remove();
@@ -42,13 +41,9 @@ function generateCheckListQuestion(question) {
       );
       feedback.id = feedbackId;
       feedbackCount += 1; // adicionei mais um feedback
-    //if (feedbackElement) {
-    //  feedbackElement.remove(); // if an feedback already exists here it is removed
-    //}
-    //feedbackElement += 1;
-    const feedbackElement1 = feedback;
-    rootContainer.insertBefore(feedbackElement1, checkListOptions); // feeback put before the radioOptions
-    })
+      const feedbackElement1 = feedback;
+      rootContainer.insertBefore(feedbackElement1, checkListOptions); // feeback put before the radioOptions
+    });
   });
 
   // CheckListOptions

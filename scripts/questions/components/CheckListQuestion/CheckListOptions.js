@@ -1,7 +1,6 @@
 import {
   generateID,
   createElementWithClasses,
-  getInputIndexById,
 } from "../../utils/index.js";
 import { generateButtonEnviarResposta } from "../ButtonEnviarResposta.js";
 import { generateCheckMark } from "./CheckMark.js";
@@ -71,7 +70,6 @@ function generateCheckListOptions(question) {
         renderCheck = generateCheckMarkError(alternativeId);
         div.appendChild(renderCheck);
       }
-
     });
 
     // tr for each alternative
