@@ -30,7 +30,6 @@ const UE1Q1 = {
   ],
 }
 
-
 const UE1Q2 = {
   uid: 'UE1Q2',
   assertive: "As redes <input /> armazenam e controlam informações em um ponto central são chamadas de?",
@@ -55,7 +54,6 @@ const UE1Q2 = {
   ]
 };
 
-
 const UE1Q3 = {
   uid: 'UE1Q3',
   assertive: "Considere as duas situações abaixo <br/><br/> Situação A: Camila transferiu uma quantia diretamente para Carlos de forma bastante segura sem necessidade de intermediários.<br/><br/> Situação B: Camila transferiu uma quantia para Carlos utilizando como intermediário uma instituição financeira. <br/><br/> Qual o tipo de rede usada em cada situação?",
@@ -75,8 +73,6 @@ const UE1Q3 = {
     subtitle: 'Revisite o conceito de redes distribuídas e centralizadas'
   },
 };
-
-
 
 const UE1Q4 = {
   uid: 'UE1Q4',

@@ -1,9 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain";
-import { ClassificationQuestion } from "@/components/Questions/ClassificationQuestion/domain";
-import { CompleteQuestion } from "@/components/Questions/CompleteQuestion/domain";
-import { EvaluationByAssessment } from "@/components/Questions/CompleteQuestion/domain";
-
-const UE6Q1 = new RadioQuestion({
+const UE6Q1 = {
   uid: "UE6Q1",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -33,9 +28,9 @@ const UE6Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE6Q2 = new ClassificationQuestion({
+const UE6Q2 = {
   uid: 'UE6Q2',
   assertive: "Relacione cada elemento do cálculo de gás com sua descrição.",
   components: [],
@@ -54,9 +49,9 @@ const UE6Q2 = new ClassificationQuestion({
     title: 'OPS!',
     subtitle: 'Revisite o conceito de redes distribuídas e centralizadas'
   },
-});
+};
 
-const UE6Q3 = new RadioQuestion({
+const UE6Q3 = {
   uid: "UE6Q3",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -85,9 +80,9 @@ const UE6Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE6Q4 = new CompleteQuestion({
+const UE6Q4 = {
   uid: 'UE6Q4',
   assertive: "Clique nas palavras abaixo para escolher a resposta CORRETA para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -96,7 +91,7 @@ const UE6Q4 = new CompleteQuestion({
       sentence: "Os contratos inteligentes utilizam <input /> como plataforma para seu funcionamento?",
       alternatives: ['Blockchain', 'EVM', 'Proof of Stake'],
       correctAnswer: ['EVM'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -107,12 +102,12 @@ const UE6Q4 = new CompleteQuestion({
             subtitle: 'Revise os conceitos da unidade.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
-const UE6Q5 = new ClassificationQuestion({
+const UE6Q5 = {
   uid: 'UE6Q5',
   assertive: "Relacione corretamente as características de cada algoritmo de validação abaixo:",
   components: [],
@@ -133,10 +128,10 @@ const UE6Q5 = new ClassificationQuestion({
     title: 'OPS!',
     subtitle: 'Revisite os conceitos da unidade.'
   },
-});
+};
 
 
-const UE6Q6 = new CompleteQuestion({
+const UE6Q6 = {
   uid: 'UE6Q6',
   assertive: "Clique nas palavras abaixo para escolher a resposta correta para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -145,7 +140,7 @@ const UE6Q6 = new CompleteQuestion({
       sentence: "Parte do funcionamento Proof of Stake ou prova de participação consiste que o participante tenha uma quantidade de criptomoedas bloqueadas na “apostadas” em um bloco. <input />",
       alternatives: ['Blockchain', 'EVM', 'Proof of Stake'],
       correctAnswer: ['EVM'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -156,9 +151,9 @@ const UE6Q6 = new CompleteQuestion({
             subtitle: 'Revise os conceitos da unidade.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
 export { UE6Q1, UE6Q2, UE6Q3, UE6Q4, UE6Q5, UE6Q6 };

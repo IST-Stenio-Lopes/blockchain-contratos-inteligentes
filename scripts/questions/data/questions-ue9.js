@@ -1,12 +1,11 @@
-
-const UE9Q1 = new RadioQuestion({
+const UE9Q1 = {
   uid: "UE9Q1",
   assertive:
     "Maria quer fazer uma função para realizar uma operação entre dois números e escreveu o seguinte código:",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ1,
+      value: "/images/ue/UE 9/Imagem - Q.1.jpg",
     },
     {
       type: "TEXT",
@@ -47,15 +46,15 @@ const UE9Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE9Q2 = new RadioQuestion({
+const UE9Q2 = {
   uid: "UE9Q2",
   assertive: "A imagem mostra o código da função soma feita por Maria",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ1,
+      value: "/images/ue/UE 9/Imagem - Q.1.jpg",
     },
     {
       type: "TEXT",
@@ -96,15 +95,15 @@ const UE9Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE9Q3 = new RadioQuestion({
+const UE9Q3 = {
   uid: "UE9Q3",
   assertive: "A imagem mostra o código da função soma feita por Maria",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ1,
+      value: "/images/ue/UE 9/Imagem - Q.1.jpg",
     },
     {
       type: "TEXT",
@@ -145,15 +144,15 @@ const UE9Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE9Q4 = new RadioQuestion({
+const UE9Q4 = {
   uid: "UE9Q4",
   assertive: "A imagem mostra o código da função soma feita por Maria",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ1,
+      value: "/images/ue/UE 9/Imagem - Q.1.jpg",
     },
     {
       type: "TEXT",
@@ -195,15 +194,15 @@ const UE9Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE9Q5 = new RadioQuestion({
+const UE9Q5 = {
   uid: "UE9Q5",
   assertive: "A imagem mostra o código da função soma feita por Maria",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ1,
+      value: "/images/ue/UE 9/Imagem - Q.1.jpg",
     },
     {
       type: "TEXT",
@@ -238,9 +237,9 @@ const UE9Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE9Q6 = new ClassificationQuestion({
+const UE9Q6 = {
   uid: "UE9Q6",
   assertive:
     "Clique no espaço vazio e escolha a letra correspondente a função/variáveis intrínsecas (build-in) com sua funcionalidade.",
@@ -299,9 +298,9 @@ const UE9Q6 = new ClassificationQuestion({
     title: "OPS!",
     subtitle: "Revisite as funcionalidades das funções intrínsecas.",
   },
-});
+};
 
-const UE9Q7 = new RadioQuestion({
+const UE9Q7 = {
   uid: "UE9Q7",
   assertive:
     "Considerando o exemplo anterior, se a função guardar(5724) for executada, qual será o valor retornado na saída de consultar( )?",
@@ -332,9 +331,9 @@ const UE9Q7 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE9Q8 = new RadioQuestion({
+const UE9Q8 = {
   uid: "UE9Q8",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -362,9 +361,9 @@ const UE9Q8 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE9Q9 = new CompleteQuestion({
+const UE9Q9 = {
   uid: "UE9Q9",
   assertive:
     "Clique nas palavras abaixo para escolher a resposta correta para os espaços em branco e completar a sentença a seguir:",
@@ -382,7 +381,7 @@ const UE9Q9 = new CompleteQuestion({
         "constructor",
       ],
       correctAnswer: ["Modificadores", "modifier"],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: "PARABÉNS!",
@@ -393,10 +392,10 @@ const UE9Q9 = new CompleteQuestion({
             subtitle: "Revisite o conteúdo sobre modificadores.",
           },
         }
-      })
+      }
     },
   ],
-});
+};
 
 export {
   UE9Q1,

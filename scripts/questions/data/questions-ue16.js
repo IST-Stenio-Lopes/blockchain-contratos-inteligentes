@@ -1,6 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-
-const UE16Q1 = new RadioQuestion({
+const UE16Q1 = {
   uid: "UE16Q1",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -29,11 +27,9 @@ const UE16Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-
-
-const UE16Q2 = new RadioQuestion({
+const UE16Q2 = {
   uid: "UE16Q2",
   assertive:
   [
@@ -84,9 +80,9 @@ const UE16Q2 = new RadioQuestion({
       },
     },
   ],
-})
+};
 
-const UE16Q3 = new RadioQuestion({
+const UE16Q3 = {
   uid: "UE16Q3",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -115,9 +111,9 @@ const UE16Q3 = new RadioQuestion({
       },
     },
   ],
-})
+};
 
-const UE16Q4 = new RadioQuestion({
+const UE16Q4 = {
   uid: "UE16Q4",
   assertive: [
     "Suponha que você seja um desenvolvedor planejando lançar um novo protocolo DeFi. Ao considerar os desafios potenciais associados aos sistemas distribuídos, você pondera sobre o aspecto da escalabilidade e a latência.",
@@ -163,6 +159,6 @@ const UE16Q4 = new RadioQuestion({
       },
     },
   ],
-})
+};
 
 export { UE16Q1, UE16Q2, UE16Q3, UE16Q4 };

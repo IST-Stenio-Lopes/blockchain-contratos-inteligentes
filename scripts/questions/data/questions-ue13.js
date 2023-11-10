@@ -1,16 +1,10 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-
-import ImageQ1 from "@/../public/images/UE 13/Imagem - Q. 1.png";
-import ImageQ2 from "@/../public/images/UE 13/Imagem - Q. 2.png";
-import ImageQ3 from "@/../public/images/UE 13/Imagem - Q. 3.png";
-
-const UE13Q1 = new RadioQuestion({
+const UE13Q1 = {
   uid: "UE13Q1",
   assertive: "Considere o evento definido para troca de produto",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ1,
+      value: "/images/ue/UE 13/Imagem - Q. 1.png",
     },
     {
       type: "TEXT",
@@ -65,15 +59,15 @@ const UE13Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE13Q2 = new RadioQuestion({
+const UE13Q2 = {
   uid: "UE13Q2",
   assertive: "Considere a função:",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ2,
+      value: "/images/ue/UE 13/Imagem - Q. 2.png",
     },
     {
       type: "TEXT",
@@ -149,16 +143,16 @@ const UE13Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE13Q3 = new RadioQuestion({
+const UE13Q3 = {
   uid: "UE13Q3",
   assertive:
     "Considere o seguinte trecho de código de um contrato inteligente de um sistema de votação que utiliza tokens. A função 'votar' é responsável por verificar se o eleitor tem tokens suficientes para votar em um candidato específico. Analise o código a seguir:",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ3,
+      value: "/images/ue/UE 13/Imagem - Q. 3.png",
     },
     {
       type: "TEXT",
@@ -184,7 +178,7 @@ const UE13Q3 = new RadioQuestion({
       feedback: {
         title: "OPS!",
         subtitle:
-          " A função 'votar' utiliza a diretiva 'require' (linha 4) para verificar se o eleitor tem tokens suficientes para votar no candidato desejado.",
+          " A função 'votar' utiliza a diretiva 'require' (linha 4) para verificar se o eleitor tem tokens suficientes para votar no candidato desejado.",
       },
     },
     {
@@ -218,6 +212,6 @@ const UE13Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 export { UE13Q1, UE13Q2, UE13Q3 };

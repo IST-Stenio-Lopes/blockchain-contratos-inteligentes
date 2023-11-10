@@ -1,9 +1,4 @@
-import { CheckListQuestion } from "@/components/Questions/CheckListQuestion/domain";
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-import { CompleteQuestion, EvaluationByAssessment } from "@/components/Questions/CompleteQuestion/domain";
-import { CompleteWithSelectQuestion } from "@/components/Questions/CompleteWithSelectQuestion/domain";
-
-const UE8Q1 = new RadioQuestion({
+const UE8Q1 = {
   uid: "UE8Q1",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -28,9 +23,9 @@ const UE8Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE8Q2 = new CompleteQuestion({
+const UE8Q2 = {
   uid: 'UE8Q2',
   assertive: "Respectivamente, clique nas palavras abaixo para escolher a resposta CORRETA para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -39,7 +34,7 @@ const UE8Q2 = new CompleteQuestion({
       sentence: "A blockchain é uma rede <input /> que compartilha entre os nós o ledger ou livro razão, no qual são registradas as <input />",
       alternatives: ['Remix', 'Node.js', 'JavaScript', 'Solidity'],
       correctAnswer: ['Remix', 'Solidity'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -53,12 +48,12 @@ const UE8Q2 = new CompleteQuestion({
             subtitle: 'Revise os conceitos da unidade.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
-const UE8Q3 = new CheckListQuestion({
+const UE8Q3 = {
   uid: "UE8Q3",
   assertive: "Múltipla escolha. Você pode selecionar mais de uma opção",
   components: [
@@ -93,9 +88,9 @@ const UE8Q3 = new CheckListQuestion({
       },
     },
   ],
-});
+};
 
-const UE8Q4 = new RadioQuestion({
+const UE8Q4 = {
   uid: "UE8Q4",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -120,9 +115,9 @@ const UE8Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE8Q5 = new CompleteWithSelectQuestion({
+const UE8Q5 = {
   uid: 'UE8Q5',
   assertive: "Clique no espaço em branco para selecionar a opção CORRETA para a sentença a seguir:",
   components: [],
@@ -134,7 +129,7 @@ const UE8Q5 = new CompleteWithSelectQuestion({
       ].join('<br/><br/>'),
       alternatives: ['Construtor', 'Variável', 'Compilador'],
       correctAnswer: ['Variável'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -145,13 +140,13 @@ const UE8Q5 = new CompleteWithSelectQuestion({
             subtitle: 'Revise o conteúdo da unidade'
           }
         }
-      })
+      }
     },
     {
       sentence: "2. Um trecho de código que realiza alguma tarefa específica e pode ser chamado por outras parte do programa, no exemplo chamado de olaMundo() é uma <select />",
       alternatives: ['Função', 'Return', 'Licença'],
       correctAnswer: ['Função'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -162,12 +157,12 @@ const UE8Q5 = new CompleteWithSelectQuestion({
             subtitle: 'Revise o conteúdo da unidade'
           }
         }
-      })
+      }
     }
   ]
-})
+}
 
-const UE8Q6 = new RadioQuestion({
+const UE8Q6 = {
   uid: "UE8Q6",
   assertive: "Marque a alternativa que apresenta a ordem correta das atividades para produção e uso de contratos in",
   components: [],
@@ -213,7 +208,7 @@ const UE8Q6 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 
 

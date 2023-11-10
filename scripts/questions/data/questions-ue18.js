@@ -1,6 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-
-const UE18Q1 = new RadioQuestion({
+const UE18Q1 = {
   uid: "UE18Q1",
   assertive: "João, um gerente de projetos em uma empresa de tecnologia, está liderando uma equipe para desenvolver um novo sistema DeFi. Durante uma reunião com a equipe, ele precisa tomar uma decisão que envolve a ética profissional. Com base no texto sobre ética profissional, qual das seguintes opções representa a melhor decisão ética de João?",
   components: [],
@@ -42,9 +40,9 @@ const UE18Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE18Q2 = new RadioQuestion({
+const UE18Q2 = {
   uid: "UE18Q2",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -81,9 +79,9 @@ const UE18Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE18Q3 = new RadioQuestion({
+const UE18Q3 = {
   uid: "UE18Q3",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -114,9 +112,9 @@ const UE18Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE18Q4 = new RadioQuestion({
+const UE18Q4 = {
   uid: "UE18Q4",
   assertive: [
     "Arthur é gerente de projetos em uma empresa de TI e está liderando a seleção de um novo fornecedor de software para um projeto importante. Um de seus melhores amigos é dono de uma das empresas que estão concorrendo ao contrato. Pedro está preocupado com o potencial conflito de interesses na situação.",
@@ -155,6 +153,6 @@ const UE18Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 export { UE18Q1, UE18Q2, UE18Q3, UE18Q4 };

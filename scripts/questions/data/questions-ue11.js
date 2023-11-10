@@ -1,11 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-import { CompleteQuestion, EvaluationByAssessment } from "@/components/Questions/CompleteQuestion/domain";
-
-import ImageQ2 from '@/../public/images/UE 11/Imagem - Q. 2.png'
-import ImageQ3 from '@/../public/images/UE 11/Imagem - Q. 3.png'
-
-
-const UE11Q1 = new RadioQuestion({
+const UE11Q1 = {
   uid: "UE11Q1",
   assertive: "Assinale a alternativa FALSA sobre herança em Solidity.",
   components: [
@@ -44,15 +37,15 @@ const UE11Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE11Q2 = new RadioQuestion({
+const UE11Q2 = {
   uid: "UE11Q2",
   assertive: "Considerando o exemplo anterior. Se o contrato Teste teve a seguinte modificação de implementação:",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ2,
+      value: "images/ue/UE 11/Imagem - Q. 2.png",
     },
     {
       type: "TEXT",
@@ -93,15 +86,15 @@ const UE11Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE11Q3 = new RadioQuestion({
+const UE11Q3 = {
   uid: "UE11Q3",
   assertive: "Considerando o exemplo anterior. Se o contrato Teste teve a seguinte modificação de implementação:",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ3,
+      value: "/images/ue/UE 11/Imagem - Q. 3.png",
     },
     {
       type: "TEXT",
@@ -142,9 +135,9 @@ const UE11Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE11Q4 = new CompleteQuestion({
+const UE11Q4 = {
   uid: 'UE11Q4',
   assertive: "Respectivamente, clique nas palavras abaixo para escolher a resposta correta para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -153,7 +146,7 @@ const UE11Q4 = new CompleteQuestion({
       sentence: "O marcador <input /> é utilizado no contrato base indicando que a função pode ser sobrescrita. O marcador <input /> é usado no contrato derivado e indica que a função foi sobrescrita.",
       alternatives: ['override', 'virtual'],
       correctAnswer: ['virtual', 'override'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -164,13 +157,13 @@ const UE11Q4 = new CompleteQuestion({
             subtitle: 'Revise o conteúdo.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
 
-const UE11Q5 = new RadioQuestion({
+const UE11Q5 = {
   uid: "UE11Q5",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -197,9 +190,9 @@ const UE11Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE11Q6 = new CompleteQuestion({
+const UE11Q6 = {
   uid: 'UE11Q6',
   assertive: "Respectivamente, clique nas palavras abaixo para escolher a resposta correta para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -208,7 +201,7 @@ const UE11Q6 = new CompleteQuestion({
       sentence: "Erros de sintaxe são considerados erros de <input /> . Já os erros de <input /> acontecem durante a execução do contrato, podendo gerar falhas para os usuários.",
       alternatives: ['compilação', 'execução'],
       correctAnswer: ['compilação', 'execução'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -219,10 +212,10 @@ const UE11Q6 = new CompleteQuestion({
             subtitle: 'Revise o conteúdo.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
 export {
   UE11Q1,

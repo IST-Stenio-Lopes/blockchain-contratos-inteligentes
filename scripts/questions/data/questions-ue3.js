@@ -1,13 +1,4 @@
-import UE3Q4Image from '@/../public/images/UE 3/Imagem Q4 - UE3.png'
-
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-import { ClassificationQuestion } from "@/components/Questions/ClassificationQuestion/domain";
-import { CompleteQuestion } from "@/components/Questions/CompleteQuestion/domain";
-import { EvaluationByAssessment } from "@/components/Questions/CompleteQuestion/domain";
-import { CompleteImage } from "../CompleteImage/domain";
-
-
-const UE3Q1 = new CompleteQuestion({
+const UE3Q1 = {
   uid: "UE3Q1",
   assertive: "Escolha a palavra que é a resposta correta para completar as sentenças a seguir:",
   components: [],
@@ -16,7 +7,7 @@ const UE3Q1 = new CompleteQuestion({
       sentence: "1. O banco de dados da Blockchain é constituído por <input /> que, juntos, formam uma cadeia.",
       alternatives: ['Blocos', 'Tabelas'],
       correctAnswer: ['Blocos'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -27,13 +18,13 @@ const UE3Q1 = new CompleteQuestion({
             subtitle: 'Revise o conteúdo sobre a estrutura da rede Blockchain'
           },
         }
-      })
+      }
     },
     {
       sentence: "2. Os blocos possuem <input /> que funcionam com links com os blocos anteriores até o bloco inicial.",
       alternatives: ['Relações', 'Hashes'],
       correctAnswer: ['Hashes'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -44,20 +35,20 @@ const UE3Q1 = new CompleteQuestion({
             subtitle: 'Revise o conteúdo sobre a estrutura da rede Blockchain'
           },
         }
-      })
+      }
     },
   ]
-});
+};
 
 
-
-const UE3Q2 = new CompleteImage({
+// CompleteImage
+const UE3Q2 = {
   uid: "UE3Q2",
   assertive: "Analise a imagem abaixo e, respectivamente, clique na palavra que corresponde aos espaços vazios na estrutura do bloco da blockchain:",
   components: [],
   alternatives: ['Assinatura', 'Hash', 'Transação'],
   correctAnswer: ['Hash', 'Transação', 'Assinatura'],
-  evaluation: new EvaluationByAssessment({
+  evaluation: { //EvaluationByAssessment
     feedback: {
       correct: {
         title: 'CORRETO',
@@ -68,11 +59,11 @@ const UE3Q2 = new CompleteImage({
         subtitle: 'Revise o conteúdo sobre a estrutura de bloco.'
       },
     }
-  })
-});
+  }
+};
 
 
-const UE3Q3 = new RadioQuestion({
+const UE3Q3 = {
   uid: "UE3Q3",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -99,10 +90,10 @@ const UE3Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-
-const UE3Q4 = new CompleteImage({
+// CompleteImage
+const UE3Q4 = {
   uid: "UE3Q4",
   assertive: [
     "Para preencher o espaço em branco, selecione a função que tem as características abaixo: <br /><br />",
@@ -112,7 +103,7 @@ const UE3Q4 = new CompleteImage({
   components: [],
   alternatives: ['Hash', 'Modular', 'Injetora'],
   correctAnswer: ['Hash'],
-  evaluation: new EvaluationByAssessment({
+  evaluation: {
     feedback: {
       correct: {
         title: 'CORRETO',
@@ -123,10 +114,10 @@ const UE3Q4 = new CompleteImage({
         subtitle: 'Revise o conteúdo sobre a função hash.'
       },
     }
-  })
-});
+  }
+};
 
-const UE3Q5 = new RadioQuestion({
+const UE3Q5 = {
   uid: "UE3Q5",
   assertive: "Uma das formas de minerar dados na blockchain é achar o número <input /> para criação do hash.",
   components: [],
@@ -157,9 +148,9 @@ const UE3Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE3Q6 = new RadioQuestion({
+const UE3Q6 = {
   uid: "UE3Q6",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -185,9 +176,9 @@ const UE3Q6 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE3Q7 = new RadioQuestion({
+const UE3Q7 = {
   uid: "UE3Q7",
   assertive: "As transações estão relacionadas a uma <input /> garantindo segurança e o anonimato",
   components: [],
@@ -220,9 +211,9 @@ const UE3Q7 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE3Q8 = new ClassificationQuestion({
+const UE3Q8 = {
   uid: 'UE3Q8',
   assertive: "Clique nos campos vazios e escolha a opção correspondente a sua característica:",
   components: [],
@@ -241,9 +232,9 @@ const UE3Q8 = new ClassificationQuestion({
     title: 'OPS!',
     subtitle: 'Revisite os conceitos dos tipos de chaves e endereço.'
   },
-});
+};
 
-const UE3Q9 = new ClassificationQuestion({
+const UE3Q9 = {
   uid: 'UE3Q9',
   assertive: "Clique nos campos vazios e escolha o tipo de carteira que corresponde a sua característica:",
   components: [],
@@ -261,7 +252,7 @@ const UE3Q9 = new ClassificationQuestion({
     title: 'OPS!',
     subtitle: 'Revisite o conteúdo de tipos de carteira.'
   },
-});
+};
 
 
 export { UE3Q1, UE3Q2, UE3Q3, UE3Q4, UE3Q5, UE3Q6, UE3Q7, UE3Q8, UE3Q9 };

@@ -1,9 +1,9 @@
-import { createElementWithClasses } from "../utils/index.js";
-
 function generateImage(imageSrc) {
-  const image = createElementWithClasses("image", "w-full");
-  image.setAttribute("src", imageSrc);
-  image.setAttribute("alt", "");
+  const image = new Image();
+  image.src = imageSrc;
+  image.classList.add("w-full");
+  image.style.color = "transparent";
+
   return image;
 }
 

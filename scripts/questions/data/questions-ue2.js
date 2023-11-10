@@ -1,4 +1,4 @@
-const UE2Q1 = new CompleteQuestion({
+const UE2Q1 = {
   uid: 'UE2Q1',
   assertive: "Respectivamente, clique nas palavras abaixo para escolher a resposta correta para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -7,7 +7,7 @@ const UE2Q1 = new CompleteQuestion({
       sentence: "<input /> são moedas digitais que utilizam criptografia como elemento de segurança. <input /> é uma tecnologia distribuída popularmente utilizada nas criptomoedas.",
       alternatives: ['Blockchain', 'Criptomoedas'],
       correctAnswer: ['Criptomoedas', 'Blockchain'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: "PARABÉNS!",
@@ -18,13 +18,13 @@ const UE2Q1 = new CompleteQuestion({
             subtitle: "Revise o conceito de blockchain e criptomoedas."
           },
         }
-      })
+      }
     },
   ],
-});
+};
 
 
-const UE2Q2 = new RadioQuestion({
+const UE2Q2 = {
   uid: "UE2Q2",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -51,9 +51,9 @@ const UE2Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE2Q3 = new RadioQuestion({
+const UE2Q3 = {
   uid: "UE2Q3",
   assertive: "As blockchains <input /> são indicadas para empresas que querem usufruir da tecnologia blockchain, mas ainda preservar a publicidade de seus dados.",
   components: [],
@@ -75,9 +75,9 @@ const UE2Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE2Q4 = new RadioQuestion({
+const UE2Q4 = {
   uid: "UE2Q4",
   assertive: "Joana comprou um apartamento diretamente à Paula. Toda parte financeira e de documentação foi feita entre as duas, sem necessidade de intervenção de terceiros. Joana e Paula podem ter utilizado:",
   components: [],
@@ -120,9 +120,9 @@ const UE2Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE2Q5 = new RadioQuestion({
+const UE2Q5 = {
   uid: "UE2Q5",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -149,9 +149,9 @@ const UE2Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE2Q6 = new RadioQuestion({
+const UE2Q6 = {
   uid: "UE2Q6",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -176,9 +176,8 @@ const UE2Q6 = new RadioQuestion({
         subtitle:
           "A Blockchain já é uma realidade no ciclo industrial de várias indústrias.",
       },
-
     },
   ],
-});
+};
 
 export { UE2Q1, UE2Q2, UE2Q3, UE2Q4, UE2Q5, UE2Q6 };

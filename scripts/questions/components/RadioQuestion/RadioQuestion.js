@@ -35,8 +35,8 @@ function generateRadioQuestion(question) {
   });
 
   // Components (Image / SubHeader)
-  question.components.map((component, componentIndex) => {
-    const questionComponent = generateQuestionComponent(component);
+  question.components.map((component, _) => {
+    let questionComponent = generateQuestionComponent(component);
     rootContainer.appendChild(questionComponent);
   });
 
