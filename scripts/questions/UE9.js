@@ -7,7 +7,7 @@ import {
   UE9Q6,
   UE9Q7,
   UE9Q8,
-  UE9Q9
+  UE9Q9,
 } from "./data/questions-ue9.js";
 import { generateRadioQuestion } from "./components/RadioQuestion/RadioQuestion.js";
 import { generateCompleteQuestion } from "./components/CompleteQuestion/CompleteQuestion.js";

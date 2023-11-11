@@ -79,6 +79,31 @@
   border-color: var(--red-500);
 }
 
+.bg-gradient-complete-image {
+  background: linear-gradient(to right, white, #FAFAFF, #EFEFFF);
+}
+
+.gap-2 {
+  gap: 0.5rem; /* 8px */
+}
+
+.bg-\[\#EBEEF7\] {
+  background-color: #EBEEF7;
+}
+
+.border-\[\#062680\] {
+  border-color: #062680;
+}
+
+.bg-\[\#EBEEF7\] {
+  background-color: #EBEEF7;
+
+}
+
+.border-gray-4000 {
+  border-color: rgb(156 163 175);
+  opacity: 1;
+}
 /*
 .before\:content\[\'\'\]::before {
     content: "";

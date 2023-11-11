@@ -139,7 +139,7 @@ function generateCompleteWithBoxAssessment(
       const classesInput =
         "bg-secondary-overlay-800 text-secondary-300 font-normal border-b-2 border-secondary-500 outline-none mx-1 text-center";
       const input = document.createElement("input");
-      input.classList.add(...classesInput.split(" ")); // TODO ver se funciona
+      input.classList.add(...classesInput.split(" "));
       input.id = inputId;
       input.name = inputId;
       input.value = rawTextValue;

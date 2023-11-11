@@ -12,9 +12,10 @@ import {
 import { generateRadioQuestion } from "./components/RadioQuestion/RadioQuestion.js";
 import { generateClassificationQuestion } from "./components/ClassificationQuestion/ClassificationQuestion.js";
 import { generateCompleteQuestion } from "./components/CompleteQuestion/CompleteQuestion.js";
+import { generateCompleteImageQuestion } from "./components/CompleteImage/CompleteImage.js";
 
 generateCompleteQuestion(UE3Q1);
-// TODO CompleteImage UE3Q2
+generateCompleteImageQuestion(UE3Q2);
 generateRadioQuestion(UE3Q3);
 // TODO CompleteImage UE3Q4
 generateRadioQuestion(UE3Q5);

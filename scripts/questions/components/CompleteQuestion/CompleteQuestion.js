@@ -1,20 +1,12 @@
 import { generateQuestionHeader } from "../QuestionHeader.js";
 import { generateQuestionComponent } from "../QuestionComponent.js";
 import { generateCompleteWithBoxAssessment } from "./CompleteWithBoxesAssessment.js";
-import { createElementWithClasses, generateID } from "../../utils/index.js";
+import {
+  createElementWithClasses,
+  generateID,
+  responsesAreEqual,
+} from "../../utils/index.js";
 import { generateButtonEnviarResposta } from "../ButtonEnviarResposta.js";
-
-function responsesAreEqual(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (var i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
 
 function generateCompleteQuestion(question) {
   const {
