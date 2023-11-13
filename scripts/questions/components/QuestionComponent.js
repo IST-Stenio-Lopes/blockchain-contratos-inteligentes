@@ -8,6 +8,8 @@ function generateQuestionComponent(component) {
       return subHeader;
     case "IMAGE":
       const image = generateImage(component.value);
+      image.classList.add("w-full");
+      image.style.color = "transparent";
       return image;
     default:
       return null;

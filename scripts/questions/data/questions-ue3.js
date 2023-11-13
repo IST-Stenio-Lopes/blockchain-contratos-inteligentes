@@ -40,8 +40,6 @@ const UE3Q1 = {
   ]
 };
 
-
-// CompleteImage
 const UE3Q2 = {
   uid: "UE3Q2",
   assertive: "Analise a imagem abaixo e, respectivamente, clique na palavra que corresponde aos espaços vazios na estrutura do bloco da blockchain:",
@@ -92,7 +90,6 @@ const UE3Q3 = {
   ],
 };
 
-// CompleteImage
 const UE3Q4 = {
   uid: "UE3Q4",
   assertive: [

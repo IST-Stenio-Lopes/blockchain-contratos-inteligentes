@@ -104,51 +104,11 @@
   border-color: rgb(156 163 175);
   opacity: 1;
 }
-/*
-.before\:content\[\'\'\]::before {
-    content: "";
-  }
-  
-  .before\:absolute::before {
-    position: absolute;
-  }
-  
-  .before\:top--90\%::before {
-    top: -90%;
-  }
-  .before\:left-2\/4::before {
-    left: 50%;
-  }
-  .before\:block::before {
-    display: block;
-  }
-  .before\:h-12::before {
-    height: 3rem;
-  }
-  .before\:w-12::before {
-    width: 3rem;
-  }
-  .before\:-translate-y-2\/4::before {
-    transform: translateY(-50%);
-  }
-  .before\:-translate-x-2\/4::before {
-    transform: translateX(-50%);
-  }
-  .before\:rounded-full::before {
-    border-radius: 9999px;
-  }
-  .before\:opacity-0::before {
-    opacity: 0;
-  }
-  .before\:transition-opacity::before {
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-  .checked\:border-primary-400:checked {
-    border-color: var(--primary-400);
-  }
-  
-  .checked\:before\:bg-gray-100:checked::before {
-    background-color: var(--gray-100);
-  }*/
+
+.inset-12 {
+  inset: 3rem; /* 48px */
+}
+
+.bottom-6 {
+  bottom: 1.5rem; /* 24px */
+}
