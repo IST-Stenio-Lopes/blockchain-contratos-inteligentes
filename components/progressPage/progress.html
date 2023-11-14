@@ -39,7 +39,38 @@
     <div
       class="w-full items-center flex flex-col min-h-screen overflow-y-auto py-14 min-w-page max-w-page"
     >
-      <!-- Progresso total -->
+      <div class="w-full p-8 rounded border border-gray-500 dark:bg-gray-overlay-120 text-gray-200 dark:text-gray-900">
+        <div class="flex flex-row">
+          <div class="flex-1">
+            <h1 class="text-xl font-normal w-1/2">
+              Curso de Aperfeiçoamento
+              <br>
+              <strong class="uppercase font-bold">Programação para Blockchain: Contratos Inteligentes</strong>
+            </h1>
+          </div>
+
+          <div>
+            <button id="continue-course" class="h-12 border z-10 font-semibold px-14 disabled:cursor-not-allowed border-secondary-500 text-secondary-500 bg-secondary-900 disabled:text-secondary-overlay-200 rounded-md disabled:border-secondary-overlay-200 disabled:bg-secondary-overlay-800">
+              Continuar de onde parou
+            </button>
+          </div>
+
+        </div>
+        <div class="flex flex-row items-center mt-6">
+          <div class="relative w-full h-3 rounded-md bg-surface-900 dark:bg-gray-500">
+            <div
+              id="bar-pages-complete"
+              class="absolute top-0 left-0 h-full rounded-md bg-primary-700"
+            >
+              <!-- barra de páginas completas -->
+            </div>
+          </div>
+  
+          <span id="pages-complete" class="ml-8 whitespace-nowrap">
+            <!-- páginas completas -->
+          </span>
+        </div>
+      </div>
 
       <div class="flex flex-row items-center justify-start w-full mt-14 mb-8">
         <h1 class="font-bold text-2xl uppercase">Unidades de estudo</h1>
