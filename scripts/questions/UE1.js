@@ -11,10 +11,12 @@ import { generateRadioQuestion } from "./components/RadioQuestion/RadioQuestion.
 import { generateClassificationQuestion } from "./components/ClassificationQuestion/ClassificationQuestion.js";
 import { generateCompleteQuestion } from "./components/CompleteQuestion/CompleteQuestion.js";
 
-generateRadioQuestion(UE1Q1);
-generateRadioQuestion(UE1Q2);
-generateClassificationQuestion(UE1Q3);
-generateCompleteQuestion(UE1Q4);
-generateRadioQuestion(UE1Q5);
-// TODO Questão 6
-generateRadioQuestion(UE1Q7);
+export function createAllQuestions() {
+  generateRadioQuestion(UE1Q1);
+  generateRadioQuestion(UE1Q2);
+  generateClassificationQuestion(UE1Q3);
+  generateCompleteQuestion(UE1Q4);
+  generateRadioQuestion(UE1Q5);
+  // TODO Questão 6
+  generateRadioQuestion(UE1Q7);
+}
