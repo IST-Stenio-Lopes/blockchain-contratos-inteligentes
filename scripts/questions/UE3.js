@@ -15,12 +15,14 @@ import { generateCompleteQuestion } from "./components/CompleteQuestion/Complete
 import { generateCompleteImageQuestion } from "./components/CompleteImage/CompleteImage.js";
 import { generateCompleteImageV2Question } from "./components/CompleteImageV2/CompleteImageV2.js";
 
-generateCompleteQuestion(UE3Q1);
-generateCompleteImageQuestion(UE3Q2);
-generateRadioQuestion(UE3Q3);
-generateCompleteImageV2Question(UE3Q4);
-generateRadioQuestion(UE3Q5);
-generateRadioQuestion(UE3Q6);
-generateRadioQuestion(UE3Q7);
-generateClassificationQuestion(UE3Q8);
-generateClassificationQuestion(UE3Q9);
+export function createAllQuestions() {
+  generateCompleteQuestion(UE3Q1);
+  generateCompleteImageQuestion(UE3Q2);
+  generateRadioQuestion(UE3Q3);
+  generateCompleteImageV2Question(UE3Q4);
+  generateRadioQuestion(UE3Q5);
+  generateRadioQuestion(UE3Q6);
+  generateRadioQuestion(UE3Q7);
+  generateClassificationQuestion(UE3Q8);
+  generateClassificationQuestion(UE3Q9);
+}

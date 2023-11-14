@@ -13,12 +13,14 @@ import { generateRadioQuestion } from "./components/RadioQuestion/RadioQuestion.
 import { generateCompleteQuestion } from "./components/CompleteQuestion/CompleteQuestion.js";
 import { generateClassificationQuestion } from "./components/ClassificationQuestion/ClassificationQuestion.js";
 
-generateRadioQuestion(UE9Q1);
-generateRadioQuestion(UE9Q2);
-generateRadioQuestion(UE9Q3);
-generateRadioQuestion(UE9Q4);
-generateRadioQuestion(UE9Q5);
-generateClassificationQuestion(UE9Q6);
-generateRadioQuestion(UE9Q7);
-generateRadioQuestion(UE9Q8);
-generateCompleteQuestion(UE9Q9);
+export function createAllQuestions() {
+  generateRadioQuestion(UE9Q1);
+  generateRadioQuestion(UE9Q2);
+  generateRadioQuestion(UE9Q3);
+  generateRadioQuestion(UE9Q4);
+  generateRadioQuestion(UE9Q5);
+  generateClassificationQuestion(UE9Q6);
+  generateRadioQuestion(UE9Q7);
+  generateRadioQuestion(UE9Q8);
+  generateCompleteQuestion(UE9Q9);
+}

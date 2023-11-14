@@ -106,7 +106,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="1-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">
             Protocolo DeFi em um Projeto Agile
           </h1>
         </div>
@@ -850,11 +850,11 @@
   <!-- Section title secondary -->
   <div class="w-full pt-8 pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -1016,3 +1016,7 @@
 </div>
 <script type="module" src="/scripts/questions/UE17.js"></script>
 <!-- / Page-->
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE17.js";
+  createAllQuestions();
+</script>

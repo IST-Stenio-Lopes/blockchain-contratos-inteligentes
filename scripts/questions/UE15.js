@@ -8,9 +8,11 @@ import {
 } from "./data/questions-ue15.js";
 import { generateRadioQuestion } from "./components/RadioQuestion/RadioQuestion.js";
 
-generateRadioQuestion(UE15Q1);
-generateRadioQuestion(UE15Q2);
-generateRadioQuestion(UE15Q3);
-generateRadioQuestion(UE15Q4);
-generateRadioQuestion(UE15Q5);
-generateRadioQuestion(UE15Q6);
+export function createAllQuestions() {
+  generateRadioQuestion(UE15Q1);
+  generateRadioQuestion(UE15Q2);
+  generateRadioQuestion(UE15Q3);
+  generateRadioQuestion(UE15Q4);
+  generateRadioQuestion(UE15Q5);
+  generateRadioQuestion(UE15Q6);
+}

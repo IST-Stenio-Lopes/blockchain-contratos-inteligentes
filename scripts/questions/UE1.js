@@ -5,7 +5,7 @@ import {
   UE1Q4,
   UE1Q5,
   UE1Q6,
-  UE1Q7
+  UE1Q7,
 } from "./data/questions-ue1.js";
 import { generateRadioQuestion } from "./components/RadioQuestion/RadioQuestion.js";
 import { generateClassificationQuestion } from "./components/ClassificationQuestion/ClassificationQuestion.js";

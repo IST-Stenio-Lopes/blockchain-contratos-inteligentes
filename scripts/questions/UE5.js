@@ -9,9 +9,11 @@ import {
 import { generateRadioQuestion } from "./components/RadioQuestion/RadioQuestion.js";
 import { generateClassificationQuestion } from "./components/ClassificationQuestion/ClassificationQuestion.js";
 
-generateRadioQuestion(UE5Q1);
-generateClassificationQuestion(UE5Q2);
-generateRadioQuestion(UE5Q3);
-generateRadioQuestion(UE5Q4);
-generateRadioQuestion(UE5Q5);
-generateClassificationQuestion(UE5Q6);
+export function createAllQuestions() {
+  generateRadioQuestion(UE5Q1);
+  generateClassificationQuestion(UE5Q2);
+  generateRadioQuestion(UE5Q3);
+  generateRadioQuestion(UE5Q4);
+  generateRadioQuestion(UE5Q5);
+  generateClassificationQuestion(UE5Q6);
+}

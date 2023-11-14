@@ -102,7 +102,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="1-0">Sintaxe</h1>
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">Sintaxe</h1>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="2-0">Inteiros</h1>
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="2-0">Inteiros</h1>
         </div>
       </div>
     </div>
@@ -413,7 +413,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="3-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="3-0">
             Número de ponto fixo
           </h1>
         </div>
@@ -447,7 +447,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="4-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="4-0">
             Booleanos (bool)
           </h1>
         </div>
@@ -563,7 +563,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="5-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="5-0">
             Endereços (address)
           </h1>
         </div>
@@ -678,7 +678,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="6-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="6-0">
             Membros de um Address.
           </h1>
         </div>
@@ -989,7 +989,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="7-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="7-0">
             Tipos por referência
           </h1>
         </div>
@@ -1348,7 +1348,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="8-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="8-0">
             Tipos de mapeamento (mapping)
           </h1>
         </div>
@@ -1540,11 +1540,11 @@
   <!-- Section title secondary -->
   <div class="w-full pt-8 pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -1979,3 +1979,7 @@
   <!-- / Section -->
 </div>
 <script type="module" src="/scripts/questions/UE10.js"></script>
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE10.js";
+  createAllQuestions();
+</script>
