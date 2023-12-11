@@ -106,7 +106,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="1-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">
             Protocolo DeFi em um Projeto Agile
           </h1>
         </div>
@@ -258,7 +258,7 @@
         </div>
         <!-- / SimpleTableV1 -->
 
-        <!-- TODO QUESTÃO - Questão 1-->
+        <div id="UE17Q1" class="space-y-2 pt-8"></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
 
@@ -357,7 +357,7 @@
           crucial para o sucesso de projetos de contratos inteligentes.
         </p>
 
-        <!-- TODO QUESTÃO - Questão 2 -->
+        <div id="UE17Q2" class="space-y-2 pt-8"></div>
 
         <h2
           class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
@@ -504,7 +504,7 @@
           lançá-lo ao mercado.
         </p>
 
-        <!-- TODO QUESTÃO  - Questão 3-->
+        <div id="UE17Q3" class="space-y-2 pt-8"></div>
 
         <h2
           class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
@@ -584,7 +584,7 @@
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <!-- TODO QUESTÃO - Questão 4 -->
+        <div id="UE17Q4" class="space-y-2 pt-8"></div>
 
         <h2
           class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
@@ -841,7 +841,7 @@
           contrato inteligente e lançá-lo para o mercado com segurança.
         </p>
 
-        <!-- TODO QUESTÃO - Questão 5 -->
+        <div id="UE17Q5" class="space-y-2 pt-8"></div>
       </div>
     </div>
   </div>
@@ -850,11 +850,11 @@
   <!-- Section title secondary -->
   <div class="w-full pt-8 pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -1014,4 +1014,9 @@
   </div>
   <!-- / Section -->
 </div>
+<script type="module" src="/scripts/questions/UE17.js"></script>
 <!-- / Page-->
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE17.js";
+  createAllQuestions();
+</script>

@@ -1,6 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-
-const UE17Q1 = new RadioQuestion({
+const UE17Q1 = {
   uid: "UE17Q1",
   assertive: "No contexto do desenvolvimento de um Protocolo DeFi, qual dos seguintes benefícios está diretamente associado ao uso de uma metodologia ágil como o Scrum, em comparação ao desenvolvimento tradicional?",
   components: [],
@@ -47,9 +45,9 @@ const UE17Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE17Q2 = new RadioQuestion({
+const UE17Q2 = {
   uid: "UE17Q2",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -78,9 +76,9 @@ const UE17Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE17Q3 = new RadioQuestion({
+const UE17Q3 = {
   uid: "UE17Q3",
   assertive: "Qual das seguintes opções melhor justifica o motivo do Protocolo DeFi ser considerado um produto de software, e não apenas um contrato inteligente na blockchain? ",
   components: [],
@@ -127,10 +125,10 @@ const UE17Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 
-const UE17Q4 = new RadioQuestion({
+const UE17Q4 = {
   uid: "UE17Q4",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -159,9 +157,9 @@ const UE17Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE17Q5 = new RadioQuestion({
+const UE17Q5 = {
   uid: "UE17Q5",
   assertive: "Guilherme precisa garantir que o contrato inteligente esteja funcionando corretamente e que nenhuma atualização afete negativamente as funcionalidades já existentes. Qual dos seguintes tipos de teste é mais adequado para garantir que as alterações introduzidas não afetem negativamente as funcionalidades que já estavam em funcionamento?",
   components: [],
@@ -208,6 +206,6 @@ const UE17Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 export { UE17Q1, UE17Q2, UE17Q3, UE17Q4, UE17Q5 };

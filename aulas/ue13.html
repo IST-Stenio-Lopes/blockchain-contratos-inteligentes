@@ -373,7 +373,7 @@
         </ol>
         <!-- / List -->
 
-        <!-- TODO QUESTÃO - Questão 1 -->
+        <div id="UE13Q1" class="space-y-2 pt-8 pb-8"></div>
 
         <p>
           Ao usar o modificador "indexed" no endereço do cliente, permite que
@@ -557,7 +557,7 @@
           </div>
         </div>
 
-        <!-- TODO QUESTÃO - Questão 2 -->
+        <div id="UE13Q2" class="space-y-2 pt-8 pb-8"></div>
 
         <p>
           Chegou a hora de implementar a função que troca os pontos do cliente
@@ -749,7 +749,7 @@
           fatura para o cliente ou enviar uma mensagem de confirmação da troca.
         </p>
 
-        <!-- TODO QUESTÃO - Questão 3-->
+        <div id="UE13Q3" class="space-y-2 pt-8"></div>
       </div>
     </div>
   </div>
@@ -758,11 +758,11 @@
   <!-- Section title secondary -->
   <div class="w-full pt-8 pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -878,4 +878,9 @@
   </div>
   <!-- / Section -->
 </div>
+<script type="module" src="/scripts/questions/UE13.js"></script>
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE13.js";
+  createAllQuestions();
+</script>
 <!-- / Page-->

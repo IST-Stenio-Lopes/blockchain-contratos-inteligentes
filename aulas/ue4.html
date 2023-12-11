@@ -178,7 +178,7 @@
         </ol>
         <!-- / List -->
 
-        <!-- TODO QUESTION - Questão 1 -->
+        <div id="UE4Q1" class="space-y-2 pt-8"></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -191,7 +191,7 @@
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
         <h1
-          class="font-bold text-primary-500 dark:text-white text-2xl ms-6 pt-8"
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6 pt-8"
           id="1-1"
         >
           Registro no livro-razão
@@ -227,7 +227,7 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO RADIO QUESTION - Questão 2 -->
+        <div id="UE4Q2" class="space-y-2 pt-8"></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -240,7 +240,7 @@
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
         <h1
-          class="font-bold text-primary-500 dark:text-white text-2xl ms-6 pt-8"
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6 pt-8"
           id="1-2"
         >
           Consenso
@@ -305,7 +305,7 @@
 
         <!-- /IMAGESLIDER-->
 
-        <!-- TODO RADIO QUESTION - Questão 3 -->
+        <div id="UE4Q3" class="space-y-2 pt-8"></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -318,7 +318,7 @@
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
         <h1
-          class="font-bold text-primary-500 dark:text-white text-2xl ms-6 pt-8"
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6 pt-8"
           id="1-3"
         >
           Mineradores
@@ -367,7 +367,7 @@
           candidato.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 4 -->
+        <div id="UE4Q4" class="space-y-2 pt-8 pb-8"></div>
 
         <p>
           A atividade de mineração consome muita energia elétrica.
@@ -442,7 +442,7 @@
           pelos usuários que estão solicitando transações.
         </p>
 
-        <!-- TODO COMPLETE QUESTION -->
+        <div id="UE4Q5" class="space-y-2 pt-8"></div>
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18 pt-8"
@@ -479,7 +479,7 @@
           que entra o campo Nonce.
         </p>
 
-        <!-- TODO RADIO QUESTION -->
+        <div id="UE4Q6" class="space-y-2 pt-8"></div>
       </div>
 
       <!-- VideoFrame -->
@@ -503,7 +503,7 @@
           levará para conseguir obter uma hash válida.
         </p>
 
-        <!-- TODO COMPLETE QUESTION -->
+        <div id="UE4Q7" class="space-y-2 pt-8"></div>
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18 pt-8"
@@ -631,11 +631,11 @@
   <!-- Section title secondary -->
   <div class="w-full pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -737,3 +737,8 @@
   </div>
   <!-- / Section -->
 </div>
+<script type="module" src="/scripts/questions/UE4.js"></script>
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE4.js";
+  createAllQuestions();
+</script>

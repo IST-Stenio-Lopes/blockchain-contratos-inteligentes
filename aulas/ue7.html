@@ -105,7 +105,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 id="1-0" class="text-primary-400 text-2xl font-bold">
+          <h1 id="1-0" class="text-primary-400 text-2xl font-bold dark:text-white">
             Protocolos e Algoritmos
           </h1>
         </div>
@@ -155,7 +155,7 @@
           vai trabalhar.
         </p>
 
-        <!-- TODO Questões -->
+        <div id="UE7Q1" class="space-y-2 pb-8 pt-8"></div>
 
         <p>Mas, afinal, o que são protocolos de consenso?</p>
       </div>
@@ -178,7 +178,7 @@
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <!-- TODO Questão 2 -->
+        <div id="UE7Q2" class="space-y-2 pb-8"></div>
 
         <p>
           Agora, você vai conhecer algumas características dos algoritmos de
@@ -407,10 +407,9 @@
         </div>
         <!-- / SimpleTableV1 -->
 
-        <!-- TODO QUESTÕES -->
         <!-- TODO Table -->
 
-        <!-- TODO Questão 3 -->
+        <div id="UE7Q3" class="space-y-2 pt-8"></div>
       </div>
       <!-- /grid-->
     </div>
@@ -514,7 +513,7 @@
           criando efetivamente uma blockchain.
         </p>
 
-        <!-- TODO QUESTÃO -->
+        <div id="UE7Q4" class="space-y-2 pb-8 pt-8"></div>
 
         <p>
           Agora, você vai conhecer alguns algoritmos de criptografia utilizados
@@ -571,7 +570,7 @@
           para se tornar mais gerenciáveis.
         </p>
 
-        <!-- TODO QUESTÃO -->
+        <div id="UE7Q5" class="space-y-2 pt-8"></div>
 
         <!-- WarningBanner -->
         <div class="pt-8">
@@ -757,7 +756,7 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO QUESTÕES -->
+        <div id="UE7Q6" class="space-y-2 pt-8"></div>
       </div>
     </div>
   </div>
@@ -820,7 +819,7 @@
           <br />
         </ol>
         <!-- / List -->
-        <!-- TODO QUESTÕES - Questão 7 -->
+        <div id="UE7Q7" class="space-y-2 pt-8"></div>
       </div>
     </div>
   </div>
@@ -829,11 +828,11 @@
   <!-- Section title secondary -->
   <div class="w-full pt-8 pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -1023,4 +1022,9 @@
   </div>
   <!-- / Section -->
 </div>
+<script type="module" src="/scripts/questions/UE7.js"></script>
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE7.js";
+  createAllQuestions();
+</script>
 <!-- / Page-->

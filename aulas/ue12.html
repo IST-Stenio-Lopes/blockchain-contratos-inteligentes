@@ -104,7 +104,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="1-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">
             Construindo um contrato inteligente
           </h1>
         </div>
@@ -196,7 +196,7 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO RADIO QUESTION - Questão 1 -->
+        <div id="UE12Q1" class="space-y-2 pt-8 pb-8"></div>
 
         <p>
           Definimos uma forma de representar os estudantes, então podem surgir
@@ -349,7 +349,7 @@
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <!-- TODO RADIO QUESTION - Questão 2 -->
+        <div id="UE12Q2" class="space-y-2 pb-8"></div>
 
         <p>
           A próxima função tem como objetivo avaliar se o estudante é válido
@@ -392,7 +392,7 @@
         ></div>
         <!-- / Image content -->
 
-        <!-- TODO RADIO QUESTION -->
+        <div id="UE12Q3" class="space-y-2 pt-8 pb-8"></div>
 
         <p>
           Agora que já é possível realizarmos as validações necessárias, podemos
@@ -633,11 +633,11 @@
   <!-- Section title secondary -->
   <div class="w-full pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -792,3 +792,8 @@
   </div>
   <!-- / Section -->
 </div>
+<script type="module" src="/scripts/questions/UE12.js"></script>
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE12.js";
+  createAllQuestions();
+</script>

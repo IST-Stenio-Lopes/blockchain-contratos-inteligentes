@@ -1,9 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain";
-import { CompleteQuestion } from "@/components/Questions/CompleteQuestion/domain";
-import { ClassificationQuestion } from "@/components/Questions/ClassificationQuestion/domain";
-import { EvaluationByAssessment } from "@/components/Questions/CompleteQuestion/domain";
-
-const UE7Q1 = new CompleteQuestion({
+const UE7Q1 = {
   uid: 'UE7Q1',
   assertive: "Clique nas palavras abaixo para escolher a resposta correta para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -12,7 +7,7 @@ const UE7Q1 = new CompleteQuestion({
       sentence: "Mesmo que alguns nós falhem, o mecanismo de <input /> garante que os nós concordem sobre o estado da rede.",
       alternatives: ['Consenso', 'Assinaturas digitais', 'Criptografia'],
       correctAnswer: ['Consenso'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -23,12 +18,12 @@ const UE7Q1 = new CompleteQuestion({
             subtitle: 'Revisite os conceitos da unidade.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
-const UE7Q2 = new RadioQuestion({
+const UE7Q2 = {
   uid: "UE7Q2",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -56,9 +51,9 @@ const UE7Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE7Q3 = new ClassificationQuestion({
+const UE7Q3 = {
   uid: 'UE7Q3',
   assertive: "Relacione cada elemento do cálculo de gás com sua descrição.",
   components: [],
@@ -77,9 +72,9 @@ const UE7Q3 = new ClassificationQuestion({
     title: 'OPS!',
     subtitle: 'Revisite os conceitos dos tipos de chaves e endereço.'
   },
-});
+};
 
-const UE7Q4 = new CompleteQuestion({
+const UE7Q4 = {
   uid: 'UE7Q4',
   assertive: "Clique nas palavras abaixo para escolher a resposta CORRETA para os espaços em branco e completar a sentença a seguir:",
   components: [],
@@ -88,7 +83,7 @@ const UE7Q4 = new CompleteQuestion({
       sentence: "Hash e criptografia são mecanismos relacionados a <input /> da informação",
       alternatives: ['Segurança', 'Consenso', 'Distribuição'],
       correctAnswer: ['Segurança'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -99,12 +94,12 @@ const UE7Q4 = new CompleteQuestion({
             subtitle: 'Revisite os conceitos da unidade.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
-const UE7Q5 = new RadioQuestion({
+const UE7Q5 = {
   uid: "UE7Q5",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -134,9 +129,9 @@ const UE7Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE7Q6 = new CompleteQuestion({
+const UE7Q6 = {
   uid: 'UE7Q6',
   assertive: "Escolha a palavra que é a resposta CORRETA para completar as sentenças a seguir:",
   components: [],
@@ -145,7 +140,7 @@ const UE7Q6 = new CompleteQuestion({
       sentence: "A própria estrutura da blockchain proporciona a <input />",
       alternatives: ['Atualização', 'Exclusão', 'Imutabilidade'],
       correctAnswer: ['Exclusão'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -156,13 +151,13 @@ const UE7Q6 = new CompleteQuestion({
             subtitle: 'Revisite os conceitos da unidade.'
           }
         }
-      })
+      }
     },
     {
       sentence: "(...) dos dados que já foram validados. Associada aos algoritmos de <input /> tem-se estrutura para segurança da rede.",
       alternatives: ['Criptografia', 'Escalonamento', 'Consenso'],
       correctAnswer: ['Escalonamento'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -173,12 +168,12 @@ const UE7Q6 = new CompleteQuestion({
             subtitle: 'Revisite os conceitos da unidade.'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
-const UE7Q7 = new RadioQuestion({
+const UE7Q7 = {
   uid: "UE7Q7",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -207,6 +202,6 @@ const UE7Q7 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 export { UE7Q1, UE7Q2, UE7Q3, UE7Q4, UE7Q5, UE7Q6, UE7Q7 };

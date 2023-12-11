@@ -1,11 +1,4 @@
-import { CheckListQuestion } from "@/components/Questions/CheckListQuestion/domain";
-import { CompleteWithSelectQuestion } from "../CompleteWithSelectQuestion/domain";
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-import { CompleteQuestion } from "@/components/Questions/CompleteQuestion/domain";
-import { EvaluationByAssessment } from "@/components/Questions/CompleteQuestion/domain";
-
-
-const UE4Q1 = new CheckListQuestion({
+const UE4Q1 = {
   uid: "UE4Q1",
   assertive: "Múltipla escolha. Você pode selecionar mais de uma opção",
   components: [
@@ -52,9 +45,9 @@ const UE4Q1 = new CheckListQuestion({
       },
     },
   ],
-});
+};
 
-const UE4Q2 = new RadioQuestion({
+const UE4Q2 = {
   uid: "UE4Q2",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -83,9 +76,9 @@ const UE4Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE4Q3 = new RadioQuestion({
+const UE4Q3 = {
   uid: "UE4Q3",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -115,9 +108,9 @@ const UE4Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE4Q4 = new RadioQuestion({
+const UE4Q4 = {
   uid: "UE4Q4",
   assertive:
     "Joana comprou um apartamento diretamente à Paula. Toda parte financeira e de documentação foi feita entre as duas, sem necessidade de intervenção de terceiros. Joana e Paula podem ter utilizado:",
@@ -152,9 +145,9 @@ const UE4Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE4Q5 = new CompleteQuestion({
+const UE4Q5 = {
   uid: 'UE4Q5',
   assertive: "Escolha a palavra ou frase que é a resposta correta para completar as sentenças a seguir:",
   components: [],
@@ -163,7 +156,7 @@ const UE4Q5 = new CompleteQuestion({
       sentence: "1. A mineração é um tarefa de custo elevado, uma dos motivos é <input />.",
       alternatives: ['Alto consumo de energia elétrica', 'Remuneração para um grande número de trabalhadores envolvidos'],
       correctAnswer: ['Alto consumo de energia elétrica'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -174,13 +167,13 @@ const UE4Q5 = new CompleteQuestion({
             subtitle: 'Revise o conteúdo de mineração'
           }
         }
-      })
+      }
     },
     {
       sentence: "2. Os mineradores são recompensados pela trabalho através de uma transação especial chamada <input />.",
       alternatives: ['Prova de trabalho', 'Coinbase'],
       correctAnswer: ['Coinbase'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO',
@@ -191,12 +184,12 @@ const UE4Q5 = new CompleteQuestion({
             subtitle: 'Revise o conteúdo de mineração'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
-const UE4Q6 = new RadioQuestion({
+const UE4Q6 = {
   uid: "UE4Q6",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -226,9 +219,9 @@ const UE4Q6 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE4Q7 = new CompleteWithSelectQuestion({
+const UE4Q7 = {
   uid: 'UE4Q7',
   assertive: 'Clique no espaço em branco para selecionar a opção CORRETA para a sentença a seguir:',
   components: [],
@@ -236,7 +229,7 @@ const UE4Q7 = new CompleteWithSelectQuestion({
     sentence: 'Quantidade de zeros iniciais que uma hash deve possuir para ser válida. Com o passar do tempo, encontrar sua solução torna-se cada vez mais difícil. As redes Blockchain utilizam esse método como forma de aumentar a proteção. Selecione o conceito relacionado a descrição acima: <select />',
     alternatives: ['Grau de dificuldade', 'Proof of Work', 'Mineração'],
     correctAnswer: ['Grau de dificuldade'],
-    evaluation: new EvaluationByAssessment({
+    evaluation: {
       feedback: {
         correct: {
           title: 'CORRETO',
@@ -247,8 +240,8 @@ const UE4Q7 = new CompleteWithSelectQuestion({
           subtitle: 'Revise o conteúdo'
         }
       }
-    })
+    }
   }]
-})
+};
 
 export { UE4Q1, UE4Q2, UE4Q3, UE4Q4, UE4Q5, UE4Q6, UE4Q7 };

@@ -103,7 +103,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="1-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">
             Aplicações descentralizadas
           </h1>
         </div>
@@ -280,7 +280,7 @@
           compartilhem suas informações de identidade de forma segura e privada.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 1 -->
+        <div id="UE16Q1" class="space-y-2 pt-8 pb-8"></div>
 
         <p>
           Uma categoria bastante popular de DApps são as DeFis. Vamos conhecer
@@ -426,7 +426,7 @@
           mercado.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 2 -->
+        <div id="UE16Q2" class="space-y-2 pt-8"></div>
 
         <h2
           class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
@@ -707,7 +707,7 @@
           descentralizadas parece brilhante.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 3-->
+        <div id="UE16Q3" class="space-y-2 pt-8"></div>
 
         <h3
           class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18 pt-8"
@@ -783,7 +783,7 @@
           abordados para garantir seu sucesso contínuo.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 4 -->
+        <div id="UE16Q4" class="space-y-2 pt-8"></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -793,11 +793,11 @@
   <!-- Section title secondary -->
   <div class="w-full pt-8 pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -917,3 +917,8 @@
   </div>
   <!-- / Section -->
 </div>
+<script type="module" src="/scripts/questions/UE16.js"></script>
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE16.js";
+  createAllQuestions();
+</script>

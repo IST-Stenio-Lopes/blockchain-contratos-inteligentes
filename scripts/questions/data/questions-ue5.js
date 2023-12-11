@@ -1,7 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain";
-import { ClassificationQuestion } from "@/components/Questions/ClassificationQuestion/domain";
-
-const UE5Q1 = new RadioQuestion({
+const UE5Q1 = {
   uid: "UE5Q1",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -28,13 +25,10 @@ const UE5Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-
-
-
-const UE5Q2 = new ClassificationQuestion({
-  uid: 'UE1Q2',
+const UE5Q2 = {
+  uid: 'UE5Q2',
   assertive: "Associe a descrição do mecanismo da plataforma Ethereum ao seu tipo",
   components: [],
   descriptions: ['Descrição', 'Mecanismo'],
@@ -51,10 +45,10 @@ const UE5Q2 = new ClassificationQuestion({
     title: 'OPS!',
     subtitle: 'Revisite os conceitos da unidade.'
   },
-});
+};
 
 
-const UE5Q3 = new RadioQuestion({
+const UE5Q3 = {
   uid: "UE5Q3",
   assertive: "A EVM é uma máquina virtual distribuída que proporciona a operação e implantação dos contratos inteligentes. Ela é a base da blockchain <input /> . ",
   components: [],
@@ -66,7 +60,6 @@ const UE5Q3 = new RadioQuestion({
         title: "Parabéns",
         subtitle: "A EVM significa Ethereum Virtual Machine e é utilizada na blockchain Ethereum.",
       },
-
     },
     {
       label: "Bitcoin",
@@ -85,10 +78,10 @@ const UE5Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 
-const UE5Q4 = new RadioQuestion({
+const UE5Q4 = {
   uid: "UE5Q4",
   assertive: "Um dispositivo ou linguagem que, tendo memória e tempo suficiente, consegue resolver qualquer problema computacional é considerado Turing <input />.",
   components: [],
@@ -112,9 +105,9 @@ const UE5Q4 = new RadioQuestion({
       },
     }
   ],
-});
+};
 
-const UE5Q5 = new RadioQuestion({
+const UE5Q5 = {
   uid: "UE5Q5",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -140,10 +133,10 @@ const UE5Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE5Q6 = new ClassificationQuestion({
-  uid: 'UE1Q6',
+const UE5Q6 = {
+  uid: 'UE5Q6',
   assertive: "Associe a descrição do mecanismo da plataforma Ethereum ao seu tipo",
   components: [],
   descriptions: ['Descrição', 'Mecanismo'],
@@ -160,7 +153,7 @@ const UE5Q6 = new ClassificationQuestion({
     title: 'OPS!',
     subtitle: 'Revisite os conceitos da unidade.'
   },
-});
+};
 
 
 export { UE5Q1, UE5Q2, UE5Q3, UE5Q4, UE5Q5, UE5Q6 }

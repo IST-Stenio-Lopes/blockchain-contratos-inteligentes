@@ -9,3 +9,112 @@
 .focus\:border-secondary-500:focus {
     border-color: var(--secondary-500);
 }
+
+.right-20\% {
+    right: 20%;
+}
+
+.top-2\/4 {
+    top: 50%;
+}
+
+.-left-2\/4 {
+    left: -50%;
+}
+
+.h-\[24px\] {
+    height: 24px;
+}
+
+.w-\[24px\] {
+    width: 24px;
+}
+
+.border-\[1\.5px\] {
+    /*border: 1.5px solid black;*/
+    border-width: 1.5px;
+}
+
+.before\:top--2\/4::before {
+    top: -50%;
+}
+
+.before\:left-2\/4::before {
+    left: 50%;
+}
+
+.top-2\/4 {
+    top: 50%;
+}
+
+.left-2\/4 {
+    left: 50%;
+}
+
+
+.checked\:bg-transparent:checked {
+    background-color: transparent;
+}
+.checked\:before\:bg-white:checked::before {
+    background-color: white;
+}
+
+.fill-primary-400 {
+    fill: var(--primary-400);
+}
+
+.left-2\/4 {
+  left: -84%;
+}
+
+:is(.dark .dark\:fill-primary-800) {
+    fill: var(--primary-800);
+}
+
+.checked\:border-red-500:checked {
+  border-color: var(--red-500);
+}
+
+:is(.dark .dark\:checked\:border-red-500:checked) {
+  border-color: var(--red-500);
+}
+
+.bg-gradient-complete-image {
+  background: linear-gradient(to right, white, #FAFAFF, #EFEFFF);
+}
+
+.gap-2 {
+  gap: 0.5rem; /* 8px */
+}
+
+.bg-\[\#EBEEF7\] {
+  background-color: #EBEEF7;
+}
+
+.border-\[\#062680\] {
+  border-color: #062680;
+}
+
+.bg-\[\#EBEEF7\] {
+  background-color: #EBEEF7;
+
+}
+
+.border-gray-4000 {
+  border-color: rgb(156 163 175);
+  opacity: 1;
+}
+
+.inset-12 {
+  inset: 3rem; /* 48px */
+}
+
+.bottom-6 {
+  bottom: 1.5rem; /* 24px */
+}
+
+
+/*sobre as paginas*/ 
+h1 :is(.dark) {
+  color: white;
+}

@@ -1,7 +1,4 @@
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-import ImageQ4 from "@/../public/images/UE 15/Imagem - Q. 4.png";
-
-const UE15Q1 = new RadioQuestion({
+const UE15Q1 = {
   uid: "UE15Q1",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -33,9 +30,9 @@ const UE15Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE15Q2 = new RadioQuestion({
+const UE15Q2 = {
   uid: "UE15Q2",
   assertive:
     "A empresa CryptoBank está desenvolvendo um contrato inteligente para lidar com transações financeiras em sua plataforma DeFi. A equipe de desenvolvimento quer garantir que o contrato seja eficiente, seguro e de fácil manutenção. Para atingir esses objetivos, qual das seguintes estratégias deve ser adotada pela equipe? ",
@@ -83,9 +80,9 @@ const UE15Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE15Q3 = new RadioQuestion({
+const UE15Q3 = {
   uid: "UE15Q3",
   assertive: "Qual é o objetivo do padrão de autoridade em contratos inteligentes?",
   components: [],
@@ -137,16 +134,16 @@ const UE15Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE15Q4 = new RadioQuestion({
+const UE15Q4 = {
   uid: "UE15Q4",
   assertive:
     "Considere o código abaixo para depósito e saque de saldo de uma conta:",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ4,
+      value: "/images/ue/UE 15/Imagem - Q. 4.png",
     },
     {
       type: "TEXT",
@@ -193,9 +190,9 @@ const UE15Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE15Q5 = new RadioQuestion({
+const UE15Q5 = {
   uid: "UE15Q5",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -224,9 +221,9 @@ const UE15Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE15Q6 = new RadioQuestion({
+const UE15Q6 = {
   uid: "UE15Q6",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -255,6 +252,6 @@ const UE15Q6 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 export { UE15Q1, UE15Q2, UE15Q3, UE15Q4, UE15Q5, UE15Q6 };

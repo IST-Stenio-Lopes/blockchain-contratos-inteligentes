@@ -1,13 +1,4 @@
-import ImageQ3 from '@/../public/images/UE 10/Imagem - Q. 3.png'
-import ImageQ4 from '@/../public/images/UE 10/Imagem - Q. 4.png'
-import ImageQ5 from '@/../public/images/UE 10/Imagem - Q. 5.png'
-
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain";
-import { CompleteWithSelectQuestion } from '../CompleteWithSelectQuestion/domain';
-import { CompleteQuestion, EvaluationByAssessment } from "@/components/Questions/CompleteQuestion/domain";
-import { EvaluationBySingleResponse } from '../CompleteQuestion/domain/entities/EvaluationBySingleResponse';
-
-const UE10Q1 = new RadioQuestion({
+const UE10Q1 = {
   uid: "UE10Q1",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -32,9 +23,9 @@ const UE10Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE10Q2 = new CompleteQuestion({
+const UE10Q2 = {
   uid: 'UE10Q2',
   assertive: "Respectivamente, clique nas palavras abaixo para escolher a ordem CORRETA das palavras e preencher a sentença a seguir:",
   components: [
@@ -49,7 +40,7 @@ const UE10Q2 = new CompleteQuestion({
       sentence: "<input /> <input /> = <input />",
       alternatives: ['ano', 'uint', '2022'],
       correctAnswer: ['uint', 'ano', '2022'],
-      evaluation: new EvaluationBySingleResponse({
+      evaluation: {
         feedbacks: [
           {
             correct: {
@@ -82,12 +73,12 @@ const UE10Q2 = new CompleteQuestion({
             }
           }
         ]
-      })
+      }
     },
   ],
-});
+};
 
-const UE10Q3 = new RadioQuestion({
+const UE10Q3 = {
   uid: "UE10Q3",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -97,7 +88,7 @@ const UE10Q3 = new RadioQuestion({
     },
     {
       type: 'IMAGE',
-      value: ImageQ3,
+      value: '/images/ue/UE 10/Imagem - Q. 3.png',
     }
   ],
   alternatives: [
@@ -118,9 +109,9 @@ const UE10Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE10Q4 = new RadioQuestion({
+const UE10Q4 = {
   uid: "UE10Q4",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -130,7 +121,7 @@ const UE10Q4 = new RadioQuestion({
     },
     {
       type: 'IMAGE',
-      value: ImageQ4,
+      value: '/images/ue/UE 10/Imagem - Q. 4.png',
     }
   ],
   alternatives: [
@@ -151,15 +142,15 @@ const UE10Q4 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE10Q5 = new RadioQuestion({
+const UE10Q5 = {
   uid: "UE10Q5",
   assertive: "Considere o código abaixo:",
   components: [
     {
       type: 'IMAGE',
-      value: ImageQ5,
+      value: "/images/ue/UE 10/Imagem - Q. 5.png",
     },
     {
       type: 'TEXT',
@@ -200,10 +191,10 @@ const UE10Q5 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 
-const UE10Q6 = new RadioQuestion({
+const UE10Q6 = {
   uid: "UE10Q6",
   assertive: "Verdadeiro ou Falso",
   components: [{
@@ -244,9 +235,9 @@ const UE10Q6 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE10Q7 = new RadioQuestion({
+const UE10Q7 = {
   uid: "UE10Q7",
   assertive: "Qual das seguintes opções é a forma correta de criar um array de inteiros de <strong>tamanho fixo</strong> com o Solidity?",
   components: [],
@@ -285,10 +276,10 @@ const UE10Q7 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 
-const UE10Q8 = new RadioQuestion({
+const UE10Q8 = {
   uid: "UE10Q8",
   assertive: "Você está trabalhando em um projeto de contrato inteligente para uma plataforma de licitações online. Neste projeto, é necessário armazenar os lances feitos pelos licitantes para cada item licitado. Para isso, você decide usar um mapping em Solidity para criar uma tabela associativa que mapeie cada item licitado para uma lista de lances. Qual das seguintes afirmações é verdadeira sobre mappings em Solidity nesse contexto?",
   components: [],
@@ -334,9 +325,9 @@ const UE10Q8 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE10Q9 = new CompleteWithSelectQuestion({
+const UE10Q9 = {
   uid: 'UE10Q9',
   assertive: "Clique no espaço em branco para selecionar a opção CORRETA para a sentença a seguir:",
   components: [{
@@ -348,7 +339,7 @@ const UE10Q9 = new CompleteWithSelectQuestion({
       sentence: "a. Permite a execução de uma sequência de ações repetidas até que uma condição seja satisfeita, com a verificação da condição no início da sequência <select />",
       alternatives: ['if/else', 'while', 'do/while'],
       correctAnswer: ['while'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -359,13 +350,13 @@ const UE10Q9 = new CompleteWithSelectQuestion({
             subtitle: 'Revise o conteúdo'
           }
         }
-      })
+      }
     },
     {
       sentence: "b. Executa uma ação específica se a condição for verdadeira e outra ação se a condição for falsa <select />",
       alternatives: ['if/else', 'while', 'do/while'],
       correctAnswer: ['if/else'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'CORRETO!',
@@ -376,13 +367,13 @@ const UE10Q9 = new CompleteWithSelectQuestion({
             subtitle: 'Revise o conteúdo'
           }
         }
-      })
+      }
     },
     {
       sentence: "c. Executa uma sequência de ações repetidas até que uma condição seja satisfeita, com a verificação da condição no final da sequência <select />",
       alternatives: ['if/else', 'while', 'do/while'],
       correctAnswer: ['do/while'],
-      evaluation: new EvaluationByAssessment({
+      evaluation: {
         feedback: {
           correct: {
             title: 'PARABÉNS!',
@@ -393,10 +384,10 @@ const UE10Q9 = new CompleteWithSelectQuestion({
             subtitle: 'Revise o conteúdo'
           }
         }
-      })
+      }
     }
   ]
-});
+};
 
 export {
   UE10Q1,

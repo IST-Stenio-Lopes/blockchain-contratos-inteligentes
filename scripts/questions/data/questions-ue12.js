@@ -1,9 +1,4 @@
-import ImageQ1 from '@/../public/images/UE 12/Imagem - Q. 1.png'
-import ImageQ2 from '@/../public/images/UE 12/Imagem - Q. 2.png'
-
-import { RadioQuestion } from "@/components/Questions/RadioQuestion/domain"
-
-const UE12Q1 = new RadioQuestion({
+const UE12Q1 = {
   uid: "UE12Q1",
   assertive: "Verdadeiro ou Falso",
   components: [
@@ -13,7 +8,7 @@ const UE12Q1 = new RadioQuestion({
     },
     {
       type: "IMAGE",
-      value: ImageQ1,
+      value: "/images/ue/UE 12/Imagem - Q. 1.png",
     },
   ],
   alternatives: [
@@ -34,15 +29,15 @@ const UE12Q1 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE12Q2 = new RadioQuestion({
+const UE12Q2 = {
   uid: "UE12Q2",
   assertive: "Os valores assumidos para preRequisito já representam sua validade, logo optamos, no nosso exemplo,  por não implementar uma função para verificar sua validação especificamente. Caso fosse definida, teria a seguinte implementação:",
   components: [
     {
       type: "IMAGE",
-      value: ImageQ2,
+      value: "/images/ue/UE 12/Imagem - Q. 2.png",
     },
     {
       type: "TEXT",
@@ -83,9 +78,9 @@ const UE12Q2 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
-const UE12Q3 = new RadioQuestion({
+const UE12Q3 = {
   uid: "UE12Q3",
   assertive: "Considerando a implementação da função ehEstudanteValido, marque a alternativa que apresenta uma tupla de dados para um estudante válido.",
   components: [
@@ -132,7 +127,7 @@ const UE12Q3 = new RadioQuestion({
       },
     },
   ],
-});
+};
 
 export {
   UE12Q1,

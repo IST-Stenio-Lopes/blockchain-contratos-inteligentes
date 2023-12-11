@@ -220,7 +220,9 @@
         </div>
         <!-- / SimpleTableV1 -->
 
-        <!-- TODO RADIO QUESTION  - Questão 1-->
+        <br>
+
+        <div id="UE18Q1" class="space-y-2 pt-8 pb-8"></div>
 
         <p>
           Vamos agora estudar os princípios relacionados à ética profissional
@@ -238,7 +240,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="1-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">
             Princípios da ética
           </h1>
         </div>
@@ -473,7 +475,7 @@
           e aumentar a confiança e respeito dos clientes e colegas de trabalho.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 2 -->
+        <div id="UE18Q2" class="space-y-2 pt-8"></div>
 
         <h2
           class="font-bold text-primary-500 dark:text-primary-900 text-xl ms-12 pt-8"
@@ -512,7 +514,7 @@
           oportunidades de trabalho e progresso na carreira.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 3 -->
+        <div id="UE18Q3" class="space-y-2 pt-8"></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -526,7 +528,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="2-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="2-0">
             Conflito de interesse
           </h1>
         </div>
@@ -591,7 +593,7 @@
           impacto no trabalho do profissional.
         </p>
 
-        <!-- TODO RADIO QUESTION - Questão 4 -->
+        <div id="UE18Q4" class="space-y-2 pt-8"></div>
       </div>
       <!-- / GridCol marginInCols = 2 -->
     </div>
@@ -605,7 +607,7 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold" id="3-0">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="3-0">
             Comunicação e os relacionamentos interpessoais
           </h1>
         </div>
@@ -782,11 +784,11 @@
   <!-- Section title secondary -->
   <div class="w-full pt-8 pb-8">
     <div
-      class="flex items-center justify-center w-full h-16 section-title-content-secondary"
+      class="flex items-center justify-center w-full h-16 section-title-content-secondary dark:bg-primary-100"
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1 class="text-primary-400 text-2xl font-bold dark:text-primary-900">
             Recapitulando
           </h1>
         </div>
@@ -910,3 +912,8 @@
   </div>
   <!-- / Section -->
 </div>
+<script type="module" src="/scripts/questions/UE18.js"></script>
+<script type="module">
+  import { createAllQuestions } from "/scripts/questions/UE18.js";
+  createAllQuestions();
+</script>
