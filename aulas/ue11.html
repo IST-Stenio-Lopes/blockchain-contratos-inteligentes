@@ -46,7 +46,7 @@
         <div class="mt-20 flex">
           <button
             class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
-            onclick="handleStart"
+            onclick="handleStart()"
           >
             Iniciar unidade
           </button>
@@ -107,7 +107,12 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">Heranças</h1>
+          <h1
+            class="text-primary-400 text-2xl font-bold dark:text-white"
+            id="1-0"
+          >
+            Heranças
+          </h1>
         </div>
       </div>
     </div>
@@ -138,81 +143,123 @@
               <span class="font-bold text-lg uppercase mb-3">VOCÊ SABIA?</span>
               No Solidity, os modificadores de visibilidade definem acesso de
               acordo com a tabela abaixo.
-              <br>
-              
+              <br />
+
               <!-- SimpleTableV1 -->
               <div class="pt-8 pb-8">
-                <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+                <table
+                  class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+                >
                   <thead>
                     <tr>
-                      <th class="font-semibold py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
+                      <th
+                        class="font-semibold py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600"
+                      >
                         Visibilidade
                       </th>
-                      <th class="font-semibold  py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
-                        Dentro do contrato	
+                      <th
+                        class="font-semibold py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600"
+                      >
+                        Dentro do contrato
                       </th>
-                      <th class="font-semibold  py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
-                        Contratos derivados (filhos)	
+                      <th
+                        class="font-semibold py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600"
+                      >
+                        Contratos derivados (filhos)
                       </th>
-                      <th class="font-semibold  py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600">
+                      <th
+                        class="font-semibold py-2 px-4 bg-gray-900 text-gray-300 text-xs text-left border border-gray-600"
+                      >
                         Outros Contratos
                       </th>
                     </tr>
                   </thead>
                   <tbody class="text-left">
                     <tr>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         external
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Não
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Não
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Sim
                       </td>
                     </tr>
                     <tr>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         internal
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Sim
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Sim
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Não
                       </td>
                     </tr>
                     <tr>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         public
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Sim
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Sim
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Sim
                       </td>
                     </tr>
                     <tr>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         private
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Sim
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Não
                       </td>
-                      <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-gray-900 text-xs">
+                      <td
+                        class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-gray-900 text-xs"
+                      >
                         Não
                       </td>
                     </tr>
@@ -314,7 +361,7 @@
             Na linha 9, numero é multiplicado por 2 e atribuído a variável
             dobro.
           </li>
-          <br>
+          <br />
         </ol>
         <!-- / List -->
 
@@ -343,9 +390,7 @@
             <ol
               class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
             >
-              <li>
-                Filho por herdar Pai tem acesso a variável
-              </li>
+              <li>Filho por herdar Pai tem acesso a variável</li>
               <br />
             </ol>
             <!-- / List -->
@@ -388,7 +433,6 @@
             a variável dobro.
           </li>
           <br />
-
         </ol>
         <!-- / List -->
 
@@ -729,7 +773,10 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="4-0">
+          <h1
+            class="text-primary-400 text-2xl font-bold dark:text-white"
+            id="4-0"
+          >
             Controle de erros
           </h1>
         </div>
@@ -752,55 +799,83 @@
 
         <!-- SimpleTableV1 -->
         <div class="pt-8 pb-8">
-          <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
             <colgroup>
-              <col style="width: 50%;">
-              <col style="width: 50%;">
+              <col style="width: 50%" />
+              <col style="width: 50%" />
             </colgroup>
-            <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-center">
+            <caption
+              class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-center"
+            >
               Erros
             </caption>
             <thead>
               <tr>
-                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                <th
+                  class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+                >
                   COMPILAÇÃO
                 </th>
-                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                <th
+                  class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+                >
                   EXECUÇÃO
                 </th>
               </tr>
             </thead>
             <tbody class="text-left">
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Erros relacionados à sintaxe da linguagem	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Erros relacionados à sintaxe da linguagem
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Erros que acontecem durante a execução do contrato
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Identificados pelo compilador	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Identificados pelo compilador
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Difíceis de serem identificados. Não detecção automática
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Corrigidos pelo programador antes do deploy do contrato	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Corrigidos pelo programador antes do deploy do contrato
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Precisam ser tratados para não causar uma falha para o usuário.
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Precisam ser tratados para não causar uma falha para o
+                  usuário.
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Exemplo: palavras reservadas escritas de forma errada, esquecimento do ponto e vírgula após as instruções e etc	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Exemplo: palavras reservadas escritas de forma errada,
+                  esquecimento do ponto e vírgula após as instruções e etc
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Exemplo: erro de falta de gás, erro de estouro de tipo de dados, erro de divisão por zero, erro de array fora do índice etc.
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Exemplo: erro de falta de gás, erro de estouro de tipo de
+                  dados, erro de divisão por zero, erro de array fora do índice
+                  etc.
                 </td>
               </tr>
             </tbody>

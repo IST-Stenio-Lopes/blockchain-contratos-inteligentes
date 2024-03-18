@@ -264,7 +264,7 @@
           <div class="mt-20 flex">
             <button
               class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
-              onclick="handleStart"
+              onclick="handleStart()"
             >
               Iniciar unidade
             </button>
@@ -380,37 +380,51 @@
 
     <!-- SimpleTableV1 -->
     <div>
-      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+      <table
+        class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+      >
         <colgroup>
-          <col style="width: 75%;">
-          <col style="width: 25%;">
-          <col style="width: 25%;">
+          <col style="width: 75%" />
+          <col style="width: 25%" />
+          <col style="width: 25%" />
         </colgroup>
-        <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+        <caption
+          class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left"
+        >
           Tipos de Blockchain
         </caption>
         <thead>
           <tr>
-            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
-            
-            </th>
-            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+            <th
+              class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+            ></th>
+            <th
+              class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+            >
               PÚBLICA
             </th>
-            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+            <th
+              class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+            >
               PRIVADA
             </th>
           </tr>
         </thead>
         <tbody class="text-left">
           <tr>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-              Sem necessidade de permissão?	
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
+              Sem necessidade de permissão?
             </td>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
               Sim
             </td>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
               Não
             </td>
           </tr>
@@ -421,21 +435,30 @@
 
     <!-- SimpleTableV2 -->
     <div>
-      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+      <table
+        class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+      >
         <colgroup>
-          <col style="width: 50%;">
-          <col style="width: 50%;">
+          <col style="width: 50%" />
+          <col style="width: 50%" />
         </colgroup>
-        <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+        <caption
+          class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left"
+        >
           Tipos de Operadores
         </caption>
         <tbody class="text-left">
           <tr>
-            <td class="bg-secondary-900 px-4 font-semibold uppercase border border-secondary-800">
-              OPERADORES ARITMÉTICOS	
+            <td
+              class="bg-secondary-900 px-4 font-semibold uppercase border border-secondary-800"
+            >
+              OPERADORES ARITMÉTICOS
             </td>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-              +, -, unary - (apenas para inteiros com sinal), *, /, % (módulo), ** (exponenciação)
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
+              +, -, unary - (apenas para inteiros com sinal), *, /, % (módulo),
+              ** (exponenciação)
             </td>
           </tr>
         </tbody>
@@ -445,38 +468,46 @@
 
     <!-- SimpleTableV3 -->
     <div>
-      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
-        <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+      <table
+        class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+      >
+        <caption
+          class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left"
+        >
           Estruturas do bloco
         </caption>
         <colgroup>
-          <col style="width: 50%;">
-          <col style="width: 50%;">
+          <col style="width: 50%" />
+          <col style="width: 50%" />
         </colgroup>
         <thead>
           <tr>
-            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+            <th
+              class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+            >
               ESTRUTURA
             </th>
-            <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+            <th
+              class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+            >
               DESCRIÇÃO
             </th>
           </tr>
           <tr>
-            <th class="font-semibold py-2 px-4 bg-secondary-950">
-              CABEÇALHO
-            </th>
-            <th class="font-semibold py-2 px-4 bg-secondary-950">
-              
-            </th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950">CABEÇALHO</th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950"></th>
           </tr>
         </thead>
         <tbody class="text-left">
           <tr>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-              Bloco 1		
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
+              Bloco 1
             </td>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
               Número do bloco (altura do bloco na cadeia de bloco)
             </td>
           </tr>
@@ -485,27 +516,31 @@
     </div>
 
     <div>
-      <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+      <table
+        class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+      >
         <colgroup>
-          <col style="width: 50%;">
-          <col style="width: 50%;">
+          <col style="width: 50%" />
+          <col style="width: 50%" />
         </colgroup>
         <thead>
           <tr>
             <th class="font-semibold py-2 px-4 bg-secondary-950">
-              CORPO DO BLOCO	
+              CORPO DO BLOCO
             </th>
-            <th class="font-semibold py-2 px-4 bg-secondary-950">
-              
-            </th>
+            <th class="font-semibold py-2 px-4 bg-secondary-950"></th>
           </tr>
         </thead>
         <tbody class="text-left">
           <tr>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-              Assinatura	
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
+              Assinatura
             </td>
-            <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+            <td
+              class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+            >
               Assinatura digital associado às transações
             </td>
           </tr>
@@ -513,6 +548,5 @@
       </table>
     </div>
     <!-- / SimpleTableV3 -->
-
   </body>
 </html>

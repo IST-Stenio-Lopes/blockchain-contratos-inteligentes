@@ -46,7 +46,7 @@
         <div class="mt-20 flex">
           <button
             class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
-            onclick="handleStart"
+            onclick="handleStart()"
           >
             Iniciar unidade
           </button>
@@ -106,7 +106,10 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 class="text-primary-400 text-2xl font-bold dark:text-white" id="1-0">
+          <h1
+            class="text-primary-400 text-2xl font-bold dark:text-white"
+            id="1-0"
+          >
             Protocolo DeFi em um Projeto Agile
           </h1>
         </div>
@@ -165,91 +168,134 @@
 
         <!-- SimpleTableV1 -->
         <div class="pt-8">
-          <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
             <colgroup>
-              <col style="width: 50%;">
-              <col style="width: 50%;">
+              <col style="width: 50%" />
+              <col style="width: 50%" />
             </colgroup>
             <thead>
               <tr>
-                <th class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center">
-                  DESENVOLVIMENTO TRADICIONAL	
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
+                  DESENVOLVIMENTO TRADICIONAL
                 </th>
-                <th class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center">
+                <th
+                  class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
+                >
                   DESENVOLVIMENTO ÁGIL
                 </th>
               </tr>
             </thead>
             <tbody class="text-left">
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Foco no planejamento detalhado e antecipado	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Foco no planejamento detalhado e antecipado
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Foco em adaptação e entrega incremental
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Processos e documentações são rígidos e pré-definidos	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Processos e documentações são rígidos e pré-definidos
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Processos e documentações são flexíveis e adaptáveis
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Requisitos são definidos no início do projeto e raramente mudam	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Requisitos são definidos no início do projeto e raramente
+                  mudam
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Requisitos são adaptados conforme a necessidade
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Ciclos longos de desenvolvimento e entrega
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Ciclos curtos de desenvolvimento e entrega
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Comunicação é vertical e hierárquica
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Comunicação é horizontal e colaborativa
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Equipes separadas por funções específicas
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Equipes multi-funcionais
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Ênfase na prevenção de problemas antes que eles aconteçam
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Ênfase na detecção e resolução rápida de problemas
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Testes são realizados ao final do desenvolvimento
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Testes são realizados ao longo do processo de desenvolvimento
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Equipes geralmente trabalham com um único projeto por vez
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Equipes trabalham com vários projetos simultaneamente
                 </td>
               </tr>

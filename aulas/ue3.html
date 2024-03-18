@@ -46,7 +46,7 @@
         <div class="mt-20 flex">
           <button
             class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
-            onclick="handleStart"
+            onclick="handleStart()"
           >
             Iniciar unidade
           </button>
@@ -106,7 +106,10 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 id="1-0" class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1
+            id="1-0"
+            class="text-primary-400 text-2xl font-bold dark:text-white"
+          >
             Estrutura da rede Blockchain
           </h1>
         </div>
@@ -203,20 +206,28 @@
 
         <!-- SimpleTableV3 -->
         <div class="pt-8">
-          <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
-            <caption class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left">
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
+            <caption
+              class="bg-secondary-800 text-secondary-300 font-semibold text-xl py-2 px-4 text-left"
+            >
               Estruturas do bloco
             </caption>
             <colgroup>
-              <col style="width: 50%;">
-              <col style="width: 50%;">
+              <col style="width: 50%" />
+              <col style="width: 50%" />
             </colgroup>
             <thead>
               <tr>
-                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                <th
+                  class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+                >
                   ESTRUTURA
                 </th>
-                <th class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800">
+                <th
+                  class="font-semibold py-2 px-4 bg-secondary-950 border border-secondary-800"
+                >
                   DESCRIÇÃO
                 </th>
               </tr>
@@ -224,86 +235,112 @@
                 <th class="font-semibold py-2 px-4 bg-secondary-950">
                   CABEÇALHO
                 </th>
-                <th class="font-semibold py-2 px-4 bg-secondary-950">
-                  
-                </th>
+                <th class="font-semibold py-2 px-4 bg-secondary-950"></th>
               </tr>
             </thead>
             <tbody class="text-left">
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Bloco 1		
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Bloco 1
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Número do bloco (altura do bloco na cadeia de bloco)
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  00054551		
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  00054551
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Hash do bloco anterior
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  000	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  000
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Dificuldade alvo (difficult target)
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  15:40 10/08/2018	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  15:40 10/08/2018
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Marcação de tempo (timestamp)
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   7224
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Valor Nonce
                 </td>
               </tr>
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Raiz de Merkle	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Raiz de Merkle
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Hash da lista de transações (Merkle Root Hash ou Merkle Tree)
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        
+
         <div class="pb-8">
-          <table class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden">
+          <table
+            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
+          >
             <colgroup>
-              <col style="width: 50%;">
-              <col style="width: 50%;">
+              <col style="width: 50%" />
+              <col style="width: 50%" />
             </colgroup>
             <thead>
               <tr>
                 <th class="font-semibold py-2 px-4 bg-secondary-950">
-                  CORPO DO BLOCO	
+                  CORPO DO BLOCO
                 </th>
-                <th class="font-semibold py-2 px-4 bg-secondary-950">
-                  
-                </th>
+                <th class="font-semibold py-2 px-4 bg-secondary-950"></th>
               </tr>
             </thead>
             <tbody class="text-left">
               <tr>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
-                  Assinatura	
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
+                  Assinatura
                 </td>
-                <td class="px-4 py-3 text-gray-300 dark:text-gray-900  border border-secondary-800">
+                <td
+                  class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
+                >
                   Assinatura digital associado às transações
                 </td>
               </tr>
@@ -597,7 +634,9 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h1 class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6 pt-8">
+        <h1
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6 pt-8"
+        >
           Assinaturas digitais
         </h1>
         <p>
@@ -620,7 +659,9 @@
     <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h1 class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6 pt-8">
+        <h1
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6 pt-8"
+        >
           Chave pública e chave privada
         </h1>
 
@@ -760,7 +801,9 @@
 
       <!-- GridCol marginInCols = 2 -->
       <div class="col-end-11 col-start-3 space-y-4">
-        <h1 class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6">
+        <h1
+          class="font-bold text-primary-500 dark:text-primary-900 text-2xl ms-6"
+        >
           Carteira de Criptomoedas
         </h1>
 

@@ -42,7 +42,7 @@
         <div class="mt-20 flex">
           <button
             class="h-12 rounded-sm border z-10 font-semibold px-14 disabled:cursor-not-allowed border-primary-900 text-primary-900 bg-gray-200"
-            onclick="handleStart"
+            onclick="handleStart()"
           >
             Iniciar unidade
           </button>
@@ -104,7 +104,10 @@
     >
       <div class="grid grid-cols-12 gap-x-4 min-w-page max-w-page w-full z-20">
         <div class="col-end-11 col-start-3 space-y-4">
-          <h1 id="1-0" class="text-primary-400 text-2xl font-bold dark:text-white">
+          <h1
+            id="1-0"
+            class="text-primary-400 text-2xl font-bold dark:text-white"
+          >
             Contratos inteligentes
           </h1>
         </div>
@@ -747,14 +750,16 @@
               <!-- / Image content -->
 
               <!-- List -->
-                <ol
+              <ol
                 class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
               >
                 <li>
-                  Bytocode é o contrato em linguagem de máquina. Este código será interpretado e executado pela EVM
+                  Bytocode é o contrato em linguagem de máquina. Este código
+                  será interpretado e executado pela EVM
                 </li>
                 <li>
-                  ABI é uma interface de utilização em binário. Você vai ter informações das variáveis e funções públicas.
+                  ABI é uma interface de utilização em binário. Você vai ter
+                  informações das variáveis e funções públicas.
                 </li>
                 <br />
               </ol>
