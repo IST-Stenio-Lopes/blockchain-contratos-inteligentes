@@ -17,6 +17,6 @@ export function createAllQuestions() {
   generateClassificationQuestion(UE1Q3);
   generateCompleteQuestion(UE1Q4);
   generateRadioQuestion(UE1Q5);
-  // TODO Questão 6
+  generateCompleteQuestion(UE1Q6);
   generateRadioQuestion(UE1Q7);
 }

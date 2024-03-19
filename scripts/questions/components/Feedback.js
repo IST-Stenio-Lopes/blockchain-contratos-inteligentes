@@ -15,7 +15,7 @@ function generateFeedBack(title, subtitle, isCorrect) {
   // title inside the title container
   const feedbackTitle = createElementWithClasses(
     "span",
-    "text-lg font-semibold"
+    "text-base font-semibold"
   );
   feedbackTitle.innerHTML = title;
   titleContainer.appendChild(feedbackTitle);
@@ -79,7 +79,7 @@ function generateFeedBack(title, subtitle, isCorrect) {
   // subtitle inside the subtitle container
   const feedbackSubtitle = createElementWithClasses(
     "span",
-    "font-medium text-lg text-gray-200 dark:text-gray-900"
+    "font-normal text-base text-gray-200 dark:text-gray-900"
   );
   subtitleContainer.appendChild(feedbackSubtitle);
   feedbackSubtitle.innerHTML = subtitle;

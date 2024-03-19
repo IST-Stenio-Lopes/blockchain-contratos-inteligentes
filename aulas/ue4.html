@@ -153,7 +153,7 @@
 
         <!-- List -->
         <ol
-          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+          class="font-normal text-base text-gray-200 dark:text-gray-900 ms-8 list-disc"
         >
           <li>
             <strong>Alto risco de perda ou destruição de dados:</strong> O
@@ -365,9 +365,9 @@
 
         <p>
           Uma vez recebidas, tais transações são inseridas através da estrutura
-          de dados da merkle tree e armazenadas no bloco que será minerado para
-          ser inserido na rede Blockchain. Tal bloco é denominado bloco
-          candidato.
+          de dados da merkle tree e armazenadas no <strong>bloco</strong> que
+          será minerado para ser inserido na rede Blockchain. Tal bloco é
+          denominado bloco <strong>candidato</strong>.
         </p>
 
         <div id="UE4Q4" class="space-y-2 pt-8 pb-8"></div>
@@ -463,15 +463,14 @@
         </p>
 
         <p>
-          Por exemplo, <strong>um novo bloco</strong> só pode ser aceito quando
+          Por exemplo, <strong>um novo bloco só pode ser aceito</strong> quando
           sua <strong>hash contém 5 zeros</strong>. Este é o requisito mínimo
           para a hash ser válida. É a dificuldade alvo.
         </p>
 
         <p>
-          <strong>
-            00000E6CC2661A6E263A391D88530B72C4491E43A0567BE6C5C5E5E0CF67A10D
-          </strong>
+          <strong class="text-red-500">00000</strong
+          >E6CC2661A6E263A391D88530B72C4491E43A0567BE6C5C5E5E0CF67A10D
         </p>
 
         <p>
@@ -483,6 +482,40 @@
         </p>
 
         <div id="UE4Q6" class="space-y-2 pt-8"></div>
+        <br />
+        <p>
+          Imagine, por exemplo, que desejamos minerar um bloco fictício cujo
+          conteúdo se resume na frase: <strong>“BlockChain - SENAI”</strong>.
+          Suponha que a dificuldade (target value) seja <strong>2</strong>, ou
+          seja, a hash deve apresentar <strong>2 zeros iniciais</strong>. Ao
+          aplicarmos a <strong>Hash SHA256</strong> à frase, obtemos o seguinte
+          resultado:
+        </p>
+        <p>
+          <strong class="text-red-500">b2</strong
+          >a56c55f48d1062711a5a98a32d0bd315cc117ada8f097d8560ca5c6e5d8444
+        </p>
+        <p>
+          Observe que essa hash não atende à solicitação (target value 2) porque
+          não se inicia com dois zeros.
+        </p>
+        <p>
+          Dessa forma, vamos incrementar o <strong>Nonce</strong> para
+          <strong>1</strong>, de modo que a frase será
+          <strong
+            >“BlockChain - SENAI<span class="text-red-500">1</span>”</strong
+          >. Vamos obter:
+        </p>
+        <p>
+          <strong class="text-red-500">7e</strong
+          >0330e92fab6f01d68db5fd4c6b795af062e5afa638d2548e7305b415b0a3ef.
+        </p>
+        <p>
+          Como você pode observar, ainda não temos os 2 zeros iniciais. Em uma
+          simulação computacional, para obter 2 zeros iniciais para a frase de
+          nosso exemplo, o nonce foi de 152268. Ou seja, o computador executou
+          152268 tentativas para obter uma hash válida para o desafio.
+        </p>
       </div>
 
       <!-- VideoFrame -->
@@ -530,10 +563,20 @@
         ></div>
         <!-- / Image content -->
 
+        <h3
+          class="font-bold text-secondary-400 dark:text-primary-700 text-xl ms-18 pt-8"
+          id="1-4"
+        >
+          Composição da HASH
+        </h3>
+
         <p>
-          Em síntese, cada hash é composta por: número de bloco, hash anterior,
-          marcação de tempo, dados e nonce, submetidos ao algoritmo de
-          criptografia Hash SHA256, gerando, assim, a hash do bloco.
+          Em síntese, cada hash é composta por:
+          <strong
+            >número de bloco, hash anterior, marcação de tempo, dados e
+            nonce</strong
+          >, submetidos ao algoritmo de criptografia Hash SHA256, gerando,
+          assim, a hash do bloco.
         </p>
 
         <p>
@@ -655,7 +698,7 @@
 
         <!-- List -->
         <ol
-          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+          class="font-normal text-base text-gray-200 dark:text-gray-900 ms-8 list-disc"
         >
           <li>
             As criptomoedas utilizam um livro razão (ledger) distribuído na rede

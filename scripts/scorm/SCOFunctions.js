@@ -9,13 +9,13 @@
 var startDate;
 var exitPageStatus;
 
-var currentPage = 1;
+var currentPage = 6;
 var lessonStatus = 1;
 
 var ueData = {
   currentPage,
   totalOfPages: 18,
-  lastPageSeen: 1,
+  lastPageSeen: 18,
   darkMode: false,
   grayScale: false,
   fontSize: 0,

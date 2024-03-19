@@ -1,9 +1,11 @@
-.page p {
+.page p,
+.page ol {
   font-size: var(--text-base);
   line-height: 1.5rem;
   font-weight: 400;
 
   overflow-wrap: break-word;
+  color: var(--gray-300);
 }
 
 .section-title-container {

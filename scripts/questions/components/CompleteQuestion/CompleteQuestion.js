@@ -14,6 +14,7 @@ function generateCompleteQuestion(question) {
     assertive,
     components,
     assessments,
+    evaluation: uniqueEvaluation,
     highlight,
   } = question;
 
@@ -37,9 +38,29 @@ function generateCompleteQuestion(question) {
     });
   }
 
+  function verify(responses, correctAnswer) {
+    if (!uniqueEvaluation) return [];
+
+    const isCorrect = correctAnswer.every(
+      (assessmentAnswer, assessmentAnswerIndex) => {
+        return assessmentAnswer.every((answer, answerIndex) => {
+          return answer === responses[assessmentAnswerIndex][answerIndex];
+        });
+      }
+    );
+
+    const feedback = isCorrect
+      ? uniqueEvaluation.feedback.correct
+      : uniqueEvaluation.feedback.incorrect;
+
+    return [{ isCorrect, feedback }];
+  }
+
   function getEvaluations(evaluation, response, correctAnswer) {
     let feedbackResponse = [];
     let objeto = {};
+
+    if (!evaluation) return feedbackResponse;
 
     if (!evaluation.feedbacks) {
       // EvaluationByAssessment
@@ -94,6 +115,11 @@ function generateCompleteQuestion(question) {
     });
   }
 
+  const evaluateQuestion = (responses) => {
+    const questionAnswer = assessments.map((ass) => ass.correctAnswer);
+    return verify(responses, questionAnswer);
+  };
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -104,10 +130,11 @@ function generateCompleteQuestion(question) {
     const responses = answerMapping(submittedAnswer); // respostas em array
 
     /* Avaliar Respostas */
+    const questionResults = evaluateQuestion(responses);
     const assessmentResults = evaluateAssessment(responses);
 
     var eventFeedbacks = new CustomEvent("RecieveFeedbacks", {
-      detail: assessmentResults,
+      detail: uniqueEvaluation ? questionResults : assessmentResults,
     }); // evento que manda os feedbacks surgirem e muda as classes dos <input />
     const elements = rootContainer.getElementsByClassName(
       "class-feedbacks-remove"

@@ -180,30 +180,62 @@ function generateCompleteWithBoxAssessment(
     secondDiv.appendChild(button);
   });
 
+  function _setChildPosition(parentElement, child) {
+    let before = parentElement.children[parentElement.children.length - 1];
+    parentElement.insertBefore(child, before);
+  }
+
+  function _instantiateFeedback(
+    assId,
+    isHighlight,
+    assessmentResponse,
+    container,
+    index = 0
+  ) {
+    if (!assessmentResponse) return;
+    let inputId = generateID(assId, "IN", index);
+    let inputElement = document.getElementById(inputId);
+    if (isHighlight) {
+      // se for questão com hightlight, muda desgin dos inputs
+      if (assessmentResponse.isCorrect) {
+        inputElement.className =
+          "bg-primary-990 border border-primary-400 text-primary-400 font-semibold outline-none mx-1 text-center";
+      } else {
+        inputElement.className =
+          "bg-red-950 border border-red-300 text-red-300 font-semibold outline-none mx-1 text-center";
+      }
+    }
+    const feedback = generateFeedBack(
+      assessmentResponse.feedback.title,
+      assessmentResponse.feedback.subtitle,
+      assessmentResponse.isCorrect
+    );
+    feedback.classList.add("class-feedbacks-remove");
+
+    _setChildPosition(container, feedback);
+  }
+
   // HandleSubmit + onSubmit dispara esse evento
   const divContainer = document.getElementById(questionId);
   divContainer.addEventListener("RecieveFeedbacks", (e) => {
     const assessmentResponse = e.detail[assessmentIndex];
-    for (let i = 0; i < assessmentResponse.length; i++) {
-      let inputId = generateID(assessmentId, "IN", i);
-      let inputElement = document.getElementById(inputId);
-      if (highlight) {
-        // se for questão com hightlight, muda desgin dos inputs
-        if (assessmentResponse[i].isCorrect) {
-          inputElement.className =
-            "bg-primary-990 border border-primary-400 text-primary-400 font-semibold outline-none mx-1 text-center";
-        } else {
-          inputElement.className =
-            "bg-red-950 border border-red-300 text-red-300 font-semibold outline-none mx-1 text-center";
-        }
+    if (Array.isArray(assessmentResponse)) {
+      for (let i = 0; i < assessmentResponse.length; i++) {
+        _instantiateFeedback(
+          assessmentId,
+          highlight,
+          assessmentResponse[i],
+          rootContainer,
+          i
+        );
       }
-      const feedback = generateFeedBack(
-        assessmentResponse[i].feedback.title,
-        assessmentResponse[i].feedback.subtitle,
-        assessmentResponse[i].isCorrect
+    } else {
+      _instantiateFeedback(
+        assessmentId,
+        highlight,
+        assessmentResponse,
+        rootContainer.parentElement
       );
-      feedback.classList.add("class-feedbacks-remove");
-      rootContainer.appendChild(feedback);
     }
   });
   return rootContainer;

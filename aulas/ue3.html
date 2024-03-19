@@ -311,27 +311,12 @@
                   Hash da lista de transações (Merkle Root Hash ou Merkle Tree)
                 </td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="pb-8">
-          <table
-            class="w-full text-secondary-300 bg-gray-overlay-120 border-collapse border-hidden"
-          >
-            <colgroup>
-              <col style="width: 50%" />
-              <col style="width: 50%" />
-            </colgroup>
-            <thead>
               <tr>
                 <th class="font-semibold py-2 px-4 bg-secondary-950">
                   CORPO DO BLOCO
                 </th>
                 <th class="font-semibold py-2 px-4 bg-secondary-950"></th>
               </tr>
-            </thead>
-            <tbody class="text-left">
               <tr>
                 <td
                   class="px-4 py-3 text-gray-300 dark:text-gray-900 border border-secondary-800"
@@ -468,8 +453,15 @@
             >
               <span class="font-bold text-lg uppercase mb-3">SAIBA MAIS</span>
               Quer testar como funciona essa transformação de mensagem em hash?
-              Acesse o site https://emn178.github.io/online-tools/sha256.html,
-              insira algumas mensagens e verifique as hashes geradas. Faça
+              Acesse o site:
+              <a
+                class="cursor-pointer underline my-0"
+                target="_blank"
+                href="https://emn178.github.io/online-tools/sha256.html"
+              >
+                https://emn178.github.io/online-tools/sha256.html
+              </a>
+              Insira algumas mensagens e verifique as hashes geradas. Faça
               modificações no texto e observe que mesmo uma vírgula, um ponto
               final ou um acento causa modificação na hash.
             </div>
@@ -560,7 +552,7 @@
 
         <!-- List -->
         <ol
-          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+          class="font-normal text-base text-gray-200 dark:text-gray-900 ms-8 list-disc"
         >
           <li>
             ID da transação (hash): Identificador único da transação. É obtido
@@ -639,6 +631,7 @@
         >
           Assinaturas digitais
         </h1>
+
         <p>
           Sabemos que na Blockchain os blocos formam uma cadeia. Cada bloco
           possui informações ou transações e cada modificação ou nova informação
@@ -646,6 +639,32 @@
           relacionadas às assinaturas digitais que proporcionam segurança e
           anonimato.
         </p>
+
+        <!-- WarningBanner -->
+        <div class="pt-8 pb-8">
+          <!--para acrescentar se vai precisar de margem ou não-->
+          <div
+            class="flex shadow-banner dark:shadow-dark_banner p-6 rounded-lg border-primary-800 border"
+          >
+            <div
+              class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
+            >
+              <span class="font-bold text-lg uppercase mb-3">VOCÊ SABIA?</span>
+              Considerando a característica de transparência da blockchain
+              pública, as transações estão abertas para rastreamento. Porém, é
+              desafiador vincular uma transação a uma pessoa da vida real devido
+              ao anonimato proporcionado pelas assinaturas digitais.
+            </div>
+
+            <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
+              <img
+                src="images/icons/question-icon.svg"
+                alt="icone interrogação"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- / WarnerBanner -->
 
         <div id="UE3Q7" class="space-y-2 pt-8"></div>
       </div>
@@ -710,7 +729,7 @@
 
         <!-- List -->
         <ol
-          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+          class="font-normal text-base text-gray-200 dark:text-gray-900 ms-8 list-disc"
         >
           <li>
             A chave privada é como a senha de sua conta bancária. Com ela, é
@@ -858,22 +877,22 @@
 
         <!-- List -->
         <ol
-          class="font-regular text-lg text-gray-200 dark:text-gray-900 ms-8 list-disc"
+          class="font-normal text-base text-gray-200 dark:text-gray-900 ms-8 list-disc"
         >
           <li>
-            Os blocos são formados por hashes que são ligados ao bloco anterior,
-            funcionando como links com os blocos anteriores até o bloco inicial,
-            também conhecido como bloco gênesis (o bloco que deu origem à
-            cadeia).
+            Os blocos são formados por <strong>hashes</strong> que são ligados
+            ao bloco anterior, funcionando como links com os blocos anteriores
+            até o bloco inicial, também conhecido como
+            <strong>bloco gênesis</strong> (o bloco que deu origem à cadeia).
           </li>
           <li>
-            O bloco inicial, conhecido como bloco gênesis, não possui registro
-            de transações de outros blocos; por isso, o campo de hash do bloco
-            anterior normalmente apresenta valor 0 nesse campo.
+            O <strong>bloco inicial</strong>, conhecido como bloco gênesis, não
+            possui registro de transações de outros blocos; por isso, o campo de
+            hash do bloco anterior normalmente apresenta valor 0 nesse campo.
           </li>
           <li>
-            Um bloco pode ser entendido como um conjunto de transações ou
-            informações validadas.
+            Um bloco pode ser entendido como um
+            <strong>conjunto de transações ou informações validadas</strong>.
           </li>
           <li>
             Além da lista de transações, um bloco possui as seguintes partes:
@@ -886,10 +905,11 @@
             uma alteração na cadeia.
           </li>
           <li>
-            Os algoritmos de hash são conhecidos por serem unidirecionais (em
-            inglês, one-way). Ou seja, não é possível descobrir os dados
-            originais a partir de uma hash. Por isso, as hashes na Blockchain
-            garantem a confidencialidade dos dados originais.
+            Os algoritmos de hash são conhecidos por serem
+            <strong>unidirecionais</strong> (em inglês, one-way). Ou seja, não é
+            possível descobrir os dados originais a partir de uma hash. Por
+            isso, as hashes na Blockchain garantem a
+            <strong>confidencialidade</strong> dos dados originais.
           </li>
           <li>
             As transações definem uma quantidade de criptomoedas que serão
@@ -898,20 +918,22 @@
             um id.
           </li>
           <li>
-            As transações estão relacionadas às assinaturas digitais que
-            proporcionam segurança e anonimato.
+            As transações estão relacionadas às
+            <strong>assinaturas digitais</strong> que proporcionam segurança e
+            anonimato.
           </li>
           <li>
-            As chaves públicas e privadas geram as assinaturas digitais dos
+            As <strong>chaves públicas</strong> e
+            <strong>privadas</strong> geram as assinaturas digitais dos
             negociadores.
           </li>
           <li>
-            A chave privada funciona como uma senha, pois é uma sequência
-            alfanumérica que permite transacionar criptomoedas.
+            A <strong>chave privada</strong> funciona como uma senha, pois é uma
+            sequência alfanumérica que permite transacionar criptomoedas.
           </li>
           <li>
             No processo de transação, a mensagem só pode ser descriptografada
-            com a chave privada do destinatário.
+            com a <strong>chave privada</strong> do destinatário.
           </li>
         </ol>
         <!-- / List -->
