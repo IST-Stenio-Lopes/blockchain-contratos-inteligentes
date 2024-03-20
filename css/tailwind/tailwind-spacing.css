@@ -17,6 +17,10 @@
   margin-inline-start: 0.5rem; /* 24px */
 }
 
+.ms-4 {
+  margin-inline-start: 1rem; /* 24px */
+}
+
 .ms-6 {
   margin-inline-start: 1.5rem; /* 24px */
 }

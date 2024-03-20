@@ -48,6 +48,18 @@ const ue1 = [
     title: "2.4 Consenso",
     href: "2-4",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Recapitulando",
+    href: "3-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "4.0 Solução do problematizando",
+    href: "4-0",
+  },
 ];
 
 const ue2 = [
@@ -105,6 +117,18 @@ const ue2 = [
     title: "3.4 Rastreabilidade na indústria",
     href: "3-4",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "4.0 Recapitulando",
+    href: "4-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "5.0 Solução do problematizando",
+    href: "5-0",
+  },
 ];
 
 const ue3 = [
@@ -149,6 +173,18 @@ const ue3 = [
     bold: false,
     title: "1.6 Carteira de Criptomoedas",
     href: "1-6",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
   },
 ];
 
@@ -195,6 +231,18 @@ const ue4 = [
     title: "1.4 Composição da HASH",
     href: "1-4",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
+  },
 ];
 
 const ue5 = [
@@ -240,6 +288,18 @@ const ue5 = [
     title: "1.3.3 Criação de conta",
     href: "1-3-3",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
+  },
 ];
 
 const ue6 = [
@@ -260,6 +320,18 @@ const ue6 = [
     bold: false,
     title: "1.2 Proof of Stake e Mineração",
     href: "1-2",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
   },
 ];
 
@@ -331,6 +403,18 @@ const ue7 = [
     title: "1.10 Segurança",
     href: "1-10",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
+  },
 ];
 
 const ue8 = [
@@ -363,6 +447,18 @@ const ue8 = [
     bold: false,
     title: "1.4 Compilando e executando o OlaMundo no Remix",
     href: "1-4",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
   },
 ];
 
@@ -426,6 +522,18 @@ const ue9 = [
     bold: false,
     title: "1.5 Modificadores",
     href: "1-5",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
   },
 ];
 
@@ -574,6 +682,18 @@ const ue10 = [
     title: "8.1 Estruturas de controle",
     href: "8-1",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "9.0 Recapitulando",
+    href: "9-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "10.0 Solução do problematizando",
+    href: "10-0",
+  },
 ];
 
 const ue11 = [
@@ -643,6 +763,18 @@ const ue11 = [
     title: "4.3 Revert",
     href: "4-3",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "5.0 Recapitulando",
+    href: "5-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "6.0 Solução do problematizando",
+    href: "6-0",
+  },
 ];
 
 const ue12 = [
@@ -664,6 +796,18 @@ const ue12 = [
     title: "1.2 Utilizando o contrato",
     href: "1-2",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
+  },
 ];
 
 const ue13 = [
@@ -672,6 +816,18 @@ const ue13 = [
     bold: true,
     title: "1.0 Desenvolvimento básico do contrato inteligente",
     href: "1-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
   },
 ];
 
@@ -711,6 +867,18 @@ const ue14 = [
     bold: true,
     title: "3.0 Implementando o Contrato",
     href: "3-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "4.0 Recapitulando",
+    href: "4-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "5.0 Solução do problematizando",
+    href: "5-0",
   },
 ];
 
@@ -757,6 +925,18 @@ const ue15 = [
     title: "1.5 Economia de Gas",
     href: "1-5",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
+  },
 ];
 
 const ue16 = [
@@ -783,6 +963,18 @@ const ue16 = [
     bold: false,
     title: "1.2.1 Protocolo DeFi como sistemas distribuído",
     href: "1-2-1",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
   },
 ];
 
@@ -835,6 +1027,18 @@ const ue17 = [
     title: "1.4.3 Testes de Regressão",
     href: "1-4-3",
   },
+  {
+    ident: 0,
+    bold: true,
+    title: "2.0 Recapitulando",
+    href: "2-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "3.0 Solução do problematizando",
+    href: "3-0",
+  },
 ];
 
 const ue18 = [
@@ -861,6 +1065,18 @@ const ue18 = [
     bold: true,
     title: "3.0 Comunicação e os relacionamentos interpessoais",
     href: "3-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "4.0 Recapitulando",
+    href: "4-0",
+  },
+  {
+    ident: 0,
+    bold: true,
+    title: "5.0 Solução do problematizando",
+    href: "5-0",
   },
 ];
 
@@ -892,11 +1108,11 @@ function summaryInit(currentUe) {
   const summaryTopics = summaries["ue" + currentUe];
 
   summaryTopics.forEach((element) => {
-    const a = createAnchor(element);
+    const li = createLi(element);
 
-    a.appendChild(createLi(element));
+    li.appendChild(createAnchor(element));
 
-    summary.appendChild(a);
+    summary.appendChild(li);
   });
 }
 
@@ -906,6 +1122,7 @@ function createAnchor(anchorElement) {
   a.classList.add(anchorElement.bold && "font-bold");
 
   a.href = "#" + anchorElement.href;
+  a.innerHTML = anchorElement.title;
 
   return a;
 }
@@ -914,8 +1131,6 @@ function createLi(anchorElement) {
   const li = document.createElement("li");
   li.classList.add("mb-3");
   li.classList.add(anchorElement.ident == 1 ? "ms-2" : "ms-0");
-
-  li.innerHTML = anchorElement.title;
 
   return li;
 }

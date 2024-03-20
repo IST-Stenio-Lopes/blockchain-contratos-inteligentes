@@ -13,20 +13,20 @@ const UE15Q1 = {
   alternatives: [
     {
       label: "Verdadeiro",
-      isCorrect: true,
+      isCorrect: false,
       feedback: {
-        title: 'CORRETO!',
+        title: "CORRETO!",
         subtitle:
-        "Os padrões de projetos são soluções genéricas para problemas comuns encontrados na arquitetura de software. São soluções genéricas para problemas comuns encontrados na arquitetura de software.",
+          "Os padrões de projetos são soluções genéricas para problemas comuns encontrados na arquitetura de software. São soluções genéricas para problemas comuns encontrados na arquitetura de software.",
       },
     },
     {
-      label: "Verdadeiro",
-      isCorrect: false,
+      label: "Falso",
+      isCorrect: true,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
-          "Os padrões de projetos são soluções genéricas para problemas comuns encontrados na arquitetura de software.São soluções genéricas para problemas comuns encontrados na arquitetura de software.",
+          "Os padrões de projetos são soluções genéricas para problemas comuns encontrados na arquitetura de software. São soluções genéricas para problemas comuns encontrados na arquitetura de software.",
       },
     },
   ],
@@ -40,18 +40,22 @@ const UE15Q2 = {
   alternatives: [
     {
       isCorrect: false,
-      label: "Ignorar padrões de projeto e focar apenas na funcionalidade básica do contrato.",
+      label:
+        "Ignorar padrões de projeto e focar apenas na funcionalidade básica do contrato.",
       feedback: {
-        title: 'OPS!',
-        subtitle: "Ignorar padrões de projeto pode levar a um contrato menos organizado, difícil de manter e menos seguro.",
+        title: "OPS!",
+        subtitle:
+          "Ignorar padrões de projeto pode levar a um contrato menos organizado, difícil de manter e menos seguro.",
       },
     },
     {
       isCorrect: false,
-      label: "Escrever todo o código do contrato em um único arquivo para simplificar a estrutura.",
+      label:
+        "Escrever todo o código do contrato em um único arquivo para simplificar a estrutura.",
       feedback: {
-        title: 'OPS!',
-        subtitle: "Escrever todo o código em um único arquivo torna o contrato mais difícil de entender e manter, além de reduzir a modularidade e a reutilização de código.",
+        title: "OPS!",
+        subtitle:
+          "Escrever todo o código em um único arquivo torna o contrato mais difícil de entender e manter, além de reduzir a modularidade e a reutilização de código.",
       },
     },
     {
@@ -59,24 +63,29 @@ const UE15Q2 = {
       label:
         "Implementar padrões de projeto no contrato inteligente para melhorar a qualidade, segurança e manutenibilidade.",
       feedback: {
-        title: 'CORRETO!',
-        subtitle: "Ignorar padrões de projeto e focar apenas na funcionalidade básica do contrato.",
+        title: "CORRETO!",
+        subtitle:
+          "Ignorar padrões de projeto e focar apenas na funcionalidade básica do contrato.",
       },
     },
     {
       isCorrect: false,
-      label: "Evitar a reutilização de código e escrever todas as funções do contrato do zero.",
+      label:
+        "Evitar a reutilização de código e escrever todas as funções do contrato do zero.",
       feedback: {
-        title: 'OPS!',
-        subtitle: "Evitar a reutilização de código torna o desenvolvimento menos eficiente e mais propenso a erros, uma vez que cada função terá de ser escrita do zero.",
+        title: "OPS!",
+        subtitle:
+          "Evitar a reutilização de código torna o desenvolvimento menos eficiente e mais propenso a erros, uma vez que cada função terá de ser escrita do zero.",
       },
     },
     {
       isCorrect: false,
-      label: "Deixar a segurança do contrato como uma preocupação secundária e priorizar a velocidade de desenvolvimento",
+      label:
+        "Deixar a segurança do contrato como uma preocupação secundária e priorizar a velocidade de desenvolvimento",
       feedback: {
-        title: 'OPS!',
-        subtitle: "Deixar a segurança como uma preocupação secundária pode resultar em vulnerabilidades e ataques ao contrato, comprometendo a integridade e a confiabilidade do sistema.",
+        title: "OPS!",
+        subtitle:
+          "Deixar a segurança como uma preocupação secundária pode resultar em vulnerabilidades e ataques ao contrato, comprometendo a integridade e a confiabilidade do sistema.",
       },
     },
   ],
@@ -84,14 +93,15 @@ const UE15Q2 = {
 
 const UE15Q3 = {
   uid: "UE15Q3",
-  assertive: "Qual é o objetivo do padrão de autoridade em contratos inteligentes?",
+  assertive:
+    "Qual é o objetivo do padrão de autoridade em contratos inteligentes?",
   components: [],
   alternatives: [
     {
       label: "Permitir que vários endereços acessem o contrato ao mesmo tempo",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "O padrão de autoridade tem como objetivo garantir que apenas um endereço ou grupo de endereços tenha o controle exclusivo sobre o contrato, ao invés de permitir o controle por vários endereços.",
       },
@@ -100,7 +110,7 @@ const UE15Q3 = {
       label: "Fornecer acesso igualitário a todos os usuários",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "O padrão de autoridade tem como objetivo garantir o controle exclusivo por um endereço ou grupo de endereços, ao invés de fornecer acesso igualitário a todos os usuários.",
       },
@@ -110,7 +120,7 @@ const UE15Q3 = {
         "Garantir que apenas um endereço ou grupo de endereços tenha controle exclusivo sobre o contrato",
       isCorrect: true,
       feedback: {
-        title: 'CORRETO',
+        title: "CORRETO",
         subtitle:
           "Isso é útil em situações em que é importante ter controle restrito sobre as decisões e as alterações feitas no contrato.",
       },
@@ -119,7 +129,7 @@ const UE15Q3 = {
       label: "Tornar o contrato totalmente descentralizado",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "O padrão de autoridade tem como objetivo garantir o controle exclusivo por um endereço ou grupo de endereços, ao invés de tornar o contrato totalmente descentralizado.",
       },
@@ -128,7 +138,7 @@ const UE15Q3 = {
       label: "Proteger o contrato contra ataques maliciosos",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "Embora a proteção contra ataques maliciosos seja importante, ela não é o objetivo principal do padrão de autoridade. Ele tem como objetivo garantir o controle exclusivo por um endereço ou grupo de endereços sobre o contrato.",
       },
@@ -167,8 +177,7 @@ const UE15Q4 = {
       },
     },
     {
-      label:
-        "Tornar a variável privada",
+      label: "Tornar a variável privada",
       feedback: {
         subtitle:
           "Essa técnica ajuda a proteger o contrato contra ataques e a garantir que os dados e as operações do contrato sejam manipulados de maneira adequada.",

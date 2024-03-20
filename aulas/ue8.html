@@ -212,7 +212,12 @@
             >
               <span class="font-bold text-lg uppercase mb-3">dica</span>
               Para conhecer mais sobre Truffle Suite, acesse:
-              https://trufflesuite.com/
+              <a
+                class="underline contents cursor-pointer"
+                target="_blank"
+                href="https://trufflesuite.com/"
+                >https://trufflesuite.com/</a
+              >
             </div>
 
             <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
@@ -246,11 +251,18 @@
         <div className="w-full flex row justify-between items-center">
           <div class="w-full flex row justify-between items-center">
             Para acessar a ferramenta, digite no seu navegador o site:
-            https://remix-project.org/ ou acesse o QR Code a seguir:
+            <br />
+            <a
+              class="cursor-pointer contents underline"
+              target="_blank"
+              href="https://remix-project.org/"
+              >https://remix-project.org/</a
+            >
+            ou acesse o QR Code a seguir:
 
             <!-- Image content -->
             <div
-              class="gallery flex flex-col items-center"
+              class="gallery flex flex-col items-center ml-16"
               ue="UE8"
               index="15"
             ></div>
@@ -326,7 +338,12 @@
               <span class="font-bold text-lg uppercase mb-3">DICA</span>
               Você pode encontrar informações adicionais sobre a IDE Remix na
               sua documentação. Disponível em:
-              https://remix-ide.readthedocs.io/en/latest/
+              <a
+                class="cursor-pointer underline"
+                target="_blank"
+                href="https://remix-ide.readthedocs.io/en/latest/"
+                >https://remix-ide.readthedocs.io/en/latest/</a
+              >
             </div>
 
             <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
@@ -396,9 +413,13 @@
         </p>
 
         <p>
-          Descrito em sua documentação oficial
-          (https://docs.soliditylang.org/en/v0.8.17/), Solidity é uma linguagem
-          orientada a objetos, influenciada pelo C++, Python e pelo JavaScript.
+          Descrito em sua documentação oficial (<a
+            class="underline cursor-pointer contents"
+            target="_blank"
+            href="https://docs.soliditylang.org/en/v0.8.17/"
+            >https://docs.soliditylang.org/en/v0.8.17/</a
+          >), Solidity é uma linguagem orientada a objetos, influenciada pelo
+          C++, Python e pelo JavaScript.
         </p>
 
         <!-- WarningBanner -->
@@ -633,26 +654,28 @@
         </p>
 
         <p>
-          Inicia-se a função com a palavra reservada function e coloca-se o nome
-          da função e seus parâmetros entre parênteses, nesse caso o nome
-          escolhido é “olaMundo()” e não há parâmetros, por isso os parênteses
-          estão vazios.
+          Inicia-se a função com a palavra reservada <strong>function</strong> e
+          coloca-se o nome da função e seus parâmetros entre parênteses, nesse
+          caso o nome escolhido é “olaMundo()” e não há parâmetros, por isso os
+          parênteses estão vazios.
         </p>
 
         <p>
           Logo após, é definido o modificador de visibilidade de acesso. Neste
-          caso, foi definido public, indicando que a função pode ser chamada de
-          fora deste contrato.
+          caso, foi definido <strong>public</strong>, indicando que a função
+          pode ser chamada de fora deste contrato.
         </p>
 
         <p>
           Na sequência é definido o tipo da função, neste caso é um função do
-          tipo view, pois é utilizada para visualizar uma informação.
+          tipo <strong>view</strong>, pois é utilizada para visualizar uma
+          informação.
         </p>
 
         <p>
           Por fim, é definido o tipo de retorno usando a palavra reservada
-          returns, neste caso o retorno é tipo string memory.
+          <strong>returns</strong>, neste caso o retorno é tipo
+          <strong>string memory</strong>.
         </p>
 
         <p>
@@ -926,14 +949,26 @@
             O Remix é uma IDE online e open source, escrita em JavaScript. Ela é
             composta por módulos para desenvolvimento, depuração e publicação
             dos contratos inteligentes em Solidity.(Disponível em:
-            https://remix-project.org )
+            <a
+              class="contents underline cursor-pointer"
+              target="_blank"
+              href="https://remix-project.org"
+              >https://remix-project.org</a
+            >
+            )
           </li>
           <br />
           <li>
             O Solidity é uma linguagem de programação de alto nível utilizada
             para programação de contratos inteligentes. Tem como característica
             ser orientada a objetos e estáticamente tipada. (Documentação
-            disponível em: https://docs.soliditylang.org/en/v0.8.17/ )
+            disponível em:
+            <a
+              class="contents underline cursor-pointer"
+              target="_blank"
+              href="https://docs.soliditylang.org/en/v0.8.17/"
+              >https://docs.soliditylang.org/en/v0.8.17/</a
+            >)
           </li>
           <br />
           <li>Um dos objetivos da unidade foi construir o código a seguir:</li>
@@ -989,32 +1024,37 @@
             O construtor funciona como uma função especial que é chamada sempre
             que uma nova instância do objeto contrato for criada. Nele podemos
             definir inicialização do valor das variáveis do objeto, entre
-            outras. Em Solidity, usa-se a palavra reservada constructor.
+            outras. Em Solidity, usa-se a palavra reservada
+            <strong>constructor</strong>.
           </li>
           <br />
           <li>
-            Inicia-se a função com a palavra reservada function e coloca-se o
-            nome da função e seus parâmetros entre parênteses.
+            Inicia-se a função com a palavra reservada
+            <strong>function</strong> e coloca-se o nome da função e seus
+            parâmetros entre parênteses.
           </li>
           <br />
           <li>
             Logo após, é definido o modificador de visibilidade de acesso. Neste
-            caso, foi definido public.
+            caso, foi definido <strong>public</strong>.
           </li>
           <br />
           <li>
             Na sequência é definido o tipo da função, neste caso é um função do
-            tipo view, pois é utilizada para visualizar uma informação.
+            tipo <strong>view</strong>, pois é utilizada para visualizar uma
+            informação.
           </li>
           <br />
           <li>
             Por fim, é definido o tipo de retorno usando a palavra reservada
-            returns, neste caso o retorno é tipo string memory.
+            <strong>returns</strong>, neste caso o retorno é tipo
+            <strong>string memory</strong>.
           </li>
           <br />
           <li>
             No escopo da função, a única instrução que ela executa é retornar o
-            valor da variável “mensagem” utilizando a palavra reservada return.
+            valor da variável “mensagem” utilizando a palavra reservada
+            <strong>return</strong>.
           </li>
           <br />
           <li>Após a implementação do contrato deve-se compilar o código.</li>

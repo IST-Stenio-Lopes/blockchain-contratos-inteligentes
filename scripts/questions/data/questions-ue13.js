@@ -17,7 +17,7 @@ const UE13Q1 = {
       label: "uint256 _quantidadePontos.",
       isCorrect: true,
       feedback: {
-        title: 'CORRETO!',
+        title: "CORRETO!",
         subtitle:
           "uint256 _quantidadePontos é a forma adequada de inserir a quantidade de pontos envolvidos na troca de produtos. Isso porque uint256 é um tipo de dado que pode armazenar valores inteiros não negativos de até 2^256-1, o que é adequado para armazenar a quantidade de pontos.",
       },
@@ -26,7 +26,7 @@ const UE13Q1 = {
       label: "int _quantidadePontos",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "Embora int seja um tipo de dados inteiro, é importante notar que ele pode ser assinado (signed) ou não-assinado (unsigned), o que pode levar a comportamentos inesperados quando usado em conjunto com outros tipos de dados. Além disso, uint é geralmente preferido em vez de int para evitar erros relacionados a aritmética de complemento de dois. Portanto, não é a opção correta.",
       },
@@ -35,7 +35,7 @@ const UE13Q1 = {
       label: "string _quantidadePontos",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "String é um tipo de dados para armazenar texto. Embora possa ser usado para armazenar a quantidade de pontos, não é o tipo de dados mais adequado para isso, pois adiciona complexidade ao processamento da informação.",
       },
@@ -44,7 +44,7 @@ const UE13Q1 = {
       label: "bool _quantidadePontos:",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "bool é um tipo de dados que pode armazenar valores true ou false, o que não é adequado para armazenar a quantidade de pontos.",
       },
@@ -53,7 +53,7 @@ const UE13Q1 = {
       label: "bytes32 _quantidadePontos:",
       isCorrect: false,
       feedback: {
-        title: 'OPS!',
+        title: "OPS!",
         subtitle:
           "bytes32 é um tipo de dados que pode armazenar até 32 bytes de informação. Embora isso possa ser usado para armazenar a quantidade de pontos, isso adiciona complexidade ao processamento da informação. Além disso, bytes32 é um tipo de dados estático, mas não é tão adequado quanto uint256, que é especificamente projetado para armazenar valores inteiros não negativos.",
       },
@@ -74,9 +74,9 @@ const UE13Q2 = {
       value: [
         "Considere que o modificador 'payable' foi retirado da assinatura função “pagamento”. Analise as seguintes implicações:<br/><br/>",
         "<ol class='list-decimal ms-6'>",
-        "<li>A função não poderia receber Ether diretamente: Contratos inteligentes no Ethereum só podem receber Ether em funções marcadas como payable. Se você tentar enviar Ether para uma função sem o modificador payable, a transação será rejeitada e falhará</li><br/>",
-        "<li>A verificação de msg.value se tornaria irrelevante: Como a função não aceitaria Ether, a verificação na linha 82 se tornaria desnecessária, pois msg.value sempre seria 0. Nesse caso, você precisaria modificar a lógica para lidar com o pagamento de outra forma</li><br/>",
-        "<li>O conceito de pagamento precisaria ser repensado: Se a função não aceitar Ether diretamente, você teria que encontrar uma maneira alternativa de lidar com pagamentos no seu contrato inteligente.</li><br/>",
+        "<li class='text-secondary-300 font-semibold'>A função não poderia receber Ether diretamente: Contratos inteligentes no Ethereum só podem receber Ether em funções marcadas como payable. Se você tentar enviar Ether para uma função sem o modificador payable, a transação será rejeitada e falhará</li><br/>",
+        "<li class='text-secondary-300 font-semibold'>A verificação de msg.value se tornaria irrelevante: Como a função não aceitaria Ether, a verificação na linha 82 se tornaria desnecessária, pois msg.value sempre seria 0. Nesse caso, você precisaria modificar a lógica para lidar com o pagamento de outra forma</li><br/>",
+        "<li class='text-secondary-300 font-semibold'>O conceito de pagamento precisaria ser repensado: Se a função não aceitar Ether diretamente, você teria que encontrar uma maneira alternativa de lidar com pagamentos no seu contrato inteligente.</li><br/>",
         "</ol>",
         "Marque a alternativa que mostra a(s) opção(es) verdadeiras.",
       ].join(""),

@@ -129,7 +129,12 @@
           sobre a sintaxe de funções, construtores e modificadores. É importante
           ficar atento às mudanças, pois as evoluções da linguagem são muito
           rápidas. Mantenha-se atualizado consultando a documentação em:
-          https://solidity-portuguese.readthedocs.io/pt/latest/
+          <a
+            class="underline contents cursor-pointer"
+            target="_blank"
+            href="https://solidity-portuguese.readthedocs.io/pt/latest/"
+            >https://solidity-portuguese.readthedocs.io/pt/latest/</a
+          >
         </p>
       </div>
       <!-- / GridCol marginInCols = 2 -->
@@ -361,22 +366,22 @@
                 <th
                   class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
                 >
-                  VISIBILIDADE
+                  Visibilidade
                 </th>
                 <th
                   class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
                 >
-                  DENTRO DO CONTRATO
+                  Dentro do contrato
                 </th>
                 <th
                   class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
                 >
-                  CONTRATOS DERIVADOS (FILHOS)
+                  Contratos derivados <span class="text-sm">(filhos)</span>
                 </th>
                 <th
                   class="bg-secondary-800 text-secondary-300 font-semibold py-2 px-4 text-center"
                 >
-                  OUTROS CONTRATOS
+                  Outros Contratos
                 </th>
               </tr>
             </thead>
@@ -498,9 +503,9 @@
 
         <p>
           Se nenhuma palavra reservada for utilizada, a função é executada no
-          modo transaction, ou seja, ela pode retornar, gravar ou alterar dados.
-          A execução das funções transaction sempre envolvem pagamento de gás,
-          mesmo que seja apenas uma leitura de valores.
+          modo <strong>transaction</strong>, ou seja, ela pode retornar, gravar
+          ou alterar dados. A execução das funções transaction sempre envolvem
+          pagamento de gás, mesmo que seja apenas uma leitura de valores.
         </p>
 
         <!-- Image content -->
@@ -529,7 +534,8 @@
         <p>
           Outro tipo utilizado, são as funções definidas como
           <strong>pure</strong>. Elas são as mais restritivas e seu uso não
-          permite ler ou alterar dados. Sua execução também ocorre no modo call
+          permite ler ou alterar dados. Sua execução também ocorre no modo
+          <strong>call</strong>
           e não envolve custo de gás.
         </p>
 
@@ -547,8 +553,9 @@
         </p>
 
         <p>
-          As funções pagáveis (payable) permitem receber fundos, ou seja,
-          recebem Ether (Eth) e/ou outros tokens.
+          As funções pagáveis (payable) permitem
+          <strong>receber</strong> fundos, ou seja, recebem Ether (Eth) e/ou
+          outros tokens.
         </p>
 
         <p>
@@ -663,8 +670,13 @@
               class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
             >
               <span class="font-bold text-lg uppercase mb-3">Dica</span>
-              Você pode consultar os Chain ids em: https://chainlist.org/
-              <br />
+              Você pode consultar os Chain ids em:
+              <a
+                class="underline cursor-pointer"
+                target="_blank"
+                href="https://chainlist.org/"
+                >https://chainlist.org/</a
+              >
               Também é possível inserir sua rede e receber seu id.
             </div>
 
@@ -718,8 +730,14 @@
               class="flex flex-col w-4/5 gap-3 text-gray-200 dark:text-gray-900"
             >
               <span class="font-bold text-lg uppercase mb-3">Dica</span>
-              Acesse: https://etherscan.io/blocks e confira quantos blocos
-              existem na rede Ethereum atualmente.
+              Acesse:
+              <a
+                class="underline cursor-pointer contents"
+                target="_blank"
+                href="https://etherscan.io/blocks"
+                >https://etherscan.io/blocks</a
+              >
+              e confira quantos blocos existem na rede Ethereum atualmente.
             </div>
 
             <div class="ml-8 flex items-center justify-center min-h-full w-1/5">
@@ -842,7 +860,7 @@
               </li>
               <li>
                 Não há um especificador de comportamento, logo a função será do
-                tipo transaction.
+                tipo <strong>transaction</strong>.
               </li>
               <li>A função não retorna nenhum valor.</li>
             </ol>
