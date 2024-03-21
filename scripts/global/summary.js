@@ -887,7 +887,7 @@ const ue15 = [
     ident: 0,
     bold: true,
     title: "1.0 Boas Práticas - Padrões de projeto para contratos inteligentes",
-    href: "",
+    href: "1-0",
   },
   {
     ident: 1,
