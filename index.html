@@ -97,7 +97,7 @@
       id="sidebar"
       class="fixed h-full w-0 bg-surface-200 z-110 duration-700 flex flex-col items-center justify-start text-white overflow-hidden"
     >
-      <div class="w-full">
+      <div class="w-full" style="overflow-y: auto">
         <div class="h-20 w-full px-8 flex justify-end">
           <button
             type="button"
@@ -602,7 +602,7 @@
       <!-- Summary -->
       <div
         id="summary"
-        class="absolute left-0 top-0 overflow-x-hidden w-0 z-120 bg-surface-200"
+        class="absolute left-0 top-0 overflow-x-hidden w-0 h-full z-120 bg-surface-200"
       >
         <header
           id="header-sumario"
@@ -739,23 +739,6 @@
 
     <script>
       carregarHTML(ueData.currentPage);
-
-      addScrollSummary();
-      window.addEventListener("resize", addScrollSummary);
-
-      function addScrollSummary() {
-        let screenHeight = window.innerHeight;
-
-        let sumario = document.getElementById("height-summary");
-        sumario.style.maxHeight = screenHeight - 40 + "px";
-        sumario.classList.remove("min-h-160");
-
-        console.log(sumario.offsetHeight);
-
-        if (sumario.offsetHeight < 400 && screenHeight >= 260) {
-          sumario.classList.add("min-h-160");
-        }
-      }
 
       function carregarHTML(id) {
         if (id != "x") {
