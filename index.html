@@ -605,6 +605,7 @@
         class="absolute left-0 top-0 overflow-x-hidden w-0 z-120 bg-surface-200"
       >
         <header
+          id="header-sumario"
           class="flex flex-row justify-between text-primary-900 bg-gray-200 py-2 px-8"
         >
           <button
@@ -638,7 +639,11 @@
 
           <div></div>
         </header>
-        <div class="py-8 px-12 flex flex-col">
+        <div
+          id="height-summary"
+          class="py-8 px-12 flex flex-col"
+          style="overflow-y: auto"
+        >
           <ul id="summary-items">
             <!-- elementos do sumário -->
           </ul>
@@ -735,6 +740,23 @@
     <script>
       carregarHTML(ueData.currentPage);
 
+      addScrollSummary();
+      window.addEventListener("resize", addScrollSummary);
+
+      function addScrollSummary() {
+        let screenHeight = window.innerHeight;
+
+        let sumario = document.getElementById("height-summary");
+        sumario.style.maxHeight = screenHeight - 40 + "px";
+        sumario.classList.remove("min-h-160");
+
+        console.log(sumario.offsetHeight);
+
+        if (sumario.offsetHeight < 400 && screenHeight >= 260) {
+          sumario.classList.add("min-h-160");
+        }
+      }
+
       function carregarHTML(id) {
         if (id != "x") {
           $(function () {
@@ -751,6 +773,7 @@
               hidePageButton();
               createImages();
               summaryInit(currentPage);
+              addScrollSummary();
               sideBarInit();
               configPs();
               showHeaderAndFooter(true);
